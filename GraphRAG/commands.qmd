@@ -21,7 +21,7 @@ xmllint --version
 xmllint --xpath "//text()" <input.xml> | tr -d '\n' > <output.txt>  (cd INTO THE INPUT DIR)
 
 
-# CREATE .ENV AND YAML FILES IN RAGTEST FOLDER
+# CREATE .ENV AND YAML FILES IN RAGTEST FOLDER (CD OUTSIDE RAGTEST)
 graphrag init --root ./ragtest 
 
 graphrag index --root ./ragtest
