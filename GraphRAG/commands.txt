@@ -11,7 +11,19 @@ SOURCE - https://microsoft.github.io/graphrag/get_started/
 pip install graphrag
 mkdir -p ./ragtest/input
 
+
+XMLLINT
+(IF NOT INSTALLED)
+sudo apt-get install libxml2-utils  
+
+
 xmllint --version
 xmllint --xpath "//text()" <input.xml> | tr -d '\n' > <output.txt>  (cd INTO THE INPUT DIR)
+
+
+# CREATE .ENV AND YAML FILES IN RAGTEST FOLDER
+graphrag init --root ./ragtest 
+
+graphrag index --root ./ragtest
 
 
