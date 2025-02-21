@@ -10,3 +10,8 @@ SOURCE - https://microsoft.github.io/graphrag/get_started/
 
 pip install graphrag
 mkdir -p ./ragtest/input
+
+xmllint --version
+xmllint --xpath "//text()" <input.xml> | tr -d '\n' > <output.txt>  (cd INTO THE INPUT DIR)
+
+
