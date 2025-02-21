@@ -1,0 +1,12 @@
+python --version
+conda --version
+conda -n create graphrag
+conda  init
+("exit" & re-opened the terminal)
+
+conda activate graphrag
+
+SOURCE - https://microsoft.github.io/graphrag/get_started/
+
+pip install graphrag
+mkdir -p ./ragtest/input
