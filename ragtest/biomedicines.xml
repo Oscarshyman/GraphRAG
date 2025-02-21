@@ -1,0 +1,2831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="other" dtd-version="1.3" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">biomedicines</journal-id>
+      <journal-title-group>
+        <journal-title>Biomedicines</journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Biomedicines</abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="pubmed">Biomedicines</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2227-9059</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3390/biomedicines12081837</article-id>
+      <article-id pub-id-type="publisher-id">biomedicines-12-01837</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Opinion</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Quiescence-Origin Senescence: A New Paradigm in Cellular Aging</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-0167-777X</contrib-id>
+          <name>
+            <surname>Yao</surname>
+            <given-names>Guang</given-names>
+          </name>
+          <xref rid="af1-biomedicines-12-01837" ref-type="aff">1</xref>
+          <xref rid="af2-biomedicines-12-01837" ref-type="aff">2</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Faggioli</surname>
+            <given-names>Francesca</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Crasta</surname>
+            <given-names>Karen</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-biomedicines-12-01837"><label>1</label>Department of Molecular &amp; Cellular Biology, University of Arizona, Tucson, AZ 85721, USA; <email>guangyao@arizona.edu</email></aff>
+      <aff id="af2-biomedicines-12-01837"><label>2</label>Arizona Cancer Center, University of Arizona, Tucson, AZ 85719, USA</aff>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>08</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>08</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>8</issue>
+      <elocation-id>1837</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>30</day>
+          <month>07</month>
+          <year>2024</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>03</day>
+          <month>08</month>
+          <year>2024</year>
+        </date>
+        <date date-type="accepted">
+          <day>09</day>
+          <month>08</month>
+          <year>2024</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2024 by the author.</copyright-statement>
+        <copyright-year>2024</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Cellular senescence, traditionally viewed as a consequence of proliferating and growing cells overwhelmed by extensive stresses and damage, has long been recognized as a critical cellular aging mechanism. Recent research, however, has revealed a novel pathway termed &#x201C;quiescence-origin senescence&#x201D;, where cells directly transition into senescence from the quiescent state, bypassing cell proliferation and growth. This opinion paper presents a framework conceptualizing a continuum between quiescence and senescence with quiescence deepening as a precursor to senescence entry. We explore the triggers and controllers of this process and discuss its biological implications. Given that the majority of cells in the human body are dormant rather than proliferative, understanding quiescence-origin senescence has significant implications for tissue homeostasis, aging, cancer, and various disease processes. The new paradigm in exploring this previously overlooked senescent cell population may reshape our intervention strategies for age-related diseases and tissue regeneration.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>quiescence</kwd>
+        <kwd>senescence</kwd>
+        <kwd>quiescence deepening</kwd>
+        <kwd>dormancy state continuum</kwd>
+        <kwd>Rb&#x2013;E2F switch threshold</kwd>
+        <kwd>geroconversion</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>Research Development Grant of the University of Arizona</funding-source>
+        </award-group>
+        <funding-statement>This research was partially supported by the Research Development Grant of the University of Arizona.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1-biomedicines-12-01837" sec-type="intro">
+      <title>1. Introduction</title>
+      <p>Cellular senescence, a state of permanent cell cycle arrest, has been a focal point of biomedical research for decades [<xref ref-type="bibr" rid="B1-biomedicines-12-01837">1</xref>]. It is typically triggered when growing cells are overwhelmed by extensive stresses and damage, such as telomere erosion, oncogene activation, oxidative stress, and DNA damage, to a degree beyond their repair capacity [<xref ref-type="bibr" rid="B2-biomedicines-12-01837">2</xref>,<xref ref-type="bibr" rid="B3-biomedicines-12-01837">3</xref>]. Cells enter senescence and permanently halt proliferation to avoid deleterious consequences like malignant tumorigenesis and fibrotic response [<xref ref-type="bibr" rid="B4-biomedicines-12-01837">4</xref>,<xref ref-type="bibr" rid="B5-biomedicines-12-01837">5</xref>]. The hallmarks of senescent cells include permanent cell cycle arrest, senescence-associated secretory phenotype (SASP), macromolecular damage, deregulated metabolism [<xref ref-type="bibr" rid="B6-biomedicines-12-01837">6</xref>], and often enlarged cell size and other morphological changes [<xref ref-type="bibr" rid="B2-biomedicines-12-01837">2</xref>,<xref ref-type="bibr" rid="B7-biomedicines-12-01837">7</xref>]. This conventional view has shaped our understanding of senescence primarily as an extreme stress response in proliferating and growing cells.</p>
+      <p>In contrast, cellular quiescence is a reversible state of cell cycle arrest. Under physiological growth-limiting conditions, such as mitogen withdrawal or contact inhibition, cells exit the cell cycle and enter quiescence [<xref ref-type="bibr" rid="B8-biomedicines-12-01837">8</xref>]. Quiescent cells are typically associated with low metabolic activity and reduced cell size and do not exhibit obvious deleterious phenotypes associated with senescence, such as SASP and severe damage [<xref ref-type="bibr" rid="B8-biomedicines-12-01837">8</xref>,<xref ref-type="bibr" rid="B9-biomedicines-12-01837">9</xref>]. Upon restoration of growth-permissive conditions (e.g., reintroducing growth factors or alleviating contact inhibition), quiescent cells can resume proliferation, which is a key distinction from senescent cells [<xref ref-type="bibr" rid="B8-biomedicines-12-01837">8</xref>,<xref ref-type="bibr" rid="B9-biomedicines-12-01837">9</xref>]. Quiescence is considered a physiological state that allows cells to maintain cellular viability and integrity under growth-limiting conditions, playing a crucial role in tissue homeostasis and stem cell maintenance [<xref ref-type="bibr" rid="B9-biomedicines-12-01837">9</xref>,<xref ref-type="bibr" rid="B10-biomedicines-12-01837">10</xref>]. This mechanism is proposed to safeguard cells from senescence [<xref ref-type="bibr" rid="B11-biomedicines-12-01837">11</xref>,<xref ref-type="bibr" rid="B12-biomedicines-12-01837">12</xref>]. </p>
+      <p>Recent research in the past decade, however, has begun to challenge this traditional paradigm by demonstrating that senescence can originate directly from quiescent cells in various contexts [<xref ref-type="bibr" rid="B13-biomedicines-12-01837">13</xref>,<xref ref-type="bibr" rid="B14-biomedicines-12-01837">14</xref>,<xref ref-type="bibr" rid="B15-biomedicines-12-01837">15</xref>,<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>]. This phenomenon, which we term &#x201C;quiescence-origin senescence&#x201D;, suggests a fluid continuum between quiescence and senescence with profound implications for tissue homeostasis, aging, and disease processes. Notably, proliferating cells account for less than 1% of the thirty-seven trillion cells in the human body at any given time [<xref ref-type="bibr" rid="B17-biomedicines-12-01837">17</xref>], suggesting that quiescence-origin senescence may underlie a large proportion of previously overlooked or misclassified senescent cells. </p>
+      <p>This brief review synthesizes recent findings to provide a new framework for understanding senescence from the perspective of cell dormancy&#x2013;state plasticity, aiming to stimulate further related research into novel intervention strategies for age-related diseases, cancer, and regenerative medicine.</p>
+    </sec>
+    <sec id="sec2-biomedicines-12-01837">
+      <title>2. The Quiescence&#x2013;Senescence Continuum: A Framework for Understanding Quiescence-Origin Senescence</title>
+      <sec id="sec2dot1-biomedicines-12-01837">
+        <title>2.1. Direct Transition from Quiescence to Senescence</title>
+        <p>Mounting evidence in the past decade demonstrates a direct transition to senescence in quiescent cells under stress or with aging. One of the first reports of this phenomenon was in geriatric mice, where quiescent satellite cells (muscle stem cells, MuSCs) lose regenerative capacity and become irreversibly arrested [<xref ref-type="bibr" rid="B13-biomedicines-12-01837">13</xref>]. The same observation was confirmed in geriatric human muscle, suggesting a conserved mechanism contributing to age-related decline in muscle regenerative capacity [<xref ref-type="bibr" rid="B13-biomedicines-12-01837">13</xref>]. The quiescence-to-senescence transition in geriatric MuSCs was linked to the epigenetic derepression of p16<sup>INK4a</sup>, which is a key regulator of senescence [<xref ref-type="bibr" rid="B13-biomedicines-12-01837">13</xref>].</p>
+        <p>Further research revealed that p16<sup>INK4a</sup> derepression in geriatric MuSCs was triggered by accumulated reactive oxygen species (ROS) resulting from failed autophagy [<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>]. Restoring autophagy prevents the transition to senescence in quiescent MuSCs [<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>]. Similarly, in quiescent human hematopoietic stem progenitor cells (HSPCs), stress-induced ROS accumulation can elevate the p16<sup>INK4a</sup> level and drive the transition to senescence [<xref ref-type="bibr" rid="B14-biomedicines-12-01837">14</xref>]. </p>
+        <p>In vitro studies provide further evidence for the direct quiescence-to-senescence transition. Long-term quiescent human fibroblasts in culture (100&#x2013;150 days) accumulate DNA damage and transit into senescence [<xref ref-type="bibr" rid="B15-biomedicines-12-01837">15</xref>]. Our recent work showed that quiescent rat embryonic fibroblasts (REFs) with impaired lysosomal autophagy can directly enter a senescence-like state characterized by irreversible cell cycle arrest, &#x3B2;-galactosidase activity, and cellular hypertrophy [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>]. These in vitro results strengthen the findings of in vivo studies by showing that cells maintained in quiescent conditions throughout the experiments eventually transitioned to senescence, bypassing cell proliferation (which can be difficult to track in vivo, e.g., throughout the entire geriatric phase). Together, these in vivo and in vitro studies provide compelling evidence for the direct quiescence-to-senescence transition, resulting in quiescence-origin senescence.</p>
+      </sec>
+      <sec id="sec2dot2-biomedicines-12-01837">
+        <title>2.2. Quiescence Deepening into Senescence: A Continuum Model</title>
+        <p>The observation that cells can transition from quiescence to senescence aligns with the concept that quiescence is not a uniform state but rather a spectrum of dormant depths. Specifically, deeper quiescent cells are more resistant to cell cycle re-entry, and they resume proliferation less frequently or with a longer delay than shallower quiescent cells given the same growth stimulation [<xref ref-type="bibr" rid="B8-biomedicines-12-01837">8</xref>,<xref ref-type="bibr" rid="B19-biomedicines-12-01837">19</xref>,<xref ref-type="bibr" rid="B20-biomedicines-12-01837">20</xref>,<xref ref-type="bibr" rid="B21-biomedicines-12-01837">21</xref>,<xref ref-type="bibr" rid="B22-biomedicines-12-01837">22</xref>,<xref ref-type="bibr" rid="B23-biomedicines-12-01837">23</xref>,<xref ref-type="bibr" rid="B24-biomedicines-12-01837">24</xref>,<xref ref-type="bibr" rid="B25-biomedicines-12-01837">25</xref>,<xref ref-type="bibr" rid="B26-biomedicines-12-01837">26</xref>,<xref ref-type="bibr" rid="B27-biomedicines-12-01837">27</xref>,<xref ref-type="bibr" rid="B28-biomedicines-12-01837">28</xref>,<xref ref-type="bibr" rid="B29-biomedicines-12-01837">29</xref>,<xref ref-type="bibr" rid="B30-biomedicines-12-01837">30</xref>,<xref ref-type="bibr" rid="B31-biomedicines-12-01837">31</xref>,<xref ref-type="bibr" rid="B32-biomedicines-12-01837">32</xref>,<xref ref-type="bibr" rid="B33-biomedicines-12-01837">33</xref>,<xref ref-type="bibr" rid="B34-biomedicines-12-01837">34</xref>,<xref ref-type="bibr" rid="B35-biomedicines-12-01837">35</xref>]. Cells in deep quiescence generally exhibit decreased transcription, reduced RNA and protein levels, and increased chromatin condensation compared to cells in shallow quiescence [<xref ref-type="bibr" rid="B22-biomedicines-12-01837">22</xref>,<xref ref-type="bibr" rid="B36-biomedicines-12-01837">36</xref>,<xref ref-type="bibr" rid="B37-biomedicines-12-01837">37</xref>,<xref ref-type="bibr" rid="B38-biomedicines-12-01837">38</xref>]. Recent studies have further revealed the changes in the cellular profiles of gene expression, epigenetic modification, and metabolism that occur during the process of quiescence deepening [<xref ref-type="bibr" rid="B8-biomedicines-12-01837">8</xref>,<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>,<xref ref-type="bibr" rid="B39-biomedicines-12-01837">39</xref>,<xref ref-type="bibr" rid="B40-biomedicines-12-01837">40</xref>,<xref ref-type="bibr" rid="B41-biomedicines-12-01837">41</xref>]. It is important to note that deep quiescent cells, by definition, still retain the potential for cell cycle re-entry and can resume proliferation given a sufficiently strong and sustained growth stimulus, which is distinct from senescent cells. </p>
+        <p>Quiescence deepening has been observed under extended quiescence in culture or along the aging process in vivo across mammalian cell types and tissues [<xref ref-type="bibr" rid="B8-biomedicines-12-01837">8</xref>,<xref ref-type="bibr" rid="B19-biomedicines-12-01837">19</xref>,<xref ref-type="bibr" rid="B20-biomedicines-12-01837">20</xref>,<xref ref-type="bibr" rid="B21-biomedicines-12-01837">21</xref>,<xref ref-type="bibr" rid="B22-biomedicines-12-01837">22</xref>,<xref ref-type="bibr" rid="B23-biomedicines-12-01837">23</xref>,<xref ref-type="bibr" rid="B24-biomedicines-12-01837">24</xref>,<xref ref-type="bibr" rid="B25-biomedicines-12-01837">25</xref>,<xref ref-type="bibr" rid="B26-biomedicines-12-01837">26</xref>,<xref ref-type="bibr" rid="B27-biomedicines-12-01837">27</xref>,<xref ref-type="bibr" rid="B28-biomedicines-12-01837">28</xref>,<xref ref-type="bibr" rid="B29-biomedicines-12-01837">29</xref>,<xref ref-type="bibr" rid="B30-biomedicines-12-01837">30</xref>,<xref ref-type="bibr" rid="B31-biomedicines-12-01837">31</xref>,<xref ref-type="bibr" rid="B32-biomedicines-12-01837">32</xref>,<xref ref-type="bibr" rid="B33-biomedicines-12-01837">33</xref>] as well as in yeast [<xref ref-type="bibr" rid="B34-biomedicines-12-01837">34</xref>] and C. elegans [<xref ref-type="bibr" rid="B35-biomedicines-12-01837">35</xref>]. Consistent with quiescence depth being a continuum, subpopulations of quiescent muscle, neural, and hematopoietic stem cells, upon tissue injury or in response to systemic factors, can move to shallower (primed or G<sub>Alert</sub>) quiescence, bearing a closer resemblance to active cells [<xref ref-type="bibr" rid="B42-biomedicines-12-01837">42</xref>,<xref ref-type="bibr" rid="B43-biomedicines-12-01837">43</xref>,<xref ref-type="bibr" rid="B44-biomedicines-12-01837">44</xref>,<xref ref-type="bibr" rid="B45-biomedicines-12-01837">45</xref>]. Further extending the cell dormancy state continuum, senescent cells also exhibit varying &#x201C;depths&#x201D; with different cellular characteristics [<xref ref-type="bibr" rid="B46-biomedicines-12-01837">46</xref>,<xref ref-type="bibr" rid="B47-biomedicines-12-01837">47</xref>,<xref ref-type="bibr" rid="B48-biomedicines-12-01837">48</xref>].</p>
+        <p>Our recent work directly links quiescence deepening to senescence entry. We found that while enhancing lysosomal autophagy activity pushes REFs toward shallow quiescence, decreasing lysosomal autophagy drives REFs into progressively deeper quiescence [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>]. When lysosomal autophagy is severely hampered (with chloroquine treatment, for example), deep quiescent (yet still reversible) cells transition into irreversible senescence [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>]. This suggests that lysosomal autophagy activity acts as a &#x201C;dimmer switch&#x201D; that continuously adjusts cellular dormancy depth from shallow quiescence to deep quiescence and finally to senescence [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>,<xref ref-type="bibr" rid="B41-biomedicines-12-01837">41</xref>]. Furthermore, the transcriptomic profile changes during quiescence deepening in REFs resemble those of senescence entry with similar expression changes in &#x201C;senescence core signature&#x201D; genes [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>,<xref ref-type="bibr" rid="B49-biomedicines-12-01837">49</xref>]. A gene signature derived from quiescence deepening in REFs, the quiescence depth score (QDS), can correctly predict a wide array of senescent and aging cell types [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>,<xref ref-type="bibr" rid="B50-biomedicines-12-01837">50</xref>]. Together, these findings suggest that quiescence deepening represents a continuum transition trajectory from proliferation to senescence, which is a model increasingly recognized in the field [<xref ref-type="bibr" rid="B9-biomedicines-12-01837">9</xref>,<xref ref-type="bibr" rid="B51-biomedicines-12-01837">51</xref>,<xref ref-type="bibr" rid="B52-biomedicines-12-01837">52</xref>,<xref ref-type="bibr" rid="B53-biomedicines-12-01837">53</xref>,<xref ref-type="bibr" rid="B54-biomedicines-12-01837">54</xref>,<xref ref-type="bibr" rid="B55-biomedicines-12-01837">55</xref>].</p>
+        <p>Supporting the quiescence&#x2013;senescence continuum concept, the levels of multiple widely used senescence biomarkers (e.g., SA-&#x3B2;-gal, LAMP1, IL8, 53BP1, p21, Lamin B1, and cell size) were found to increase gradually with the duration of cell-cycle withdrawal and cannot distinguish senescence from deep quiescence [<xref ref-type="bibr" rid="B56-biomedicines-12-01837">56</xref>]. This quiescence&#x2013;senescence continuum could help explain some normal physiological functions of cellular senescence [<xref ref-type="bibr" rid="B57-biomedicines-12-01837">57</xref>], as some of the senescent cells identified based on biomarker intensities may instead be deep quiescent cells.</p>
+      </sec>
+    </sec>
+    <sec id="sec3-biomedicines-12-01837">
+      <title>3. Mechanisms Underlying Quiescence Deepening and Quiescence-Origin Senescence</title>
+      <p>The cellular processes underlying quiescence deepening and transition to senescence likely involve a complex interplay between various cellular mechanisms and signaling pathways. Yet, a converging theme has started to emerge from recent studies. </p>
+      <sec id="sec3dot1-biomedicines-12-01837">
+        <title>3.1. Trigger: The Lysosome&#x2013;Autophagy Axis</title>
+        <p>The lysosome&#x2013;autophagy axis has emerged as a critical driver of quiescence deepening and transition to senescence across various cell types. Autophagy involves autophagosomes engulfing cellular components and fusing with lysosomes, where lysosomal enzymes degrade the contents and recycle the macromolecules. This lysosome&#x2013;autophagy activity acts as a &#x201C;dimmer switch&#x201D; regulating quiescence depth in REFs with its continuously decreased activity leading to progressively deeper quiescence toward senescence [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>]. It also underlies the quiescence-to-senescence transition in geriatric MuSCs [<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>]. </p>
+        <p>In both REFs and geriatric MuSCs, ROS accumulation serves as a key effector of the impaired lysosomal autophagy function [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>,<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>]. In REFs, ROS accumulation, without evoking p16<sup>INK4a</sup>, leads to quiescence deepening [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>]; in MuSCs, ROS accumulation epigenetically derepresses the p16<sup>INK4a</sup> locus and leads to the quiescence-to-senescence transition [<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>]. Similarly, ROS accumulation drives the quiescence-to-senescence transition in HSPCs by elevating the p16<sup>INK4a</sup> level [<xref ref-type="bibr" rid="B14-biomedicines-12-01837">14</xref>]. </p>
+        <p>In neural stem cells (NSCs), the lysosome&#x2013;autophagy axis, with increased protein aggregates as the main effector, plays a crucial role in quiescence deepening. Aging quiescent NSCs display lysosomal defects, increased protein aggregates, and diminished activation potential [<xref ref-type="bibr" rid="B58-biomedicines-12-01837">58</xref>]. </p>
+        <p>Enhancing lysosomal autophagy in various cell types, including REFs, MuSCs, and NSCs, promotes shallow quiescence away from the transition to senescence [<xref ref-type="bibr" rid="B16-biomedicines-12-01837">16</xref>,<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>,<xref ref-type="bibr" rid="B58-biomedicines-12-01837">58</xref>]. Together, the findings above highlight the lysosome&#x2013;autophagy axis as a central trigger of quiescence deepening and the quiescence-to-senescence transition. </p>
+      </sec>
+      <sec id="sec3dot2-biomedicines-12-01837">
+        <title>3.2. Controller: The Rb&#x2013;E2F Switch Threshold</title>
+        <p>Our earlier studies demonstrated that the Rb&#x2013;E2F pathway, a pivotal regulator of the cell cycle in animals and plants [<xref ref-type="bibr" rid="B59-biomedicines-12-01837">59</xref>,<xref ref-type="bibr" rid="B60-biomedicines-12-01837">60</xref>,<xref ref-type="bibr" rid="B61-biomedicines-12-01837">61</xref>,<xref ref-type="bibr" rid="B62-biomedicines-12-01837">62</xref>,<xref ref-type="bibr" rid="B63-biomedicines-12-01837">63</xref>], functions as a bistable toggle switch [<xref ref-type="bibr" rid="B64-biomedicines-12-01837">64</xref>,<xref ref-type="bibr" rid="B65-biomedicines-12-01837">65</xref>]. This Rb&#x2013;E2F switch converts graded and transient mitogen signals into a binary (OFF/ON) activity of E2F (representing the combined E2F transcriptional activators, E2F1-3a), which underlies the all-or-none quiescence-to-proliferation transition [<xref ref-type="bibr" rid="B27-biomedicines-12-01837">27</xref>,<xref ref-type="bibr" rid="B64-biomedicines-12-01837">64</xref>,<xref ref-type="bibr" rid="B65-biomedicines-12-01837">65</xref>]. The activation threshold of the Rb&#x2013;E2F switch, &#x201C;Rb&#x2013;E2F switch threshold&#x201D; for short, controls quiescence depth: increasing or decreasing this threshold drives cells to deeper and shallower quiescence, respectively [<xref ref-type="bibr" rid="B27-biomedicines-12-01837">27</xref>,<xref ref-type="bibr" rid="B28-biomedicines-12-01837">28</xref>,<xref ref-type="bibr" rid="B66-biomedicines-12-01837">66</xref>]. The Rb&#x2013;E2F switch threshold is defined as the minimum growth stimulus required to activate the cellular E2F level to exceed that of non-phosphorylated Rb, which binds to and inhibits E2F in quiescent cells [<xref ref-type="bibr" rid="B27-biomedicines-12-01837">27</xref>,<xref ref-type="bibr" rid="B28-biomedicines-12-01837">28</xref>,<xref ref-type="bibr" rid="B66-biomedicines-12-01837">66</xref>]. We have shown that the Rb&#x2013;E2F switch threshold can be modulated by multiple factors in the Rb&#x2013;E2F pathway with varying degrees of sensitivity with those associated with G1 cyclins and cyclin-dependent kinases (CDK) being the most prominent [<xref ref-type="bibr" rid="B28-biomedicines-12-01837">28</xref>]. </p>
+        <p>The Rb&#x2013;E2F switch is the first bistable switch that cells encounter during the transition from quiescence to proliferation in response to mitogens, and it connects to downstream bistable switches and checkpoints regulating S phase entry [<xref ref-type="bibr" rid="B67-biomedicines-12-01837">67</xref>,<xref ref-type="bibr" rid="B68-biomedicines-12-01837">68</xref>]. Given that the Rb&#x2013;E2F pathway interacts with other quiescence regulatory pathways (e.g., Notch&#x2013;Hes1, p53&#x2013;p21, PI3K&#x2013;Akt, DNA damage response, LKB1&#x2013;AMPK, and microRNA) [<xref ref-type="bibr" rid="B10-biomedicines-12-01837">10</xref>,<xref ref-type="bibr" rid="B27-biomedicines-12-01837">27</xref>,<xref ref-type="bibr" rid="B63-biomedicines-12-01837">63</xref>], we propose that the Rb&#x2013;E2F switch serves as a core hub that integrates cellular signals to quantitatively determine the growth stimulation level required for the all-or-none cell cycle re-entry. In parallel, other cellular pathways impinge on the Rb&#x2013;E2F switch and modulate its switch threshold. This modulatory effect may occur through crosstalk with various gene nodes in the Rb&#x2013;E2F switch network, most effectively by affecting G1 cyclin and CDK activities in the cell [<xref ref-type="bibr" rid="B13-biomedicines-12-01837">13</xref>,<xref ref-type="bibr" rid="B28-biomedicines-12-01837">28</xref>,<xref ref-type="bibr" rid="B69-biomedicines-12-01837">69</xref>]. Higher thresholds lead to deeper quiescence and, eventually, senescence when physiological growth signals can no longer overcome the threshold [<xref ref-type="bibr" rid="B27-biomedicines-12-01837">27</xref>,<xref ref-type="bibr" rid="B41-biomedicines-12-01837">41</xref>]. Therefore, the difference between deep quiescence and senescence lies primarily in the magnitude of the Rb&#x2013;E2F switch threshold rather than in fundamentally distinct cellular characteristics, aligning with the quiescence&#x2013;senescence continuum model.</p>
+        <p>The lysosomal&#x2013;autophagy axis discussed above driving quiescence-to-senescence transition in MuSCs directly increases the Rb&#x2013;E2F switch threshold (by activating p16 that inhibits CDK activity) [<xref ref-type="bibr" rid="B13-biomedicines-12-01837">13</xref>,<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>]. Similarly, increasing the Rb&#x2013;E2F switch threshold has been reported to drive deep quiescence in MuSCs via fasting-induced ketone body signaling (by increasing p21 that inhibits CDK) [<xref ref-type="bibr" rid="B69-biomedicines-12-01837">69</xref>]. This threshold mechanism predicts a potential way to reverse the &#x201C;irreversible&#x201D; senescence by reducing the Rb&#x2013;E2F switch threshold. Indeed, studies have shown that senescent cells can be reactivated as such, e.g., by inactivating Rb, p53&#x2013;p21, or p16 activities [<xref ref-type="bibr" rid="B70-biomedicines-12-01837">70</xref>,<xref ref-type="bibr" rid="B71-biomedicines-12-01837">71</xref>,<xref ref-type="bibr" rid="B72-biomedicines-12-01837">72</xref>,<xref ref-type="bibr" rid="B73-biomedicines-12-01837">73</xref>,<xref ref-type="bibr" rid="B74-biomedicines-12-01837">74</xref>,<xref ref-type="bibr" rid="B75-biomedicines-12-01837">75</xref>] or by the forced G1 cyclin upregulation [<xref ref-type="bibr" rid="B76-biomedicines-12-01837">76</xref>].</p>
+      </sec>
+      <sec id="sec3dot3-biomedicines-12-01837">
+        <title>3.3. Remaining Unknowns and the Heterogeneity in Quiescence-Origin Senescence</title>
+        <p>Several key areas remain to be explored. The role of mTOR signaling, for instance, presents an intriguing paradox. mTOR is a major driver of proliferation-origin senescence, underlying the process of geroconversion&#x2014;a process in which mTOR-driven cell growth continues aberrantly after the cell cycle is blocked (e.g., by CDK inhibitors p21<sup>CIP1/Waf1</sup> and p16<sup>INK4a</sup>) [<xref ref-type="bibr" rid="B11-biomedicines-12-01837">11</xref>,<xref ref-type="bibr" rid="B77-biomedicines-12-01837">77</xref>]. In quiescence, mTOR is inactive and cells lack sustained growth, which has been proposed as a mechanism to protect quiescent cells against senescence [<xref ref-type="bibr" rid="B11-biomedicines-12-01837">11</xref>,<xref ref-type="bibr" rid="B77-biomedicines-12-01837">77</xref>]. This questions the involvement of mTOR in quiescence deepening and the quiescence-origin senescence, which aligns with the fact that mTOR activity is linked to shallow quiescence (G<sub>Alert</sub>) [<xref ref-type="bibr" rid="B42-biomedicines-12-01837">42</xref>], not quiescence deepening. Therefore, the quiescence-origin senescence appears different from proliferation-origin senescence from the aspect of mTOR and geroconversion (<xref ref-type="fig" rid="biomedicines-12-01837-f001">Figure 1</xref>).</p>
+        <p>Epigenetic regulation plays a crucial role in proliferation-origin senescence, including the formation of senescence-associated heterochromatin foci (SAHF) that repress E2F target genes [<xref ref-type="bibr" rid="B78-biomedicines-12-01837">78</xref>] and changes in DNA methylation and histone modification patterns [<xref ref-type="bibr" rid="B79-biomedicines-12-01837">79</xref>,<xref ref-type="bibr" rid="B80-biomedicines-12-01837">80</xref>]. Epigenetic mechanisms are also involved in quiescence deepening and transition to senescence, as seen in the ROS-mediated derepression of the p16 locus [<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>] and the role of ketone body-mediated acetylation and activation of the p53 locus [<xref ref-type="bibr" rid="B69-biomedicines-12-01837">69</xref>] in MuSCs as well as the long-observed increase in chromatin condensation in deep quiescent cells [<xref ref-type="bibr" rid="B37-biomedicines-12-01837">37</xref>]. However, a comprehensive understanding of the epigenetic landscape changes during quiescence deepening and the quiescence-to-senescence transition is still lacking, highlighting an important area for future research [<xref ref-type="bibr" rid="B40-biomedicines-12-01837">40</xref>].</p>
+        <p>The heterogeneity and context dependency of the quiescence-to-senescence transition are also apparent, underscoring the complexity of these cellular processes. For instance, ROS-mediated p16<sup>INK4a</sup> activation occurs through epigenetic derepression in MuSCs [<xref ref-type="bibr" rid="B18-biomedicines-12-01837">18</xref>] but via p38 MAPK hyperactivation in HSPCs [<xref ref-type="bibr" rid="B14-biomedicines-12-01837">14</xref>]. Blocking p16<sup>INK4a</sup> activation prevents the quiescence-to-senescence transition only in a subset of cells [<xref ref-type="bibr" rid="B13-biomedicines-12-01837">13</xref>], suggesting the involvement of other molecular effectors driving the quiescence-origin senescence. Furthermore, is lysosomal autophagy always the primary trigger for quiescence deepening and transition to senescence, and does this process always converge onto the Rb&#x2013;E2F switch threshold&#x2014;or possibly regulate downstream switches controlling S phase entry [<xref ref-type="bibr" rid="B67-biomedicines-12-01837">67</xref>,<xref ref-type="bibr" rid="B68-biomedicines-12-01837">68</xref>] or downstream E2F target genes necessary for cell proliferation [<xref ref-type="bibr" rid="B41-biomedicines-12-01837">41</xref>,<xref ref-type="bibr" rid="B78-biomedicines-12-01837">78</xref>]? Growing cells exiting from either the G1 or G2 phase of the cell cycle converge onto the same senescent state with a G1-like molecular signature [<xref ref-type="bibr" rid="B76-biomedicines-12-01837">76</xref>]. How about quiescence-origin senescence? What are its molecular markers, and to what extent do they overlap with or differ from the markers of proliferation-origin senescence, beyond the sustained (if not totally irreversible) arrested phenotype (<xref ref-type="fig" rid="biomedicines-12-01837-f001">Figure 1</xref>)? Future investigations are needed to find the answers.</p>
+      </sec>
+    </sec>
+    <sec id="sec4-biomedicines-12-01837" sec-type="conclusions">
+      <title>4. Conclusions</title>
+      <p>Unlike conventional proliferation-origin senescence, quiescence-origin senescence involves the direct transition of quiescent cells to senescence. It represents a previously understudied new type of cellular aging process (<xref ref-type="fig" rid="biomedicines-12-01837-f001">Figure 1</xref>). Given that the vast majority of cells in the human body are in quiescence, not in proliferation, quiescence-origin senescence is expected to be responsible for a larger proportion of irreversibly arrested senescent cells in our tissues than previously realized.</p>
+      <p>Understanding the mechanisms underlying the continuum of quiescence-to-senescence transition through quiescence deepening has important implications for multiple areas of biomedical research and clinical practice, such as cancer biology, aging, and regenerative medicine. Future research will reveal both common and cell type-specific mechanisms of quiescence-depth regulation and transition to senescence, identify specific molecular markers, and suggest the optimal strategies to target this group of previously overlooked senescent cells to reshape our approaches to promoting health and longevity.</p>
+    </sec>
+  </body>
+  <back>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflicts of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-biomedicines-12-01837">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hayflick</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Moorhead</surname>
+              <given-names>P.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The serial cultivation of human diploid cell strains</article-title>
+          <source>Exp. Cell Res.</source>
+          <year>1961</year>
+          <volume>25</volume>
+          <fpage>585</fpage>
+          <lpage>621</lpage>
+          <pub-id pub-id-type="doi">10.1016/0014-4827(61)90192-6</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-biomedicines-12-01837">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuilman</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Michaloglou</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Mooi</surname>
+              <given-names>W.J.</given-names>
+            </name>
+            <name>
+              <surname>Peeper</surname>
+              <given-names>D.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The essence of senescence</article-title>
+          <source>Genes Dev.</source>
+          <year>2010</year>
+          <volume>24</volume>
+          <fpage>2463</fpage>
+          <lpage>2479</lpage>
+          <pub-id pub-id-type="doi">10.1101/gad.1971610</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-biomedicines-12-01837">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rodier</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Campisi</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Four faces of cellular senescence</article-title>
+          <source>J. Cell Biol.</source>
+          <year>2011</year>
+          <volume>192</volume>
+          <fpage>547</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="doi">10.1083/jcb.201009094</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-biomedicines-12-01837">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Campisi</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>di Fagagna</surname>
+              <given-names>F.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cellular senescence: When bad things happen to good cells</article-title>
+          <source>Nat. Rev. Mol. Cell Biol.</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>729</fpage>
+          <lpage>740</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrm2233</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-biomedicines-12-01837">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Munoz-Espin</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Serrano</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cellular senescence: From physiology to pathology</article-title>
+          <source>Nat. Rev. Mol. Cell Biol.</source>
+          <year>2014</year>
+          <volume>15</volume>
+          <fpage>482</fpage>
+          <lpage>496</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrm3823</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-biomedicines-12-01837">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gorgoulis</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Adams</surname>
+              <given-names>P.D.</given-names>
+            </name>
+            <name>
+              <surname>Alimonti</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bennett</surname>
+              <given-names>D.C.</given-names>
+            </name>
+            <name>
+              <surname>Bischof</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Bishop</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Campisi</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Collado</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Evangelou</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Ferbeyre</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cellular Senescence: Defining a Path Forward</article-title>
+          <source>Cell</source>
+          <year>2019</year>
+          <volume>179</volume>
+          <fpage>813</fpage>
+          <lpage>827</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cell.2019.10.005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-biomedicines-12-01837">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lanz</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>Zatulovskiy</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Swaffer</surname>
+              <given-names>M.P.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Ilerten</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>D.S.</given-names>
+            </name>
+            <name>
+              <surname>Marinov</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>McAlpine</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Elias</surname>
+              <given-names>J.E.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Increasing cell size remodels the proteome and promotes senescence</article-title>
+          <source>Mol. Cell</source>
+          <year>2022</year>
+          <volume>82</volume>
+          <fpage>3255</fpage>
+          <lpage>3269.e8</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.molcel.2022.07.017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-biomedicines-12-01837">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Coller</surname>
+              <given-names>H.A.</given-names>
+            </name>
+            <name>
+              <surname>Sang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Roberts</surname>
+              <given-names>J.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>A New Description of Cellular Quiescence</article-title>
+          <source>PLoS Biol.</source>
+          <year>2006</year>
+          <volume>4</volume>
+          <elocation-id>e83</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pbio.0040083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-biomedicines-12-01837">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marescal</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Cheeseman</surname>
+              <given-names>I.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cellular Mechanisms and Regulation of Quiescence</article-title>
+          <source>Dev. Cell</source>
+          <year>2020</year>
+          <volume>55</volume>
+          <fpage>259</fpage>
+          <lpage>271</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.devcel.2020.09.029</pub-id>
+          <pub-id pub-id-type="pmid">33171109</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-biomedicines-12-01837">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheung</surname>
+              <given-names>T.H.</given-names>
+            </name>
+            <name>
+              <surname>Rando</surname>
+              <given-names>T.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular regulation of stem cell quiescence</article-title>
+          <source>Nat. Rev. Mol. Cell Biol.</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>329</fpage>
+          <lpage>340</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrm3591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-biomedicines-12-01837">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blagosklonny</surname>
+              <given-names>M.V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Geroconversion: Irreversible step to cellular senescence</article-title>
+          <source>Cell Cycle</source>
+          <year>2014</year>
+          <volume>13</volume>
+          <fpage>3628</fpage>
+          <lpage>3635</lpage>
+          <pub-id pub-id-type="doi">10.4161/15384101.2014.985507</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-biomedicines-12-01837">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Coller</surname>
+              <given-names>H.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fear of commitment: Hes1 protects quiescent fibroblasts from irreversible cellular fates</article-title>
+          <source>Cell Cycle</source>
+          <year>2009</year>
+          <volume>8</volume>
+          <fpage>2161</fpage>
+          <lpage>2167</lpage>
+          <pub-id pub-id-type="doi">10.4161/cc.8.14.9104</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-biomedicines-12-01837">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sousa-Victor</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Gutarra</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Garc&#xED;a-Prat</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Rodriguez-Ubreva</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ortet</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Ruiz-Bonilla</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Jard&#xED;</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ballestar</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Gonz&#xE1;lez</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Serrano</surname>
+              <given-names>A.L.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Geriatric muscle stem cells switch reversible quiescence into senescence</article-title>
+          <source>Nature</source>
+          <year>2014</year>
+          <volume>506</volume>
+          <fpage>316</fpage>
+          <lpage>321</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature13013</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-biomedicines-12-01837">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cho</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Yusuf</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Kook</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Attar</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Scadden</surname>
+              <given-names>D.T.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>B.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Purinergic P2Y(1)(4) receptor modulates stress-induced hematopoietic stem/progenitor cell senescence</article-title>
+          <source>J. Clin. Investig.</source>
+          <year>2014</year>
+          <volume>124</volume>
+          <fpage>3159</fpage>
+          <lpage>3171</lpage>
+          <pub-id pub-id-type="doi">10.1172/JCI61636</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-biomedicines-12-01837">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marthandan</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Priebe</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Hemmerich</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Klement</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Diekmann</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Long-term quiescent fibroblast cells transit into senescence</article-title>
+          <source>PLoS ONE</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <elocation-id>e115597</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0115597</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-biomedicines-12-01837">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fujimaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Della Croce</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>H.H.</given-names>
+            </name>
+            <name>
+              <surname>Xing</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Bai</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Graded regulation of cellular quiescence depth between proliferation and senescence by a lysosomal dimmer switch</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2019</year>
+          <volume>116</volume>
+          <fpage>22624</fpage>
+          <lpage>22634</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1915905116</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-biomedicines-12-01837">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sender</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Milo</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>The distribution of cellular turnover in the human body</article-title>
+          <source>Nat. Med.</source>
+          <year>2021</year>
+          <volume>27</volume>
+          <fpage>45</fpage>
+          <lpage>48</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41591-020-01182-9</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-biomedicines-12-01837">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garc&#xED;a-Prat</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Mart&#xED;nez-Vicente</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Perdiguero</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Ortet</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Rodr&#xED;guez-Ubreva</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Rebollo</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Ruiz-Bonilla</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Gutarra</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ballestar</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Serrano</surname>
+              <given-names>A.L.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Autophagy maintains stemness by preventing senescence</article-title>
+          <source>Nature</source>
+          <year>2016</year>
+          <volume>529</volume>
+          <fpage>37</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature16187</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-biomedicines-12-01837">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bucher</surname>
+              <given-names>N.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Regeneration of Mammalian Liver</article-title>
+          <source>Int. Rev. Cytol.</source>
+          <year>1963</year>
+          <volume>15</volume>
+          <fpage>245</fpage>
+          <lpage>300</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B20-biomedicines-12-01837">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Adelman</surname>
+              <given-names>R.C.</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>G.S.</given-names>
+            </name>
+            <name>
+              <surname>Englander</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Age-dependent regulation of mammalian DNA synthesis and cell proliferation In vivo</article-title>
+          <source>Mech. Ageing Dev.</source>
+          <year>1972</year>
+          <volume>1</volume>
+          <fpage>49</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="doi">10.1016/0047-6374(72)90052-8</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-biomedicines-12-01837">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gunther</surname>
+              <given-names>G.R.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J.L.</given-names>
+            </name>
+            <name>
+              <surname>Edelman</surname>
+              <given-names>G.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>The kinetics of cellular commitment during stimulation of lymphocytes by lectins</article-title>
+          <source>J. Cell Biol.</source>
+          <year>1974</year>
+          <volume>62</volume>
+          <fpage>366</fpage>
+          <lpage>377</lpage>
+          <pub-id pub-id-type="doi">10.1083/jcb.62.2.366</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-biomedicines-12-01837">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Augenlicht</surname>
+              <given-names>L.H.</given-names>
+            </name>
+            <name>
+              <surname>Baserga</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Changes in the G0 state of WI-38 fibroblasts at different times after confluence</article-title>
+          <source>Exp. Cell Res.</source>
+          <year>1974</year>
+          <volume>89</volume>
+          <fpage>255</fpage>
+          <lpage>262</lpage>
+          <pub-id pub-id-type="doi">10.1016/0014-4827(74)90789-7</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-biomedicines-12-01837">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martin</surname>
+              <given-names>R.G.</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting state in normal and simian virus 40 transformed Chinese hamster lung cells</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>1976</year>
+          <volume>73</volume>
+          <fpage>1655</fpage>
+          <lpage>1659</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.73.5.1655</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-biomedicines-12-01837">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Owen</surname>
+              <given-names>T.A.</given-names>
+            </name>
+            <name>
+              <surname>Soprano</surname>
+              <given-names>D.R.</given-names>
+            </name>
+            <name>
+              <surname>Soprano</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of the growth factor requirements for stimulation of WI-38 cells after extended periods of density-dependent growth arrest</article-title>
+          <source>J. Cell. Physiol.</source>
+          <year>1989</year>
+          <volume>139</volume>
+          <fpage>424</fpage>
+          <lpage>431</lpage>
+          <pub-id pub-id-type="doi">10.1002/jcp.1041390227</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-biomedicines-12-01837">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yanez</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>O&#x2019;Farrell</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Variation in the length of the lag phase following serum restimulation of mouse 3T3 cells</article-title>
+          <source>Cell Biol. Int. Rep.</source>
+          <year>1989</year>
+          <volume>13</volume>
+          <fpage>453</fpage>
+          <lpage>462</lpage>
+          <pub-id pub-id-type="doi">10.1016/0309-1651(89)90140-9</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-biomedicines-12-01837">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lum</surname>
+              <given-names>J.J.</given-names>
+            </name>
+            <name>
+              <surname>Bauer</surname>
+              <given-names>D.E.</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>M.H.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Lindsten</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>C.B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Growth factor regulation of autophagy and cell survival in the absence of apoptosis</article-title>
+          <source>Cell</source>
+          <year>2005</year>
+          <volume>120</volume>
+          <fpage>237</fpage>
+          <lpage>248</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cell.2004.11.046</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-biomedicines-12-01837">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modelling mammalian cellular quiescence</article-title>
+          <source>Interface Focus</source>
+          <year>2014</year>
+          <volume>4</volume>
+          <fpage>20130074</fpage>
+          <pub-id pub-id-type="doi">10.1098/rsfs.2013.0074</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-biomedicines-12-01837">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kwon</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Everetts</surname>
+              <given-names>N.J.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Della Croce</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Xing</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Controlling Depth of Cellular Quiescence by an Rb-E2F Network Switch</article-title>
+          <source>Cell Rep.</source>
+          <year>2017</year>
+          <volume>20</volume>
+          <fpage>3223</fpage>
+          <lpage>3235</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.celrep.2017.09.007</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-biomedicines-12-01837">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gookin</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Min</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Phadke</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Carter</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Spencer</surname>
+              <given-names>S.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>A map of protein dynamics during cell-cycle progression and cell-cycle exit</article-title>
+          <source>PLoS Biol.</source>
+          <year>2017</year>
+          <volume>15</volume>
+          <elocation-id>e2003268</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pbio.2003268</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-biomedicines-12-01837">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van Velthoven</surname>
+              <given-names>C.T.J.</given-names>
+            </name>
+            <name>
+              <surname>Rando</surname>
+              <given-names>T.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Stem Cell Quiescence: Dynamism, Restraint, and Cellular Idling</article-title>
+          <source>Cell Stem Cell</source>
+          <year>2019</year>
+          <volume>24</volume>
+          <fpage>213</fpage>
+          <lpage>225</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.stem.2019.01.001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-biomedicines-12-01837">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Audesse</surname>
+              <given-names>A.J.</given-names>
+            </name>
+            <name>
+              <surname>Webb</surname>
+              <given-names>A.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mechanisms of enhanced quiescence in neural stem cell aging</article-title>
+          <source>Mech. Ageing Dev.</source>
+          <year>2020</year>
+          <volume>191</volume>
+          <fpage>111323</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.mad.2020.111323</pub-id>
+          <pub-id pub-id-type="pmid">32781077</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-biomedicines-12-01837">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harris</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Rigo</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Stiehl</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Gaber</surname>
+              <given-names>Z.B.</given-names>
+            </name>
+            <name>
+              <surname>Austin</surname>
+              <given-names>S.H.</given-names>
+            </name>
+            <name>
+              <surname>Masdeu</surname>
+              <given-names>M.d.M.</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Urb&#xE1;n</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Marciniak-Czochra</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Guillemot</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Coordinated changes in cellular behavior ensure the lifelong maintenance of the hippocampal stem cell population</article-title>
+          <source>Cell Stem Cell</source>
+          <year>2021</year>
+          <volume>28</volume>
+          <fpage>863</fpage>
+          <lpage>876.e6</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.stem.2021.01.003</pub-id>
+          <pub-id pub-id-type="pmid">33581058</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-biomedicines-12-01837">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ibrayeva</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bay</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Pu</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>J&#xF6;rg</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Jun</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Aaron</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Resler</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Early stem cell aging in the mature brain</article-title>
+          <source>Cell Stem Cell</source>
+          <year>2021</year>
+          <volume>28</volume>
+          <fpage>955</fpage>
+          <lpage>966.e7</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.stem.2021.03.018</pub-id>
+          <pub-id pub-id-type="pmid">33848469</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-biomedicines-12-01837">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laporte</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Jimenez</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Gouleme</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Sagot</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Yeast quiescence exit swiftness is influenced by cell volume and chronological age</article-title>
+          <source>Microb. Cell</source>
+          <year>2017</year>
+          <volume>5</volume>
+          <fpage>104</fpage>
+          <lpage>111</lpage>
+          <pub-id pub-id-type="doi">10.15698/mic2018.02.615</pub-id>
+          <pub-id pub-id-type="pmid">29417058</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-biomedicines-12-01837">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Olmedo</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Mata-Cabana</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Rodr&#xED;guez-Palero</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Garc&#xED;a-S&#xE1;nchez</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Fern&#xE1;ndez-Ya&#xF1;ez</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Merrow</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Artal-Sanz</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Prolonged quiescence delays somatic stem cell-like divisions in Caenorhabditis elegans and is controlled by insulin signaling</article-title>
+          <source>Aging Cell</source>
+          <year>2020</year>
+          <volume>19</volume>
+          <fpage>e13085</fpage>
+          <pub-id pub-id-type="doi">10.1111/acel.13085</pub-id>
+          <pub-id pub-id-type="pmid">31852031</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-biomedicines-12-01837">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Darzynkiewicz</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Traganos</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Melamed</surname>
+              <given-names>M.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>New cell cycle compartments identified by multiparameter flow cytometry</article-title>
+          <source>Cytometry</source>
+          <year>1980</year>
+          <volume>1</volume>
+          <fpage>98</fpage>
+          <lpage>108</lpage>
+          <pub-id pub-id-type="doi">10.1002/cyto.990010203</pub-id>
+          <pub-id pub-id-type="pmid">6170495</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B37-biomedicines-12-01837">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossini</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>J.C.</given-names>
+            </name>
+            <name>
+              <surname>Baserga</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of prolonged quiescence on neuclei and chromatin of WI-38 fibroblasts</article-title>
+          <source>J. Cell. Physiol.</source>
+          <year>1976</year>
+          <volume>88</volume>
+          <fpage>1</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="doi">10.1002/jcp.1040880102</pub-id>
+          <pub-id pub-id-type="pmid">1262403</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-biomedicines-12-01837">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Soprano</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>WI-38 cell long-term quiescence model system: A valuable tool to study molecular events that regulate growth</article-title>
+          <source>J. Cell. Biochem.</source>
+          <year>1994</year>
+          <volume>54</volume>
+          <fpage>405</fpage>
+          <lpage>414</lpage>
+          <pub-id pub-id-type="doi">10.1002/jcb.240540407</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-biomedicines-12-01837">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Valcourt</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>Lemons</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Haley</surname>
+              <given-names>E.M.</given-names>
+            </name>
+            <name>
+              <surname>Kojima</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Demuren</surname>
+              <given-names>O.O.</given-names>
+            </name>
+            <name>
+              <surname>Coller</surname>
+              <given-names>H.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Staying alive: Metabolic adaptations to quiescence</article-title>
+          <source>Cell Cycle</source>
+          <year>2012</year>
+          <volume>11</volume>
+          <fpage>1680</fpage>
+          <lpage>1696</lpage>
+          <pub-id pub-id-type="doi">10.4161/cc.19879</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B40-biomedicines-12-01837">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bonitto</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Sarathy</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Atai</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Mitra</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Coller</surname>
+              <given-names>H.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Is There a Histone Code for Cellular Quiescence?</article-title>
+          <source>Front. Cell Dev. Biol.</source>
+          <year>2021</year>
+          <volume>9</volume>
+          <elocation-id>739780</elocation-id>
+          <pub-id pub-id-type="doi">10.3389/fcell.2021.739780</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-biomedicines-12-01837">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fujimaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cell dormancy plasticity: Quiescence deepens into senescence through a dimmer switch</article-title>
+          <source>Physiol. Genom.</source>
+          <year>2020</year>
+          <volume>52</volume>
+          <fpage>558</fpage>
+          <lpage>562</lpage>
+          <pub-id pub-id-type="doi">10.1152/physiolgenomics.00068.2020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B42-biomedicines-12-01837">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rodgers</surname>
+              <given-names>J.T.</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>K.Y.</given-names>
+            </name>
+            <name>
+              <surname>Brett</surname>
+              <given-names>J.O.</given-names>
+            </name>
+            <name>
+              <surname>Cromie</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Charville</surname>
+              <given-names>G.W.</given-names>
+            </name>
+            <name>
+              <surname>Maguire</surname>
+              <given-names>K.K.</given-names>
+            </name>
+            <name>
+              <surname>Brunson</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Mastey</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Tsai</surname>
+              <given-names>C.-R.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>mTORC1 controls the adaptive transition of quiescent stem cells from G0 to G(Alert)</article-title>
+          <source>Nature</source>
+          <year>2014</year>
+          <volume>510</volume>
+          <fpage>393</fpage>
+          <lpage>396</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature13255</pub-id>
+          <pub-id pub-id-type="pmid">24870234</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B43-biomedicines-12-01837">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Llorens-Bobadilla</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Baser</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Saiz-Castro</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Zwadlo</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Martin-Villalba</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Single-Cell Transcriptomics Reveals a Population of Dormant Neural Stem Cells that Become Activated upon Brain Injury</article-title>
+          <source>Cell Stem Cell</source>
+          <year>2015</year>
+          <volume>17</volume>
+          <fpage>329</fpage>
+          <lpage>340</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.stem.2015.07.002</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B44-biomedicines-12-01837">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rodgers</surname>
+              <given-names>J.T.</given-names>
+            </name>
+            <name>
+              <surname>Schroeder</surname>
+              <given-names>M.D.</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Rando</surname>
+              <given-names>T.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>HGFA Is an Injury-Regulated Systemic Factor that Induces the Transition of Stem Cells into GAlert</article-title>
+          <source>Cell Rep.</source>
+          <year>2017</year>
+          <volume>19</volume>
+          <fpage>479</fpage>
+          <lpage>486</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.celrep.2017.03.066</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-biomedicines-12-01837">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Espirito Santo</surname>
+              <given-names>A.I.</given-names>
+            </name>
+            <name>
+              <surname>Zwingenberger</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Cai</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Vogl</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Feldmann</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Horwood</surname>
+              <given-names>N.J.</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>J.K.</given-names>
+            </name>
+            <name>
+              <surname>Nanchahal</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fully reduced HMGB1 accelerates the regeneration of multiple tissues by transitioning stem cells to GAlert</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2018</year>
+          <volume>115</volume>
+          <fpage>E4463</fpage>
+          <lpage>E4472</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B46-biomedicines-12-01837">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baker</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Sedivy</surname>
+              <given-names>J.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Probing the depths of cellular senescence</article-title>
+          <source>J. Cell Biol.</source>
+          <year>2013</year>
+          <volume>202</volume>
+          <fpage>11</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.1083/jcb.201305155</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B47-biomedicines-12-01837">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Deursen</surname>
+              <given-names>J.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of senescent cells in ageing</article-title>
+          <source>Nature</source>
+          <year>2014</year>
+          <volume>509</volume>
+          <fpage>439</fpage>
+          <lpage>446</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature13193</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B48-biomedicines-12-01837">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Du</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Niu</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>M.Q.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The loss of heterochromatin is associated with multiscale three-dimensional genome reorganization and aberrant transcription during cellular senescence</article-title>
+          <source>Genome Res.</source>
+          <year>2021</year>
+          <volume>31</volume>
+          <fpage>1121</fpage>
+          <lpage>1135</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.275235.121</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B49-biomedicines-12-01837">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hernandez-Segura</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>de Jong</surname>
+              <given-names>T.V.</given-names>
+            </name>
+            <name>
+              <surname>Melov</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Guryev</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Campisi</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>DeMaria</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Unmasking Transcriptional Heterogeneity in Senescent Cells</article-title>
+          <source>Curr. Biol.</source>
+          <year>2017</year>
+          <volume>27</volume>
+          <fpage>2652</fpage>
+          <lpage>2660.e4</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cub.2017.07.033</pub-id>
+          <pub-id pub-id-type="pmid">28844647</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B50-biomedicines-12-01837">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wei</surname>
+              <given-names>M.Y.</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modeling the Depth of Cellular Dormancy from RNA-Sequencing Data</article-title>
+          <source>Methods Mol. Biol.</source>
+          <year>2024</year>
+          <volume>2811</volume>
+          <fpage>123</fpage>
+          <lpage>135</lpage>
+          <pub-id pub-id-type="pmid">39037654</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B51-biomedicines-12-01837">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Urban</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Cheung</surname>
+              <given-names>T.H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Stem cell quiescence: The challenging path to activation</article-title>
+          <source>Development</source>
+          <year>2021</year>
+          <volume>148</volume>
+          <fpage>dev165084</fpage>
+          <pub-id pub-id-type="doi">10.1242/dev.165084</pub-id>
+          <pub-id pub-id-type="pmid">33558315</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B52-biomedicines-12-01837">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brooks</surname>
+              <given-names>R.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cell Cycle Commitment and the Origins of Cell Cycle Variability</article-title>
+          <source>Front. Cell Dev. Biol.</source>
+          <year>2021</year>
+          <volume>9</volume>
+          <elocation-id>698066</elocation-id>
+          <pub-id pub-id-type="doi">10.3389/fcell.2021.698066</pub-id>
+          <pub-id pub-id-type="pmid">34368148</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B53-biomedicines-12-01837">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Truskowski</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Amend</surname>
+              <given-names>S.R.</given-names>
+            </name>
+            <name>
+              <surname>Pienta</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dormant cancer cells: Programmed quiescence, senescence, or both?</article-title>
+          <source>Cancer Metastasis Rev.</source>
+          <year>2023</year>
+          <volume>42</volume>
+          <fpage>37</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10555-022-10073-z</pub-id>
+          <pub-id pub-id-type="pmid">36598661</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B54-biomedicines-12-01837">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wiecek</surname>
+              <given-names>A.J.</given-names>
+            </name>
+            <name>
+              <surname>Cutty</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Kornai</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Parreno-Centeno</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gourmet</surname>
+              <given-names>L.E.</given-names>
+            </name>
+            <name>
+              <surname>Tagliazucchi</surname>
+              <given-names>G.M.</given-names>
+            </name>
+            <name>
+              <surname>Jacobson</surname>
+              <given-names>D.H.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Xiong</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Bond</surname>
+              <given-names>G.L.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genomic hallmarks and therapeutic implications of G0 cell cycle arrest in cancer</article-title>
+          <source>Genome Biol.</source>
+          <year>2023</year>
+          <volume>24</volume>
+          <elocation-id>128</elocation-id>
+          <pub-id pub-id-type="doi">10.1186/s13059-023-02963-4</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B55-biomedicines-12-01837">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tanke</surname>
+              <given-names>N.T.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Gore</surname>
+              <given-names>M.T.</given-names>
+            </name>
+            <name>
+              <surname>Bougaran</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Linares</surname>
+              <given-names>M.B.</given-names>
+            </name>
+            <name>
+              <surname>Marvin</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Sharma</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Oatley</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Quigley</surname>
+              <given-names>K.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Endothelial Cell Flow-Mediated Quiescence Is Temporally Regulated and Utilizes the Cell Cycle Inhibitor p27</article-title>
+          <source>Arter. Thromb. Vasc. Biol.</source>
+          <year>2024</year>
+          <volume>44</volume>
+          <fpage>1265</fpage>
+          <lpage>1282</lpage>
+          <pub-id pub-id-type="doi">10.1161/ATVBAHA.124.320671</pub-id>
+          <pub-id pub-id-type="pmid">38602102</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B56-biomedicines-12-01837">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ashraf</surname>
+              <given-names>H.M.</given-names>
+            </name>
+            <name>
+              <surname>Fernandez</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Spencer</surname>
+              <given-names>S.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>The intensities of canonical senescence biomarkers integrate the duration of cell-cycle withdrawal</article-title>
+          <source>Nat. Commun.</source>
+          <year>2023</year>
+          <volume>14</volume>
+          <fpage>4527</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41467-023-40132-0</pub-id>
+          <pub-id pub-id-type="pmid">37500655</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B57-biomedicines-12-01837">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>de Magalhaes</surname>
+              <given-names>J.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cellular senescence in normal physiology</article-title>
+          <source>Science</source>
+          <year>2024</year>
+          <volume>384</volume>
+          <fpage>1300</fpage>
+          <lpage>1301</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.adj7050</pub-id>
+          <pub-id pub-id-type="pmid">38900869</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B58-biomedicines-12-01837">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leeman</surname>
+              <given-names>D.S.</given-names>
+            </name>
+            <name>
+              <surname>Hebestreit</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Ruetz</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Webb</surname>
+              <given-names>A.E.</given-names>
+            </name>
+            <name>
+              <surname>McKay</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Pollina</surname>
+              <given-names>E.A.</given-names>
+            </name>
+            <name>
+              <surname>Dulken</surname>
+              <given-names>B.W.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Yeo</surname>
+              <given-names>R.W.</given-names>
+            </name>
+            <name>
+              <surname>Ho</surname>
+              <given-names>T.T.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Lysosome activation clears aggregates and enhances quiescent neural stem cell activation during aging</article-title>
+          <source>Science</source>
+          <year>2018</year>
+          <volume>359</volume>
+          <fpage>1277</fpage>
+          <lpage>1283</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.aag3048</pub-id>
+          <pub-id pub-id-type="pmid">29590078</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B59-biomedicines-12-01837">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dyson</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>The regulation of E2F by pRB-family proteins</article-title>
+          <source>Genes Dev.</source>
+          <year>1998</year>
+          <volume>12</volume>
+          <fpage>2245</fpage>
+          <lpage>2262</lpage>
+          <pub-id pub-id-type="doi">10.1101/gad.12.15.2245</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B60-biomedicines-12-01837">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nevins</surname>
+              <given-names>J.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Rb/E2F pathway and cancer</article-title>
+          <source>Hum. Mol. Genet.</source>
+          <year>2001</year>
+          <volume>10</volume>
+          <fpage>699</fpage>
+          <lpage>703</lpage>
+          <pub-id pub-id-type="doi">10.1093/hmg/10.7.699</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B61-biomedicines-12-01837">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sears</surname>
+              <given-names>R.C.</given-names>
+            </name>
+            <name>
+              <surname>Nevins</surname>
+              <given-names>J.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Signaling networks that link cell proliferation and cell fate</article-title>
+          <source>J. Biol. Chem.</source>
+          <year>2002</year>
+          <volume>277</volume>
+          <fpage>11617</fpage>
+          <lpage>11620</lpage>
+          <pub-id pub-id-type="doi">10.1074/jbc.R100063200</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B62-biomedicines-12-01837">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trimarchi</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Lees</surname>
+              <given-names>J.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Sibling rivalry in the E2F family</article-title>
+          <source>Nat. Rev. Mol. Cell Biol.</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>11</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrm714</pub-id>
+          <pub-id pub-id-type="pmid">11823794</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B63-biomedicines-12-01837">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Polager</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ginsberg</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>E2F-at the crossroads of life and death</article-title>
+          <source>Trends Cell Biol.</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <fpage>528</fpage>
+          <lpage>535</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tcb.2008.08.003</pub-id>
+          <pub-id pub-id-type="pmid">18805009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B64-biomedicines-12-01837">
+        <label>64.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>T.J.</given-names>
+            </name>
+            <name>
+              <surname>Mori</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Nevins</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>A bistable Rb-E2F switch underlies the restriction point</article-title>
+          <source>Nat. Cell Biol.</source>
+          <year>2008</year>
+          <volume>10</volume>
+          <fpage>476</fpage>
+          <lpage>482</lpage>
+          <pub-id pub-id-type="doi">10.1038/ncb1711</pub-id>
+          <pub-id pub-id-type="pmid">18364697</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B65-biomedicines-12-01837">
+        <label>65.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>West</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Nevins</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Origin of bistability underlying mammalian cell cycle entry</article-title>
+          <source>Mol. Syst. Biol.</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <elocation-id>485</elocation-id>
+          <pub-id pub-id-type="doi">10.1038/msb.2011.19</pub-id>
+          <pub-id pub-id-type="pmid">21525871</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B66-biomedicines-12-01837">
+        <label>66.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Fujimaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Mitchell</surname>
+              <given-names>G.C.</given-names>
+            </name>
+            <name>
+              <surname>Kwon</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Della Croce</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Langsdorf</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>H.H.</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Exit from quiescence displays a memory of cell growth and division</article-title>
+          <source>Nat. Commun.</source>
+          <year>2017</year>
+          <volume>8</volume>
+          <fpage>321</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41467-017-00367-0</pub-id>
+          <pub-id pub-id-type="pmid">28831039</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B67-biomedicines-12-01837">
+        <label>67.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cappell</surname>
+              <given-names>S.D.</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Jaimovich</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Spencer</surname>
+              <given-names>S.L.</given-names>
+            </name>
+            <name>
+              <surname>Meyer</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Irreversible APC(Cdh1) Inactivation Underlies the Point of No Return for Cell-Cycle Entry</article-title>
+          <source>Cell</source>
+          <year>2016</year>
+          <volume>166</volume>
+          <fpage>167</fpage>
+          <lpage>180</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cell.2016.05.077</pub-id>
+          <pub-id pub-id-type="pmid">27368103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B68-biomedicines-12-01837">
+        <label>68.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cappell</surname>
+              <given-names>S.D.</given-names>
+            </name>
+            <name>
+              <surname>Mark</surname>
+              <given-names>K.G.</given-names>
+            </name>
+            <name>
+              <surname>Garbett</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Pack</surname>
+              <given-names>L.R.</given-names>
+            </name>
+            <name>
+              <surname>Rape</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Meyer</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>EMI1 switches from being a substrate to an inhibitor of APC/C(CDH1) to start the cell cycle</article-title>
+          <source>Nature</source>
+          <year>2018</year>
+          <volume>558</volume>
+          <fpage>313</fpage>
+          <lpage>317</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41586-018-0199-7</pub-id>
+          <pub-id pub-id-type="pmid">29875408</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B69-biomedicines-12-01837">
+        <label>69.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benjamin</surname>
+              <given-names>D.I.</given-names>
+            </name>
+            <name>
+              <surname>Both</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Benjamin</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Nutter</surname>
+              <given-names>C.W.</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>J.H.</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Machado</surname>
+              <given-names>L.A.</given-names>
+            </name>
+            <name>
+              <surname>Klein</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>de Morree</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Fasting induces a highly resilient deep quiescent state in muscle stem cells via ketone body signaling</article-title>
+          <source>Cell Metab.</source>
+          <year>2022</year>
+          <volume>34</volume>
+          <fpage>902</fpage>
+          <lpage>918.e6</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cmet.2022.04.012</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B70-biomedicines-12-01837">
+        <label>70.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shay</surname>
+              <given-names>J.W.</given-names>
+            </name>
+            <name>
+              <surname>Pereira-Smith</surname>
+              <given-names>O.M.</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>W.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>A role for both RB and p53 in the regulation of human cellular senescence</article-title>
+          <source>Exp. Cell Res.</source>
+          <year>1991</year>
+          <volume>196</volume>
+          <fpage>33</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="doi">10.1016/0014-4827(91)90453-2</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B71-biomedicines-12-01837">
+        <label>71.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beaus&#xE9;jour</surname>
+              <given-names>C.M.</given-names>
+            </name>
+            <name>
+              <surname>Krtolica</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Galimi</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Narita</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>S.W.</given-names>
+            </name>
+            <name>
+              <surname>Yaswen</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Campisi</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reversal of human cellular senescence: Roles of the p53 and p16 pathways</article-title>
+          <source>EMBO J.</source>
+          <year>2003</year>
+          <volume>22</volume>
+          <fpage>4212</fpage>
+          <lpage>4222</lpage>
+          <pub-id pub-id-type="doi">10.1093/emboj/cdg417</pub-id>
+          <pub-id pub-id-type="pmid">12912919</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B72-biomedicines-12-01837">
+        <label>72.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sage</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>A.L.</given-names>
+            </name>
+            <name>
+              <surname>Perez-Mancera</surname>
+              <given-names>P.A.</given-names>
+            </name>
+            <name>
+              <surname>Wysocki</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Jacks</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Acute mutation of retinoblastoma gene function is sufficient for cell cycle re-entry</article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>424</volume>
+          <fpage>223</fpage>
+          <lpage>228</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature01764</pub-id>
+          <pub-id pub-id-type="pmid">12853964</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B73-biomedicines-12-01837">
+        <label>73.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dirac</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Bernards</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reversal of senescence in mouse fibroblasts through lentiviral suppression of p53</article-title>
+          <source>J. Biol. Chem.</source>
+          <year>2003</year>
+          <volume>278</volume>
+          <fpage>11731</fpage>
+          <lpage>11734</lpage>
+          <pub-id pub-id-type="doi">10.1074/jbc.C300023200</pub-id>
+          <pub-id pub-id-type="pmid">12551891</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B74-biomedicines-12-01837">
+        <label>74.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pajalunga</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Mazzola</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Salzano</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Biferi</surname>
+              <given-names>M.G.</given-names>
+            </name>
+            <name>
+              <surname>De Luca</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Crescenzi</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Critical requirement for cell cycle inhibitors in sustaining nonproliferative states</article-title>
+          <source>J. Cell Biol.</source>
+          <year>2007</year>
+          <volume>176</volume>
+          <fpage>807</fpage>
+          <lpage>818</lpage>
+          <pub-id pub-id-type="doi">10.1083/jcb.200608109</pub-id>
+          <pub-id pub-id-type="pmid">17353358</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B75-biomedicines-12-01837">
+        <label>75.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Reyes</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J.-Y.</given-names>
+            </name>
+            <name>
+              <surname>Stewart-Ornstein</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Karhohs</surname>
+              <given-names>K.W.</given-names>
+            </name>
+            <name>
+              <surname>Mock</surname>
+              <given-names>C.S.</given-names>
+            </name>
+            <name>
+              <surname>Lahav</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fluctuations in p53 Signaling Allow Escape from Cell-Cycle Arrest</article-title>
+          <source>Mol. Cell</source>
+          <year>2018</year>
+          <volume>71</volume>
+          <fpage>581</fpage>
+          <lpage>591.e5</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.molcel.2018.06.031</pub-id>
+          <pub-id pub-id-type="pmid">30057196</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B76-biomedicines-12-01837">
+        <label>76.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stallaert</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>S.R.</given-names>
+            </name>
+            <name>
+              <surname>Kedziora</surname>
+              <given-names>K.M.</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>C.D.</given-names>
+            </name>
+            <name>
+              <surname>Sobon</surname>
+              <given-names>H.K.</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>C.L.</given-names>
+            </name>
+            <name>
+              <surname>Limas</surname>
+              <given-names>J.C.</given-names>
+            </name>
+            <name>
+              <surname>Holloway</surname>
+              <given-names>J.V.</given-names>
+            </name>
+            <name>
+              <surname>Johnson</surname>
+              <given-names>M.S.</given-names>
+            </name>
+            <name>
+              <surname>Cook</surname>
+              <given-names>J.G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The molecular architecture of cell cycle arrest</article-title>
+          <source>Mol. Syst. Biol.</source>
+          <year>2022</year>
+          <volume>18</volume>
+          <elocation-id>e11087</elocation-id>
+          <pub-id pub-id-type="doi">10.15252/msb.202211087</pub-id>
+          <pub-id pub-id-type="pmid">36161508</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B77-biomedicines-12-01837">
+        <label>77.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blagosklonny</surname>
+              <given-names>M.V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Rapamycin, proliferation and geroconversion to senescence</article-title>
+          <source>Cell Cycle</source>
+          <year>2018</year>
+          <volume>17</volume>
+          <fpage>2655</fpage>
+          <lpage>2665</lpage>
+          <pub-id pub-id-type="doi">10.1080/15384101.2018.1554781</pub-id>
+          <pub-id pub-id-type="pmid">30541374</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B78-biomedicines-12-01837">
+        <label>78.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Narita</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Nu&#xF1;ez</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Heard</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>A.W.</given-names>
+            </name>
+            <name>
+              <surname>Hearn</surname>
+              <given-names>S.A.</given-names>
+            </name>
+            <name>
+              <surname>Spector</surname>
+              <given-names>D.L.</given-names>
+            </name>
+            <name>
+              <surname>Hannon</surname>
+              <given-names>G.J.</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>S.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Rb-Mediated Heterochromatin Formation and Silencing of E2F Target Genes during Cellular Senescence</article-title>
+          <source>Cell</source>
+          <year>2003</year>
+          <volume>113</volume>
+          <fpage>703</fpage>
+          <lpage>716</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0092-8674(03)00401-X</pub-id>
+          <pub-id pub-id-type="pmid">12809602</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B79-biomedicines-12-01837">
+        <label>79.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crouch</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Shvedova</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Thanapaul</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Botchkarev</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Roh</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Epigenetic Regulation of Cellular Senescence</article-title>
+          <source>Cells</source>
+          <year>2022</year>
+          <volume>11</volume>
+          <elocation-id>672</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/cells11040672</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B80-biomedicines-12-01837">
+        <label>80.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paluvai</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Di Giorgio</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Brancolini</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Histone Code of Senescence</article-title>
+          <source>Cells</source>
+          <year>2020</year>
+          <volume>9</volume>
+          <elocation-id>466</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/cells9020466</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figure</title>
+      <fig id="biomedicines-12-01837-f001" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Quiescence-origin senescence. Conventional senescence originates from proliferating and growing cells via mTOR-mediated geroconversion, when cell growth continues aberrantly after the cell cycle is blocked in response to severe stress and damage. In comparison, quiescence-origin senescence originates from quiescent cells via quiescence deepening, accompanied by a progressively increasing Rb&#x2013;E2F switch threshold in response to decreased lysosomal autophagy and increased ROS accumulation and protein aggregation. Senescent cells are irreversibly arrested under physiological conditions. Deep quiescent cells are reversible but require stronger growth stimulation and take a longer time to re-enter the cell cycle than shallow quiescent cells. The boundary between very deep quiescence and quiescence-origin senescence (the red dashed line) is blurred.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="biomedicines-12-01837-g001.tif"/>
+      </fig>
+    </sec>
+    <fn-group>
+      <fn>
+        <p><bold>Disclaimer/Publisher&#x2019;s Note:</bold> The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>
