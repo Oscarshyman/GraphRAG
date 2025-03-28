@@ -1,0 +1,35 @@
+# Ignore environment variables
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments and dependency folders
+env/
+venv/
+.venv/
+
+# Ignore log files and build artifacts
+*.log
+build/
+dist/
+*.egg-info/
+
+# Ignore Memgraph data (if persisted locally)
+mg_data/
+memgraph.log
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+
+
+# Ignore VSCode settings (optional, if not shared)
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
