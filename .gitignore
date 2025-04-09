@@ -34,4 +34,4 @@ memgraph.log
 .DS_Store
 Thumbs.db
 
-.gz
+*.tar.gz
