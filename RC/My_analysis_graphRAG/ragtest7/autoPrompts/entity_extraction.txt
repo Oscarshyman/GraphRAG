@@ -1,0 +1,177 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+1. Identify all entities. For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: One of the following types: [publication, person, biological process, cell type, biomarker, research study, mechanism, disease process, intervention strategy]
+- entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [publication, person, biological process, cell type, biomarker, research study, mechanism, disease process, intervention strategy]
+text:
+5. doi:10.1242/dev.073593Fujimaki, K., Li, R., Chen, H., Della Croce, K., Zhang, H. H., Xing, J., et al. (2019).Graded Regulation of Cellular Quiescence Depth between Proliferation andSenescence by a Lysosomal Dimmer Switch.Proc. Natl. Acad. Sci. USA116,22624–22634. doi:10.1073/pnas.1915905116Fujimaki, K., and Yao, G. (2020). Cell Dormancy Plasticity: Quiescence Deepensinto Senescence through a Dimmer Switch.Physiol. Genomics52, 558–562.doi:10.1152/physiolgenomics.00068.2020Galie, P. A., Russell, M. W., Westfall, M. V., and Stegemann, J. P. (2012). InterstitialFluid Flow and Cyclic Strain Differentially Regulate Cardiac FibroblastActivation via AT1R and TGF-B1.Exp. Cel Res.318, 75–84. doi:10.1016
+------------------------
+output:
+("entity"{tuple_delimiter}FUJIMAKI, K.{tuple_delimiter}PERSON{tuple_delimiter}K. Fujimaki is a researcher involved in studies on cellular quiescence and dormancy.)
+{record_delimiter}
+("entity"{tuple_delimiter}LI, R.{tuple_delimiter}PERSON{tuple_delimiter}R. Li is a co-author of research on graded regulation of cellular quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}CHEN, H.{tuple_delimiter}PERSON{tuple_delimiter}H. Chen is a researcher who contributed to the study of cellular quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}DELLA CROCE, K.{tuple_delimiter}PERSON{tuple_delimiter}K. Della Croce is a co-author of the research on cellular quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}ZHANG, H. H.{tuple_delimiter}PERSON{tuple_delimiter}H. H. Zhang is a researcher involved in the study of cellular quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}XING, J.{tuple_delimiter}PERSON{tuple_delimiter}J. Xing is a co-author of the research on cellular quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELLULAR QUIESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Cellular quiescence is a state of reversible cell cycle arrest that allows cells to conserve energy and resources.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL DORMANCY PLASTICITY{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Cell dormancy plasticity refers to the ability of cells to transition between quiescence and senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}CARDIAC FIBROBLAST ACTIVATION{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Cardiac fibroblast activation is a process influenced by mechanical and biochemical signals in the heart.)
+{record_delimiter}
+("entity"{tuple_delimiter}AT1R{tuple_delimiter}BIOMARKER{tuple_delimiter}AT1R is a receptor that plays a role in cardiac fibroblast activation and response to angiotensin II.)
+{record_delimiter}
+("entity"{tuple_delimiter}TGF-B1{tuple_delimiter}BIOMARKER{tuple_delimiter}TGF-B1 is a growth factor involved in the regulation of cardiac fibroblast activation.)
+{record_delimiter}
+("entity"{tuple_delimiter}GRADATION OF CELLULAR QUIESCENCE{tuple_delimiter}RESEARCH STUDY{tuple_delimiter}This study investigates how cellular quiescence depth is regulated between proliferation and senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL DORMANCY AND SENESCENCE{tuple_delimiter}RESEARCH STUDY{tuple_delimiter}This research explores the transition from cell dormancy to senescence through a regulatory mechanism.)
+{record_delimiter}
+("entity"{tuple_delimiter}INTERSTITIAL FLUID FLOW{tuple_delimiter}MECHANISM{tuple_delimiter}Interstitial fluid flow is a mechanical stimulus that affects cardiac fibroblast behavior.)
+{record_delimiter}
+("relationship"{tuple_delimiter}FUJIMAKI, K.{tuple_delimiter}GRADATION OF CELLULAR QUIESCENCE{tuple_delimiter}K. Fujimaki is a lead author of the study on the regulation of cellular quiescence depth.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}LI, R.{tuple_delimiter}GRADATION OF CELLULAR QUIESCENCE{tuple_delimiter}R. Li is a co-author of the study on the regulation of cellular quiescence depth.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}CHEN, H.{tuple_delimiter}GRADATION OF CELLULAR QUIESCENCE{tuple_delimiter}H. Chen contributed to the research on cellular quiescence regulation.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}DELLA CROCE, K.{tuple_delimiter}GRADATION OF CELLULAR QUIESCENCE{tuple_delimiter}K. Della Croce is a co-author of the study on cellular quiescence depth regulation.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}ZHANG, H. H.{tuple_delimiter}GRADATION OF CELLULAR QUIESCENCE{tuple_delimiter}H. H. Zhang is a co-author of the research on cellular quiescence.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}XING, J.{tuple_delimiter}GRADATION OF CELLULAR QUIESCENCE{tuple_delimiter}J. Xing is a co-author of the study on cellular quiescence depth regulation.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}CELLULAR QUIESCENCE{tuple_delimiter}CELL DORMANCY PLASTICITY{tuple_delimiter}Cellular quiescence is a key aspect of cell dormancy plasticity, influencing transitions to senescence.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}CELL DORMANCY PLASTICITY{tuple_delimiter}CELLULAR QUIESCENCE{tuple_delimiter}Cell dormancy plasticity involves the regulation of cellular quiescence and its depth.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}CARDIAC FIBROBLAST ACTIVATION{tuple_delimiter}AT1R{tuple_delimiter}AT1R is involved in the mechanism of cardiac fibroblast activation.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}CARDIAC FIBROBLAST ACTIVATION{tuple_delimiter}TGF-B1{tuple_delimiter}TGF-B1 plays a role in the activation of cardiac fibroblasts.{tuple_delimiter}8)
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+entity_types: [publication, person, biological process, cell type, biomarker, research study, mechanism, disease process, intervention strategy]
+text:
+ Pharmacol. Physiol.33, 131–138. doi:10.1111/j.1440-1681.2006.04339.xLutolf, M. P., Gilbert, P. M., and Blau, H. M. (2009). Designing Materials to DirectStem-Cell Fate.Nature462, 433–441. doi:10.1038/nature08602Ng, C. P., and Swartz, M. A. (2003). Fibroblast Alignment under Interstitial FluidFlow Using a Novel 3-D Tissue Culture Model.Am. J. Physiology-HeartCirculatory Physiol.284, H1771–H1777. doi:10.1152/ajpheart.01008.2002Orford, K. W., and Scadden, D. T. (2008). Deconstructing Stem Cell Self-Renewal:Genetic Insights into Cell-Cycle Regulation.Nat. Rev. Genet.9, 115–128. doi:10.1038/nrg2269Owen, T. A., Soprano, D. R., and Soprano, K. J. (1989).
+------------------------
+output:
+("entity"{tuple_delimiter}LUTOLF, M. P.{tuple_delimiter}PERSON{tuple_delimiter}Lutolf, M. P. is a researcher involved in designing materials to direct stem-cell fate.)
+{record_delimiter}
+("entity"{tuple_delimiter}GILBERT, P. M.{tuple_delimiter}PERSON{tuple_delimiter}Gilbert, P. M. is a researcher involved in designing materials to direct stem-cell fate.)
+{record_delimiter}
+("entity"{tuple_delimiter}BLAU, H. M.{tuple_delimiter}PERSON{tuple_delimiter}Blau, H. M. is a researcher involved in designing materials to direct stem-cell fate.)
+{record_delimiter}
+("entity"{tuple_delimiter}NATURE{tuple_delimiter}PUBLICATION{tuple_delimiter}Nature is a scientific journal where the research on designing materials to direct stem-cell fate was published.)
+{record_delimiter}
+("entity"{tuple_delimiter}AMERICAN JOURNAL OF PHYSIOLOGY-HEART AND CIRCULATORY PHYSIOLOGY{tuple_delimiter}PUBLICATION{tuple_delimiter}The American Journal of Physiology-Heart and Circulatory Physiology is a scientific journal that published research on fibroblast alignment under interstitial fluid flow.)
+{record_delimiter}
+("entity"{tuple_delimiter}ORFORD, K. W.{tuple_delimiter}PERSON{tuple_delimiter}Orford, K. W. is a researcher involved in deconstructing stem cell self-renewal.)
+{record_delimiter}
+("entity"{tuple_delimiter}SCADDEN, D. T.{tuple_delimiter}PERSON{tuple_delimiter}Scadden, D. T. is a researcher involved in deconstructing stem cell self-renewal.)
+{record_delimiter}
+("entity"{tuple_delimiter}NATURAL REVIEWS GENETICS{tuple_delimiter}PUBLICATION{tuple_delimiter}Natural Reviews Genetics is a scientific journal that published research on genetic insights into cell-cycle regulation.)
+{record_delimiter}
+("relationship"{tuple_delimiter}LUTOLF, M. P.{tuple_delimiter}NATURE{tuple_delimiter}Lutolf, M. P. is an author of a publication in Nature regarding materials to direct stem-cell fate{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}GILBERT, P. M.{tuple_delimiter}NATURE{tuple_delimiter}Gilbert, P. M. is an author of a publication in Nature regarding materials to direct stem-cell fate{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}BLAU, H. M.{tuple_delimiter}NATURE{tuple_delimiter}Blau, H. M. is an author of a publication in Nature regarding materials to direct stem-cell fate{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}NATURAL REVIEWS GENETICS{tuple_delimiter}ORFORD, K. W.{tuple_delimiter}Orford, K. W. is an author of a publication in Natural Reviews Genetics regarding stem cell self-renewal{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}NATURAL REVIEWS GENETICS{tuple_delimiter}SCADDEN, D. T.{tuple_delimiter}Scadden, D. T. is an author of a publication in Natural Reviews Genetics regarding stem cell self-renewal{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}AMERICAN JOURNAL OF PHYSIOLOGY-HEART AND CIRCULATORY PHYSIOLOGY{tuple_delimiter}NATURAL REVIEWS GENETICS{tuple_delimiter}Both publications discuss aspects of stem cell research, linking the studies of fibroblast alignment and stem cell self-renewal{tuple_delimiter}5)
+{completion_delimiter}
+#############################
+
+
+Example 3:
+
+entity_types: [publication, person, biological process, cell type, biomarker, research study, mechanism, disease process, intervention strategy]
+text:
+] [PubMed]
+68.Cappell, S.D.; Mark, K.G.; Garbett, D.; Pack, L.R.; Rape, M.; Meyer, T. EMI1 switches from being a substrate to an inhibitor of
+APC/C(CDH1) to start the cell cycle. Nature2018,558, 313–317. [CrossRef] [PubMed]
+69.Benjamin, D.I.; Both, P.; Benjamin, J.S.; Nutter, C.W.; Tan, J.H.; Kang, J.; Machado, L.A.; Klein, J.D.; de Morree, A.; Kim, S.; et al.
+Fasting induces a highly resilient deep quiescent state in muscle stem cells via ketone body signaling.Cell Metab.2022,34,
+902–918.e6. [CrossRef]
+70.Shay, J.W.; Pereira-Smith, O.M.; Wright, W.E. A role for both RB and p53 in the regulation of human cellular senescence.Exp. Cell
+Res.1991,196, 33–39. [CrossRef]
+71.Beauséjour, C.M.; Krtolica, A.; Galimi, F.; Narita, M.;
+------------------------
+output:
+("entity"{tuple_delimiter}EMI1{tuple_delimiter}biological process{tuple_delimiter}EMI1 is a protein that switches from being a substrate to an inhibitor of APC/C(CDH1) to initiate the cell cycle.)
+{record_delimiter}
+("entity"{tuple_delimiter}APC/C(CDH1){tuple_delimiter}mechanism{tuple_delimiter}APC/C(CDH1) is a protein complex that regulates the cell cycle by targeting proteins for degradation.)
+{record_delimiter}
+("entity"{tuple_delimiter}FASTING{tuple_delimiter}intervention strategy{tuple_delimiter}Fasting is a dietary intervention that induces a deep quiescent state in muscle stem cells through ketone body signaling.)
+{record_delimiter}
+("entity"{tuple_delimiter}MUSCLE STEM CELLS{tuple_delimiter}cell type{tuple_delimiter}Muscle stem cells are a type of cell that can enter a quiescent state and are involved in muscle regeneration.)
+{record_delimiter}
+("entity"{tuple_delimiter}KETONE BODY SIGNALING{tuple_delimiter}mechanism{tuple_delimiter}Ketone body signaling is a metabolic pathway that influences the behavior of muscle stem cells during fasting.)
+{record_delimiter}
+("entity"{tuple_delimiter}RB{tuple_delimiter}biomarker{tuple_delimiter}RB is a tumor suppressor protein that plays a role in regulating the cell cycle and cellular senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}P53{tuple_delimiter}biomarker{tuple_delimiter}P53 is a protein that regulates the cell cycle and is involved in the response to cellular stress and DNA damage.)
+{record_delimiter}
+("entity"{tuple_delimiter}HUMAN CELLULAR SENESCENCE{tuple_delimiter}biological process{tuple_delimiter}Human cellular senescence is a state of stable cell cycle arrest that occurs in response to various stressors, including DNA damage.)
+{record_delimiter}
+("relationship"{tuple_delimiter}EMI1{tuple_delimiter}APC/C(CDH1){tuple_delimiter}EMI1 acts as a substrate and then an inhibitor of APC/C(CDH1) to regulate the cell cycle{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}FASTING{tuple_delimiter}MUSCLE STEM CELLS{tuple_delimiter}Fasting induces a quiescent state in muscle stem cells through metabolic signaling{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}KETONE BODY SIGNALING{tuple_delimiter}MUSCLE STEM CELLS{tuple_delimiter}Ketone body signaling is involved in the regulation of muscle stem cells during fasting{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}RB{tuple_delimiter}P53{tuple_delimiter}RB and P53 both play roles in the regulation of human cellular senescence{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}RB{tuple_delimiter}HUMAN CELLULAR SENESCENCE{tuple_delimiter}RB is involved in the regulation of the cell cycle and cellular senescence{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}P53{tuple_delimiter}HUMAN CELLULAR SENESCENCE{tuple_delimiter}P53 is involved in the regulation of the cell cycle and cellular senescence{tuple_delimiter}8)
+{completion_delimiter}
+#############################
+
+
+
+-Real Data-
+######################
+entity_types: [publication, person, biological process, cell type, biomarker, research study, mechanism, disease process, intervention strategy]
+text: {input_text}
+######################
+output:
