@@ -27,3 +27,38 @@ graphrag init --root ./ragtest
 graphrag index --root ./ragtest
 
 
+#################
+
+# Trying neo4j
+
+Create the /etc/apt/keyrings/ Directory Run the following command to create the missing directory:
+
+sudo mkdir -p /etc/apt/keyrings
+
+
+Retry the Command
+wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/neotechnology.gpg
+
+
+Verify the Key
+ls -l /etc/apt/keyrings/neotechnology.gpg
+
+
+Add the Neo4j repository:
+echo "deb [signed-by=/etc/apt/keyrings/neotechnology.gpg] https://debian.neo4j.com stable 4.x" | sudo tee /etc/apt/sources.list.d/neo4j.list
+
+
+
+Update the package list:
+sudo apt update
+
+
+Steps to Fix
+1. Correct the Repository Configuration
+Edit the Neo4j repository file to fix the URL. Run the following command:
+
+Replace the current line:
+deb [signed-by=/etc/apt/keyrings/neotechnology.gpg] https://debian.neo4j.com stable 4.x
+
+With this corrected line:
+deb [signed-by=/etc/apt/keyrings/neotechnology.gpg] https://debian.neo4j.com/ stable main
