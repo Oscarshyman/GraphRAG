@@ -67,20 +67,10 @@ deb [signed-by=/etc/apt/keyrings/neotechnology.gpg] https://debian.neo4j.com/ st
 
 ####################################################
 
-# Pulling Data using AWS CLI
-    conda create -n aws1
-    conda activate aws1
+# Pdf to txt
 
-    sudo apt-get update
-    sudo apt-get install awscli
-
-    aws configure
-
-# Enter dummy or blank values when prompted:
-AWS Access Key ID: [press enter]
-AWS Secret Access Key: [press enter]
-Default region name: us-east-1
-Default output format: json
+    sudo apt-get install poppler-utils
+    pdftotext <biomedicines.pdf> <biomedicines.txt>
 
 
     
