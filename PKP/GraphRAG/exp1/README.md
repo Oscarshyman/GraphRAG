@@ -1,9 +1,12 @@
 # Experiment
 5 iterations  of Auto-Prompt-tuning with same parameters
 
-
+## initialise graphrag
+graphrag init --root ./grag-1
 
 mkdir `input` and add txt files
+
+
 ## In `settings.yaml`
 
     `model: gpt-4o-mini`
