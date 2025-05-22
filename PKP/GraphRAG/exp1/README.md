@@ -18,3 +18,8 @@ mkdir `input` and add txt files
 cd into the specific grag folder ( `cd grag-1`)
 
 `graphrag prompt-tune --root . --config ./settings.yaml  --domain "Senescence" --min-examples-required 5`
+
+## Run Graphrag Pipeline
+
+cd ..
+graphrag index --root ./grag-1
