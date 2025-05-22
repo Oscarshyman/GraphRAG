@@ -110,7 +110,7 @@ umap:
   enabled: false # if true, will generate UMAP embeddings for nodes (embed_graph must also be enabled)
 
 snapshots:
-  graphml: false
+  graphml: true
   embeddings: false
   transient: false
 

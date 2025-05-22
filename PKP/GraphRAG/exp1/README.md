@@ -10,6 +10,11 @@ mkdir `input` and add txt files
     for cache --> `base_dir: "cache_grag-<1>"`
     for output storage --> `base_dir: "output_grag-<1>"`
 
-Then run,
+    `graphml:true`
 
-`python -m graphrag prompt-tune --root ./grag-1 --config ./grag-1/settings.yaml  --domain "Senescence" --min-examples-required 5`
+
+## Auto-tuning
+
+cd into the specific grag folder ( `cd grag-1`)
+
+`graphrag prompt-tune --root . --config ./settings.yaml  --domain "Senescence" --min-examples-required 5`

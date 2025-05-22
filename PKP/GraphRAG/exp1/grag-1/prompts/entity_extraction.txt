@@ -1,121 +1,240 @@
 
 -Goal-
 Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
- 
+
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [{entity_types}]
+- entity_type: One of the following types: [cellular state, quiescence, senescence, gene network, microfluidic system, extracellular fluid flow, shear stress, autophagy, stem cells, fibroblasts, gene expression, protein aggregates]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
- 
+
 2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
 For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
- Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
- 
-3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
- 
-4. When finished, output {completion_delimiter}
- 
-######################
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in The primary language of the provided text is "English." as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into The primary language of the provided text is "English.", just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
 -Examples-
 ######################
+
 Example 1:
-Entity_types: ORGANIZATION,PERSON
-Text:
-The Verdantis's Central Institution is scheduled to meet on Monday and Thursday, with the institution planning to release its latest policy decision on Thursday at 1:30 p.m. PDT, followed by a press conference where Central Institution Chair Martin Smith will take questions. Investors expect the Market Strategy Committee to hold its benchmark interest rate steady in a range of 3.5%-3.75%.
-######################
-Output:
-("entity"{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution is the Federal Reserve of Verdantis, which is setting interest rates on Monday and Thursday)
-{record_delimiter}
-("entity"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}PERSON{tuple_delimiter}Martin Smith is the chair of the Central Institution)
-{record_delimiter}
-("entity"{tuple_delimiter}MARKET STRATEGY COMMITTEE{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution committee makes key decisions about interest rates and the growth of Verdantis's money supply)
-{record_delimiter}
-("relationship"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}Martin Smith is the Chair of the Central Institution and will answer questions at a press conference{tuple_delimiter}9)
-{completion_delimiter}
 
-######################
+entity_types: [cellular state, quiescence, senescence, gene network, microfluidic system, extracellular fluid flow, shear stress, autophagy, stem cells, fibroblasts, gene expression, protein aggregates]
+text:
+Flow Rate and Flow-Induced Shear Stress
+The total volume of medium in a microdevice (including tubing
+at the inlet/outlet of the channel but not connectors, Figure 1C) is
+approximately 140 μl, and the medium volume in the
+microﬂuidic channel alone is about 67 µl. In this study, a
+continuous medium ﬂow with a ﬁxed ﬂow rate (5 or 20 μl/h)
+was fed into the channel to mimic the typical interstitial ﬂow
+velocity in soft tissues (Swartz and Fleury, 2007) unless otherwise
+noted. Correspondingly, the ﬂow rate, rather than the priming
+volume, is used to characterize the ﬂow effect. We also consider
+the concentration of the bulk ﬂuid is uniform spatially, and local
+diffusion and convection at the interfaces between the �
+------------------------
+output:
+("entity"{tuple_delimiter}MICRODEVICE{tuple_delimiter}MICROFLUIDIC SYSTEM{tuple_delimiter}A microdevice used to study the flow rate and flow-induced shear stress in a controlled environment)
+{record_delimiter}
+("entity"{tuple_delimiter}FLOW RATE{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}The flow rate is the volume of medium fed into the microfluidic channel, measured in μl/h, to mimic interstitial flow velocity in soft tissues)
+{record_delimiter}
+("entity"{tuple_delimiter}SHEAR STRESS{tuple_delimiter}SHEAR STRESS{tuple_delimiter}Shear stress is the force per unit area exerted by the flow of fluid in the microfluidic channel, affecting cellular behavior)
+{record_delimiter}
+("relationship"{tuple_delimiter}MICRODEVICE{tuple_delimiter}FLOW RATE{tuple_delimiter}The microdevice is designed to study the effects of flow rate on cellular behavior in a controlled environment{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}FLOW RATE{tuple_delimiter}SHEAR STRESS{tuple_delimiter}The flow rate influences the shear stress experienced by cells in the microfluidic channel, impacting their physiological responses{tuple_delimiter}9)
+{completion_delimiter}
+#############################
+
+
 Example 2:
-Entity_types: ORGANIZATION
-Text:
-TechGlobal's (TG) stock skyrocketed in its opening day on the Global Exchange Thursday. But IPO experts warn that the semiconductor corporation's debut on the public markets isn't indicative of how other newly listed companies may perform.
 
-TechGlobal, a formerly public company, was taken private by Vision Holdings in 2014. The well-established chip designer says it powers 85% of premium smartphones.
-######################
-Output:
-("entity"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}ORGANIZATION{tuple_delimiter}TechGlobal is a stock now listed on the Global Exchange which powers 85% of premium smartphones)
+entity_types: [cellular state, quiescence, senescence, gene network, microfluidic system, extracellular fluid flow, shear stress, autophagy, stem cells, fibroblasts, gene expression, protein aggregates]
+text:
+ accumulation of protein aggregates is associated with quiescence deepening, and that the
+clearance of protein aggregates (by lysosomes in NSCs and by
+DnaK–ClpB complex in bacteria) drives cells to shallower quiescence and enhances their ability to reenter the cell cycle (39, 70).
+Quiescence entry and exit are regulated by the Rb-E2f-Cyclin/
+Cdk gene network (71, 72) that functions as a bistable switch
+(25). How does the toggle switch-like nature of the Rb-E2f
+pathway fit with the lysosomal dimmer switch? We speculate
+that during quiescence exit, cells first move progressively into
+shallow quiescence and at a time point, the restriction point (73,
+74), “flip” into the cell cycle by committing to proliferation; the
+whole process acts like adjusting a sliding dimmer before activating
+a toggle switch. In this
+------------------------
+output:
+("entity"{tuple_delimiter}PROTEIN AGGREGATES{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Accumulation of protein aggregates is associated with quiescence deepening and their clearance drives cells to shallower quiescence.)
 {record_delimiter}
-("entity"{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}ORGANIZATION{tuple_delimiter}Vision Holdings is a firm that previously owned TechGlobal)
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Quiescence is a state where cells exit the cell cycle and can be deepened or shallowed based on the presence of protein aggregates.)
 {record_delimiter}
-("relationship"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}Vision Holdings formerly owned TechGlobal from 2014 until present{tuple_delimiter}5)
+("entity"{tuple_delimiter}RB-E2F-CYCLIN/CDK GENE NETWORK{tuple_delimiter}GENE NETWORK{tuple_delimiter}The Rb-E2f-Cyclin/Cdk gene network regulates quiescence entry and exit, functioning as a bistable switch.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOMES{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Lysosomes are involved in the clearance of protein aggregates, influencing the quiescence state of cells.)
+{record_delimiter}
+("entity"{tuple_delimiter}NSCs{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Neural Stem Cells (NSCs) utilize lysosomes for the clearance of protein aggregates, affecting their quiescence.)
+{record_delimiter}
+("relationship"{tuple_delimiter}PROTEIN AGGREGATES{tuple_delimiter}QUIESCENCE{tuple_delimiter}The accumulation of protein aggregates is linked to the deepening of quiescence in cells.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}PROTEIN AGGREGATES{tuple_delimiter}LYSOSOMES{tuple_delimiter}Lysosomes are responsible for clearing protein aggregates, which affects the quiescence state of cells.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}RB-E2F-CYCLIN/CDK GENE NETWORK{tuple_delimiter}The Rb-E2f-Cyclin/Cdk gene network regulates the entry and exit of quiescence in cells.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMES{tuple_delimiter}NSCs{tuple_delimiter}Neural Stem Cells utilize lysosomes to clear protein aggregates, impacting their quiescence state.{tuple_delimiter}7)
 {completion_delimiter}
+#############################
 
-######################
+
 Example 3:
-Entity_types: ORGANIZATION,GEO,PERSON
-Text:
-Five Aurelians jailed for 8 years in Firuzabad and widely regarded as hostages are on their way home to Aurelia.
 
-The swap orchestrated by Quintara was finalized when $8bn of Firuzi funds were transferred to financial institutions in Krohaara, the capital of Quintara.
-
-The exchange initiated in Firuzabad's capital, Tiruzia, led to the four men and one woman, who are also Firuzi nationals, boarding a chartered flight to Krohaara.
-
-They were welcomed by senior Aurelian officials and are now on their way to Aurelia's capital, Cashion.
-
-The Aurelians include 39-year-old businessman Samuel Namara, who has been held in Tiruzia's Alhamia Prison, as well as journalist Durke Bataglani, 59, and environmentalist Meggie Tazbah, 53, who also holds Bratinas nationality.
-######################
-Output:
-("entity"{tuple_delimiter}FIRUZABAD{tuple_delimiter}GEO{tuple_delimiter}Firuzabad held Aurelians as hostages)
+entity_types: [cellular state, quiescence, senescence, gene network, microfluidic system, extracellular fluid flow, shear stress, autophagy, stem cells, fibroblasts, gene expression, protein aggregates]
+text:
+. Here we measured
+transcriptome changes as rat embryonic fibroblasts moved from
+shallow to deep quiescence over time in the absence of growth
+signals. We found that lysosomal gene expression was significantly
+up-regulated in deep quiescence, and partially compensated for gradually reduced autophagy flux. Reducing lysosomal function drove
+cells progressively deeper into quiescence and eventually into a
+senescence-like irreversibly arrested state; increasing lysosomal function, by lowering oxidative stress, progressively pushed cells into
+shallower quiescence. That is, lysosomal function modulates graded
+quiescence depth between proliferation and senescence as a dimmer
+switch. Finally, we found that a gene-expression signature developed
+by comparing deep and shallow quiescence in fibroblasts can correctly classify a wide array of senescent and aging cell types in vitro
+and in vivo, suggesting that while quiescence is generally considered
+to
+------------------------
+output:
+("entity"{tuple_delimiter}RAT EMBRYONIC FIBROBLASTS{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Rat embryonic fibroblasts are cells that can transition between quiescence and senescence depending on growth signals and lysosomal function.)
 {record_delimiter}
-("entity"{tuple_delimiter}AURELIA{tuple_delimiter}GEO{tuple_delimiter}Country seeking to release hostages)
+("entity"{tuple_delimiter}DEEP QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Deep quiescence is a state where cells are in a low metabolic state and do not respond to growth signals, characterized by specific gene expression changes.)
 {record_delimiter}
-("entity"{tuple_delimiter}QUINTARA{tuple_delimiter}GEO{tuple_delimiter}Country that negotiated a swap of money in exchange for hostages)
+("entity"{tuple_delimiter}SHALLOW QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Shallow quiescence is a less pronounced state of quiescence where cells are more responsive to growth signals compared to deep quiescence.)
 {record_delimiter}
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Senescence is an irreversible arrested state of cells that occurs after prolonged stress or damage, characterized by distinct changes in gene expression and cellular function.)
 {record_delimiter}
-("entity"{tuple_delimiter}TIRUZIA{tuple_delimiter}GEO{tuple_delimiter}Capital of Firuzabad where the Aurelians were being held)
+("entity"{tuple_delimiter}LYSOSOMAL GENE EXPRESSION{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}Lysosomal gene expression refers to the expression of genes involved in lysosomal function, which is up-regulated in deep quiescence and plays a role in cellular metabolism and autophagy.)
 {record_delimiter}
-("entity"{tuple_delimiter}KROHAARA{tuple_delimiter}GEO{tuple_delimiter}Capital city in Quintara)
+("entity"{tuple_delimiter}AUTOPHAGY FLUX{tuple_delimiter}AUTOPHAGY{tuple_delimiter}Autophagy flux is the process by which cells degrade and recycle cellular components, which is gradually reduced in deep quiescence.)
 {record_delimiter}
-("entity"{tuple_delimiter}CASHION{tuple_delimiter}GEO{tuple_delimiter}Capital city in Aurelia)
+("entity"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Lysosomal function refers to the activity of lysosomes in degrading cellular waste and is crucial for maintaining cellular health and modulating quiescence depth.)
 {record_delimiter}
-("entity"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}PERSON{tuple_delimiter}Aurelian who spent time in Tiruzia's Alhamia Prison)
+("entity"{tuple_delimiter}OXIDATIVE STRESS{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Oxidative stress is a condition characterized by excessive free radicals that can damage cells and influence their transition between quiescence and senescence.)
 {record_delimiter}
-("entity"{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}GEO{tuple_delimiter}Prison in Tiruzia)
+("entity"{tuple_delimiter}GENE-EXPRESSION SIGNATURE{tuple_delimiter}GENE NETWORK{tuple_delimiter}A gene-expression signature is a specific pattern of gene expression that can classify different cell types, including senescent and aging cells, based on their quiescent states.)
 {record_delimiter}
-("entity"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}PERSON{tuple_delimiter}Aurelian journalist who was held hostage)
+("relationship"{tuple_delimiter}RAT EMBRYONIC FIBROBLASTS{tuple_delimiter}DEEP QUIESCENCE{tuple_delimiter}Rat embryonic fibroblasts transition into deep quiescence when growth signals are absent, leading to specific gene expression changes.{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}PERSON{tuple_delimiter}Bratinas national and environmentalist who was held hostage)
+("relationship"{tuple_delimiter}DEEP QUIESCENCE{tuple_delimiter}LYSOSOMAL GENE EXPRESSION{tuple_delimiter}Deep quiescence is associated with up-regulated lysosomal gene expression, indicating a metabolic adaptation.{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}FIRUZABAD{tuple_delimiter}AURELIA{tuple_delimiter}Firuzabad negotiated a hostage exchange with Aurelia{tuple_delimiter}2)
+("relationship"{tuple_delimiter}DEEP QUIESCENCE{tuple_delimiter}AUTOPHAGY FLUX{tuple_delimiter}In deep quiescence, autophagy flux is gradually reduced, affecting cellular maintenance and function.{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}AURELIA{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
+("relationship"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}DEEP QUIESCENCE{tuple_delimiter}Lysosomal function modulates the depth of quiescence, influencing the transition to senescence.{tuple_delimiter}9)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
+("relationship"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}OXIDATIVE STRESS{tuple_delimiter}Lowering oxidative stress enhances lysosomal function, which can push cells into shallower quiescence.{tuple_delimiter}8)
 {record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}Samuel Namara was a prisoner at Alhamia prison{tuple_delimiter}8)
+("relationship"{tuple_delimiter}DEEP QUIESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Cells can progress from deep quiescence to a senescence-like state when lysosomal function is compromised.{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}Samuel Namara and Meggie Tazbah were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Samuel Namara and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Meggie Tazbah and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Samuel Namara was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}FIRUZABAD{tuple_delimiter}Meggie Tazbah was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}FIRUZABAD{tuple_delimiter}Durke Bataglani was a hostage in Firuzabad{tuple_delimiter}2)
+("relationship"{tuple_delimiter}GENE-EXPRESSION SIGNATURE{tuple_delimiter}SENESCENCE{tuple_delimiter}The gene-expression signature can classify various senescent and aging cell types, indicating a relationship between gene expression and cellular aging.{tuple_delimiter}8)
 {completion_delimiter}
+#############################
 
-######################
+
+Example 4:
+
+entity_types: [cellular state, quiescence, senescence, gene network, microfluidic system, extracellular fluid flow, shear stress, autophagy, stem cells, fibroblasts, gene expression, protein aggregates]
+text:
+ EdU-incorporation assay in regular cell
+cultures (Kwon et al., 2017; Wang et al., 2017; Fujimaki et al.,
+2019) as well as here on the microﬂuidic platform
+(Supplementary Figures S1B,C; see Methods).
+To induce quiescence, cells in microﬂuidic devices were
+cultured in serum-starvation medium (0.02% serum) for
+4 days under a given extracellular ﬂuid ﬂow (5 or 20 μl/h). In
+these conditions, about 95% of cells or more entered quiescence
+(Figures 2A,B, 0.02% serum, 4-days), as indicated by the Offstate of the E2f-GFP reporter (E2f-Off for short, the lower/left
+mode of the E2f-GFP histograms in Figure 2).
+------------------------
+output:
+("entity"{tuple_delimiter}EDU-INCORPORATION ASSAY{tuple_delimiter}CELLULAR STATE{tuple_delimiter}The EdU-incorporation assay is a method used to measure cell proliferation in regular cell cultures.)
+{record_delimiter}
+("entity"{tuple_delimiter}MICROFLUIDIC PLATFORM{tuple_delimiter}MICROFLUIDIC SYSTEM{tuple_delimiter}The microfluidic platform is a system that allows for the manipulation of fluids at a microscale, used here for cell culture experiments.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Quiescence is a cellular state characterized by a temporary cessation of cell division and metabolic activity, often induced by specific environmental conditions.)
+{record_delimiter}
+("entity"{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}Extracellular fluid flow refers to the movement of fluid outside of cells, which can influence cellular behavior and state.)
+{record_delimiter}
+("entity"{tuple_delimiter}SERUM-STARVATION MEDIUM{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Serum-starvation medium is a nutrient-deficient environment used to induce quiescence in cells by limiting growth factors.)
+{record_delimiter}
+("entity"{tuple_delimiter}E2F-GFP REPORTER{tuple_delimiter}GENE NETWORK{tuple_delimiter}The E2F-GFP reporter is a genetic construct used to monitor the activity of the E2F transcription factor, indicating cellular states such as quiescence.)
+{record_delimiter}
+("relationship"{tuple_delimiter}MICROFLUIDIC PLATFORM{tuple_delimiter}QUIESCENCE{tuple_delimiter}The microfluidic platform was used to induce quiescence in cells through controlled environmental conditions.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}Quiescence in cells was induced under specific extracellular fluid flow conditions, demonstrating a direct relationship between fluid dynamics and cellular state.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}SERUM-STARVATION MEDIUM{tuple_delimiter}QUIESCENCE{tuple_delimiter}The use of serum-starvation medium is a method to induce quiescence in cells, linking nutrient availability to cellular state.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}E2F-GFP REPORTER{tuple_delimiter}QUIESCENCE{tuple_delimiter}The E2F-GFP reporter indicates the quiescent state of cells, showing a relationship between gene expression and cellular state.{tuple_delimiter}8)
+{completion_delimiter}
+#############################
+
+
+Example 5:
+
+entity_types: [cellular state, quiescence, senescence, gene network, microfluidic system, extracellular fluid flow, shear stress, autophagy, stem cells, fibroblasts, gene expression, protein aggregates]
+text:
+.gov/geo/query/acc.cgi?acc=GSE124109. Deposited 11 October 2019.
+27. N. E. Sharpless, C. J. Sherr, Forging a signature of in vivo senescence. Nat. Rev. Cancer
+15, 397–408 (2015).
+28. G. Yu, L.-G. Wang, Y. Han, Q.-Y. He, clusterProfiler: An R package for comparing
+biological themes among gene clusters. OMICS 16, 284–287 (2012).
+29. W. Huang, B. T. Sherman, R. A. Lempicki, Systematic and integrative analysis of large
+gene lists using DAVID bioinformatics resources. Nat. Protoc. 4, 44–57 (2009).
+30. A. Subramanian et al., Gene set enrichment analysis: A knowledge-based approach
+for interpreting genome-wide expression profiles. Proc
+------------------------
+output:
+("entity"{tuple_delimiter}N. E. SHARPLESS{tuple_delimiter}PERSON{tuple_delimiter}N. E. Sharpless is a researcher known for work on in vivo senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}C. J. SHERR{tuple_delimiter}PERSON{tuple_delimiter}C. J. Sherr is a researcher who collaborates with N. E. Sharpless on senescence studies.)
+{record_delimiter}
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}CELLULAR STATE{tuple_delimiter}Senescence is a cellular state characterized by permanent cell cycle arrest and is associated with aging and various diseases.)
+{record_delimiter}
+("entity"{tuple_delimiter}GENE NETWORK{tuple_delimiter}GENE NETWORK{tuple_delimiter}A gene network is a collection of molecular interactions between genes and their products that regulate gene expression and cellular functions.)
+{record_delimiter}
+("entity"{tuple_delimiter}CLUSTERPROFILER{tuple_delimiter}GENE NETWORK{tuple_delimiter}ClusterProfiler is an R package used for comparing biological themes among gene clusters.)
+{record_delimiter}
+("entity"{tuple_delimiter}DAVID{tuple_delimiter}GENE NETWORK{tuple_delimiter}DAVID is a bioinformatics resource for systematic and integrative analysis of large gene lists.)
+{record_delimiter}
+("entity"{tuple_delimiter}GENE SET ENRICHMENT ANALYSIS{tuple_delimiter}GENE NETWORK{tuple_delimiter}Gene set enrichment analysis is a method for interpreting genome-wide expression profiles based on known biological pathways.)
+{record_delimiter}
+("relationship"{tuple_delimiter}N. E. SHARPLESS{tuple_delimiter}SENESCENCE{tuple_delimiter}N. E. Sharpless has contributed to the understanding of senescence in cancer research{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}C. J. SHERR{tuple_delimiter}SENESCENCE{tuple_delimiter}C. J. Sherr collaborates with N. E. Sharpless on research related to senescence{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}CLUSTERPROFILER{tuple_delimiter}GENE NETWORK{tuple_delimiter}ClusterProfiler is used to analyze gene networks and biological themes among gene clusters{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}DAVID{tuple_delimiter}GENE NETWORK{tuple_delimiter}DAVID provides tools for the analysis of gene networks and large gene lists{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}GENE SET ENRICHMENT ANALYSIS{tuple_delimiter}GENE NETWORK{tuple_delimiter}Gene set enrichment analysis is a technique used to interpret gene networks based on expression profiles{tuple_delimiter}7)
+{completion_delimiter}
+#############################
+
+
+
 -Real Data-
 ######################
-Entity_types: {entity_types}
-Text: {input_text}
+entity_types: [cellular state, quiescence, senescence, gene network, microfluidic system, extracellular fluid flow, shear stress, autophagy, stem cells, fibroblasts, gene expression, protein aggregates]
+text: {input_text}
 ######################
-Output:
+output:
