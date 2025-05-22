@@ -1,0 +1,1090 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="BIOMEDICINES" />
+    <node id="GUANG YAO" />
+    <node id="DEPARTMENT OF MOLECULAR &amp; CELLULAR BIOLOGY" />
+    <node id="UNIVERSITY OF ARIZONA" />
+    <node id="CELLULAR SENESCENCE" />
+    <node id="QUIESCENCE-ORIGIN SENESCENCE" />
+    <node id="AGING" />
+    <node id="SENESCENCE-ASSOCIATED SECRETORY PHENOTYPE (SASP)" />
+    <node id="QUIESCENCE" />
+    <node id="TISSUE HOMEOSTASIS" />
+    <node id="CANCER" />
+    <node id="REGENERATIVE MEDICINE" />
+    <node id="RB&#8211;E2F SWITCH THRESHOLD" />
+    <node id="SENESCENT CELLS" />
+    <node id="QUESCENCE" />
+    <node id="SENESCENCE" />
+    <node id="AGE-RELATED DISEASES" />
+    <node id="MUSCLE STEM CELLS" />
+    <node id="P16INK4A" />
+    <node id="REACTIVE OXYGEN SPECIES" />
+    <node id="AUTOPHAGY" />
+    <node id="LYSOSOMAL AUTOPHAGY" />
+    <node id="CHLOROQUINE" />
+    <node id="QUESCENCE DEEPENING" />
+    <node id="GERIATRIC HUMAN MUSCLE" />
+    <node id="DNA DAMAGE" />
+    <node id="CELL CYCLE ARREST" />
+    <node id="TRANSCRIPTOMIC PROFILE" />
+    <node id="QUESCENCE-ORIGIN SENESCENCE" />
+    <node id="CELL DORMANCY-STATE PLASTICITY" />
+    <node id="LYSOSOMAL AUTOPHAGY ACTIVITY" />
+    <node id="ROS ACCUMULATION" />
+    <node id="NEURAL STEM CELLS (NSCS)" />
+    <node id="GERIATRIC MUSCLE STEM CELLS (MUSCS)" />
+    <node id="QUESCENCE DEPTH SCORE (QDS)" />
+    <node id="SENESCENCE CORE SIGNATURE GENES" />
+    <node id="SA-&#914;-GAL" />
+    <node id="LAMP1" />
+    <node id="IL8" />
+    <node id="53BP1" />
+    <node id="P21" />
+    <node id="LAMIN B1" />
+    <node id="CELL SIZE" />
+    <node id="REFS" />
+    <node id="RB&#8211;E2F PATHWAY" />
+    <node id="RB-E2F SWITCH" />
+    <node id="LYSOSOMAL AUTOPHAGY AXIS" />
+    <node id="P16" />
+    <node id="G1 CYCLINS" />
+    <node id="NOTCH-HES1 PATHWAY" />
+    <node id="MICRORNA" />
+    <node id="MUSCS" />
+    <node id="LKB1-AMPK PATHWAY" />
+    <node id="ROS" />
+    <node id="GEROCONVERSION" />
+    <node id="P53" />
+    <node id="DNA DAMAGE RESPONSE" />
+    <node id="SAHF" />
+    <node id="E2F TARGET GENES" />
+    <node id="DNA METHYLATION" />
+    <node id="HISTONE MODIFICATION" />
+    <node id="CELLULAR AGING" />
+    <node id="P16 LOCUS" />
+    <node id="KETONE BODY" />
+    <node id="P53 LOCUS" />
+    <node id="HSPCS" />
+    <node id="P38 MAPK" />
+    <node id="CELL CYCLE" />
+    <node id="CELLULAR HETEROGENEITY" />
+    <node id="QUESCENCE-TO-SENESCENCE TRANSITION" />
+    <node id="MOLECULAR MARKERS" />
+    <node id="CELL" />
+    <node id="PROTEOME REMODELING" />
+    <node id="MOL. CELL" />
+    <node id="GERICONVERSION" />
+    <node id="J. CLIN. INVESTIG." />
+    <node id="PLOS ONE" />
+    <node id="LIVER" />
+    <node id="MAMMALIAN DNA SYNTHESIS" />
+    <node id="CELL TURNOVER" />
+    <node id="HES1" />
+    <node id="PLOS BIOLOGY" />
+    <node id="DEV. CELL" />
+    <node id="NATURE REV. MOL. CELL BIOL." />
+    <node id="PROC. NATL. ACAD. SCI. USA" />
+    <node id="WI-38 FIBROBLASTS" />
+    <node id="AGE-DEPENDENT REGULATION" />
+    <node id="J. CELL PHYSIOLOGY" />
+    <node id="WI-38 CELLS" />
+    <node id="GROWTH FACTOR" />
+    <node id="MOUSE 3T3 CELLS" />
+    <node id="CELL BIOLOGY INTERNATIONAL REPORT" />
+    <node id="CELL REPORT" />
+    <node id="CELL STEM CELL" />
+    <node id="AGING CELL" />
+    <node id="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" />
+    <node id="NEURAL STEM CELLS" />
+    <node id="C. ELEGANS" />
+    <node id="CELLULAR QUIESCENCE" />
+    <node id="CELL DORMANCY PLASTICITY" />
+    <node id="URBAN, N." />
+    <node id="CHEUNG, T.H." />
+    <node id="FRONT. CELL DEV. BIOL." />
+    <node id="K. FUJIMAKI" />
+    <node id="G. YAO" />
+    <node id="BROOKS, R.F." />
+    <node id="M.T. WEI" />
+    <node id="GENOMIC HALLMARKS" />
+    <node id="NATURE" />
+    <node id="M.T. GORE" />
+    <node id="P27" />
+    <node id="RODGERS, J.T." />
+    <node id="KING, K.Y." />
+    <node id="BRETT, J.O." />
+    <node id="CROMIE, M.J." />
+    <node id="CHARVILLE, G.W." />
+    <node id="MAGUIRE, K.K." />
+    <node id="BRUNSON, C." />
+    <node id="MASTEY, N." />
+    <node id="LIU, L." />
+    <node id="TSAI, C.-R." />
+    <node id="HGFA" />
+    <node id="LLORENS-BOBADILLA, E." />
+    <node id="ZHAO, S." />
+    <node id="BASER, A." />
+    <node id="SAIZ-CASTRO, G." />
+    <node id="ZWADLO, K." />
+    <node id="MARTIN-VILLALBA, A." />
+    <node id="JOURNAL OF CELL BIOLOGY" />
+    <node id="ZHANG, X." />
+    <node id="LI, Y." />
+    <node id="GAO, J." />
+    <node id="WIECEK, A.J." />
+    <node id="CUTTY, S.J." />
+    <node id="KORNAI, D." />
+    <node id="PARENO-CENTENO, M." />
+    <node id="GOURMET, L.E." />
+    <node id="TAGLIAZUCCHI, G.M." />
+    <node id="JACOBSON, D.H." />
+    <node id="XIONG, L." />
+    <node id="BOND, G.L." />
+    <node id="HERNANDEZ-SEGURA, A." />
+    <node id="DE MAGALHAES, J.P." />
+    <node id="CAMPISI, J." />
+    <node id="DEMARIA, M." />
+    <node id="TRUSKOWSKI, K." />
+    <node id="CANCER METASTASIS REV." />
+    <node id="AMEND, S.R." />
+    <node id="PIENTA, K.J." />
+    <node id="NATURAL COMMUNICATION" />
+    <node id="LYSOSOME ACTIVATION" />
+    <node id="D.S. ASHRAF" />
+    <node id="B. FERNANDEZ" />
+    <node id="S.L. SPENCER" />
+    <node id="SCIENCE" />
+    <node id="HUMAN CELLULAR SENESCENCE" />
+    <node id="J.P. DE MAGALHAES" />
+    <node id="QUIESCENT NEURAL STEM CELLS" />
+    <node id="D.S. LEEMAN" />
+    <node id="K. HEBESTREIT" />
+    <node id="T. RUETZ" />
+    <node id="A.E. WEBB" />
+    <node id="A. MCKAY" />
+    <node id="E.A. POLLINA" />
+    <node id="B.W. DULKEN" />
+    <node id="X. ZHAO" />
+    <node id="R.W. YEO" />
+    <node id="T.T. HO" />
+    <node id="X. WANG" />
+    <node id="E2F" />
+    <node id="RB/E2F PATHWAY" />
+    <node id="APC/C" />
+    <node id="J.R. NEVINS" />
+    <node id="N. DYSON" />
+    <node id="R.C. SEARS" />
+    <node id="J.M. TRIMARCHI" />
+    <node id="S. POLAGER" />
+    <node id="D. BEAUS&#201;JOUR" />
+    <node id="J.W. SHAY" />
+    <node id="S.D. CAPPELL" />
+    <node id="KETONE BODY SIGNALING" />
+    <node id="PAJALUNGA, D." />
+    <node id="MAZZOLA, A." />
+    <node id="SALZANO, A.M." />
+    <node id="BIFERI, M.G." />
+    <node id="DE LUCA, G." />
+    <node id="CRESCENZI, M." />
+    <node id="MOLECULAR CELL" />
+    <node id="REYES, J." />
+    <node id="CHEN, J.-Y." />
+    <node id="STEWART-ORNSTEIN, J." />
+    <node id="KARHOHS, K.W." />
+    <node id="MOCK, C.S." />
+    <node id="LAHAV, G." />
+    <node id="MOLECULAR SYSTEMS BIOLOGY" />
+    <node id="STALLAERT, W." />
+    <node id="TAYLOR, S.R." />
+    <node id="KEDZIORA, K.M." />
+    <node id="TAYLOR, C.D." />
+    <node id="SOBON, H.K." />
+    <node id="YOUNG, C.L." />
+    <node id="LIMAS, J.C." />
+    <node id="HOLLOWAY, J.V." />
+    <node id="JOHNSON, M.S." />
+    <node id="COOK, J.G." />
+    <node id="RAPAMYCIN" />
+    <node id="R.B." />
+    <node id="CELLS" />
+    <node id="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" />
+    <node id="KOTARO FUJIMAKI" />
+    <node id="RUOYAN LI" />
+    <node id="HENGYU CHEN" />
+    <node id="KIMIKO DELLA CROCE" />
+    <node id="HAO HELEN ZHANG" />
+    <node id="JIANHUA XING" />
+    <node id="FAN BAI" />
+    <node id="PEKING UNIVERSITY" />
+    <node id="UNIVERSITY OF PITTSBURGH" />
+    <node id="LYSOSOMAL FUNCTION" />
+    <node id="OXIDATIVE STRESS" />
+    <node id="RAT EMBRYONIC FIBROBLASTS" />
+    <node id="GENE-EXPRESSION SIGNATURE" />
+    <node id="DORMANCY" />
+    <node id="CELL PROLIFERATION" />
+    <node id="HYPERPROLIFERATIVE DISEASES" />
+    <node id="HYPOPROLIFERATIVE DISEASES" />
+    <node id="SERUM STARVATION" />
+    <node id="CONTACT INHIBITION" />
+    <node id="AUTOPHAGY FLUX" />
+    <node id="REACTIVE OXYGEN SPECIES (ROS)" />
+    <node id="REF CELLS" />
+    <node id="E2F1" />
+    <node id="TRANSCRIPTOME CHANGES" />
+    <node id="SENESCENCE CORE SIGNATURE" />
+    <node id="5-ETHYNYL-2'-DEOXYURIDINE (EDU)" />
+    <node id="LYSOSOMAL GENE EXPRESSION" />
+    <node id="LYSOSOMAL MASS" />
+    <node id="CDK2" />
+    <node id="CDK4" />
+    <node id="RB1" />
+    <node id="CDKN1A (P21CIP1)" />
+    <node id="CDKN1B (P27KIP1)" />
+    <node id="CDKN2A (P16INK4A)" />
+    <node id="EDU INCORPORATION" />
+    <node id="MAMMALIAN TARGET OF RAPAMYCIN (MTOR)" />
+    <node id="LYSOTRACKER INTENSITY" />
+    <node id="GENE-EXPRESSION DYNAMICS" />
+    <node id="DIFFERENTIALLY EXPRESSED GENES" />
+    <node id="PRINCIPAL COMPONENT ANALYSIS (PCA)" />
+    <node id="LYSOTRACKER" />
+    <node id="LC3-II TURNOVER ASSAY" />
+    <node id="LYSOSOME DESTRUCTION" />
+    <node id="NOCODAZOLE" />
+    <node id="VINBLASTINE" />
+    <node id="AUTOPHAGIC CLEARANCE" />
+    <node id="BAFILOMYCIN A1" />
+    <node id="E2F-GFP REPORTER" />
+    <node id="PROPIDIUM IODIDE STAINING" />
+    <node id="CQ" />
+    <node id="BAF" />
+    <node id="DMSO" />
+    <node id="NUTRIENT STARVATION" />
+    <node id="SERUM STIMULATION" />
+    <node id="&#914;-GALACTOSIDASE" />
+    <node id="MIT/TFE FAMILY" />
+    <node id="EDU" />
+    <node id="E2F-GFP" />
+    <node id="PI STAINING" />
+    <node id="QUIESCENCE-DEPTH ASSAY" />
+    <node id="MITF" />
+    <node id="LYSOTRACKING" />
+    <node id="LC3-II TURNOVER" />
+    <node id="ANTIOXIDATION" />
+    <node id="TERT-BUTYL HYDROPEROXIDE" />
+    <node id="MITF-GFP" />
+    <node id="MCHERRY" />
+    <node id="TBHP" />
+    <node id="METHYL PYRUVATE" />
+    <node id="MITOSOX" />
+    <node id="EDU ASSAY" />
+    <node id="MITO-SOX" />
+    <node id="QUESCENCE-DEPTH GENE SIGNATURE" />
+    <node id="QUESCENCE-DEPTH SCORE (QDS)" />
+    <node id="PRIMED NSCS" />
+    <node id="LYSOSOME-AUTOPHAGY PATHWAY" />
+    <node id="LYSOSOMAL BIOGENESIS" />
+    <node id="QUESCENCE DEPTH SIGNATURE" />
+    <node id="HSCS" />
+    <node id="ADRIAMYCIN" />
+    <node id="5-AZA-2-DEOXYCYTIDINE" />
+    <node id="H2O2" />
+    <node id="RNA-SEQ" />
+    <node id="MCOLN1" />
+    <node id="DEEP QUIESCENCE" />
+    <node id="MITOPHAGY" />
+    <node id="KEGG_LYSOSOME GENE SET" />
+    <node id="LYSOSOMAL GENES" />
+    <node id="GOLGI NETWORK" />
+    <node id="MTOCR1" />
+    <node id="LYSOSOME-AUTOPHAGY" />
+    <node id="RB-E2F-CYCLIN/CDK NETWORK" />
+    <node id="SHALLOW QUIESCENCE" />
+    <node id="QUIESCENCE DEEPENING" />
+    <node id="PROTEIN AGGREGATES" />
+    <node id="REF52 CELLS" />
+    <node id="E2F1 PROMOTER-DRIVEN DESTABILIZED EGFP" />
+    <node id="PI DNA STAINING" />
+    <node id="GENE EXPRESSION OMNIBUS" />
+    <node id="NATIONAL SCIENCE FOUNDATION" />
+    <node id="NATIONAL INSTITUTES OF HEALTH" />
+    <node id="SERUM-STARVATION MEDIUM" />
+    <node id="SERUM-STIMULATION MEDIUM" />
+    <node id="D.R. SOPRANO" />
+    <node id="JOURNAL OF CELL PHYSIOLOGY" />
+    <node id="K.J. SOPRANO" />
+    <node id="EXP. CELL RES." />
+    <node id="DENSITY-DEPENDENT GROWTH ARREST" />
+    <node id="LYSOSOMAL DIMMER SWITCH" />
+    <node id="BISTABILITY" />
+    <node id="L.H. AUGENLICHT" />
+    <node id="J.S. KWON" />
+    <node id="L. GARC&#205;A-PRAT" />
+    <node id="H.T. KANG" />
+    <node id="S. MARTHANDAN" />
+    <node id="J.J. LUM" />
+    <node id="N. MIZUSHIMA" />
+    <node id="A. HERNANDEZ-SEGURA" />
+    <node id="CURRENT BIOLOGY" />
+    <node id="M. PURCELL" />
+    <node id="A. GROVER" />
+    <node id="NAT. COMMUN." />
+    <node id="Y. YU" />
+    <node id="MOL. SYST. BIOL." />
+    <node id="NAT. CELL BIOL." />
+    <node id="N.E. SHARPLESS" />
+    <node id="NAT. REV. CANCER" />
+    <node id="G. YU" />
+    <node id="OMICS" />
+    <node id="W. HUANG" />
+    <node id="NAT. PROTOC." />
+    <node id="A. SUBRAMANIAN" />
+    <node id="PROC. NATL. ACAD. SCI. U.S.A." />
+    <node id="F. NAZIO" />
+    <node id="J. CELL BIOL." />
+    <node id="J. HASEGAWA" />
+    <node id="METHODS" />
+    <node id="C. PAPADOPOULOS" />
+    <node id="H. MEYER" />
+    <node id="AUTOPHAGY RESEARCH" />
+    <node id="GUIDELINES FOR MONITORING AUTOPHAGY" />
+    <node id="SELECTIVE AUTOPHAGY" />
+    <node id="LYSOPHAGY" />
+    <node id="ENDO-LYSOSOMAL DAMAGE RESPONSE" />
+    <node id="CYTOSKELETON" />
+    <node id="SENESCENCE-ASSOCIATED GENES" />
+    <node id="IGFBP-3" />
+    <node id="WNT SIGNALING" />
+    <node id="PANCREATIC CANCER METABOLISM" />
+    <node id="DROSOPHILA MITF" />
+    <node id="LYSOSOMAL-AUTOPHAGIC PATHWAY" />
+    <node id="LONG-TERM QUIESCENT FIBROBLASTS" />
+    <node id="REPLICATIVE SENESCENCE" />
+    <node id="KIDNEY INJURY" />
+    <node id="MUCOLIPIDOSIS TYPE IV" />
+    <node id="LYSOSOMAL DYSFUNCTION" />
+    <node id="AGE-RELATED ACCUMULATION OF PROTEIN CARBONYL" />
+    <node id="LIVER PROTEOLYTIC ACTIVITIES" />
+    <node id="CHAPERONE-MEDIATED AUTOPHAGY" />
+    <node id="AGE-RELATED DECLINE" />
+    <node id="CELL BIOLOGY" />
+    <node id="CELLULAR CLEARANCE" />
+    <node id="ENERGY METABOLISM" />
+    <node id="PROTEOLYTIC ACTIVITIES" />
+    <node id="FIBROBLASTS" />
+    <node id="DNA-DAMAGE-AND-REPAIR GENES" />
+    <node id="QUESCENCE DEPTH" />
+    <node id="AUTOPHAGIC CAPACITY" />
+    <node id="HS68 CELLS" />
+    <node id="LYSOSOMES" />
+    <node id="NATURAL REVIEWS MOLECULAR CELL BIOLOGY" />
+    <node id="TSC-MTOR" />
+    <node id="HEMATOPOIETIC STEM CELLS" />
+    <node id="PRIMORDIAL FOLLICLES" />
+    <node id="JOURNAL OF EXPERIMENTAL MEDICINE" />
+    <node id="HUMAN MOLECULAR GENETICS" />
+    <node id="MTOR SIGNALING" />
+    <node id="TRANSCRIPTION FACTOR EB (TFEB)" />
+    <node id="CANCER METASTASIS" />
+    <node id="ONCOGENE" />
+    <node id="LUNG CANCER" />
+    <node id="NATURE COMMUNICATIONS" />
+    <node id="EMBO JOURNAL" />
+    <node id="BACTERIAL DORMANCY" />
+    <node id="NATURAL REVIEWS CANCER" />
+    <node id="C. SCHWARZ" />
+    <node id="INTERNATIONAL JOURNAL OF DEVELOPMENTAL BIOLOGY" />
+    <node id="S. L. SPENCER" />
+    <node id="D. SUN" />
+    <node id="FEBS JOURNAL" />
+    <node id="J. P. MATSON" />
+    <node id="MECHANISMS OF AGEING AND DEVELOPMENT" />
+    <node id="R. C. ADELMAN" />
+    <node id="NATURE MEDICINE" />
+    <node id="EXPERIMENTAL CELL RESEARCH" />
+    <node id="MOUSE GENOME DATABASE" />
+    <node id="B. G. CHILDS" />
+    <node id="J. W. SHAY" />
+    <node id="NATURE REVIEWS MOLECULAR CELL BIOLOGY" />
+    <node id="J. CAMPISI" />
+    <node id="D. C. BENNETT" />
+    <node id="CURRENT OPINION IN CELL BIOLOGY" />
+    <node id="TRENDS IN BIOCHEMICAL SCIENCES" />
+    <node id="J. J. TYSON" />
+    <node id="EXTRACELLULAR FLUID FLOW" />
+    <node id="MICROFLUIDICS" />
+    <node id="CELL QUIESCENCE" />
+    <node id="SHEAR STRESS" />
+    <node id="EXTRACELLULAR FACTORS" />
+    <node id="MICROENVIRONMENT" />
+    <node id="MATHEMATICAL MODEL" />
+    <node id="RB-E2F BISTABLE SWITCH" />
+    <node id="XIA WANG" />
+    <node id="LINAN JIANG" />
+    <node id="YITSHAK ZOHAR" />
+    <node id="BI LIU" />
+    <node id="HEPATOCYTES" />
+    <node id="HYDRODYNAMIC SHEAR STRESS" />
+    <node id="MICROFLUIDIC SYSTEM" />
+    <node id="INTERSTITIAL FLOW" />
+    <node id="NUTRIENTS" />
+    <node id="REF/E23 CELLS" />
+    <node id="CELL CULTURE" />
+    <node id="DEXTRAN" />
+    <node id="FLOW RATE" />
+    <node id="PRESSURE-DRIVEN FLOW" />
+    <node id="BONDING STRENGTH" />
+    <node id="MICROFLUIDIC DEVICES" />
+    <node id="FIBRONECTIN" />
+    <node id="MEDIUM" />
+    <node id="CELL SUSPENSION" />
+    <node id="LIU ET AL." />
+    <node id="SERUM STIMULATION MEDIUM" />
+    <node id="MICRODEVICE" />
+    <node id="RB-E2F BISTABLE SWITCH MODEL" />
+    <node id="FLOW CYTOMETRY" />
+    <node id="MATHEMATICAL MODELING" />
+    <node id="STOCHASTIC SIMULATIONS" />
+    <node id="NUTRIENT DEPLETION" />
+    <node id="E2F-ON%" />
+    <node id="STATIC MEDIUM" />
+    <node id="MECHANICAL SHEAR STRESS" />
+    <node id="EXTRACELLULAR FACTOR REPLACEMENT" />
+    <node id="FRESH-MEDIUM CONFIGURATION" />
+    <node id="RECYCLED-MEDIUM CONFIGURATION" />
+    <node id="CELL CYCLE REENTRY" />
+    <node id="FR" />
+    <node id="E2F-ACTIVATION THRESHOLD" />
+    <node id="SERUM STARVATION MEDIUM" />
+    <node id="SERUM" />
+    <node id="QUIESCENCE DEPTH" />
+    <node id="CELL POPULATIONS" />
+    <node id="EXTRACELLULAR FLOW" />
+    <node id="SERUM-STIMULATION" />
+    <node id="HILL FUNCTION" />
+    <node id="CELL MORPHOLOGY" />
+    <node id="SERUM DEPRIVATION" />
+    <node id="LOSS OF ADHESION" />
+    <node id="CELL ATTACHMENT" />
+    <node id="INFLAMMATION" />
+    <node id="MEDIUM VISCOSITY" />
+    <node id="TISSUE REPAIR" />
+    <node id="MICROFLUIDIC DEVICE" />
+    <node id="MOLECULAR REGULATION OF STEM CELL QUIESCENCE" />
+    <node id="FLUID FLOWS AND FORCES IN DEVELOPMENT" />
+    <node id="GRADIENT REGULATION OF CELLULAR QUIESCENCE DEPTH" />
+    <node id="CELL ACTIVATION" />
+    <node id="G0 STATE" />
+    <node id="INTERSTITIAL FLUID FLOW" />
+    <node id="CARDIAC FIBROBLAST" />
+    <node id="AT1R" />
+    <node id="TGF-B1" />
+    <node id="FLUID SHEAR STRESS" />
+    <node id="OVARIAN CANCER CELL" />
+    <node id="TRANSPORT OF MOLECULES" />
+    <node id="CANCER RESEARCH" />
+    <node id="E2F NETWORK" />
+    <node id="ADULT STEM CELLS" />
+    <node id="MECHANICAL FORCE-INDUCED SIGNAL TRANSDUCTION" />
+    <node id="INTERNAL MEDIAL SMOOTH MUSCLE CELLS" />
+    <node id="SINGLE-CELL TRANSCRIPTOMICS" />
+    <node id="STEM CELL SELF-RENEWAL" />
+    <node id="NATURE REVIEWS GENETICS" />
+    <node id="CELL PHYSIOLOGY" />
+    <node id="NATIONAL ACADEMY OF SCIENCES" />
+    <node id="ANNUAL REVIEW OF BIOMEDICAL ENGINEERING" />
+    <node id="FASEB JOURNAL" />
+    <node id="TUMOR CELL MIGRATION" />
+    <node id="ANGIOGENESIS" />
+    <node id="VASCULAR SMOOTH MUSCLE CELLS" />
+    <node id="AMERICAN JOURNAL OF PHYSIOLOGY-HEART AND CIRCULATORY PHYSIOLOGY" />
+    <node id="FLK-1-POSITIVE EMBRYONIC STEM CELLS" />
+    <node id="LIU" />
+    <node id="WANG" />
+    <node id="JIANG" />
+    <node id="XU" />
+    <node id="ZOHAR" />
+    <node id="YAO" />
+    <node id="SELF-RENEWAL" />
+    <edge source="BIOMEDICINES" target="GUANG YAO" />
+    <edge source="BIOMEDICINES" target="QUESCENCE DEEPENING" />
+    <edge source="GUANG YAO" target="DEPARTMENT OF MOLECULAR &amp; CELLULAR BIOLOGY" />
+    <edge source="GUANG YAO" target="UNIVERSITY OF ARIZONA" />
+    <edge source="GUANG YAO" target="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" />
+    <edge source="GUANG YAO" target="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" />
+    <edge source="UNIVERSITY OF ARIZONA" target="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" />
+    <edge source="CELLULAR SENESCENCE" target="QUIESCENCE-ORIGIN SENESCENCE" />
+    <edge source="CELLULAR SENESCENCE" target="AGING" />
+    <edge source="CELLULAR SENESCENCE" target="SENESCENCE-ASSOCIATED SECRETORY PHENOTYPE (SASP)" />
+    <edge source="CELLULAR SENESCENCE" target="CELL" />
+    <edge source="CELLULAR SENESCENCE" target="GERICONVERSION" />
+    <edge source="CELLULAR SENESCENCE" target="J. CLIN. INVESTIG." />
+    <edge source="CELLULAR SENESCENCE" target="PLOS ONE" />
+    <edge source="CELLULAR SENESCENCE" target="LIVER" />
+    <edge source="CELLULAR SENESCENCE" target="MAMMALIAN DNA SYNTHESIS" />
+    <edge source="CELLULAR SENESCENCE" target="CELL TURNOVER" />
+    <edge source="CELLULAR SENESCENCE" target="JOURNAL OF CELL BIOLOGY" />
+    <edge source="CELLULAR SENESCENCE" target="HERNANDEZ-SEGURA, A." />
+    <edge source="CELLULAR SENESCENCE" target="DE MAGALHAES, J.P." />
+    <edge source="CELLULAR SENESCENCE" target="CAMPISI, J." />
+    <edge source="CELLULAR SENESCENCE" target="DEMARIA, M." />
+    <edge source="CELLULAR SENESCENCE" target="RAPAMYCIN" />
+    <edge source="CELLULAR SENESCENCE" target="R.B." />
+    <edge source="CELLULAR SENESCENCE" target="CELLS" />
+    <edge source="CELLULAR SENESCENCE" target="QUIESCENCE" />
+    <edge source="CELLULAR SENESCENCE" target="SENESCENCE CORE SIGNATURE" />
+    <edge source="CELLULAR SENESCENCE" target="QUESCENCE" />
+    <edge source="CELLULAR SENESCENCE" target="QUESCENCE-DEPTH SCORE (QDS)" />
+    <edge source="CELLULAR SENESCENCE" target="AUTOPHAGY" />
+    <edge source="CELLULAR SENESCENCE" target="QUIESCENCE DEEPENING" />
+    <edge source="CELLULAR SENESCENCE" target="H2O2" />
+    <edge source="CELLULAR SENESCENCE" target="NATURAL REVIEWS CANCER" />
+    <edge source="CELLULAR SENESCENCE" target="CELLULAR QUIESCENCE" />
+    <edge source="CELLULAR SENESCENCE" target="CELL DORMANCY PLASTICITY" />
+    <edge source="QUIESCENCE-ORIGIN SENESCENCE" target="QUIESCENCE" />
+    <edge source="QUIESCENCE-ORIGIN SENESCENCE" target="CANCER" />
+    <edge source="QUIESCENCE-ORIGIN SENESCENCE" target="REGENERATIVE MEDICINE" />
+    <edge source="QUIESCENCE-ORIGIN SENESCENCE" target="RB&#8211;E2F SWITCH THRESHOLD" />
+    <edge source="AGING" target="QUESCENCE-DEPTH SCORE (QDS)" />
+    <edge source="AGING" target="AUTOPHAGY" />
+    <edge source="AGING" target="KEGG_LYSOSOME GENE SET" />
+    <edge source="AGING" target="DEEP QUIESCENCE" />
+    <edge source="QUIESCENCE" target="TISSUE HOMEOSTASIS" />
+    <edge source="QUIESCENCE" target="RB-E2F SWITCH" />
+    <edge source="QUIESCENCE" target="SENESCENCE" />
+    <edge source="QUIESCENCE" target="MUSCS" />
+    <edge source="QUIESCENCE" target="LKB1-AMPK PATHWAY" />
+    <edge source="QUIESCENCE" target="CELL" />
+    <edge source="QUIESCENCE" target="HES1" />
+    <edge source="QUIESCENCE" target="PLOS BIOLOGY" />
+    <edge source="QUIESCENCE" target="DEV. CELL" />
+    <edge source="QUIESCENCE" target="NATURE REV. MOL. CELL BIOL." />
+    <edge source="QUIESCENCE" target="PROC. NATL. ACAD. SCI. USA" />
+    <edge source="QUIESCENCE" target="WI-38 FIBROBLASTS" />
+    <edge source="QUIESCENCE" target="WI-38 CELLS" />
+    <edge source="QUIESCENCE" target="NEURAL STEM CELLS" />
+    <edge source="QUIESCENCE" target="C. ELEGANS" />
+    <edge source="QUIESCENCE" target="LYSOSOMAL FUNCTION" />
+    <edge source="QUIESCENCE" target="RAT EMBRYONIC FIBROBLASTS" />
+    <edge source="QUIESCENCE" target="GENE-EXPRESSION SIGNATURE" />
+    <edge source="QUIESCENCE" target="DORMANCY" />
+    <edge source="QUIESCENCE" target="CELL PROLIFERATION" />
+    <edge source="QUIESCENCE" target="HYPERPROLIFERATIVE DISEASES" />
+    <edge source="QUIESCENCE" target="HYPOPROLIFERATIVE DISEASES" />
+    <edge source="QUIESCENCE" target="MUSCLE STEM CELLS" />
+    <edge source="QUIESCENCE" target="SERUM STARVATION" />
+    <edge source="QUIESCENCE" target="CONTACT INHIBITION" />
+    <edge source="QUIESCENCE" target="REF CELLS" />
+    <edge source="QUIESCENCE" target="E2F1" />
+    <edge source="QUIESCENCE" target="TRANSCRIPTOME CHANGES" />
+    <edge source="QUIESCENCE" target="CELL CYCLE" />
+    <edge source="QUIESCENCE" target="LYSOSOMAL GENE EXPRESSION" />
+    <edge source="QUIESCENCE" target="LYSOSOMAL MASS" />
+    <edge source="QUIESCENCE" target="CDK2" />
+    <edge source="QUIESCENCE" target="CDK4" />
+    <edge source="QUIESCENCE" target="RB1" />
+    <edge source="QUIESCENCE" target="CDKN1A (P21CIP1)" />
+    <edge source="QUIESCENCE" target="CDKN1B (P27KIP1)" />
+    <edge source="QUIESCENCE" target="CDKN2A (P16INK4A)" />
+    <edge source="QUIESCENCE" target="LYSOSOME DESTRUCTION" />
+    <edge source="QUIESCENCE" target="ANTIOXIDATION" />
+    <edge source="QUIESCENCE" target="TERT-BUTYL HYDROPEROXIDE" />
+    <edge source="QUIESCENCE" target="EDU" />
+    <edge source="QUIESCENCE" target="E2F-GFP REPORTER" />
+    <edge source="QUIESCENCE" target="MITF-GFP" />
+    <edge source="QUIESCENCE" target="OXIDATIVE STRESS" />
+    <edge source="QUIESCENCE" target="BAF" />
+    <edge source="QUIESCENCE" target="CQ" />
+    <edge source="QUIESCENCE" target="TBHP" />
+    <edge source="QUIESCENCE" target="METHYL PYRUVATE" />
+    <edge source="QUIESCENCE" target="LYSOSOME-AUTOPHAGY PATHWAY" />
+    <edge source="QUIESCENCE" target="LYSOSOMAL BIOGENESIS" />
+    <edge source="QUIESCENCE" target="QUESCENCE DEPTH SIGNATURE" />
+    <edge source="QUIESCENCE" target="HSCS" />
+    <edge source="QUIESCENCE" target="MTOCR1" />
+    <edge source="QUIESCENCE" target="DNA DAMAGE" />
+    <edge source="QUIESCENCE" target="RB-E2F-CYCLIN/CDK NETWORK" />
+    <edge source="QUIESCENCE" target="SHALLOW QUIESCENCE" />
+    <edge source="QUIESCENCE" target="DEEP QUIESCENCE" />
+    <edge source="QUIESCENCE" target="REF52 CELLS" />
+    <edge source="QUIESCENCE" target="SERUM-STARVATION MEDIUM" />
+    <edge source="QUIESCENCE" target="SERUM-STIMULATION MEDIUM" />
+    <edge source="QUIESCENCE" target="DEXTRAN" />
+    <edge source="QUIESCENCE" target="E2F-GFP" />
+    <edge source="QUIESCENCE" target="EDU INCORPORATION" />
+    <edge source="QUIESCENCE" target="SERUM STIMULATION MEDIUM" />
+    <edge source="QUIESCENCE" target="MICRODEVICE" />
+    <edge source="QUIESCENCE" target="RB-E2F BISTABLE SWITCH MODEL" />
+    <edge source="QUIESCENCE" target="REF/E23 CELLS" />
+    <edge source="QUIESCENCE" target="EXTRACELLULAR FLUID FLOW" />
+    <edge source="QUIESCENCE" target="NUTRIENT DEPLETION" />
+    <edge source="QUIESCENCE" target="MECHANICAL SHEAR STRESS" />
+    <edge source="QUIESCENCE" target="CELL CYCLE REENTRY" />
+    <edge source="QUIESCENCE" target="SHEAR STRESS" />
+    <edge source="QUIESCENCE" target="SERUM" />
+    <edge source="QUIESCENCE" target="RB-E2F BISTABLE SWITCH" />
+    <edge source="QUIESCENCE" target="EXTRACELLULAR FLOW" />
+    <edge source="QUIESCENCE" target="SERUM-STIMULATION" />
+    <edge source="QUIESCENCE" target="HILL FUNCTION" />
+    <edge source="QUIESCENCE" target="SERUM DEPRIVATION" />
+    <edge source="QUIESCENCE" target="LOSS OF ADHESION" />
+    <edge source="QUIESCENCE" target="SERUM STIMULATION" />
+    <edge source="QUIESCENCE" target="MEDIUM VISCOSITY" />
+    <edge source="QUIESCENCE" target="CELL MORPHOLOGY" />
+    <edge source="QUIESCENCE" target="INFLAMMATION" />
+    <edge source="QUIESCENCE" target="TISSUE REPAIR" />
+    <edge source="TISSUE HOMEOSTASIS" target="CELLULAR QUIESCENCE" />
+    <edge source="CANCER" target="SENESCENCE" />
+    <edge source="RB&#8211;E2F SWITCH THRESHOLD" target="RB&#8211;E2F PATHWAY" />
+    <edge source="SENESCENT CELLS" target="QUESCENCE" />
+    <edge source="QUESCENCE" target="SENESCENCE" />
+    <edge source="QUESCENCE" target="CQ" />
+    <edge source="QUESCENCE" target="BAF" />
+    <edge source="QUESCENCE" target="REF CELLS" />
+    <edge source="QUESCENCE" target="LYSOSOMAL FUNCTION" />
+    <edge source="QUESCENCE" target="NUTRIENT STARVATION" />
+    <edge source="QUESCENCE" target="SERUM STIMULATION" />
+    <edge source="QUESCENCE" target="MITO-SOX" />
+    <edge source="QUESCENCE" target="MITF" />
+    <edge source="QUESCENCE" target="SHEAR STRESS" />
+    <edge source="SENESCENCE" target="AGE-RELATED DISEASES" />
+    <edge source="SENESCENCE" target="MUSCLE STEM CELLS" />
+    <edge source="SENESCENCE" target="P16INK4A" />
+    <edge source="SENESCENCE" target="REACTIVE OXYGEN SPECIES" />
+    <edge source="SENESCENCE" target="AUTOPHAGY" />
+    <edge source="SENESCENCE" target="LYSOSOMAL AUTOPHAGY" />
+    <edge source="SENESCENCE" target="CHLOROQUINE" />
+    <edge source="SENESCENCE" target="QUESCENCE DEEPENING" />
+    <edge source="SENESCENCE" target="GERIATRIC HUMAN MUSCLE" />
+    <edge source="SENESCENCE" target="DNA DAMAGE" />
+    <edge source="SENESCENCE" target="CELL CYCLE ARREST" />
+    <edge source="SENESCENCE" target="QUESCENCE DEPTH SCORE (QDS)" />
+    <edge source="SENESCENCE" target="SENESCENCE CORE SIGNATURE GENES" />
+    <edge source="SENESCENCE" target="SA-&#914;-GAL" />
+    <edge source="SENESCENCE" target="LAMP1" />
+    <edge source="SENESCENCE" target="IL8" />
+    <edge source="SENESCENCE" target="53BP1" />
+    <edge source="SENESCENCE" target="P21" />
+    <edge source="SENESCENCE" target="LAMIN B1" />
+    <edge source="SENESCENCE" target="CELL SIZE" />
+    <edge source="SENESCENCE" target="ROS" />
+    <edge source="SENESCENCE" target="GEROCONVERSION" />
+    <edge source="SENESCENCE" target="P53" />
+    <edge source="SENESCENCE" target="DNA DAMAGE RESPONSE" />
+    <edge source="SENESCENCE" target="CELLULAR AGING" />
+    <edge source="SENESCENCE" target="WI-38 CELLS" />
+    <edge source="SENESCENCE" target="AGE-RELATED DECLINE" />
+    <edge source="SENESCENCE" target="FIBROBLASTS" />
+    <edge source="MUSCLE STEM CELLS" target="KETONE BODY SIGNALING" />
+    <edge source="MUSCLE STEM CELLS" target="CELLULAR QUIESCENCE" />
+    <edge source="AUTOPHAGY" target="MOUSE 3T3 CELLS" />
+    <edge source="AUTOPHAGY" target="SERUM STARVATION" />
+    <edge source="AUTOPHAGY" target="MAMMALIAN TARGET OF RAPAMYCIN (MTOR)" />
+    <edge source="AUTOPHAGY" target="LYSOSOME DESTRUCTION" />
+    <edge source="AUTOPHAGY" target="NOCODAZOLE" />
+    <edge source="AUTOPHAGY" target="VINBLASTINE" />
+    <edge source="AUTOPHAGY" target="REF CELLS" />
+    <edge source="AUTOPHAGY" target="LYSOSOMAL FUNCTION" />
+    <edge source="AUTOPHAGY" target="MITOPHAGY" />
+    <edge source="AUTOPHAGY" target="WI-38 CELLS" />
+    <edge source="AUTOPHAGY" target="CYTOSKELETON" />
+    <edge source="AUTOPHAGY" target="PANCREATIC CANCER METABOLISM" />
+    <edge source="AUTOPHAGY" target="KIDNEY INJURY" />
+    <edge source="AUTOPHAGY" target="CELL BIOLOGY" />
+    <edge source="AUTOPHAGY" target="CELLULAR CLEARANCE" />
+    <edge source="AUTOPHAGY" target="ENERGY METABOLISM" />
+    <edge source="AUTOPHAGY" target="MTOR SIGNALING" />
+    <edge source="AUTOPHAGY" target="TRANSCRIPTION FACTOR EB (TFEB)" />
+    <edge source="AUTOPHAGY" target="CANCER METASTASIS" />
+    <edge source="AUTOPHAGY" target="ONCOGENE" />
+    <edge source="LYSOSOMAL AUTOPHAGY" target="QUESCENCE DEEPENING" />
+    <edge source="CHLOROQUINE" target="REF CELLS" />
+    <edge source="QUESCENCE DEEPENING" target="TRANSCRIPTOMIC PROFILE" />
+    <edge source="QUESCENCE DEEPENING" target="LYSOSOMAL AUTOPHAGY ACTIVITY" />
+    <edge source="QUESCENCE DEEPENING" target="ROS ACCUMULATION" />
+    <edge source="QUESCENCE DEEPENING" target="NEURAL STEM CELLS (NSCS)" />
+    <edge source="QUESCENCE DEEPENING" target="GERIATRIC MUSCLE STEM CELLS (MUSCS)" />
+    <edge source="QUESCENCE DEEPENING" target="MUSCS" />
+    <edge source="QUESCENCE DEEPENING" target="REF CELLS" />
+    <edge source="DNA DAMAGE" target="CELL CYCLE" />
+    <edge source="DNA DAMAGE" target="EMBO JOURNAL" />
+    <edge source="QUESCENCE-ORIGIN SENESCENCE" target="CELL DORMANCY-STATE PLASTICITY" />
+    <edge source="LYSOSOMAL AUTOPHAGY ACTIVITY" target="REFS" />
+    <edge source="P21" target="RB-E2F SWITCH" />
+    <edge source="RB-E2F SWITCH" target="LYSOSOMAL AUTOPHAGY AXIS" />
+    <edge source="RB-E2F SWITCH" target="P16" />
+    <edge source="RB-E2F SWITCH" target="G1 CYCLINS" />
+    <edge source="RB-E2F SWITCH" target="NOTCH-HES1 PATHWAY" />
+    <edge source="RB-E2F SWITCH" target="MICRORNA" />
+    <edge source="RB-E2F SWITCH" target="CELL CYCLE" />
+    <edge source="P16" target="HUMAN CELLULAR SENESCENCE" />
+    <edge source="ROS" target="P16 LOCUS" />
+    <edge source="ROS" target="LYSOSOMAL FUNCTION" />
+    <edge source="ROS" target="LYSOSOME-AUTOPHAGY" />
+    <edge source="P53" target="HUMAN CELLULAR SENESCENCE" />
+    <edge source="SAHF" target="E2F TARGET GENES" />
+    <edge source="E2F TARGET GENES" target="R.B." />
+    <edge source="DNA METHYLATION" target="HISTONE MODIFICATION" />
+    <edge source="KETONE BODY" target="P53 LOCUS" />
+    <edge source="HSPCS" target="P38 MAPK" />
+    <edge source="CELL CYCLE" target="JOURNAL OF CELL BIOLOGY" />
+    <edge source="CELL CYCLE" target="MOLECULAR CELL" />
+    <edge source="CELL CYCLE" target="MOLECULAR SYSTEMS BIOLOGY" />
+    <edge source="CELL CYCLE" target="M. PURCELL" />
+    <edge source="CELL CYCLE" target="DNA-DAMAGE-AND-REPAIR GENES" />
+    <edge source="CELL CYCLE" target="QUESCENCE DEPTH" />
+    <edge source="CELL CYCLE" target="SERUM STARVATION" />
+    <edge source="CELLULAR HETEROGENEITY" target="QUESCENCE-TO-SENESCENCE TRANSITION" />
+    <edge source="QUESCENCE-TO-SENESCENCE TRANSITION" target="MOLECULAR MARKERS" />
+    <edge source="CELL" target="PROTEOME REMODELING" />
+    <edge source="CELL" target="MOL. CELL" />
+    <edge source="CELL" target="CELL BIOLOGY INTERNATIONAL REPORT" />
+    <edge source="CELL" target="CELL REPORT" />
+    <edge source="CELL" target="CELL STEM CELL" />
+    <edge source="CELL" target="AGING CELL" />
+    <edge source="CELL" target="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" />
+    <edge source="CELL" target="J.J. LUM" />
+    <edge source="CELL" target="N. MIZUSHIMA" />
+    <edge source="CELL" target="MTOR SIGNALING" />
+    <edge source="CELL" target="MOLECULAR CELL" />
+    <edge source="CELL" target="INTERNATIONAL JOURNAL OF DEVELOPMENTAL BIOLOGY" />
+    <edge source="CELL" target="NATURE COMMUNICATIONS" />
+    <edge source="CELL" target="S. L. SPENCER" />
+    <edge source="CELL" target="HEMATOPOIETIC STEM CELLS" />
+    <edge source="PLOS ONE" target="WI-38 CELLS" />
+    <edge source="PLOS ONE" target="H.T. KANG" />
+    <edge source="PLOS ONE" target="S. MARTHANDAN" />
+    <edge source="CELL TURNOVER" target="AGE-DEPENDENT REGULATION" />
+    <edge source="WI-38 FIBROBLASTS" target="G0 STATE" />
+    <edge source="J. CELL PHYSIOLOGY" target="WI-38 CELLS" />
+    <edge source="WI-38 CELLS" target="GROWTH FACTOR" />
+    <edge source="WI-38 CELLS" target="JOURNAL OF CELL PHYSIOLOGY" />
+    <edge source="WI-38 CELLS" target="EXP. CELL RES." />
+    <edge source="WI-38 CELLS" target="CELL REPORT" />
+    <edge source="WI-38 CELLS" target="NATURE" />
+    <edge source="WI-38 CELLS" target="DENSITY-DEPENDENT GROWTH ARREST" />
+    <edge source="WI-38 CELLS" target="CELLULAR QUIESCENCE" />
+    <edge source="WI-38 CELLS" target="RNA-SEQ" />
+    <edge source="WI-38 CELLS" target="LYSOSOMAL DIMMER SWITCH" />
+    <edge source="WI-38 CELLS" target="BISTABILITY" />
+    <edge source="WI-38 CELLS" target="CELL PHYSIOLOGY" />
+    <edge source="WI-38 CELLS" target="NATIONAL ACADEMY OF SCIENCES" />
+    <edge source="WI-38 CELLS" target="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" />
+    <edge source="WI-38 CELLS" target="ANNUAL REVIEW OF BIOMEDICAL ENGINEERING" />
+    <edge source="WI-38 CELLS" target="FASEB JOURNAL" />
+    <edge source="MOUSE 3T3 CELLS" target="CELL BIOLOGY INTERNATIONAL REPORT" />
+    <edge source="CELL REPORT" target="J.S. KWON" />
+    <edge source="CELL STEM CELL" target="HGFA" />
+    <edge source="CELL STEM CELL" target="LLORENS-BOBADILLA, E." />
+    <edge source="CELL STEM CELL" target="ZHAO, S." />
+    <edge source="CELL STEM CELL" target="BASER, A." />
+    <edge source="CELL STEM CELL" target="SAIZ-CASTRO, G." />
+    <edge source="CELL STEM CELL" target="ZWADLO, K." />
+    <edge source="CELL STEM CELL" target="MARTIN-VILLALBA, A." />
+    <edge source="CELL STEM CELL" target="SINGLE-CELL TRANSCRIPTOMICS" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="XIA WANG" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="LINAN JIANG" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="YITSHAK ZOHAR" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="BI LIU" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="LIU ET AL." />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="E2F-GFP" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="LIU" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="WANG" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="JIANG" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="XU" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="ZOHAR" />
+    <edge source="FRONTIERS IN CELL AND DEVELOPMENTAL BIOLOGY" target="YAO" />
+    <edge source="NEURAL STEM CELLS" target="PRIMED NSCS" />
+    <edge source="NEURAL STEM CELLS" target="QUESCENCE-DEPTH SCORE (QDS)" />
+    <edge source="NEURAL STEM CELLS" target="CELLULAR QUIESCENCE" />
+    <edge source="CELLULAR QUIESCENCE" target="CELL DORMANCY PLASTICITY" />
+    <edge source="CELLULAR QUIESCENCE" target="URBAN, N." />
+    <edge source="CELLULAR QUIESCENCE" target="CHEUNG, T.H." />
+    <edge source="CELLULAR QUIESCENCE" target="LYSOSOMAL FUNCTION" />
+    <edge source="CELLULAR QUIESCENCE" target="HEPATOCYTES" />
+    <edge source="CELLULAR QUIESCENCE" target="EXTRACELLULAR FLUID FLOW" />
+    <edge source="CELLULAR QUIESCENCE" target="HYDRODYNAMIC SHEAR STRESS" />
+    <edge source="CELLULAR QUIESCENCE" target="MICROFLUIDIC SYSTEM" />
+    <edge source="CELLULAR QUIESCENCE" target="INTERSTITIAL FLOW" />
+    <edge source="CELLULAR QUIESCENCE" target="NUTRIENTS" />
+    <edge source="CELLULAR QUIESCENCE" target="MOLECULAR REGULATION OF STEM CELL QUIESCENCE" />
+    <edge source="CELLULAR QUIESCENCE" target="FLUID FLOWS AND FORCES IN DEVELOPMENT" />
+    <edge source="CELLULAR QUIESCENCE" target="GRADIENT REGULATION OF CELLULAR QUIESCENCE DEPTH" />
+    <edge source="CELLULAR QUIESCENCE" target="LYSOSOMAL DIMMER SWITCH" />
+    <edge source="CELLULAR QUIESCENCE" target="CELL ACTIVATION" />
+    <edge source="CELLULAR QUIESCENCE" target="E2F NETWORK" />
+    <edge source="CELLULAR QUIESCENCE" target="ADULT STEM CELLS" />
+    <edge source="FRONT. CELL DEV. BIOL." target="K. FUJIMAKI" />
+    <edge source="FRONT. CELL DEV. BIOL." target="G. YAO" />
+    <edge source="FRONT. CELL DEV. BIOL." target="BROOKS, R.F." />
+    <edge source="K. FUJIMAKI" target="GENE EXPRESSION OMNIBUS" />
+    <edge source="G. YAO" target="RB/E2F PATHWAY" />
+    <edge source="G. YAO" target="MOL. SYST. BIOL." />
+    <edge source="G. YAO" target="NAT. CELL BIOL." />
+    <edge source="M.T. WEI" target="GENOMIC HALLMARKS" />
+    <edge source="M.T. WEI" target="NATURE" />
+    <edge source="GENOMIC HALLMARKS" target="ZHANG, X." />
+    <edge source="GENOMIC HALLMARKS" target="LI, Y." />
+    <edge source="GENOMIC HALLMARKS" target="GAO, J." />
+    <edge source="GENOMIC HALLMARKS" target="WIECEK, A.J." />
+    <edge source="GENOMIC HALLMARKS" target="CUTTY, S.J." />
+    <edge source="GENOMIC HALLMARKS" target="KORNAI, D." />
+    <edge source="GENOMIC HALLMARKS" target="PARENO-CENTENO, M." />
+    <edge source="GENOMIC HALLMARKS" target="GOURMET, L.E." />
+    <edge source="GENOMIC HALLMARKS" target="TAGLIAZUCCHI, G.M." />
+    <edge source="GENOMIC HALLMARKS" target="JACOBSON, D.H." />
+    <edge source="GENOMIC HALLMARKS" target="XIONG, L." />
+    <edge source="GENOMIC HALLMARKS" target="BOND, G.L." />
+    <edge source="NATURE" target="RODGERS, J.T." />
+    <edge source="NATURE" target="KING, K.Y." />
+    <edge source="NATURE" target="BRETT, J.O." />
+    <edge source="NATURE" target="CROMIE, M.J." />
+    <edge source="NATURE" target="CHARVILLE, G.W." />
+    <edge source="NATURE" target="MAGUIRE, K.K." />
+    <edge source="NATURE" target="BRUNSON, C." />
+    <edge source="NATURE" target="MASTEY, N." />
+    <edge source="NATURE" target="LIU, L." />
+    <edge source="NATURE" target="TSAI, C.-R." />
+    <edge source="NATURE" target="L. GARC&#205;A-PRAT" />
+    <edge source="NATURE" target="T.T. HO" />
+    <edge source="M.T. GORE" target="P27" />
+    <edge source="JOURNAL OF CELL BIOLOGY" target="PAJALUNGA, D." />
+    <edge source="JOURNAL OF CELL BIOLOGY" target="MAZZOLA, A." />
+    <edge source="JOURNAL OF CELL BIOLOGY" target="SALZANO, A.M." />
+    <edge source="JOURNAL OF CELL BIOLOGY" target="BIFERI, M.G." />
+    <edge source="JOURNAL OF CELL BIOLOGY" target="DE LUCA, G." />
+    <edge source="JOURNAL OF CELL BIOLOGY" target="CRESCENZI, M." />
+    <edge source="TRUSKOWSKI, K." target="CANCER METASTASIS REV." />
+    <edge source="CANCER METASTASIS REV." target="AMEND, S.R." />
+    <edge source="CANCER METASTASIS REV." target="PIENTA, K.J." />
+    <edge source="NATURAL COMMUNICATION" target="LYSOSOME ACTIVATION" />
+    <edge source="NATURAL COMMUNICATION" target="D.S. ASHRAF" />
+    <edge source="NATURAL COMMUNICATION" target="B. FERNANDEZ" />
+    <edge source="NATURAL COMMUNICATION" target="S.L. SPENCER" />
+    <edge source="LYSOSOME ACTIVATION" target="QUIESCENT NEURAL STEM CELLS" />
+    <edge source="LYSOSOME ACTIVATION" target="D.S. LEEMAN" />
+    <edge source="LYSOSOME ACTIVATION" target="K. HEBESTREIT" />
+    <edge source="LYSOSOME ACTIVATION" target="T. RUETZ" />
+    <edge source="LYSOSOME ACTIVATION" target="A.E. WEBB" />
+    <edge source="LYSOSOME ACTIVATION" target="A. MCKAY" />
+    <edge source="LYSOSOME ACTIVATION" target="E.A. POLLINA" />
+    <edge source="LYSOSOME ACTIVATION" target="B.W. DULKEN" />
+    <edge source="LYSOSOME ACTIVATION" target="X. ZHAO" />
+    <edge source="LYSOSOME ACTIVATION" target="R.W. YEO" />
+    <edge source="LYSOSOME ACTIVATION" target="T.T. HO" />
+    <edge source="SCIENCE" target="HUMAN CELLULAR SENESCENCE" />
+    <edge source="SCIENCE" target="J.P. DE MAGALHAES" />
+    <edge source="HUMAN CELLULAR SENESCENCE" target="D. BEAUS&#201;JOUR" />
+    <edge source="HUMAN CELLULAR SENESCENCE" target="J.W. SHAY" />
+    <edge source="QUIESCENT NEURAL STEM CELLS" target="X. WANG" />
+    <edge source="X. WANG" target="NATURE COMMUNICATIONS" />
+    <edge source="E2F" target="RB/E2F PATHWAY" />
+    <edge source="RB/E2F PATHWAY" target="APC/C" />
+    <edge source="RB/E2F PATHWAY" target="J.R. NEVINS" />
+    <edge source="RB/E2F PATHWAY" target="N. DYSON" />
+    <edge source="RB/E2F PATHWAY" target="R.C. SEARS" />
+    <edge source="RB/E2F PATHWAY" target="J.M. TRIMARCHI" />
+    <edge source="RB/E2F PATHWAY" target="S. POLAGER" />
+    <edge source="APC/C" target="S.D. CAPPELL" />
+    <edge source="MOLECULAR CELL" target="REYES, J." />
+    <edge source="MOLECULAR CELL" target="CHEN, J.-Y." />
+    <edge source="MOLECULAR CELL" target="STEWART-ORNSTEIN, J." />
+    <edge source="MOLECULAR CELL" target="KARHOHS, K.W." />
+    <edge source="MOLECULAR CELL" target="MOCK, C.S." />
+    <edge source="MOLECULAR CELL" target="LAHAV, G." />
+    <edge source="MOLECULAR CELL" target="BACTERIAL DORMANCY" />
+    <edge source="MOLECULAR CELL" target="MOLECULAR CELL" />
+    <edge source="MOLECULAR CELL" target="C. SCHWARZ" />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="STALLAERT, W." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="TAYLOR, S.R." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="KEDZIORA, K.M." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="TAYLOR, C.D." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="SOBON, H.K." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="YOUNG, C.L." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="LIMAS, J.C." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="HOLLOWAY, J.V." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="JOHNSON, M.S." />
+    <edge source="MOLECULAR SYSTEMS BIOLOGY" target="COOK, J.G." />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="KOTARO FUJIMAKI" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="RUOYAN LI" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="HENGYU CHEN" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="KIMIKO DELLA CROCE" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="HAO HELEN ZHANG" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="JIANHUA XING" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="FAN BAI" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="PEKING UNIVERSITY" />
+    <edge source="GRADED REGULATION OF CELLULAR QUIESCENCE DEPTH" target="UNIVERSITY OF PITTSBURGH" />
+    <edge source="LYSOSOMAL FUNCTION" target="OXIDATIVE STRESS" />
+    <edge source="LYSOSOMAL FUNCTION" target="AUTOPHAGY FLUX" />
+    <edge source="LYSOSOMAL FUNCTION" target="REACTIVE OXYGEN SPECIES (ROS)" />
+    <edge source="LYSOSOMAL FUNCTION" target="REF CELLS" />
+    <edge source="LYSOSOMAL FUNCTION" target="LYSOSOME DESTRUCTION" />
+    <edge source="LYSOSOMAL FUNCTION" target="LYSOSOMAL GENE EXPRESSION" />
+    <edge source="LYSOSOMAL FUNCTION" target="LYSOSOMAL MASS" />
+    <edge source="LYSOSOMAL FUNCTION" target="AUTOPHAGIC CLEARANCE" />
+    <edge source="LYSOSOMAL FUNCTION" target="MIT/TFE FAMILY" />
+    <edge source="LYSOSOMAL FUNCTION" target="MITF" />
+    <edge source="LYSOSOMAL FUNCTION" target="LYSOTRACKING" />
+    <edge source="LYSOSOMAL FUNCTION" target="LC3-II TURNOVER" />
+    <edge source="LYSOSOMAL FUNCTION" target="LYSOSOMAL GENES" />
+    <edge source="LYSOSOMAL FUNCTION" target="GOLGI NETWORK" />
+    <edge source="DORMANCY" target="HEMATOPOIETIC STEM CELLS" />
+    <edge source="DORMANCY" target="SELF-RENEWAL" />
+    <edge source="SERUM STARVATION" target="LYSOSOMAL MASS" />
+    <edge source="SERUM STARVATION" target="GENE-EXPRESSION DYNAMICS" />
+    <edge source="SERUM STARVATION" target="REF CELLS" />
+    <edge source="SERUM STARVATION" target="QUIESCENCE DEEPENING" />
+    <edge source="REF CELLS" target="5-ETHYNYL-2'-DEOXYURIDINE (EDU)" />
+    <edge source="REF CELLS" target="EDU INCORPORATION" />
+    <edge source="REF CELLS" target="LYSOSOMAL MASS" />
+    <edge source="REF CELLS" target="LYSOTRACKER" />
+    <edge source="REF CELLS" target="LC3-II TURNOVER ASSAY" />
+    <edge source="REF CELLS" target="BAFILOMYCIN A1" />
+    <edge source="REF CELLS" target="E2F-GFP REPORTER" />
+    <edge source="REF CELLS" target="PROPIDIUM IODIDE STAINING" />
+    <edge source="REF CELLS" target="&#914;-GALACTOSIDASE" />
+    <edge source="REF CELLS" target="EDU" />
+    <edge source="REF CELLS" target="E2F-GFP" />
+    <edge source="REF CELLS" target="PI STAINING" />
+    <edge source="REF CELLS" target="QUIESCENCE-DEPTH ASSAY" />
+    <edge source="REF CELLS" target="SERUM STIMULATION" />
+    <edge source="REF CELLS" target="BAF" />
+    <edge source="REF CELLS" target="CQ" />
+    <edge source="REF CELLS" target="MITOSOX" />
+    <edge source="REF CELLS" target="EDU ASSAY" />
+    <edge source="REF CELLS" target="TBHP" />
+    <edge source="REF CELLS" target="QUESCENCE-DEPTH GENE SIGNATURE" />
+    <edge source="REF CELLS" target="ADRIAMYCIN" />
+    <edge source="REF CELLS" target="5-AZA-2-DEOXYCYTIDINE" />
+    <edge source="REF CELLS" target="H2O2" />
+    <edge source="REF CELLS" target="RNA-SEQ" />
+    <edge source="REF CELLS" target="DEEP QUIESCENCE" />
+    <edge source="LYSOSOMAL GENE EXPRESSION" target="LYSOSOMAL MASS" />
+    <edge source="LYSOSOMAL MASS" target="MAMMALIAN TARGET OF RAPAMYCIN (MTOR)" />
+    <edge source="LYSOSOMAL MASS" target="LYSOTRACKER INTENSITY" />
+    <edge source="EDU INCORPORATION" target="REF52 CELLS" />
+    <edge source="EDU INCORPORATION" target="REF/E23 CELLS" />
+    <edge source="GENE-EXPRESSION DYNAMICS" target="DIFFERENTIALLY EXPRESSED GENES" />
+    <edge source="DIFFERENTIALLY EXPRESSED GENES" target="PRINCIPAL COMPONENT ANALYSIS (PCA)" />
+    <edge source="E2F-GFP REPORTER" target="REF52 CELLS" />
+    <edge source="E2F-GFP REPORTER" target="REF/E23 CELLS" />
+    <edge source="BAF" target="DMSO" />
+    <edge source="E2F-GFP" target="REF/E23 CELLS" />
+    <edge source="E2F-GFP" target="FLOW CYTOMETRY" />
+    <edge source="E2F-GFP" target="CELL POPULATIONS" />
+    <edge source="MITF" target="LYSOSOMAL BIOGENESIS" />
+    <edge source="MITF" target="WNT SIGNALING" />
+    <edge source="MITF-GFP" target="MCHERRY" />
+    <edge source="LYSOSOMAL BIOGENESIS" target="MCOLN1" />
+    <edge source="SHALLOW QUIESCENCE" target="EXTRACELLULAR FLUID FLOW" />
+    <edge source="SHALLOW QUIESCENCE" target="CELL QUIESCENCE" />
+    <edge source="SHALLOW QUIESCENCE" target="SHEAR STRESS" />
+    <edge source="SHALLOW QUIESCENCE" target="EXTRACELLULAR FACTORS" />
+    <edge source="SHALLOW QUIESCENCE" target="EXTRACELLULAR FLOW" />
+    <edge source="QUIESCENCE DEEPENING" target="PROTEIN AGGREGATES" />
+    <edge source="REF52 CELLS" target="E2F1 PROMOTER-DRIVEN DESTABILIZED EGFP" />
+    <edge source="REF52 CELLS" target="PI DNA STAINING" />
+    <edge source="REF52 CELLS" target="GENE EXPRESSION OMNIBUS" />
+    <edge source="REF52 CELLS" target="NATIONAL SCIENCE FOUNDATION" />
+    <edge source="REF52 CELLS" target="NATIONAL INSTITUTES OF HEALTH" />
+    <edge source="SERUM-STARVATION MEDIUM" target="REF/E23 CELLS" />
+    <edge source="D.R. SOPRANO" target="JOURNAL OF CELL PHYSIOLOGY" />
+    <edge source="JOURNAL OF CELL PHYSIOLOGY" target="K.J. SOPRANO" />
+    <edge source="EXP. CELL RES." target="L.H. AUGENLICHT" />
+    <edge source="A. HERNANDEZ-SEGURA" target="CURRENT BIOLOGY" />
+    <edge source="A. GROVER" target="NAT. COMMUN." />
+    <edge source="NAT. COMMUN." target="Y. YU" />
+    <edge source="N.E. SHARPLESS" target="NAT. REV. CANCER" />
+    <edge source="G. YU" target="OMICS" />
+    <edge source="W. HUANG" target="NAT. PROTOC." />
+    <edge source="A. SUBRAMANIAN" target="PROC. NATL. ACAD. SCI. U.S.A." />
+    <edge source="F. NAZIO" target="J. CELL BIOL." />
+    <edge source="J. HASEGAWA" target="METHODS" />
+    <edge source="METHODS" target="C. PAPADOPOULOS" />
+    <edge source="METHODS" target="H. MEYER" />
+    <edge source="AUTOPHAGY RESEARCH" target="GUIDELINES FOR MONITORING AUTOPHAGY" />
+    <edge source="SELECTIVE AUTOPHAGY" target="LYSOPHAGY" />
+    <edge source="LYSOPHAGY" target="ENDO-LYSOSOMAL DAMAGE RESPONSE" />
+    <edge source="SENESCENCE-ASSOCIATED GENES" target="IGFBP-3" />
+    <edge source="DROSOPHILA MITF" target="LYSOSOMAL-AUTOPHAGIC PATHWAY" />
+    <edge source="LONG-TERM QUIESCENT FIBROBLASTS" target="REPLICATIVE SENESCENCE" />
+    <edge source="REPLICATIVE SENESCENCE" target="AUTOPHAGIC CAPACITY" />
+    <edge source="REPLICATIVE SENESCENCE" target="HS68 CELLS" />
+    <edge source="MUCOLIPIDOSIS TYPE IV" target="LYSOSOMAL DYSFUNCTION" />
+    <edge source="AGE-RELATED ACCUMULATION OF PROTEIN CARBONYL" target="LIVER PROTEOLYTIC ACTIVITIES" />
+    <edge source="CHAPERONE-MEDIATED AUTOPHAGY" target="AGE-RELATED DECLINE" />
+    <edge source="AGE-RELATED DECLINE" target="PROTEOLYTIC ACTIVITIES" />
+    <edge source="HS68 CELLS" target="LYSOSOMES" />
+    <edge source="LYSOSOMES" target="NATURAL REVIEWS MOLECULAR CELL BIOLOGY" />
+    <edge source="TSC-MTOR" target="HEMATOPOIETIC STEM CELLS" />
+    <edge source="TSC-MTOR" target="PRIMORDIAL FOLLICLES" />
+    <edge source="HEMATOPOIETIC STEM CELLS" target="JOURNAL OF EXPERIMENTAL MEDICINE" />
+    <edge source="PRIMORDIAL FOLLICLES" target="HUMAN MOLECULAR GENETICS" />
+    <edge source="TRANSCRIPTION FACTOR EB (TFEB)" target="LUNG CANCER" />
+    <edge source="CANCER METASTASIS" target="NATURE COMMUNICATIONS" />
+    <edge source="ONCOGENE" target="NATURE REVIEWS MOLECULAR CELL BIOLOGY" />
+    <edge source="ONCOGENE" target="D. C. BENNETT" />
+    <edge source="INTERNATIONAL JOURNAL OF DEVELOPMENTAL BIOLOGY" target="D. SUN" />
+    <edge source="FEBS JOURNAL" target="J. P. MATSON" />
+    <edge source="MECHANISMS OF AGEING AND DEVELOPMENT" target="R. C. ADELMAN" />
+    <edge source="NATURE MEDICINE" target="EXPERIMENTAL CELL RESEARCH" />
+    <edge source="NATURE MEDICINE" target="MOUSE GENOME DATABASE" />
+    <edge source="NATURE MEDICINE" target="B. G. CHILDS" />
+    <edge source="EXPERIMENTAL CELL RESEARCH" target="J. W. SHAY" />
+    <edge source="NATURE REVIEWS MOLECULAR CELL BIOLOGY" target="J. CAMPISI" />
+    <edge source="CURRENT OPINION IN CELL BIOLOGY" target="TRENDS IN BIOCHEMICAL SCIENCES" />
+    <edge source="CURRENT OPINION IN CELL BIOLOGY" target="J. J. TYSON" />
+    <edge source="EXTRACELLULAR FLUID FLOW" target="MICROFLUIDICS" />
+    <edge source="EXTRACELLULAR FLUID FLOW" target="QUIESCENCE DEPTH" />
+    <edge source="CELL QUIESCENCE" target="MICROENVIRONMENT" />
+    <edge source="SHEAR STRESS" target="DEXTRAN" />
+    <edge source="SHEAR STRESS" target="FLOW RATE" />
+    <edge source="SHEAR STRESS" target="PRESSURE-DRIVEN FLOW" />
+    <edge source="SHEAR STRESS" target="EXTRACELLULAR FLOW" />
+    <edge source="SHEAR STRESS" target="REF/E23 CELLS" />
+    <edge source="MATHEMATICAL MODEL" target="RB-E2F BISTABLE SWITCH" />
+    <edge source="RB-E2F BISTABLE SWITCH" target="FR" />
+    <edge source="RB-E2F BISTABLE SWITCH" target="E2F-ACTIVATION THRESHOLD" />
+    <edge source="RB-E2F BISTABLE SWITCH" target="EXTRACELLULAR FLOW" />
+    <edge source="HYDRODYNAMIC SHEAR STRESS" target="EXTRACELLULAR FLOW" />
+    <edge source="INTERSTITIAL FLOW" target="VASCULAR SMOOTH MUSCLE CELLS" />
+    <edge source="NUTRIENTS" target="EXTRACELLULAR FLOW" />
+    <edge source="REF/E23 CELLS" target="CELL CULTURE" />
+    <edge source="REF/E23 CELLS" target="MICROFLUIDIC DEVICES" />
+    <edge source="REF/E23 CELLS" target="E2F-ON%" />
+    <edge source="REF/E23 CELLS" target="STATIC MEDIUM" />
+    <edge source="REF/E23 CELLS" target="EXTRACELLULAR FACTOR REPLACEMENT" />
+    <edge source="REF/E23 CELLS" target="MECHANICAL SHEAR STRESS" />
+    <edge source="REF/E23 CELLS" target="FRESH-MEDIUM CONFIGURATION" />
+    <edge source="REF/E23 CELLS" target="RECYCLED-MEDIUM CONFIGURATION" />
+    <edge source="REF/E23 CELLS" target="FR" />
+    <edge source="REF/E23 CELLS" target="SERUM STARVATION MEDIUM" />
+    <edge source="REF/E23 CELLS" target="DEXTRAN" />
+    <edge source="REF/E23 CELLS" target="SERUM" />
+    <edge source="REF/E23 CELLS" target="MICROFLUIDIC DEVICE" />
+    <edge source="DEXTRAN" target="MECHANICAL SHEAR STRESS" />
+    <edge source="DEXTRAN" target="E2F-ON%" />
+    <edge source="BONDING STRENGTH" target="MICROFLUIDIC DEVICES" />
+    <edge source="BONDING STRENGTH" target="FIBRONECTIN" />
+    <edge source="MEDIUM" target="CELL SUSPENSION" />
+    <edge source="SERUM STIMULATION MEDIUM" target="E2F-ON%" />
+    <edge source="MATHEMATICAL MODELING" target="STOCHASTIC SIMULATIONS" />
+    <edge source="EXTRACELLULAR FLOW" target="CELL MORPHOLOGY" />
+    <edge source="EXTRACELLULAR FLOW" target="TUMOR CELL MIGRATION" />
+    <edge source="EXTRACELLULAR FLOW" target="ANGIOGENESIS" />
+    <edge source="CELL MORPHOLOGY" target="CELL ATTACHMENT" />
+    <edge source="CELL MORPHOLOGY" target="MEDIUM VISCOSITY" />
+    <edge source="CELL ATTACHMENT" target="INFLAMMATION" />
+    <edge source="INTERSTITIAL FLUID FLOW" target="CARDIAC FIBROBLAST" />
+    <edge source="CARDIAC FIBROBLAST" target="AT1R" />
+    <edge source="CARDIAC FIBROBLAST" target="TGF-B1" />
+    <edge source="FLUID SHEAR STRESS" target="OVARIAN CANCER CELL" />
+    <edge source="TRANSPORT OF MOLECULES" target="CANCER RESEARCH" />
+    <edge source="MECHANICAL FORCE-INDUCED SIGNAL TRANSDUCTION" target="INTERNAL MEDIAL SMOOTH MUSCLE CELLS" />
+    <edge source="STEM CELL SELF-RENEWAL" target="NATURE REVIEWS GENETICS" />
+    <edge source="AMERICAN JOURNAL OF PHYSIOLOGY-HEART AND CIRCULATORY PHYSIOLOGY" target="FLK-1-POSITIVE EMBRYONIC STEM CELLS" />
+    <edge source="FLK-1-POSITIVE EMBRYONIC STEM CELLS" target="SELF-RENEWAL" />
+  </graph>
+</graphml>

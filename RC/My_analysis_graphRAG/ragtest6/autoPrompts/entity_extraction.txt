@@ -1,0 +1,237 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+1. Identify all entities. For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: One of the following types: [cell, molecule, quiescence, senescence, autophagy, growth factor, experimental data, mechanical stress, gene, transcriptome]
+- entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [cell, molecule, quiescence, senescence, autophagy, growth factor, experimental data, mechanical stress, gene, transcriptome]
+text:
+(t)](j/equals1,...,M)with thecorresponding change of molecule numberjdescribed in v
+ji.Factorsγandωare two independent and uncorrelated Gaussiannoises. Scaling factorsθandδare implemented for theadjustment of intrinsic and extrinsic noise levels, respectively(unless otherwise noted,θ= 0.4,δ= 40, as selected to beconsistent with the experimental data presented inFigure 3).Units of model parameters and species concentrations(Supplementary Table S2) in the ODE model were convertedto molecule numbers. The E2f-On state was de/uniFB01ned as the E2fmolecule number at the 26th h after serum stimulation reachingbeyond a threshold value of 300. All SDEs were implemented andsolved in Matlab.
+RESULTSQuiescence Induction and Deepening OverTime are Consistent With or WithoutMedium Flow
+To test whether and how extracellular/uniFB02uid/uniFB02ow affects cellularquiescence, we cultured REF/E23 cells in micro/uniFB02uidic devicesunder medium/uniFB02ow (Figure 1). Two/uniFB02ow rates (Q= 5 and 
+------------------------
+output:
+("entity"{tuple_delimiter}E2F{tuple_delimiter}MOLECULE{tuple_delimiter}E2F is a molecule involved in cell cycle regulation, particularly in the transition from quiescence to active cell division)
+{record_delimiter}
+("entity"{tuple_delimiter}REF/E23{tuple_delimiter}CELL{tuple_delimiter}REF/E23 cells are a type of cell used in experiments to study quiescence and cellular responses to external stimuli)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state in which cells are in a reversible state of dormancy, not actively dividing but capable of re-entering the cell cycle)
+{record_delimiter}
+("entity"{tuple_delimiter}EXPERIMENTAL DATA{tuple_delimiter}EXPERIMENTAL DATA{tuple_delimiter}Experimental data refers to the results obtained from the study of quiescence induction and its dependence on medium flow in REF/E23 cells)
+{record_delimiter}
+("entity"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}MECHANICAL STRESS{tuple_delimiter}Serum stimulation is a mechanical stress applied to cells that can induce changes in their state, such as transitioning from quiescence to active division)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF/E23{tuple_delimiter}QUIESCENCE{tuple_delimiter}REF/E23 cells were cultured to study their quiescence induction and deepening over time{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}E2F{tuple_delimiter}QUIESCENCE{tuple_delimiter}E2F molecule number is used to define the transition from quiescence to active cell division{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}EXPERIMENTAL DATA{tuple_delimiter}QUIESCENCE{tuple_delimiter}Experimental data supports the findings on quiescence induction in REF/E23 cells under different conditions{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}REF/E23{tuple_delimiter}Serum stimulation affects the state of REF/E23 cells, influencing their quiescence and activation{tuple_delimiter}5)
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+entity_types: [cell, molecule, quiescence, senescence, autophagy, growth factor, experimental data, mechanical stress, gene, transcriptome]
+text:
+
+senescence, which aligns with the fact that mTOR activity is linked to shallow quiescence
+(GAlert) [42], not quiescence deepening. Therefore, the quiescence-origin senescence appears
+different from proliferation-origin senescence from the aspect of mTOR and geroconversion
+(Figure 1).Biomedicines2024,12, 1837
+ 5 of 8
+
+
+Figure 1.Quiescence-origin senescence. Conventional senescence originates from proliferating and
+growing cells via mTOR-mediated geroconversion, when cell growth continues aberrantly after the
+cell cycle is blocked in response to severe stress and damage. In comparison, quiescence-origin
+senescence originates from quiescent cells via quiescence deepening, accompanied by a progressively
+increasing Rb–E2F switch threshold in response to decreased lysosomal autophagy and increased ROS
+accumulation and protein aggregation. Senescent cells are irreversibly arrested under physiological
+conditions. Deep quiescent cells are reversible but require stronger growth stimulation and take a
+longer time to re-enter the cell cycle than shallow quiescent cells. The boundary between very deep
+quies
+------------------------
+output:
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Senescence is a state where cells irreversibly stop dividing, often linked to aging and stress responses, and can originate from both proliferating and quiescent cells.)
+{record_delimiter}
+("entity"{tuple_delimiter}MTOR{tuple_delimiter}molecule{tuple_delimiter}mTOR is a protein kinase that regulates cell growth, proliferation, and survival, and is involved in the process of geroconversion in senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a reversible state of cell cycle arrest, where cells are metabolically active but do not proliferate, and can be shallow or deep based on the level of growth stimulation.)
+{record_delimiter}
+("entity"{tuple_delimiter}GEROCONVERSION{tuple_delimiter}molecule{tuple_delimiter}Geroconversion is the process by which quiescent cells transition to a senescent state, often triggered by stress and damage.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOMAL AUTOPHAGY{tuple_delimiter}autophagy{tuple_delimiter}Lysosomal autophagy is a cellular degradation process that removes damaged organelles and proteins, and its decrease is associated with quiescence-origin senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}ROS{tuple_delimiter}molecule{tuple_delimiter}Reactive oxygen species (ROS) are chemically reactive molecules that can cause cellular damage and are involved in the aging process and senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}RB-E2F SWITCH{tuple_delimiter}molecule{tuple_delimiter}The Rb-E2F switch is a regulatory mechanism that controls cell cycle progression and is influenced by the state of quiescence and senescence.)
+{record_delimiter}
+("relationship"{tuple_delimiter}SENESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Senescence can originate from quiescent cells, indicating a relationship between these two states in cellular biology{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}SENESCENCE{tuple_delimiter}MTOR{tuple_delimiter}mTOR activity is linked to the process of senescence, particularly in the context of geroconversion{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}GEROCONVERSION{tuple_delimiter}Quiescence can lead to senescence through the process of geroconversion, highlighting their interconnection{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}LYSOSOMAL AUTOPHAGY{tuple_delimiter}Decreased lysosomal autophagy is associated with quiescence-origin senescence, indicating a relationship between these processes{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}ROS{tuple_delimiter}Increased ROS accumulation is a factor that influences the transition from quiescence to senescence{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}RB-E2F SWITCH{tuple_delimiter}QUIESCENCE{tuple_delimiter}The Rb-E2F switch threshold is involved in regulating the transition between quiescence and senescence{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+Example 3:
+
+entity_types: [cell, molecule, quiescence, senescence, autophagy, growth factor, experimental data, mechanical stress, gene, transcriptome]
+text:
+ starvation, lysosomal mass continuously increased over
+
+the next 14 d, as seen from the stained LysoTracker intensity
+
+(Fig. 2
+
+G
+). The initial pulsatile response of lysosomal mass was
+
+likely due to an adaptive mammalian target of rapamycin
+(mTOR)-autophagy response to serum starvation, as previously
+
+reported (31). The continuously increased LysoTracker intensity
+
+in deep quiescence was consistent with an increased number of
+
+lysosomes, another indicator of lysosomal mass; for example,
+
+11-d serum-starved cells exhibited significantly more lysosomal foci
+
+per cell and per unit area of cell than 2-d serum-starved cells (per
+A
+
+B
+C
+
+Fig. 1.
+
+Sequential quiescence deepening and transcriptome change in
+
+serum-starved REF cells over time. (
+
+A
+and
+B
+) EdU
++
+% of 2- to 14-d serum-
+
+starved cells upon stimulation. Cells in duplicated wells (
+
+n
+=
+2) were har-
+
+vested 19, 22, and 25 h after 20% serum stimulation (
+
+A
+), or 25 h after
+
+stimulation with serum at indicated concentrations (0.02
+------------------------
+output:
+("entity"{tuple_delimiter}LYSOSOMAL MASS{tuple_delimiter}MOLECULE{tuple_delimiter}Lysosomal mass refers to the total amount of lysosomes within a cell, which can increase in response to various stimuli such as serum starvation.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOTRACKER{tuple_delimiter}MOLECULE{tuple_delimiter}LysoTracker is a fluorescent dye used to stain lysosomes, allowing for the visualization and quantification of lysosomal mass in cells.)
+{record_delimiter}
+("entity"{tuple_delimiter}MAMMALIAN TARGET OF RAPAMYCIN (mTOR){tuple_delimiter}MOLECULE{tuple_delimiter}mTOR is a key regulator of cell growth and metabolism, involved in the autophagy response to nutrient availability, such as serum starvation.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive but can re-enter the cell cycle in response to stimuli.)
+{record_delimiter}
+("entity"{tuple_delimiter}SERUM STARVATION{tuple_delimiter}MECHANICAL STRESS{tuple_delimiter}Serum starvation is a condition where cells are deprived of serum, leading to various cellular responses including autophagy and changes in lysosomal mass.)
+{record_delimiter}
+("entity"{tuple_delimiter}REF CELLS{tuple_delimiter}CELL{tuple_delimiter}REF cells are a type of cell line used in research, particularly in studies involving serum starvation and cellular responses.)
+{record_delimiter}
+("entity"{tuple_delimiter}TRANSCRIPTOME{tuple_delimiter}TRANSCRIPTOME{tuple_delimiter}The transcriptome refers to the complete set of RNA transcripts produced by the genome at any one time, reflecting gene expression levels in response to various conditions.)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMAL MASS{tuple_delimiter}LYSOTRACKER{tuple_delimiter}LysoTracker is used to measure lysosomal mass, indicating the relationship between the dye and the cellular component it stains{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}MAMMALIAN TARGET OF RAPAMYCIN (mTOR){tuple_delimiter}SERUM STARVATION{tuple_delimiter}mTOR is involved in the autophagy response triggered by serum starvation, linking the two entities in cellular metabolism{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}LYSOSOMAL MASS{tuple_delimiter}In deep quiescence, lysosomal mass increases, indicating a relationship between the state of quiescence and lysosomal dynamics{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}SERUM STARVATION{tuple_delimiter}REF cells are used to study the effects of serum starvation on cellular responses, establishing a direct relationship between the cell type and the condition{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}TRANSCRIPTOME{tuple_delimiter}QUIESCENCE{tuple_delimiter}Changes in the transcriptome are observed during quiescence, indicating a relationship between gene expression and the quiescent state of cells{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+Example 4:
+
+entity_types: [cell, molecule, quiescence, senescence, autophagy, growth factor, experimental data, mechanical stress, gene, transcriptome]
+text:
+. (2005). The Effect of the Medium Viscosity on the CellsMorphology in Reaction of Cells to Topography—I.
+Proc. 2nd Saudi Sci.Conl, Fac. Sci.. KAU; 15–17 March 2004, Part I, 67–98.Kwon, J. S., Everetts, N. J., Wang, X., Wang, W., Della Croce, K., Xing, J., et al.(2017). Controlling Depth of Cellular Quiescence by an Rb-E2f NetworkSwitch.Cel Rep.20, 3223–3235. doi:10.1016/j.celrep.2017.09.007Lee, T. J., Yao, G., Bennett, D. C., Nevins, J. R., and You, L. (2010). Stochastic E2FActivation and Reconciliation of Phenomenological Cell-Cycle Models.PlosBiol.8, e1000488. doi:10.1371/journal.pbio.1000488Li, L., and Clevers, H. (2010). Coexistence of Quiescent and Active Adult StemCells in Mammals.Science327
+------------------------
+output:
+("entity"{tuple_delimiter}CELLS{tuple_delimiter}cell{tuple_delimiter}Cells are the basic structural and functional units of living organisms, which can exhibit various morphologies depending on their environment and conditions.)
+{record_delimiter}
+("entity"{tuple_delimiter}MEDIUM VISCOSITY{tuple_delimiter}molecule{tuple_delimiter}Medium viscosity refers to the thickness or resistance to flow of a liquid medium, which can influence cellular morphology and behavior.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELLULAR QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Cellular quiescence is a state in which cells are metabolically inactive and do not proliferate, often serving as a protective mechanism.)
+{record_delimiter}
+("entity"{tuple_delimiter}RB-E2F NETWORK{tuple_delimiter}molecule{tuple_delimiter}The Rb-E2F network is a regulatory pathway that controls the transition between quiescence and active cell cycle progression, influencing cellular responses to various stimuli.)
+{record_delimiter}
+("entity"{tuple_delimiter}E2F ACTIVATION{tuple_delimiter}molecule{tuple_delimiter}E2F activation refers to the process by which E2F transcription factors are activated to promote cell cycle progression and regulate gene expression.)
+{record_delimiter}
+("entity"{tuple_delimiter}ADULT STEM CELLS{tuple_delimiter}cell{tuple_delimiter}Adult stem cells are undifferentiated cells found in various tissues that can give rise to specialized cell types and can exist in both quiescent and active states.)
+{record_delimiter}
+("entity"{tuple_delimiter}PHENOMENOLOGICAL CELL-CYCLE MODELS{tuple_delimiter}experimental data{tuple_delimiter>Phenomenological cell-cycle models are theoretical frameworks that describe the dynamics of cell cycle progression based on observable behaviors rather than detailed molecular mechanisms.)
+{record_delimiter}
+("relationship"{tuple_delimiter}CELLS{tuple_delimiter}MEDIUM VISCOSITY{tuple_delimiter}Medium viscosity affects the morphology of cells, influencing their structural characteristics and behavior in response to topographical features.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}RB-E2F NETWORK{tuple_delimiter}CELLULAR QUIESCENCE{tuple_delimiter}The Rb-E2F network plays a crucial role in controlling the depth of cellular quiescence, determining whether cells remain inactive or re-enter the cell cycle.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}E2F ACTIVATION{tuple_delimiter}RB-E2F NETWORK{tuple_delimiter}E2F activation is a key process regulated by the Rb-E2F network, influencing cell cycle progression and quiescence states.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}ADULT STEM CELLS{tuple_delimiter}CELLULAR QUIESCENCE{tuple_delimiter}Adult stem cells can exist in a quiescent state, allowing them to remain inactive until needed for tissue repair or regeneration.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}PHENOMENOLOGICAL CELL-CYCLE MODELS{tuple_delimiter}E2F ACTIVATION{tuple_delimiter}Phenomenological cell-cycle models incorporate E2F activation to explain the dynamics of cell cycle progression and its regulation.{tuple_delimiter}5)
+{completion_delimiter}
+#############################
+
+
+
+-Real Data-
+######################
+entity_types: [cell, molecule, quiescence, senescence, autophagy, growth factor, experimental data, mechanical stress, gene, transcriptome]
+text: {input_text}
+######################
+output:

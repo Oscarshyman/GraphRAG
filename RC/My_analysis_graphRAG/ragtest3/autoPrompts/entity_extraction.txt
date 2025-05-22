@@ -1,0 +1,310 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+1. Identify all entities. For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: One of the following types: [cell, biochemical cues, molecular markers, cell cycle, quiescence, senescence, aging, lysosome, extracellular flow, stem cells, gene expression, mechanotransduction, physiological phenomena, diseases, biomedical research]
+- entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [cell, biochemical cues, molecular markers, cell cycle, quiescence, senescence, aging, lysosome, extracellular flow, stem cells, gene expression, mechanotransduction, physiological phenomena, diseases, biomedical research]
+text:
+otransduction in VascularSmooth Muscle Cells and Fibroblasts.Ann. Biomed. Eng.39, 1608–1619. doi:10.1007/s10439-011-0309-2Shirure,V.S.,Lezia,A.,Tao,A.,Alonzo,L.F.,andGeorge,S.C.(2017).LowLevels of Physiological Interstitial Flow Eliminate Morphogen Gradientsand Guide Angiogenesis.Angiogenesis20, 493–504. doi:10.1007/s10456-017-9559-4Spencer,S.L.,Cappell,S.D.,Tsai,F.-C.,Overton,K.W.,Wang,C.L.,andMeyer, T. (2013). The Proliferation-Quiescence Decision Is Controlled by aBifurcationinCDK2Activity at Mitotic Exit.Cell155, 369–383. doi:10.1016/j.cell.2013.08.062Swartz, M. A., and Fleury, M. E. (2007). Interstitial Flow and its Effects in SoftTissues.Annu. Rev. Biomed. Eng.9, 229–256. doi:10.1146/annurev.bioeng.9.060906.151850Tarbell, J. M., Weinbaum, S., and Kamm, R. D. (2005). Cellular Fluid Mechanicsand Mechanotransduction.Ann. Biomed. Eng.33, 1719–1723. doi:10.1007/s10439-005-8775-zToh, Y. C., and Voldman, J. (2011). Fluid Shear Stress Primes Mouse EmbryonicStem Cells for Differentiation in a Self-renewing Environment via HeparanSulfate Proteoglycans Transduction.FASEB j.25, 1208–1217. doi:10.1096/fj.10-168971Wang, D. M., and Tarbell, J. M. (1995). Modeling Interstitial Flow in an ArteryWall Allows Estimation of Wall Shear Stress on Smooth Muscle Cells.J. Biomechanical Eng.117, 358–363. doi:10.1115/1.2794192Wang, X., Fujimaki, K., Mitchell, G. C., Kwon, J. S.,
+------------------------
+output:
+("entity"{tuple_delimiter}VASCULAR SMOOTH MUSCLE CELLS{tuple_delimiter}cell{tuple_delimiter}Vascular Smooth Muscle Cells are specialized cells that regulate blood vessel contraction and relaxation, playing a crucial role in vascular function and blood pressure regulation.)
+{record_delimiter}
+("entity"{tuple_delimiter}FIBROBLASTS{tuple_delimiter}cell{tuple_delimiter}Fibroblasts are a type of cell that synthesizes the extracellular matrix and collagen, playing a critical role in wound healing and tissue repair.)
+{record_delimiter}
+("entity"{tuple_delimiter}PHYSIOLOGICAL INTERSTITIAL FLOW{tuple_delimiter}biochemical cues{tuple_delimiter}Physiological interstitial flow refers to the movement of fluid through the extracellular space in tissues, influencing cellular behavior and tissue homeostasis.)
+{record_delimiter}
+("entity"{tuple_delimiter}MORPHOGEN GRADIENTS{tuple_delimiter}biochemical cues{tuple_delimiter}Morphogen gradients are spatial distributions of signaling molecules that guide tissue development and cellular differentiation.)
+{record_delimiter}
+("entity"{tuple_delimiter}ANGIOGENESIS{tuple_delimiter}physiological phenomena{tuple_delimiter}Angiogenesis is the process through which new blood vessels form from pre-existing vessels, essential for growth and healing.)
+{record_delimiter}
+("entity"{tuple_delimiter}CDK2{tuple_delimiter}molecular markers{tuple_delimiter}CDK2 (Cyclin-dependent kinase 2) is a key regulator of the cell cycle, particularly in the transition from G1 to S phase, influencing cell proliferation and quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL CYCLE{tuple_delimiter}cell cycle{tuple_delimiter}The cell cycle is a series of phases that cells go through to grow and divide, including G1, S, G2, and M phases.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive but can re-enter the cell cycle in response to specific signals.)
+{record_delimiter}
+("entity"{tuple_delimiter}MECHANOTRANSDUCTION{tuple_delimiter}mechanotransduction{tuple_delimiter}Mechanotransduction is the process by which cells sense and respond to mechanical stimuli, influencing cellular functions and behavior.)
+{record_delimiter}
+("entity"{tuple_delimiter}MOUSE EMBRYONIC STEM CELLS{tuple_delimiter}stem cells{tuple_delimiter}Mouse embryonic stem cells are pluripotent cells derived from the inner cell mass of the blastocyst, capable of differentiating into various cell types.)
+{record_delimiter}
+("entity"{tuple_delimiter}HEPARAN SULFATE PROTEOGLYCANS{tuple_delimiter}biochemical cues{tuple_delimiter}Heparan sulfate proteoglycans are glycoproteins that play a role in cell signaling, influencing cell growth, differentiation, and migration.)
+{record_delimiter}
+("relationship"{tuple_delimiter}VASCULAR SMOOTH MUSCLE CELLS{tuple_delimiter}PHYSIOLOGICAL INTERSTITIAL FLOW{tuple_delimiter}Physiological interstitial flow affects the behavior and function of vascular smooth muscle cells, influencing vascular health and disease{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}FIBROBLASTS{tuple_delimiter}PHYSIOLOGICAL INTERSTITIAL FLOW{tuple_delimiter}Physiological interstitial flow influences fibroblast behavior, impacting tissue repair and remodeling processes{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}PHYSIOLOGICAL INTERSTITIAL FLOW{tuple_delimiter}MORPHOGEN GRADIENTS{tuple_delimiter}Physiological interstitial flow can eliminate morphogen gradients, guiding angiogenesis and tissue development{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}CDK2{tuple_delimiter}CELL CYCLE{tuple_delimiter}CDK2 is a critical regulator of the cell cycle, particularly in the transition from quiescence to proliferation{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CELL CYCLE{tuple_delimiter}Quiescence is a state that cells can enter during the cell cycle, allowing them to remain inactive until stimulated to divide{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}MOUSE EMBRYONIC STEM CELLS{tuple_delimiter}HEPARAN SULFATE PROTEOGLYCANS{tuple_delimiter}Heparan sulfate proteoglycans prime mouse embryonic stem cells for differentiation in response to mechanical cues{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}MECHANOTRANSDUCTION{tuple_delimiter}MOUSE EMBRYONIC STEM CELLS{tuple_delimiter}Mechanotransduction processes influence the differentiation of mouse embryonic stem cells in response to their environment{tuple_delimiter}8)
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+entity_types: [cell, biochemical cues, molecular markers, cell cycle, quiescence, senescence, aging, lysosome, extracellular flow, stem cells, gene expression, mechanotransduction, physiological phenomena, diseases, biomedical research]
+text:
+
+
+FIGURE 5 |Extracellular factor replacement drive cells to shallow quiescence. REF/E23 cells seeded in micro/uniFB02uidic devices were induced to and maintained inquiescence by culturing them in serum-starvation medium for 4 days under the/uniFB02ow rates of 5/uni03BCl/h(A)and 20/uni03BCl/h(B). During this period, the/uniFB02ow direction was switchedevery 24 h, after a complete volume of medium (V= 120 and 480/uni03BCl, respectively, forr= 5 and 20/uni03BCl/h) passed through the microchannel; the previous medium(“recycled”) or a fresh medium (“fresh”) of volume V was used to continue the/uniFB02ow experiment in the micro/uniFB02uidic device. Cells were subsequently stimulated withserum at the indicated concentrations for 26 h, and the E2f-On% were assayed. (Top) E2f-GFP histograms with red numbers indicating the average E2f-On% fromduplicate samples (black and grey). (Bottom) Statistic bar chart of the E2f-On% in cell populations (from the top) as a function of extracellular/uniFB02uid replacementcon/uniFB01guration (in serum-starvation) and serum concentration (in serum-stimulation). Error bars, SEM (n= 2), *p<0.05, **p<0.01.
+Frontiers in Cell and Developmental Biology | www.frontiersin.org February 2022 | Volume 10 | Article 7927198
+Liu et al.Extracellular Flow Induces Shallow Quiescenceand 0.85, respectively) of the extracellular/uniFB02uid/uniFB02ow term FR inthe model (Supplementary Table S1), the simulation results arereasonably (although not perfectly) consistent with theexperimental observations (regarding the shear stress effects,Supplementary Figure S3). Together, our modeling andexperimental results suggest that the/uniFB02ow-induced shear stress(physical cue) and replacement of extracellular factors(biochemical cues) contribute agnostically to the effect ofextracellular/uniFB02uid/uniFB02ow in promoting quiescence exit bylowering the activation threshold of the Rb-E2f bistable switch.The good agreement between simulations and
+------------------------
+output:
+("entity"{tuple_delimiter}EXTRACELLULAR FACTOR REPLACEMENT{tuple_delimiter}BIOCHEMICAL CUES{tuple_delimiter}Extracellular factor replacement refers to the process of substituting extracellular components to influence cell behavior, particularly in promoting quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}REF/E23 CELLS{tuple_delimiter}CELL{tuple_delimiter}REF/E23 cells are a specific type of cell used in experiments to study cellular responses to various stimuli, including quiescence and serum stimulation.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive and do not proliferate, often induced by specific environmental conditions.)
+{record_delimiter}
+("entity"{tuple_delimiter}SERUM-STARVATION MEDIUM{tuple_delimiter}BIOCHEMICAL CUES{tuple_delimiter}Serum-starvation medium is a nutrient solution lacking serum, used to induce quiescence in cells by depriving them of growth factors.)
+{record_delimiter}
+("entity"{tuple_delimiter}E2F{tuple_delimiter}MOLECULAR MARKERS{tuple_delimiter}E2F is a family of transcription factors that play a crucial role in regulating the cell cycle and are involved in the transition from quiescence to active cell division.)
+{record_delimiter}
+("entity"{tuple_delimiter}EXTRACELLULAR FLOW{tuple_delimiter}EXTRACELLULAR FLOW{tuple_delimiter}Extracellular flow refers to the movement of fluid in the extracellular space, which can influence cellular behavior through mechanical and biochemical cues.)
+{record_delimiter}
+("entity"{tuple_delimiter}SHEAR STRESS{tuple_delimiter}PHYSIOLOGICAL PHENOMENA{tuple_delimiter}Shear stress is a physical force exerted by fluid flow on cells, which can affect their behavior and state, including quiescence.)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF/E23 CELLS{tuple_delimiter}QUIESCENCE{tuple_delimiter}REF/E23 cells were induced to enter a state of quiescence through serum-starvation and extracellular flow conditions.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}EXTRACELLULAR FLOW{tuple_delimiter}QUIESCENCE{tuple_delimiter}Extracellular flow contributes to the promotion of quiescence by providing mechanical and biochemical cues that influence cell behavior.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}SERUM-STARVATION MEDIUM{tuple_delimiter}QUIESCENCE{tuple_delimiter}Serum-starvation medium is used to induce quiescence in cells by depriving them of growth factors necessary for proliferation.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}E2F{tuple_delimiter}QUIESCENCE{tuple_delimiter}E2F activity is regulated during quiescence, affecting the transition of cells from quiescent to active states.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}SHEAR STRESS{tuple_delimiter}EXTRACELLULAR FLOW{tuple_delimiter}Shear stress is a result of extracellular flow and can influence cellular responses, including quiescence.{tuple_delimiter}8)
+{completion_delimiter}
+#############################
+
+
+Example 3:
+
+entity_types: [cell, biochemical cues, molecular markers, cell cycle, quiescence, senescence, aging, lysosome, extracellular flow, stem cells, gene expression, mechanotransduction, physiological phenomena, diseases, biomedical research]
+text:
+4aactivation occurs through epigenetic derepression in MuSCs [18]
+but via p38 MAPK hyperactivation in HSPCs [14]. Blocking p16INK4aactivation prevents the
+quiescence-to-senescence transition only in a subset of cells [13], suggesting the involvement
+of other molecular effectors driving the quiescence-origin senescence. Furthermore, is
+lysosomal autophagy always the primary trigger for quiescence deepening and transition
+to senescence, and does this process always converge onto the Rb–E2F switch threshold—or
+possibly regulate downstream switches controlling S phase entry [67,68] or downstream
+E2F target genes necessary for cell proliferation [41,78]? Growing cells exiting from either
+the G1 or G2 phase of the cell cycle converge onto the same senescent state with a G1-like
+molecular signature [76]. How about quiescence-origin senescence? What are its molecular
+markers, and to what extent do they overlap with or differ from the markers of proliferation-
+origin senescence, beyond the sustained (if not totally irreversible) arrested phenotype
+(Figure 1)? Future investigations are needed to ﬁnd the answers.
+4. Conclusions
+Unlike conventional proliferation-origin senescence, quiescence-origin senescence
+involves the direct transition of quiescent cells to senescence. It represents a previously
+understudied new type of cellular aging process (Figure 1). Given that the vast majority of
+cells in the human body are in quiescence, not in proliferation, quiescence-origin senescenceBiomedicines2024,12, 1837
+ 6 of 8
+
+is expected to be responsible for a larger proportion of irreversibly arrested senescent cells
+in our tissues than previously realized.
+Understanding the mechanisms underlying the continuum of quiescence-to-senescence
+transition through quiescence deepening has important implications for multiple areas of
+biomedical research and clinical practice, such as cancer biology, aging, and regenerative
+medicine. Future research will reveal both common and cell type-speciﬁc mechanisms
+of quiescence-depth regulation and transition to senescence, identify speciﬁc molecular
+markers, and suggest the optimal strategies to target this group of previously overlooked
+senescent cells to reshape our approaches to promoting health and longevity.
+Funding:This research was partially supported
+------------------------
+output:
+("entity"{tuple_delimiter}MUSCS{tuple_delimiter}CELL{tuple_delimiter}MuSCs (muscle stem cells) are involved in the activation process through epigenetic derepression)
+{record_delimiter}
+("entity"{tuple_delimiter}HSPCS{tuple_delimiter}CELL{tuple_delimiter}HSPCs (hematopoietic stem and progenitor cells) are activated via p38 MAPK hyperactivation)
+{record_delimiter}
+("entity"{tuple_delimiter}P16INK4A{tuple_delimiter}MOLECULAR MARKERS{tuple_delimiter}p16INK4a is a molecular marker that, when blocked, prevents the quiescence-to-senescence transition in a subset of cells)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOMAL AUTOPHAGY{tuple_delimiter}BIOCHEMICAL CUES{tuple_delimiter}Lysosomal autophagy is a biochemical cue that may trigger quiescence deepening and transition to senescence)
+{record_delimiter}
+("entity"{tuple_delimiter}RB-E2F SWITCH{tuple_delimiter}CELL CYCLE{tuple_delimiter}The Rb–E2F switch is a critical regulatory point in the cell cycle that may be influenced by quiescence and senescence processes)
+{record_delimiter}
+("entity"{tuple_delimiter}S PHASE{tuple_delimiter}CELL CYCLE{tuple_delimiter}S phase is a stage in the cell cycle where DNA replication occurs, and its entry may be regulated by quiescence and senescence mechanisms)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL PROLIFERATION{tuple_delimiter}CELL CYCLE{tuple_delimiter}Cell proliferation refers to the process of cell division and growth, which can be affected by senescence and quiescence)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are not actively dividing but can re-enter the cell cycle under certain conditions)
+{record_delimiter}
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Senescence is a state of irreversible cell cycle arrest that can occur as a result of various stressors, including quiescence)
+{record_delimiter}
+("entity"{tuple_delimiter}AGING{tuple_delimiter}AGING{tuple_delimiter}Aging is a biological process characterized by a gradual decline in cellular function and an increase in senescent cells)
+{record_delimiter}
+("entity"{tuple_delimiter}CANCER BIOLOGY{tuple_delimiter}BIOMEDICAL RESEARCH{tuple_delimiter}Cancer biology is a field of biomedical research focused on understanding the mechanisms of cancer development and progression)
+{record_delimiter}
+("entity"{tuple_delimiter}REGENERATIVE MEDICINE{tuple_delimiter}BIOMEDICAL RESEARCH{tuple_delimiter}Regenerative medicine is a branch of biomedical research aimed at repairing or replacing damaged tissues and organs)
+{record_delimiter}
+("relationship"{tuple_delimiter}MUSCS{tuple_delimiter}P16INK4A{tuple_delimiter}p16INK4a is involved in the quiescence-to-senescence transition in MuSCs{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}HSPCS{tuple_delimiter}LYSOSOMAL AUTOPHAGY{tuple_delimiter}HSPCs are activated through p38 MAPK hyperactivation, which may relate to lysosomal autophagy processes{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMAL AUTOPHAGY{tuple_delimiter}QUIESCENCE{tuple_delimiter}Lysosomal autophagy may trigger quiescence deepening, affecting the transition to senescence{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Quiescence-origin senescence involves the direct transition of quiescent cells to senescence{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}SENESCENCE{tuple_delimiter}AGING{tuple_delimiter}Senescence contributes to the aging process by increasing the number of irreversibly arrested cells{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}CANCER BIOLOGY{tuple_delimiter}REGENERATIVE MEDICINE{tuple_delimiter}Understanding quiescence and senescence has implications for both cancer biology and regenerative medicine{tuple_delimiter}7)
+{completion_delimiter}
+#############################
+
+
+Example 4:
+
+entity_types: [cell, biochemical cues, molecular markers, cell cycle, quiescence, senescence, aging, lysosome, extracellular flow, stem cells, gene expression, mechanotransduction, physiological phenomena, diseases, biomedical research]
+text:
+ and senescence as a dimmer
+
+switch. Finally, we found that a gene-
+expression signature developed
+
+by comparing deep and shallow quiescence in fibroblasts can cor-
+rectly classify a wide array of senescent and aging cell types in vitro
+
+and in vivo, suggesting that while qui
+escence is generally considered
+
+to protect cells from irreversible a
+rrest of senescence, quiescence
+
+deepening likely represents a common transition path from cell pro-
+liferation to senescence, related to aging.
+
+quiescence
+|
+dormancy
+|
+senescence
+|
+aging
+|
+lysosome
+
+C
+ell proliferation in multicellular organisms is tightly regu-
+
+lated, and the vast majority of cells in the body stay dormant
+
+and out of the cell cycle at any given moment. The dormant
+
+state, when reversible upon growth signals, is referred to as
+
+cellular quiescence. Quiescence protects cells against stress and
+irreversible arrest, such as senescence; it is fundamental to many
+physiological phenomena, such as stem cell homeostasis and
+
+tissue repair (1
+
+–
+4). Consequently, dysregulation of cellular qui-
+
+escence can lead to a range of hyper- and hypoproliferative
+diseases, including cancer and aging (5
+
+–
+7).
+
+It becomes increasingly recognized that quiescence is a het-
+
+erogeneous state with graded depth. For example, following in-
+jury, muscle and neural stem cells at noninjury sites in the body
+move adaptively into shallower quiescence (alert or primed
+
+quiescent phase), positioning cells to more quickly respond to
+
+injury and reenter the cell cycle when needed (8, 9). In other
+cases, cells move into deep quiescence and require stronger
+
+growth stimulation and longer times to reenter the cell cycle, as
+
+seen in hepatocytes upon partial hepatectomy in older rats than
+in younger ones (10, 11). Similarly, the quiescent state deepens
+in cells that are cultured longer under quiescence-inducing sig-
+
+nals, such as contact inhibition (12, 13) and serum starvation
+(14). Deep quiescent cells can still revert to proliferation under
+
+physiological conditions, appearing distinct from irreversibly
+
+arrested senescent cells (
+
+SI Appendix
+, Fig. S1
+A
+). A graded
+------------------------
+output:
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}cell{tuple_delimiter}Senescence is a state where cells cease to divide and can contribute to aging and various diseases.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}cell{tuple_delimiter}Quiescence is a reversible state of dormancy in which cells are not actively dividing but can re-enter the cell cycle in response to growth signals.)
+{record_delimiter}
+("entity"{tuple_delimiter}AGING{tuple_delimiter}cell{tuple_delimiter}Aging is the gradual decline in physiological function and cellular integrity over time, often associated with increased senescence and quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOME{tuple_delimiter}cell{tuple_delimiter}Lysosomes are organelles that contain enzymes for breaking down waste materials and cellular debris, playing a role in cellular homeostasis.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL CYCLE{tuple_delimiter}cell cycle{tuple_delimiter}The cell cycle is the series of phases that a cell goes through to divide and replicate, including growth, DNA replication, and cell division.)
+{record_delimiter}
+("entity"{tuple_delimiter}STEM CELLS{tuple_delimiter}cell{tuple_delimiter}Stem cells are undifferentiated cells with the potential to develop into various cell types and are crucial for tissue repair and homeostasis.)
+{record_delimiter}
+("entity"{tuple_delimiter}PHYSIOLOGICAL PHENOMENA{tuple_delimiter}physiological phenomena{tuple_delimiter}Physiological phenomena refer to the various functions and processes that occur in living organisms, including responses to injury and cellular behavior.)
+{record_delimiter}
+("entity"{tuple_delimiter}CANCER{tuple_delimiter}diseases{tuple_delimiter}Cancer is a disease characterized by uncontrolled cell growth and division, often linked to dysregulation of the cell cycle and quiescence.)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Quiescence protects cells against irreversible arrest, such as senescence, indicating a relationship between the two states{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}AGING{tuple_delimiter}SENESCENCE{tuple_delimiter}Aging is associated with increased senescence, suggesting a direct relationship between the two processes{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}AGING{tuple_delimiter}Quiescence is a common transition path from cell proliferation to senescence, related to aging{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}STEM CELLS{tuple_delimiter}Quiescence is fundamental to stem cell homeostasis, indicating a strong relationship between these two entities{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CANCER{tuple_delimiter}Dysregulation of cellular quiescence can lead to hyper- and hypoproliferative diseases, including cancer{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}SENESCENCE{tuple_delimiter}CANCER{tuple_delimiter}Senescence can contribute to the development of cancer, indicating a relationship between these two entities{tuple_delimiter}7)
+{completion_delimiter}
+#############################
+
+
+
+-Real Data-
+######################
+entity_types: [cell, biochemical cues, molecular markers, cell cycle, quiescence, senescence, aging, lysosome, extracellular flow, stem cells, gene expression, mechanotransduction, physiological phenomena, diseases, biomedical research]
+text: {input_text}
+######################
+output:

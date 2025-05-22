@@ -1,0 +1,244 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+1. Identify all entities. For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: One of the following types: [research article, person, cell type, biological process, gene, institution, factor]
+- entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [research article, person, cell type, biological process, gene, institution, factor]
+text:
+ Become Activated upon Brain Injury.Cell Stem Cell2015,17, 329–340. [CrossRef]
+44.Rodgers, J.T.; Schroeder, M.D.; Ma, C.; Rando, T.A. HGFA Is an Injury-Regulated Systemic Factor that Induces the Transition of
+Stem Cells into GAlert.Cell Rep.2017,19, 479–486. [CrossRef]
+45.Lee, G.; Espirito Santo, A.I.; Zwingenberger, S.; Cai, L.; Vogl, T.; Feldmann, M.; Horwood, N.J.; Chan, J.K.; Nanchahal, J. Fully
+reduced HMGB1 accelerates the regeneration of multiple tissues by transitioning stem cells to GAlert.Proc. Natl. Acad. Sci. USA
+2018,115, E4463–E4472.
+46. Baker, D.J.; Sedivy, J.M. Probing the depths of cellular senescence. J. Cell Biol.2013,202, 11–13. [CrossRef]
+47. Van Deursen, J.M. The role of senescent cells in ageing. Nature2014,509,
+------------------------
+output:
+("entity"{tuple_delimiter}CELL STEM CELL{tuple_delimiter}RESEARCH ARTICLE{tuple_delimiter}A research article published in Cell Stem Cell in 2015 discussing activation upon brain injury)
+{record_delimiter}
+("entity"{tuple_delimiter}HGFA{tuple_delimiter}FACTOR{tuple_delimiter}HGFA is an injury-regulated systemic factor that induces the transition of stem cells into GAlert)
+{record_delimiter}
+("entity"{tuple_delimiter}GAlert{tuple_delimiter}CELL TYPE{tuple_delimiter}GAlert is a state of stem cells that is induced by HGFA during injury)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL REPORT{tuple_delimiter}RESEARCH ARTICLE{tuple_delimiter}A research article published in Cell Reports in 2017 discussing the role of HGFA in stem cell transition)
+{record_delimiter}
+("entity"{tuple_delimiter}PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES USA{tuple_delimiter}RESEARCH ARTICLE{tuple_delimiter}A research article published in PNAS in 2018 discussing the effects of fully reduced HMGB1 on tissue regeneration)
+{record_delimiter}
+("entity"{tuple_delimiter}HMGB1{tuple_delimiter}FACTOR{tuple_delimiter}HMGB1 is a factor that accelerates the regeneration of multiple tissues by transitioning stem cells to GAlert)
+{record_delimiter}
+("entity"{tuple_delimiter}JOURNAL OF CELL BIOLOGY{tuple_delimiter}RESEARCH ARTICLE{tuple_delimiter}A research article published in the Journal of Cell Biology in 2013 discussing cellular senescence)
+{record_delimiter}
+("entity"{tuple_delimiter}NATURE{tuple_delimiter}RESEARCH ARTICLE{tuple_delimiter}A research article published in Nature in 2014 discussing the role of senescent cells in aging)
+{record_delimiter}
+("entity"{tuple_delimiter}D.J. BAKER{tuple_delimiter}PERSON{tuple_delimiter}D.J. Baker is a researcher who has probed the depths of cellular senescence)
+{record_delimiter}
+("entity"{tuple_delimiter}J.M. SEDIVY{tuple_delimiter}PERSON{tuple_delimiter}J.M. Sedivy is a researcher who has probed the depths of cellular senescence)
+{record_delimiter}
+("entity"{tuple_delimiter}J.M. VAN DEURSEN{tuple_delimiter}PERSON{tuple_delimiter}J.M. Van Deursen is a researcher discussing the role of senescent cells in aging)
+{record_delimiter}
+("relationship"{tuple_delimiter}HGFA{tuple_delimiter}GAlert{tuple_delimiter}HGFA induces the transition of stem cells into GAlert{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}HMGB1{tuple_delimiter}GAlert{tuple_delimiter}Fully reduced HMGB1 accelerates the regeneration of tissues by transitioning stem cells to GAlert{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}D.J. BAKER{tuple_delimiter}JOURNAL OF CELL BIOLOGY{tuple_delimiter}D.J. Baker authored a research article discussing cellular senescence in the Journal of Cell Biology{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}J.M. SEDIVY{tuple_delimiter}JOURNAL OF CELL BIOLOGY{tuple_delimiter}J.M. Sedivy authored a research article discussing cellular senescence in the Journal of Cell Biology{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}J.M. VAN DEURSEN{tuple_delimiter}NATURE{tuple_delimiter}J.M. Van Deursen authored a research article discussing the role of senescent cells in aging in Nature{tuple_delimiter}7)
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+entity_types: [research article, person, cell type, biological process, gene, institution, factor]
+text:
+short exposure (6 h) to either drug was sufficient to inhibit ly-
+
+sosomal function in REF cells, evident by the impaired pro-
+
+teolytic degradation within the lysosomal compartment (
+
+SI
+
+Appendix
+
+, Fig. S5
+A
+). When quiescent cells were treated with
+
+either of these 2 lysosomal inhibitors, increasingly higher serum
+concentrations were required to activate cells to reenter the cell
+
+cycle, in a drug dose-dependent manner (Fig. 4
+
+B
+–
+D
+; red arrow
+
+points to serum concentration for activating
+
+∼
+50% of cells, judged
+
+based on EdU incorporation, E2f-GFP reporter, and propidium
+
+iodide [PI] staining, respectively). Correspondingly, at a given
+serum concentration (e.g., 4% serum), a decreasing percentage of
+
+cells were able to reenter the cell cycle (EdU
++
+)withanincreasing
+
+dose of either lysosomal inhibitor, Baf or CQ (Fig. 4
+
+B
+). The ly-
+
+sosomal inhibition-caused quiescence deepening occurred re-
+
+gardless of the preceding quiescence depth before drug treatment:
+
+As shown in
+
+
+------------------------
+output:
+("entity"{tuple_delimiter}REF CELLS{tuple_delimiter}CELL TYPE{tuple_delimiter}REF cells are a type of cell used in research that exhibit lysosomal function and are affected by drug treatments.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOMAL INHIBITORS{tuple_delimiter}FACTOR{tuple_delimiter}Lysosomal inhibitors are substances that impair lysosomal function, affecting cellular processes such as proteolytic degradation.)
+{record_delimiter}
+("entity"{tuple_delimiter}BAF{tuple_delimiter}FACTOR{tuple_delimiter}Baf is a specific lysosomal inhibitor that affects the reentry of quiescent cells into the cell cycle.)
+{record_delimiter}
+("entity"{tuple_delimiter}CQ{tuple_delimiter}FACTOR{tuple_delimiter}CQ is another lysosomal inhibitor that impacts the ability of quiescent cells to reactivate and reenter the cell cycle.)
+{record_delimiter}
+("entity"{tuple_delimiter}EDU INCORPORATION{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}EdU incorporation is a method used to measure cell proliferation by detecting newly synthesized DNA in cells.)
+{record_delimiter}
+("entity"{tuple_delimiter}E2F-GFP REPORTER{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}E2F-GFP reporter is a tool used to monitor cell cycle progression and activation in response to serum concentrations.)
+{record_delimiter}
+("entity"{tuple_delimiter}PROPIDIUM IODIDE STAINING{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Propidium iodide staining is a technique used to assess cell viability and cell cycle status by staining DNA.)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}LYSOSOMAL INHIBITORS{tuple_delimiter}Lysosomal inhibitors impair the lysosomal function in REF cells, affecting their ability to degrade proteins and reenter the cell cycle.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}BAF{tuple_delimiter}Baf treatment leads to a dose-dependent inhibition of REF cells' ability to reenter the cell cycle.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}CQ{tuple_delimiter}CQ treatment also inhibits REF cells' ability to reactivate and reenter the cell cycle in a dose-dependent manner.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}EDU INCORPORATION{tuple_delimiter}EdU incorporation is used to assess the percentage of REF cells that can reenter the cell cycle after treatment with lysosomal inhibitors.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}E2F-GFP REPORTER{tuple_delimiter}The E2F-GFP reporter is utilized to monitor the activation of REF cells in response to serum concentrations.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}PROPIDIUM IODIDE STAINING{tuple_delimiter}Propidium iodide staining is employed to evaluate the cell cycle status of REF cells after treatment with lysosomal inhibitors.{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+Example 3:
+
+entity_types: [research article, person, cell type, biological process, gene, institution, factor]
+text:
+ lysosomal function continuously modulates quiescence
+depth, acting like a dimmer switch (Fig. 6
+
+H
+).
+
+Quiescence Deepening Is Linked to Cellular Senescence and Aging.
+
+Finally, we examined whether and how deep quiescence in REF
+
+cells is related to the quiescent states of other cell types (case Q)
+and other nongrowth cellular states, such as senescence (case S).
+
+To this end, we first developed a gene-expression signature in-
+
+dicating the quiescence depth in REF cells by performing a
+linear regression analysis of the time-course RNA-seq data (see
+
+Materials and Methods
+
+for details). To identify a signature that
+
+corresponds to a deepening of quiescence as opposed to simply
+
+halting the cell cycle, we omitted the proliferating sample (0 d) from
+the analysis and used samples corresponding to 2- to 16-d
+serum
+
+starvation (i.e., shallow to deep quiescence) to build the regression
+
+model. We next applied this quiescence-depth signature to other
+publicly available RNA-seq datase
+ts related to cases Q and S, above.
+
+AB CD
+
+E
+
+GH
+
+F
+
+
+
+------------------------
+output:
+("entity"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Lysosomal function is involved in modulating cellular quiescence and is linked to cellular senescence and aging.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Quiescence refers to a state of cellular dormancy where cells are not actively dividing but can be activated under certain conditions.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Cellular senescence is a state where cells cease to divide and can contribute to aging and tissue dysfunction.)
+{record_delimiter}
+("entity"{tuple_delimiter}AGING{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Aging is the process of becoming older, characterized by a gradual decline in physiological function and increased susceptibility to diseases.)
+{record_delimiter}
+("entity"{tuple_delimiter}REF CELLS{tuple_delimiter}CELL TYPE{tuple_delimiter}REF cells are a type of cell used in research to study quiescence and cellular responses to various stimuli.)
+{record_delimiter}
+("entity"{tuple_delimiter}GENE-EXPRESSION SIGNATURE{tuple_delimiter}GENE{tuple_delimiter}A gene-expression signature is a specific pattern of gene expression that can indicate particular cellular states, such as quiescence depth.)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}QUIESCENCE{tuple_delimiter}Lysosomal function modulates quiescence, affecting how cells enter and maintain this dormant state{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}Quiescence is linked to cellular senescence, as both processes involve changes in cell cycle activity and can influence aging{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}AGING{tuple_delimiter}Cellular senescence contributes to the aging process by promoting tissue dysfunction and limiting regenerative capacity{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}QUIESCENCE{tuple_delimiter}REF cells are used to study the mechanisms of quiescence and how it can be influenced by various factors{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}GENE-EXPRESSION SIGNATURE{tuple_delimiter}QUIESCENCE{tuple_delimiter}The gene-expression signature developed indicates the depth of quiescence in REF cells, providing insights into their cellular state{tuple_delimiter}8)
+{completion_delimiter}
+#############################
+
+
+
+-Real Data-
+######################
+entity_types: [research article, person, cell type, biological process, gene, institution, factor]
+text: {input_text}
+######################
+output:

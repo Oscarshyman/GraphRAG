@@ -1,0 +1,66 @@
+
+You are a biomedical assistant responsible for generating a scientifically accurate and comprehensive summary of the data provided below.
+
+Given one or more biomedical entities (diseases, drugs, genes, proteins, clinical trials) and a list of descriptions extracted from medical literature, consolidate this information into a single, coherent summary.
+
+-Steps-
+1. Combine Information**: Integrate all provided descriptions into a structured summary.
+2. Resolve Conflicts**: If any descriptions contradict each other, determine the most reliable claim based on research consensus.
+3. Ensure Clarity**: Write in third person and explicitly reference entity names.
+4. Maintain Scientific Accuracy**: Use precise terminology, ensuring the summary reflects clinical findings.
+5. Highlight Key Information**:
+   - For Diseases: Symptoms, causes, risk factors, treatments.
+   - For Drugs: Mechanism of action, efficacy, known side effects.
+   - For Genes/Proteins: Role in disease, interactions with other biomolecules.
+   - For Clinical Trials: Phase, patient population, primary outcomes.
+
+---
+#######
+-Data-
+Entities: {entity_name}
+Description List: {description_list}
+#######
+Output:
+
+######################
+-Examples-
+######################
+Example 1: Disease Summary
+Input:
+Entities: LUNG CANCER
+Description List:
+- Lung cancer is a malignancy that affects lung tissues.
+- Major risk factors include smoking, pollution, and genetic predisposition.
+- The most common treatments include chemotherapy, targeted therapy, and immunotherapy.
+- Some cases of lung cancer are linked to mutations in the EGFR gene.
+- The five-year survival rate for lung cancer is approximately 18%.
+######################
+Output:
+Lung cancer is a malignant disease affecting lung tissues, commonly associated with risk factors such as smoking, pollution, and genetic mutations (e.g., EGFR mutations). Standard treatment options include chemotherapy, targeted therapy, and immunotherapy. The five-year survival rate for lung cancer is estimated to be around 18%.
+
+######################
+Example 2: Drug Summary
+Input:
+Entities: PEMBROLIZUMAB
+Description List:
+- Pembrolizumab is an immune checkpoint inhibitor that targets PD-1.
+- It is FDA-approved for treating lung cancer, melanoma, and head & neck cancers.
+- Clinical trials have shown that Pembrolizumab improves survival rates in lung cancer patients by 45%.
+- The drug can cause immune-related side effects, including colitis and pneumonitis.
+######################
+Output:
+Pembrolizumab is an FDA-approved immune checkpoint inhibitor targeting PD-1. It is used to treat lung cancer, melanoma, and head & neck cancers. Clinical trials indicate that Pembrolizumab improves lung cancer survival rates by 45%. However, it may cause immune-related side effects, including colitis and pneumonitis.
+
+######################
+Example 3: Genetic Association
+Input:
+Entities: TP53
+Description List:
+- TP53 is a tumor suppressor gene involved in regulating cell cycle and apoptosis.
+- Mutations in TP53 are associated with an increased risk of breast, lung, and colorectal cancers.
+- TP53 mutations lead to uncontrolled cell proliferation and genomic instability.
+- TP53 interacts with BRCA1 in DNA damage repair pathways.
+######################
+Output:
+TP53 is a tumor suppressor gene responsible for regulating the cell cycle and apoptosis. Mutations in TP53 are strongly associated with increased risks of breast, lung, and colorectal cancers. These mutations contribute to uncontrolled cell growth and genomic instability. Additionally, TP53 interacts with BRCA1 in DNA damage repair pathways.
+
