@@ -5,7 +5,7 @@ Given a text document that is potentially relevant to this activity and a list o
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [person, publication, cellular senescence, cell cycle, quiescence, gene expression, metabolic activity, stem cells, epigenetic regulation, lysosomal function]
+- entity_type: One of the following types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
 
@@ -28,263 +28,190 @@ Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tupl
 
 Example 1:
 
-entity_types: [person, publication, cellular senescence, cell cycle, quiescence, gene expression, metabolic activity, stem cells, epigenetic regulation, lysosomal function]
+entity_types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
 text:
-.; Bishop, C.; Campisi, J.; Collado, M.; Evangelou, K.;
-Ferbeyre, G.; et al. Cellular Senescence: Defining a Path Forward. Cell 2019, 179, 813–827.
-Lanz, M.C.; Zatulovskiy, E.; Swaffer, M.P.; Zhang, L.; Ilerten, I.; Zhang, S.; You, D.S.; Marinov, G.; McAlpine, P.; Elias, J.E.; et
-al. Increasing cell size remodels the proteome and promotes senescence. Mol. Cell 2022, 82, 3255–3269.e8.
-Coller, H.A.; Sang, L.; Roberts, J.M. A New Description of Cellular Quiescence. PLoS Biol. 2006, 4, e83.
-Marescal, O.; Cheeseman, I.M. Cellular Mechan
+off the mold with formed microchannel grooves (Figure 1A).
+After punching inlet and outlet holes at the two ends of a channel,
+the PDMS microchannel was bonded with a glass slide following
+oxygen plasma treatment of the bonding surfaces (Figure 1B).
+Next, a pair of inlet and outlet tubing adapters was assembled for
+each device to connect the microchannel to the external ﬂow
+control system. The device fabrication and packaging were
+completed with incubation at 55°C for an hour to enhance the
+bonding strength (Figure 1C). Prior to experiments, the
+microﬂuidic devices were sterilized by ﬂowing ethanol through
+the microchannels, followed by UV irradiation for 1 h inside a
+biosafety hood. The inner surfaces of the microchannel were
+coated with 2% (w/w) ﬁbronectin to enhance the adhesion of cells
+to the bottom surface.
+
+
 ------------------------
 output:
-("entity"{tuple_delimiter}BISHOP, C.{tuple_delimiter}PERSON{tuple_delimiter}C. Bishop is one of the authors of the publication discussing cellular senescence.)
+("entity"{tuple_delimiter}MICROCHANNEL{tuple_delimiter}TISSUE ENGINEERING{tuple_delimiter}Microchannels are structures used in tissue engineering to facilitate fluid flow and enhance cell adhesion.)
 {record_delimiter}
-("entity"{tuple_delimiter}CAMPISI, J.{tuple_delimiter}PERSON{tuple_delimiter}J. Campisi is one of the authors of the publication discussing cellular senescence.)
+("entity"{tuple_delimiter}PDMS{tuple_delimiter}TISSUE ENGINEERING{tuple_delimiter}PDMS (Polydimethylsiloxane) is a silicone material commonly used in the fabrication of microfluidic devices due to its biocompatibility and ease of use.)
 {record_delimiter}
-("entity"{tuple_delimiter}COLLADO, M.{tuple_delimiter}PERSON{tuple_delimiter}M. Collado is one of the authors of the publication discussing cellular senescence.)
+("entity"{tuple_delimiter}ETHANOL{tuple_delimiter}CELL{tuple_delimiter}Ethanol is used for sterilization of microfluidic devices to eliminate contaminants before cell experiments.)
 {record_delimiter}
-("entity"{tuple_delimiter}EVANGELOU, K.{tuple_delimiter}PERSON{tuple_delimiter}K. Evangelou is one of the authors of the publication discussing cellular senescence.)
+("entity"{tuple_delimiter}FIBRONECTIN{tuple_delimiter}CELL{tuple_delimiter}Fibronectin is a glycoprotein that enhances cell adhesion to surfaces, crucial for cell culture in tissue engineering applications.)
 {record_delimiter}
-("entity"{tuple_delimiter}FERBEYRE, G.{tuple_delimiter}PERSON{tuple_delimiter}G. Ferbeyre is one of the authors of the publication discussing cellular senescence.)
+("relationship"{tuple_delimiter}MICROCHANNEL{tuple_delimiter}PDMS{tuple_delimiter}Microchannels are fabricated using PDMS, which is essential for creating the structure of the device in tissue engineering.{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}CELLULAR SENESCENCE: DEFINING A PATH FORWARD{tuple_delimiter}PUBLICATION{tuple_delimiter}This publication discusses the concept of cellular senescence and proposes a path forward in understanding its implications.)
+("relationship"{tuple_delimiter}MICROCHANNEL{tuple_delimiter}FIBRONECTIN{tuple_delimiter}Fibronectin is coated on the inner surfaces of microchannels to improve cell adhesion during experiments.{tuple_delimiter}7)
 {record_delimiter}
-("entity"{tuple_delimiter}LANZ, M.C.{tuple_delimiter}PERSON{tuple_delimiter}M.C. Lanz is one of the authors of the publication discussing the effects of cell size on senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}ZATULOVSKIY, E.{tuple_delimiter}PERSON{tuple_delimiter}E. Zatulovskiy is one of the authors of the publication discussing the effects of cell size on senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}SWAFFER, M.P.{tuple_delimiter}PERSON{tuple_delimiter}M.P. Swaffer is one of the authors of the publication discussing the effects of cell size on senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}Zhang, L.{tuple_delimiter}PERSON{tuple_delimiter}L. Zhang is one of the authors of the publication discussing the effects of cell size on senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}CELLULAR SENESCENCE: INCREASING CELL SIZE REMODELS THE PROTEOME AND PROMOTES SENESCENCE{tuple_delimiter}PUBLICATION{tuple_delimiter}This publication discusses how increasing cell size affects the proteome and promotes cellular senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}COLLER, H.A.{tuple_delimiter}PERSON{tuple_delimiter}H.A. Coller is one of the authors of the publication discussing cellular quiescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}SANG, L.{tuple_delimiter}PERSON{tuple_delimiter}L. Sang is one of the authors of the publication discussing cellular quiescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}ROBERTS, J.M.{tuple_delimiter}PERSON{tuple_delimiter}J.M. Roberts is one of the authors of the publication discussing cellular quiescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}A NEW DESCRIPTION OF CELLULAR QUIESCENCE{tuple_delimiter}PUBLICATION{tuple_delimiter}This publication provides a new perspective on the concept of cellular quiescence.)
-{record_delimiter}
-("relationship"{tuple_delimiter}BISHOP, C.{tuple_delimiter}CELLULAR SENESCENCE: DEFINING A PATH FORWARD{tuple_delimiter}C. Bishop is an author of the publication discussing cellular senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}CAMPISI, J.{tuple_delimiter}CELLULAR SENESCENCE: DEFINING A PATH FORWARD{tuple_delimiter}J. Campisi is an author of the publication discussing cellular senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}COLLADO, M.{tuple_delimiter}CELLULAR SENESCENCE: DEFINING A PATH FORWARD{tuple_delimiter}M. Collado is an author of the publication discussing cellular senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}EVANGELOU, K.{tuple_delimiter}CELLULAR SENESCENCE: DEFINING A PATH FORWARD{tuple_delimiter}K. Evangelou is an author of the publication discussing cellular senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}FERBEYRE, G.{tuple_delimiter}CELLULAR SENESCENCE: DEFINING A PATH FORWARD{tuple_delimiter}G. Ferbeyre is an author of the publication discussing cellular senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}LANZ, M.C.{tuple_delimiter}CELLULAR SENESCENCE: INCREASING CELL SIZE REMODELS THE PROTEOME AND PROMOTES SENESCENCE{tuple_delimiter}M.C. Lanz is an author of the publication discussing the effects of cell size on senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}ZATULOVSKIY, E.{tuple_delimiter}CELLULAR SENESCENCE: INCREASING CELL SIZE REMODELS THE PROTEOME AND PROMOTES SENESCENCE{tuple_delimiter}E. Zatulovskiy is an author of the publication discussing the effects of cell size on senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}SWAFFER, M.P.{tuple_delimiter}CELLULAR SENESCENCE: INCREASING CELL SIZE REMODELS THE PROTEOME AND PROMOTES SENESCENCE{tuple_delimiter}M.P. Swaffer is an author of the publication discussing the effects of cell size on senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}Zhang, L.{tuple_delimiter}CELLULAR SENESCENCE: INCREASING CELL SIZE REMODELS THE PROTEOME AND PROMOTES SENESCENCE{tuple_delimiter}L. Zhang is an author of the publication discussing the effects of cell size on senescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}COLLER, H.A.{tuple_delimiter}A NEW DESCRIPTION OF CELLULAR QUIESCENCE{tuple_delimiter}H.A. Coller is an author of the publication discussing cellular quiescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}SANG, L.{tuple_delimiter}A NEW DESCRIPTION OF CELLULAR QUIESCENCE{tuple_delimiter}L. Sang is an author of the publication discussing cellular quiescence.{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}ROBERTS, J.M.{tuple_delimiter}A NEW DESCRIPTION OF CELLULAR QUIESCENCE{tuple_delimiter}J.M. Roberts is an author of the publication discussing cellular quiescence.{tuple_delimiter}8)
+("relationship"{tuple_delimiter}ETHANOL{tuple_delimiter}MICROCHANNEL{tuple_delimiter}Ethanol is used to sterilize the microchannels before cell experiments, ensuring a contaminant-free environment.{tuple_delimiter}9)
 {completion_delimiter}
 #############################
 
 
 Example 2:
 
-entity_types: [person, publication, cellular senescence, cell cycle, quiescence, gene expression, metabolic activity, stem cells, epigenetic regulation, lysosomal function]
+entity_types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
 text:
-��ow rate effects (orange), except that the FR term in
-Supplementary Table S1 was multiplied by 0.75 and 0.85, respectively. Blue
-triangle, the average E2f-On% in response to 2% serum stimulation, in cells under 5
-ul/h extracellular ﬂuid ﬂow with the indicated shear stress level during serum
-starvation (as in Figure 6B, based on Figure 4A and Table 1). Each solid curve
-represents the best ﬁt of simulation data points to a Hill function.
+ Bone Tissue Engineering: The
+Role of Interstitial Fluid Flow. Biotechnol. Bioeng. 43, 573–581. doi:10.1002/bit.
+260430706
 
-Hyler, A. R., Baudoin, N. C., Brown, M. S., Stremler, M. A., Cimini, D., Davalos, R.
-V., et al. (2018). Fluid Shear Stress Impacts Ovarian Cancer Cell Viability,
-Subcellular Organization, and Promotes Genomic Instability.
+Frontiers in Cell and Developmental Biology | www.frontiersin.org
+
+11
+
+February 2022 | Volume 10 | Article 792719
+
+Liu et al.
+
+Extracellular Flow Induces Shallow Quiescence
+
+Wiig, H. (1990). Evaluation of Methodologies for Measurement of Interstitial Fluid
+Pressure (Pi): Physiological Implications of Recent Pi Data. Crit. Rev. Biomed.
+Eng. 18, 27–54.
+Wilson, A., Laurenti, E., Oser, G., van der Wath, R. C., Blanco-Bose, W., Jaworski,
+M., et al. (2008). Hematopoietic Stem Cells Reversibly Switch from Dormancy
+to Self-R
 ------------------------
 output:
-("entity"{tuple_delimiter}HYLER, A. R.{tuple_delimiter}PERSON{tuple_delimiter}A. R. Hyler is one of the authors of the publication discussing fluid shear stress impacts on ovarian cancer cell viability.)
+("entity"{tuple_delimiter}BONE TISSUE ENGINEERING{tuple_delimiter}TISSUE ENGINEERING{tuple_delimiter}Bone Tissue Engineering involves the use of biological and engineering principles to create bone tissue for medical applications.)
 {record_delimiter}
-("entity"{tuple_delimiter}BAUDOIN, N. C.{tuple_delimiter}PERSON{tuple_delimiter}N. C. Baudoin is one of the authors of the publication discussing fluid shear stress impacts on ovarian cancer cell viability.)
+("entity"{tuple_delimiter}INTERSTITIAL FLUID FLOW{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}Interstitial Fluid Flow refers to the movement of fluid through the spaces between cells, which can influence cellular behavior and tissue engineering.)
 {record_delimiter}
-("entity"{tuple_delimiter}BROWN, M. S.{tuple_delimiter}PERSON{tuple_delimiter}M. S. Brown is one of the authors of the publication discussing fluid shear stress impacts on ovarian cancer cell viability.)
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive but can re-enter the cell cycle when stimulated.)
 {record_delimiter}
-("entity"{tuple_delimiter}STREMLER, M. A.{tuple_delimiter}PERSON{tuple_delimiter}M. A. Stremler is one of the authors of the publication discussing fluid shear stress impacts on ovarian cancer cell viability.)
+("entity"{tuple_delimiter}HEMATOPOIETIC STEM CELLS{tuple_delimiter}STEM CELLS{tuple_delimiter}Hematopoietic Stem Cells are multipotent stem cells that give rise to all blood cell types and can switch between dormancy and active proliferation.)
 {record_delimiter}
-("entity"{tuple_delimiter}CIMINI, D.{tuple_delimiter}PERSON{tuple_delimiter}D. Cimini is one of the authors of the publication discussing fluid shear stress impacts on ovarian cancer cell viability.)
+("relationship"{tuple_delimiter}INTERSTITIAL FLUID FLOW{tuple_delimiter}QUIESCENCE{tuple_delimiter}Interstitial Fluid Flow can induce a state of shallow quiescence in cells, affecting their activity and proliferation{tuple_delimiter}7)
 {record_delimiter}
-("entity"{tuple_delimiter}DAVALOS, R. V.{tuple_delimiter}PERSON{tuple_delimiter}R. V. Davalos is one of the authors of the publication discussing fluid shear stress impacts on ovarian cancer cell viability.)
+("relationship"{tuple_delimiter}HEMATOPOIETIC STEM CELLS{tuple_delimiter}QUIESCENCE{tuple_delimiter}Hematopoietic Stem Cells can reversibly switch from dormancy to self-renewal, indicating a relationship with quiescence{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}FLUID SHEAR STRESS{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}Fluid shear stress is a mechanical force that can impact cell viability and genomic stability in ovarian cancer cells.)
-{record_delimiter}
-("entity"{tuple_delimiter}OVARIAN CANCER{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}Ovarian cancer is a type of cancer that is affected by fluid shear stress, impacting cell viability and subcellular organization.)
-{record_delimiter}
-("entity"{tuple_delimiter}GENOMIC INSTABILITY{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}Genomic instability is a condition that can be promoted by fluid shear stress in ovarian cancer cells.)
-{record_delimiter}
-("entity"{tuple_delimiter}FLUID SHEAR STRESS IMPACTS OVARIAN CANCER CELL VIABILITY, SUBCELLULAR ORGANIZATION, AND PROMOTES GENOMIC INSTABILITY{tuple_delimiter}PUBLICATION{tuple_delimiter}This publication discusses the effects of fluid shear stress on ovarian cancer cell viability, subcellular organization, and genomic instability.)
-{record_delimiter}
-("relationship"{tuple_delimiter}FLUID SHEAR STRESS{tuple_delimiter}OVARIAN CANCER{tuple_delimiter}Fluid shear stress impacts ovarian cancer cell viability and subcellular organization{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}FLUID SHEAR STRESS{tuple_delimiter}GENOMIC INSTABILITY{tuple_delimiter}Fluid shear stress promotes genomic instability in ovarian cancer cells{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}OVARIAN CANCER{tuple_delimiter}GENOMIC INSTABILITY{tuple_delimiter}Ovarian cancer is associated with genomic instability, which can be influenced by fluid shear stress{tuple_delimiter}7)
-{record_delimiter}
-("relationship"{tuple_delimiter}FLUID SHEAR STRESS IMPACTS OVARIAN CANCER CELL VIABILITY, SUBCELLULAR ORGANIZATION, AND PROMOTES GENOMIC INSTABILITY{tuple_delimiter}FLUID SHEAR STRESS{tuple_delimiter}The publication discusses how fluid shear stress impacts ovarian cancer cell viability, subcellular organization, and promotes genomic instability{tuple_delimiter}9)
-{record_delimiter}
-("relationship"{tuple_delimiter}FLUID SHEAR STRESS IMPACTS OVARIAN CANCER CELL VIABILITY, SUBCELLULAR ORGANIZATION, AND PROMOTES GENOMIC INSTABILITY{tuple_delimiter}OVARIAN CANCER{tuple_delimiter}The publication discusses how ovarian cancer is affected by fluid shear stress{tuple_delimiter}9)
-{record_delimiter}
-("relationship"{tuple_delimiter}FLUID SHEAR STRESS IMPACTS OVARIAN CANCER CELL VIABILITY, SUBCELLULAR ORGANIZATION, AND PROMOTES GENOMIC INSTABILITY{tuple_delimiter}GENOMIC INSTABILITY{tuple_delimiter}The publication discusses how genomic instability is promoted by fluid shear stress in ovarian cancer cells{tuple_delimiter}9)
+("relationship"{tuple_delimiter}BONE TISSUE ENGINEERING{tuple_delimiter}INTERSTITIAL FLUID FLOW{tuple_delimiter}Bone Tissue Engineering can be influenced by Interstitial Fluid Flow, which plays a role in the development and maintenance of engineered tissues{tuple_delimiter}6)
 {completion_delimiter}
 #############################
 
 
 Example 3:
 
-entity_types: [person, publication, cellular senescence, cell cycle, quiescence, gene expression, metabolic activity, stem cells, epigenetic regulation, lysosomal function]
+entity_types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
 text:
- Spector, D.L.; Hannon, G.J.; Lowe, S.W. Rb-Mediated Heterochromatin
-Formation and Silencing of E2F Target Genes during Cellular Senescence. Cell 2003, 113, 703–716. [CrossRef] [PubMed]
-Crouch, J.; Shvedova, M.; Thanapaul, R.; Botchkarev, V.; Roh, D. Epigenetic Regulation of Cellular Senescence. Cells 2022, 11, 672.
-[CrossRef]
-Paluvai, H.; Di Giorgio, E.; Brancolini, C. The Histone Code of Senescence. Cells 2020, 9, 466. [CrossRef]
-
-Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
-author(s) and contributor(s) and not of MDPI and/or the editor
+ exact mechanisms
+dictating the relationship between lysosomal function and quiescence depth awaits further studies.
+Our results suggest that lysosomal function prevents quiescence deepening via ROS reduction (Fig. 6). Previous studies
+have shown that the lysosome–autophagy pathway reduces ROS
+in several types of quiescent cells (15, 16) through mitophagy:
+That is, selective autophagic degradation of damaged mitochondria (15). It remains to be tested whether lysosomes prevent
+quiescence deepening in REF cells via mitophagy, but the reduced mitochondrial ROS levels resulting from enhanced lysosomal function (Fig. 6 E and F) is consistent with this model.
+It was shown previously that mTORC1 can transform muscle
+stem cells into a shallower quiescent state, called GAlert, in which
+cells are sensitized to growth stimulation (8). Consistently, continuous mTORC1 activation led to depletion of certain types
 ------------------------
 output:
-("entity"{tuple_delimiter}SPECTOR, D.L.{tuple_delimiter}PERSON{tuple_delimiter}D.L. Spector is an author of a publication discussing Rb-mediated heterochromatin formation and silencing of E2F target genes during cellular senescence.)
+("entity"{tuple_delimiter}LYSOSOME{tuple_delimiter}cell{tuple_delimiter}Lysosomes are organelles that play a crucial role in cellular waste disposal and recycling, involved in the degradation of damaged cellular components through autophagy.)
 {record_delimiter}
-("entity"{tuple_delimiter}HANNON, G.J.{tuple_delimiter}PERSON{tuple_delimiter}G.J. Hannon is an author of a publication discussing Rb-mediated heterochromatin formation and silencing of E2F target genes during cellular senescence.)
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive but can re-enter the cell cycle in response to specific stimuli.)
 {record_delimiter}
-("entity"{tuple_delimiter}LOWE, S.W.{tuple_delimiter}PERSON{tuple_delimiter}S.W. Lowe is an author of a publication discussing Rb-mediated heterochromatin formation and silencing of E2F target genes during cellular senescence.)
+("entity"{tuple_delimiter}AUTOPHAGY{tuple_delimiter}autophagy{tuple_delimiter}Autophagy is a cellular degradation process that removes damaged organelles and proteins, maintaining cellular homeostasis and responding to stress.)
 {record_delimiter}
-("entity"{tuple_delimiter}RB-MEDIATED HETERCHROMATIN FORMATION{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}Rb-mediated heterochromatin formation is a process involved in the silencing of E2F target genes during cellular senescence.)
+("entity"{tuple_delimiter}ROS{tuple_delimiter}molecular markers{tuple_delimiter}Reactive oxygen species (ROS) are chemically reactive molecules containing oxygen that can lead to cellular damage but are also involved in signaling pathways.)
 {record_delimiter}
-("entity"{tuple_delimiter}E2F TARGET GENES{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}E2F target genes are regulated during cellular senescence, particularly through Rb-mediated mechanisms.)
+("entity"{tuple_delimiter}MUSCLE STEM CELLS{tuple_delimiter}stem cells{tuple_delimiter}Muscle stem cells are a type of stem cell that can differentiate into muscle cells and are involved in muscle regeneration and repair.)
 {record_delimiter}
-("entity"{tuple_delimiter}CROUCH, J.{tuple_delimiter}PERSON{tuple_delimiter}J. Crouch is an author of a publication discussing epigenetic regulation of cellular senescence.)
+("relationship"{tuple_delimiter}LYSOSOME{tuple_delimiter}QUIESCENCE{tuple_delimiter)Lysosomal function is suggested to prevent quiescence deepening by reducing ROS levels, indicating a protective role in maintaining quiescent states.{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}SHVEDOVA, M.{tuple_delimiter}PERSON{tuple_delimiter}M. Shvedova is an author of a publication discussing epigenetic regulation of cellular senescence.)
+("relationship"{tuple_delimiter}LYSOSOME{tuple_delimiter}AUTOPHAGY{tuple_delimiter}The lysosome-autophagy pathway is involved in reducing ROS in quiescent cells, linking lysosomal function to autophagic processes.{tuple_delimiter}7)
 {record_delimiter}
-("entity"{tuple_delimiter}THANAPAUL, R.{tuple_delimiter}PERSON{tuple_delimiter}R. Thanapaul is an author of a publication discussing epigenetic regulation of cellular senescence.)
+("relationship"{tuple_delimiter}AUTOPHAGY{tuple_delimiter}QUIESCENCE{tuple_delimiter}Autophagy contributes to the maintenance of quiescence by degrading damaged mitochondria, thus influencing the quiescent state of cells.{tuple_delimiter}6)
 {record_delimiter}
-("entity"{tuple_delimiter}BOTCHKAREV, V.{tuple_delimiter}PERSON{tuple_delimiter}V. Botchkarev is an author of a publication discussing epigenetic regulation of cellular senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}ROH, D.{tuple_delimiter}PERSON{tuple_delimiter}D. Roh is an author of a publication discussing epigenetic regulation of cellular senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}EPIGENETIC REGULATION OF CELLULAR SENESCENCE{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}Epigenetic regulation plays a crucial role in the process of cellular senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}PALUVAI, H.{tuple_delimiter}PERSON{tuple_delimiter}H. Paluvai is an author of a publication discussing the histone code of senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}DI GIORGIO, E.{tuple_delimiter}PERSON{tuple_delimiter}E. Di Giorgio is an author of a publication discussing the histone code of senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}BRANCOLINI, C.{tuple_delimiter}PERSON{tuple_delimiter}C. Brancolini is an author of a publication discussing the histone code of senescence.)
-{record_delimiter}
-("entity"{tuple_delimiter}HISTONE CODE OF SENESCENCE{tuple_delimiter}CELLULAR SENESCENCE{tuple_delimiter}The histone code of senescence refers to the specific modifications of histones that regulate gene expression during cellular senescence.)
-{record_delimiter}
-("relationship"{tuple_delimiter}SPECTOR, D.L.{tuple_delimiter}RB-MEDIATED HETERCHROMATIN FORMATION{tuple_delimiter}D.L. Spector is an author discussing Rb-mediated heterochromatin formation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}HANNON, G.J.{tuple_delimiter}RB-MEDIATED HETERCHROMATIN FORMATION{tuple_delimiter}G.J. Hannon is an author discussing Rb-mediated heterochromatin formation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}LOWE, S.W.{tuple_delimiter}RB-MEDIATED HETERCHROMATIN FORMATION{tuple_delimiter}S.W. Lowe is an author discussing Rb-mediated heterochromatin formation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}CROUCH, J.{tuple_delimiter}EPIGENETIC REGULATION OF CELLULAR SENESCENCE{tuple_delimiter}J. Crouch is an author discussing epigenetic regulation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}SHVEDOVA, M.{tuple_delimiter}EPIGENETIC REGULATION OF CELLULAR SENESCENCE{tuple_delimiter}M. Shvedova is an author discussing epigenetic regulation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}THANAPAUL, R.{tuple_delimiter}EPIGENETIC REGULATION OF CELLULAR SENESCENCE{tuple_delimiter}R. Thanapaul is an author discussing epigenetic regulation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}BOTCHKAREV, V.{tuple_delimiter}EPIGENETIC REGULATION OF CELLULAR SENESCENCE{tuple_delimiter}V. Botchkarev is an author discussing epigenetic regulation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}ROH, D.{tuple_delimiter}EPIGENETIC REGULATION OF CELLULAR SENESCENCE{tuple_delimiter}D. Roh is an author discussing epigenetic regulation in cellular senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}PALUVAI, H.{tuple_delimiter}HISTONE CODE OF SENESCENCE{tuple_delimiter}H. Paluvai is an author discussing the histone code in senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}DI GIORGIO, E.{tuple_delimiter}HISTONE CODE OF SENESCENCE{tuple_delimiter}E. Di Giorgio is an author discussing the histone code in senescence{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}BRANCOLINI, C.{tuple_delimiter}HISTONE CODE OF SENESCENCE{tuple_delimiter}C. Brancolini is an author discussing the histone code in senescence{tuple_delimiter}8)
+("relationship"{tuple_delimiter}MUSCLE STEM CELLS{tuple_delimiter}QUIESCENCE{tuple_delimiter}mTORC1 activation in muscle stem cells can lead to a shallower quiescent state, indicating a relationship between stem cell behavior and quiescence.{tuple_delimiter}5)
 {completion_delimiter}
 #############################
 
 
 Example 4:
 
-entity_types: [person, publication, cellular senescence, cell cycle, quiescence, gene expression, metabolic activity, stem cells, epigenetic regulation, lysosomal function]
+entity_types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
 text:
-aki et al.
-
-cell, > 2.5-fold, P = 4.9 × e−14 in a 1-tailed t test; per unit area of
-cell, > 2.3-fold, P = 2.9 × e−15 in a 1-tailed t test) (Fig. 2H).
-
-A
-
-B
-
-sion and lysosomal mass as quiescence deepens would lead to an
-increase of lysosomal function. Instead, we found that autophagy
-flux, an indicator for the primary lysosomal function, did not increase but gradually declined as cells moved deeper into quiescence,
-as seen in an LC3-II turnover assay (32) (Fig. 3A). This result posed
-2 immediate questions: 1) What is the relationship between increased lysosomal mass and gene expression to decreased lysosomal
-function? 2) Does declined lysosomal function cause quiescence
-deepening and
+, J. B., Goetz, J. G., Hill, K. L., and Vermot, J. (2012). Fluid Flows and Forces
+in Development: Functions, Features and Biophysical Principles. Development
+139, 1229–1245. doi:10.1242/dev.073593
+Fujimaki, K., Li, R., Chen, H., Della Croce, K., Zhang, H. H., Xing, J., et al. (2019).
+Graded Regulation of Cellular Quiescence Depth between Proliferation and
+Senescence by a Lysosomal Dimmer Switch. Proc. Natl. Acad. Sci. USA 116,
+22624–22634. doi:10.1073/pnas.1915905116
+Fujimaki, K., and Yao, G. (2020). Cell Dormancy Plasticity: Quiescence Deepens
+into Senescence
 ------------------------
 output:
-("entity"{tuple_delimiter}AKI ET AL.{tuple_delimiter}PERSON{tuple_delimiter}Aki et al. refers to a group of researchers involved in the study of cellular senescence and related processes.)
+("entity"{tuple_delimiter}CELL{tuple_delimiter}cell{tuple_delimiter}A basic structural, functional, and biological unit of all known living organisms, which can exist in various states including quiescence and senescence)
 {record_delimiter}
-("entity"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}Lysosomal function refers to the activity of lysosomes in degrading and recycling cellular waste, which is crucial for cellular homeostasis.)
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}A reversible state of cellular dormancy where cells are metabolically active but do not proliferate, allowing them to conserve resources and respond to environmental cues)
 {record_delimiter}
-("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive but can re-enter the cell cycle under certain conditions.)
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}senescence{tuple_delimiter}A permanent state of cell cycle arrest that occurs in response to stress or damage, leading to changes in cell function and contributing to aging and tissue dysfunction)
 {record_delimiter}
-("entity"{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}Gene expression is the process by which information from a gene is used to synthesize functional gene products, typically proteins, which are essential for cellular functions.)
+("entity"{tuple_delimiter}LYSOSOME{tuple_delimiter}lysosome{tuple_delimiter}An organelle that contains digestive enzymes to break down waste materials and cellular debris, playing a crucial role in cellular homeostasis and metabolism)
 {record_delimiter}
-("relationship"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}QUIESCENCE{tuple_delimiter}Increased lysosomal mass is hypothesized to relate to decreased lysosomal function as cells enter deeper states of quiescence, indicating a potential inverse relationship between these two entities.{tuple_delimiter}7)
+("relationship"{tuple_delimiter}CELL{tuple_delimiter}QUIESCENCE{tuple_delimiter}Cells can enter a state of quiescence to conserve energy and resources, which is a reversible process{tuple_delimiter}8)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}The decline in lysosomal function during quiescence may be linked to changes in gene expression, suggesting that gene regulation could influence cellular quiescence states.{tuple_delimiter}6)
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Quiescence can deepen into senescence when cells experience prolonged stress or damage, leading to irreversible cell cycle arrest{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}The relationship between increased lysosomal mass and gene expression may impact lysosomal function, indicating that gene expression could modulate lysosomal activity.{tuple_delimiter}5)
+("relationship"{tuple_delimiter}LYSOSOME{tuple_delimiter}QUIESCENCE{tuple_delimiter}Lysosomes play a role in regulating cellular quiescence by managing cellular waste and maintaining metabolic balance{tuple_delimiter}6)
 {completion_delimiter}
 #############################
 
 
 Example 5:
 
-entity_types: [person, publication, cellular senescence, cell cycle, quiescence, gene expression, metabolic activity, stem cells, epigenetic regulation, lysosomal function]
+entity_types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
 text:
- distribution with the highest frequency
-set at 100% (y axis). (F) Binned MitoSox intensity (log-transformed and normalized with the median of dGFP control set at 0). Cells were grouped according to
-their log-transformed GFP intensity into 20 even-width bins. (G) Quiescence-depth assay of Mitf transfected cells cotreated with tBHP (n = 2). Cells were
-transfected with Mitf-GFP expression vector or dGFP control, induced to quiescence by 2-d serum starvation. Mitf-transfected cells were further treated with
-tBHP at indicated concentration for 1 h. Cells were subsequently stimulated with 4% serum for 24 h and subjected to EdU assay. (H) Model of quiescencedepth regulation by lysosomal function.
-
-Next, we found that inhibiting lysosomal function by Baf and
-CQ, which deepened
+1 min for
+140 µl medium) and identical to all quiescent cell groups,
+avoiding the bias in the exposure time of cells to the
+stimulation medium (if otherwise using slow ﬂows at different
+ﬂow rates, 5 or 20 μl/h). Cells were then incubated with serumstimulation medium at static condition (again, identical to all
+quiescent cell groups). After 26 h of serum stimulation, cells
+inside the channel were harvested, and the intensities of E2fGFP signals from individual cells were measured using a ﬂow
+cytometer (BD LSR II). Flow cytometry data were analyzed using
+FlowJo software (version 10.0).
+The percentage of cells with the E2f at the “On” state (E2f-On
+%) in a cell population after serum stimulation was used as an
+index for quiescence depth before stimulation: the smaller the
 ------------------------
 output:
-("entity"{tuple_delimiter}MITF{tuple_delimiter}gene expression{tuple_delimiter}Mitf is a gene that, when transfected, influences cellular behavior and is involved in quiescence regulation)
+("entity"{tuple_delimiter}QUIESCENT CELL GROUPS{tuple_delimiter}cell{tuple_delimiter}Groups of cells that are in a quiescent state, characterized by a lack of proliferation and metabolic activity, which can be stimulated under certain conditions.)
 {record_delimiter}
-("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state where cells are in a temporary non-dividing phase, often induced by serum starvation)
+("entity"{tuple_delimiter}SERUM STIMULATION MEDIUM{tuple_delimiter}biomedical research{tuple_delimiter}A medium used to stimulate cells, typically containing growth factors and nutrients to promote cell activity and proliferation.)
 {record_delimiter}
-("entity"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}lysosomal function{tuple_delimiter)Lysosomal function refers to the activity of lysosomes in degrading cellular waste and regulating cellular metabolism)
+("entity"{tuple_delimiter}E2F{tuple_delimiter}molecular markers{tuple_delimiter}A family of transcription factors that play a crucial role in regulating the cell cycle and are used as molecular markers to assess cell proliferation and quiescence.)
 {record_delimiter}
-("entity"{tuple_delimiter}T-BHP{tuple_delimiter}metabolic activity{tuple_delimiter}T-BHP is a compound used to induce oxidative stress in cells, affecting their metabolic activity)
+("entity"{tuple_delimiter}FLOW CYTOMETER{tuple_delimiter}biomedical research{tuple_delimiter}An instrument used to measure the physical and chemical characteristics of cells or particles in a fluid as they pass through a laser.)
 {record_delimiter}
-("entity"{tuple_delimiter}EDU ASSAY{tuple_delimiter}cell cycle{tuple_delimiter}EdU assay is a method used to measure cell proliferation by detecting newly synthesized DNA)
+("entity"{tuple_delimiter}FLOWJO SOFTWARE{tuple_delimiter}biomedical research{tuple_delimiter}Software used for analyzing flow cytometry data, allowing researchers to visualize and interpret the characteristics of cell populations.)
 {record_delimiter}
-("relationship"{tuple_delimiter}MITF{tuple_delimiter}QUIESCENCE{tuple_delimiter}Mitf transfection influences the regulation of quiescence in cells{tuple_delimiter}8)
+("relationship"{tuple_delimiter}QUIESCENT CELL GROUPS{tuple_delimiter}SERUM STIMULATION MEDIUM{tuple_delimiter}Quiescent cell groups are incubated with serum stimulation medium to induce cell activity and assess their response to stimulation.{tuple_delimiter}8)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}Quiescence depth regulation is influenced by lysosomal function{tuple_delimiter}7)
+("relationship"{tuple_delimiter}QUIESCENT CELL GROUPS{tuple_delimiter}E2F{tuple_delimiter}The percentage of cells with E2F in the “On” state is used to measure the quiescence depth of the quiescent cell groups.{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}T-BHP{tuple_delimiter}QUIESCENCE{tuple_delimiter}T-BHP treatment induces quiescence in Mitf transfected cells{tuple_delimiter}6)
+("relationship"{tuple_delimiter}E2F{tuple_delimiter}FLOW CYTOMETER{tuple_delimiter}E2F signals from individual cells are measured using a flow cytometer to analyze cell states.{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}EDU ASSAY{tuple_delimiter}The EdU assay is used to assess cell proliferation after quiescence induction{tuple_delimiter}5)
+("relationship"{tuple_delimiter}FLOW CYTOMETER{tuple_delimiter}FLOWJO SOFTWARE{tuple_delimiter}Flow cytometry data collected by the flow cytometer is analyzed using FlowJo software to interpret cell characteristics.{tuple_delimiter}9)
 {completion_delimiter}
 #############################
 
@@ -292,7 +219,7 @@ output:
 
 -Real Data-
 ######################
-entity_types: [person, publication, cellular senescence, cell cycle, quiescence, gene expression, metabolic activity, stem cells, epigenetic regulation, lysosomal function]
+entity_types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
 text: {input_text}
 ######################
 output:
