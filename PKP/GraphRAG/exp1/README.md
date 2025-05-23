@@ -6,7 +6,7 @@ graphrag init --root ./grag-1
 
 mkdir `input` and add txt files
 
-
+(assing OPEN-AI key in .env)
 ## In `settings.yaml`
 
     `model: gpt-4o-mini`

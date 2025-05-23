@@ -9,7 +9,7 @@ encoding_model: cl100k_base # this needs to be matched to your model!
 llm:
   api_key: ${GRAPHRAG_API_KEY} # set this in the generated .env file
   type: openai_chat # or azure_openai_chat
-  model: gpt-4-turbo-preview
+  model: gpt-4o-mini
   model_supports_json: true # recommended if this is available for your model.
   # audience: "https://cognitiveservices.azure.com/.default"
   # api_base: https://<instance>.openai.azure.com
@@ -60,7 +60,7 @@ chunks:
 
 cache:
   type: file # one of [blob, cosmosdb, file]
-  base_dir: "cache"
+  base_dir: "cache_grag-2"
 
 reporting:
   type: file # or console, blob
@@ -68,7 +68,7 @@ reporting:
 
 storage:
   type: file # one of [blob, cosmosdb, file]
-  base_dir: "output"
+  base_dir: "output_grag-2"
 
 ## only turn this on if running `graphrag index` with custom settings
 ## we normally use `graphrag update` with the defaults
@@ -110,7 +110,7 @@ umap:
   enabled: false # if true, will generate UMAP embeddings for nodes (embed_graph must also be enabled)
 
 snapshots:
-  graphml: false
+  graphml: true
   embeddings: false
   transient: false
 

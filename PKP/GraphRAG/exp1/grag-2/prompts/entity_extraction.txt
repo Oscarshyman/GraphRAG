@@ -1,121 +1,209 @@
 
 -Goal-
 Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
- 
+
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [{entity_types}]
+- entity_type: One of the following types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
- 
+
 2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
 For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
- Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
- 
-3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
- 
-4. When finished, output {completion_delimiter}
- 
-######################
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in The primary language of the provided text is "English." as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into The primary language of the provided text is "English.", just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
 -Examples-
 ######################
+
 Example 1:
-Entity_types: ORGANIZATION,PERSON
-Text:
-The Verdantis's Central Institution is scheduled to meet on Monday and Thursday, with the institution planning to release its latest policy decision on Thursday at 1:30 p.m. PDT, followed by a press conference where Central Institution Chair Martin Smith will take questions. Investors expect the Market Strategy Committee to hold its benchmark interest rate steady in a range of 3.5%-3.75%.
-######################
-Output:
-("entity"{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution is the Federal Reserve of Verdantis, which is setting interest rates on Monday and Thursday)
-{record_delimiter}
-("entity"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}PERSON{tuple_delimiter}Martin Smith is the chair of the Central Institution)
-{record_delimiter}
-("entity"{tuple_delimiter}MARKET STRATEGY COMMITTEE{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution committee makes key decisions about interest rates and the growth of Verdantis's money supply)
-{record_delimiter}
-("relationship"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}Martin Smith is the Chair of the Central Institution and will answer questions at a press conference{tuple_delimiter}9)
-{completion_delimiter}
 
-######################
+entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+text:
+
+following the chemical Langevin formulation of the ODE
+
+Frontiers in Cell and Developmental Biology | www.frontiersin.org
+
+framework, which considered both intrinsic and extrinsic
+noise in the system (see Methods for detail), and the results
+are shown in Figure 6.
+A direct comparison between Figure 3B and Figure 6A
+demonstrates that the simulation results, based on the ﬂuid
+ﬂow-incorporated Rb-E2f bistable switch model, are
+qualitatively and quantitatively in good agreement with the
+experimental measurements. This ﬁnding supports our
+hypothesis regarding how extracellular ﬂuid ﬂow may sensitize
+cells to serum growth signals and activate the Rb-E2f bistable
+switch, and thus, reduces quiescence depth. Simulation results
+further show that the effect of extracellular ﬂuid ﬂow is more
+------------------------
+output:
+("entity"{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}molecular mechanism{tuple_delimiter}The Rb-E2F bistable switch is a molecular mechanism that regulates cell cycle progression and is influenced by extracellular fluid flow.)
+{record_delimiter}
+("entity"{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}biological process{tuple_delimiter}Extracellular fluid flow refers to the movement of fluid outside cells, which can affect cellular responses and signaling pathways.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state in which cells are in a reversible non-dividing state, often characterized by reduced metabolic activity.)
+{record_delimiter}
+("entity"{tuple_delimiter}EXPERIMENTAL MEASUREMENTS{tuple_delimiter}experimental measurement{tuple_delimiter>Experimental measurements are quantitative assessments used to validate hypotheses and models in biological research.)
+{record_delimiter}
+("relationship"{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}Extracellular fluid flow activates the Rb-E2F bistable switch, influencing cell sensitivity to growth signals{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}QUIESCENCE{tuple_delimiter}The activation of the Rb-E2F bistable switch reduces the depth of quiescence in cells{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}EXPERIMENTAL MEASUREMENTS{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}Experimental measurements validate the simulation results of the Rb-E2F bistable switch model{tuple_delimiter}9)
+{completion_delimiter}
+#############################
+
+
 Example 2:
-Entity_types: ORGANIZATION
-Text:
-TechGlobal's (TG) stock skyrocketed in its opening day on the Global Exchange Thursday. But IPO experts warn that the semiconductor corporation's debut on the public markets isn't indicative of how other newly listed companies may perform.
 
-TechGlobal, a formerly public company, was taken private by Vision Holdings in 2014. The well-established chip designer says it powers 85% of premium smartphones.
-######################
-Output:
-("entity"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}ORGANIZATION{tuple_delimiter}TechGlobal is a stock now listed on the Global Exchange which powers 85% of premium smartphones)
-{record_delimiter}
-("entity"{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}ORGANIZATION{tuple_delimiter}Vision Holdings is a firm that previously owned TechGlobal)
-{record_delimiter}
-("relationship"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}Vision Holdings formerly owned TechGlobal from 2014 until present{tuple_delimiter}5)
+entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+text:
+ was conducted in the
+absence of any commercial or ﬁnancial relationships that could be construed as a
+potential conﬂict of interest.
+Publisher’s Note: All claims expressed in this article are solely those of the authors
+and do not necessarily represent those of their afﬁliated organizations, or those of
+the publisher, the editors and the reviewers. Any product that may be evaluated in
+this article, orclaim that may be made by its manufacturer, is not guaranteed or
+endorsed by the publisher.
+Copyright © 2022 Liu, Wang, Jiang, Xu, Zohar and Yao. This is an open-access
+article distributed under the terms of the Creative Commons Attribution License (CC
+BY). The use, distribution or reproduction in other forums is permitted, provided the
+original author(s) and the copyright owner(s) are credited and that the original
+publication in this journal is cited, in accordance with accepted academic practice.
+No use, distribution
+------------------------
+output:
 {completion_delimiter}
+#############################
 
-######################
+
 Example 3:
-Entity_types: ORGANIZATION,GEO,PERSON
-Text:
-Five Aurelians jailed for 8 years in Firuzabad and widely regarded as hostages are on their way home to Aurelia.
 
-The swap orchestrated by Quintara was finalized when $8bn of Firuzi funds were transferred to financial institutions in Krohaara, the capital of Quintara.
-
-The exchange initiated in Firuzabad's capital, Tiruzia, led to the four men and one woman, who are also Firuzi nationals, boarding a chartered flight to Krohaara.
-
-They were welcomed by senior Aurelian officials and are now on their way to Aurelia's capital, Cashion.
-
-The Aurelians include 39-year-old businessman Samuel Namara, who has been held in Tiruzia's Alhamia Prison, as well as journalist Durke Bataglani, 59, and environmentalist Meggie Tazbah, 53, who also holds Bratinas nationality.
-######################
-Output:
-("entity"{tuple_delimiter}FIRUZABAD{tuple_delimiter}GEO{tuple_delimiter}Firuzabad held Aurelians as hostages)
+entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+text:
+, Fig. S1C),
+and the serum concentration required for cell cycle reentry increased from <2% to ∼8% (to achieve ∼60% EdU+ measured at
+the 25th hour of serum stimulation) (Fig. 1B). This result is consistent with our earlier findings that the time and serum threshold
+required for cell cycle reentry are 2 related features that both reflect
+the same biological state, the quiescence depth (14). Importantly,
+deep quiescent cells were not irreversibly arrested. For example,
+upon 20% serum stimulation, 92.6% of 16-d serum-starved deep
+quiescent REF cells were able to reenter the cell cycle (EdU+)
+within 41 h (SI Appendix, Fig. S1B).
+To identify molecular mechanisms regulating quiescence
+depth at the transcriptional level, we performed RNA-sequencing
+(RNA-seq) analysis of
+------------------------
+output:
+("entity"{tuple_delimiter}CELL CYCLE{tuple_delimiter}biological process{tuple_delimiter}The cell cycle is a series of phases that cells go through to grow and divide, which can be influenced by serum concentration and quiescence depth.)
 {record_delimiter}
-("entity"{tuple_delimiter}AURELIA{tuple_delimiter}GEO{tuple_delimiter}Country seeking to release hostages)
+("entity"{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}quiescence{tuple_delimiter}Quiescence depth refers to the state of cells being in a deep quiescent phase, where they are not actively dividing but can reenter the cell cycle under certain conditions.)
 {record_delimiter}
-("entity"{tuple_delimiter}QUINTARA{tuple_delimiter}GEO{tuple_delimiter}Country that negotiated a swap of money in exchange for hostages)
+("entity"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}molecular mechanism{tuple_delimiter}Serum stimulation is a process that triggers cells to reenter the cell cycle, with varying concentrations affecting the reentry rate.)
 {record_delimiter}
+("entity"{tuple_delimiter}REF CELLS{tuple_delimiter}cell type{tuple_delimiter}REF cells are a type of cell used in experiments to study quiescence and cell cycle reentry, particularly under serum starvation conditions.)
 {record_delimiter}
-("entity"{tuple_delimiter}TIRUZIA{tuple_delimiter}GEO{tuple_delimiter}Capital of Firuzabad where the Aurelians were being held)
+("entity"{tuple_delimiter}RNA-SEQUENCING{tuple_delimiter}experimental measurement{tuple_delimiter}RNA-sequencing is a technique used to analyze the transcriptome of cells, helping to identify molecular mechanisms regulating quiescence depth.)
 {record_delimiter}
-("entity"{tuple_delimiter}KROHAARA{tuple_delimiter}GEO{tuple_delimiter}Capital city in Quintara)
+("relationship"{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}CELL CYCLE{tuple_delimiter}Quiescence depth affects the ability of cells to reenter the cell cycle upon serum stimulation{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}CASHION{tuple_delimiter}GEO{tuple_delimiter}Capital city in Aurelia)
+("relationship"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}CELL CYCLE{tuple_delimiter>Serum stimulation is necessary for cells to transition from quiescence to active cell cycle reentry{tuple_delimiter}9)
 {record_delimiter}
-("entity"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}PERSON{tuple_delimiter}Aurelian who spent time in Tiruzia's Alhamia Prison)
+("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}REF cells are used to study the effects of quiescence depth on cell cycle reentry{tuple_delimiter}7)
 {record_delimiter}
-("entity"{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}GEO{tuple_delimiter}Prison in Tiruzia)
-{record_delimiter}
-("entity"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}PERSON{tuple_delimiter}Aurelian journalist who was held hostage)
-{record_delimiter}
-("entity"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}PERSON{tuple_delimiter}Bratinas national and environmentalist who was held hostage)
-{record_delimiter}
-("relationship"{tuple_delimiter}FIRUZABAD{tuple_delimiter}AURELIA{tuple_delimiter}Firuzabad negotiated a hostage exchange with Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}AURELIA{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}Samuel Namara was a prisoner at Alhamia prison{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}Samuel Namara and Meggie Tazbah were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Samuel Namara and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Meggie Tazbah and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Samuel Namara was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}FIRUZABAD{tuple_delimiter}Meggie Tazbah was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}FIRUZABAD{tuple_delimiter}Durke Bataglani was a hostage in Firuzabad{tuple_delimiter}2)
+("relationship"{tuple_delimiter}RNA-SEQUENCING{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}RNA-sequencing helps identify the molecular mechanisms that regulate quiescence depth{tuple_delimiter}8)
 {completion_delimiter}
+#############################
 
-######################
+
+Example 4:
+
+entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+text:
+ Genet. 2001, 10, 699–703. [CrossRef]
+Sears, R.C.; Nevins, J.R. Signaling networks that link cell proliferation and cell fate. J. Biol. Chem. 2002, 277, 11617–11620.
+[CrossRef]
+Trimarchi, J.M.; Lees, J.A. Sibling rivalry in the E2F family. Nat. Rev. Mol. Cell Biol. 2002, 3, 11–20. [CrossRef] [PubMed]
+Polager, S.; Ginsberg, D. E2F-at the crossroads of life and death. Trends Cell Biol. 2008, 18, 528–535. [CrossRef] [PubMed]
+Yao, G.; Lee, T.J.; Mori, S.; Nevins, J.R.; You, L. A bistable Rb-E2F switch underlies the restriction point
+------------------------
+output:
+("entity"{tuple_delimiter}E2F{tuple_delimiter}molecular mechanism{tuple_delimiter}E2F is a family of transcription factors that play a crucial role in regulating the cell cycle and cell proliferation.)
+{record_delimiter}
+("entity"{tuple_delimiter}RB-E2F SWITCH{tuple_delimiter}Rb-E2F switch{tuple_delimiter}The Rb-E2F switch is a bistable mechanism that controls the transition between cell proliferation and quiescence, acting as a regulatory checkpoint in the cell cycle.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL PROLIFERATION{tuple_delimiter}biological process{tuple_delimiter}Cell proliferation is the process by which cells divide and reproduce, leading to an increase in cell number.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL FATE{tuple_delimiter}biological process{tuple_delimiter}Cell fate refers to the final differentiated state that a cell will adopt, influenced by various signaling pathways and environmental factors.)
+{record_delimiter}
+("entity"{tuple_delimiter}SIGNALING NETWORKS{tuple_delimiter}molecular mechanism{tuple_delimiter}Signaling networks are complex systems of molecular signals that coordinate cellular responses, linking cell proliferation and cell fate decisions.)
+{record_delimiter}
+("entity"{tuple_delimiter}SIBLING RIVALRY IN E2F FAMILY{tuple_delimiter}hypothesis{tuple_delimiter}The hypothesis suggests that members of the E2F family may compete for binding to target genes, influencing cell cycle progression and differentiation.)
+{record_delimiter}
+("relationship"{tuple_delimiter}E2F{tuple_delimiter}CELL PROLIFERATION{tuple_delimiter}E2F regulates cell proliferation by controlling the expression of genes necessary for cell cycle progression{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}E2F{tuple_delimiter}CELL FATE{tuple_delimiter}E2F influences cell fate decisions by regulating the expression of genes involved in differentiation{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}RB-E2F SWITCH{tuple_delimiter}CELL PROLIFERATION{tuple_delimiter}The Rb-E2F switch is critical for controlling the transition between cell proliferation and quiescence{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}SIGNALING NETWORKS{tuple_delimiter}CELL FATE{tuple_delimiter}Signaling networks play a key role in determining cell fate by integrating various signals that influence differentiation{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}SIBLING RIVALRY IN E2F FAMILY{tuple_delimiter}E2F{tuple_delimiter}The sibling rivalry hypothesis in the E2F family suggests competition among E2F members affects their regulatory functions in the cell cycle{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+Example 5:
+
+entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+text:
+20% (E) or 6% (F). Cells were harvested at the indicated time points (19 h, E; 10 to 30 h,
+F). Error bar in E, SEM (n = 2); **P < 0.01, and ns, insignificance, P > 0.05 (1-tailed t test). Dotted lines in F indicate the estimated median cell cycle reentry time
+(50 nM Baf-treated = 24.3 h; DMSO control = 20.6 h) of the quiescence-exited cells by the 30th hour (n = 2 at each time point). (G and H) EdU profiles of 2d serum-starved cells treated with 20 μM CQ for 5.5 h (G) or 5 μM CQ for 54 h (H), followed by 20% serum stimulation for 48 h (n = 
+------------------------
+output:
+("entity"{tuple_delimiter}CELLS{tuple_delimiter}CELL TYPE{tuple_delimiter}Cells are biological units that can be harvested and analyzed for various experimental measurements and processes.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state where cells exit the cell cycle and enter a resting phase, which can be reversed under certain conditions.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL CYCLE{tuple_delimiter}CELL CYCLE{tuple_delimiter}The cell cycle is a series of phases that cells go through to grow and divide, including reentry from quiescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}EDU PROFILES{tuple_delimiter}EXPERIMENTAL MEASUREMENT{tuple_delimiter}EdU profiles are measurements used to assess cell proliferation by incorporating EdU into newly synthesized DNA.)
+{record_delimiter}
+("entity"{tuple_delimiter}Baf{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Baf is a compound used to treat cells, affecting their reentry into the cell cycle and quiescence exit.)
+{record_delimiter}
+("entity"{tuple_delimiter}CQ{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}CQ is a compound used in experiments to study its effects on cell behavior and quiescence exit.)
+{record_delimiter}
+("relationship"{tuple_delimiter}CELLS{tuple_delimiter}QUIESCENCE{tuple_delimiter}Cells can enter a quiescent state, exiting the cell cycle under specific conditions.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CELL CYCLE{tuple_delimiter}Quiescence is a phase that cells can exit to reenter the cell cycle.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}EDU PROFILES{tuple_delimiter}CELL CYCLE{tuple_delimiter}EdU profiles are used to measure cell proliferation during the cell cycle phases.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Baf{tuple_delimiter}CELL CYCLE{tuple_delimiter}Baf treatment affects the timing of cell cycle reentry from quiescence.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}CQ{tuple_delimiter}CELL CYCLE{tuple_delimiter}CQ treatment influences cell behavior and can affect the exit from quiescence into the cell cycle.{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+
 -Real Data-
 ######################
-Entity_types: {entity_types}
-Text: {input_text}
+entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+text: {input_text}
 ######################
-Output:
+output:
