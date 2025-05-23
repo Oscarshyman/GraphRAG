@@ -5,7 +5,7 @@ Given a text document that is potentially relevant to this activity and a list o
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+- entity_type: One of the following types: [cell, quiescence, serum stimulation, lysosomal function, autophagy, extracellular flow, gene expression, microenvironment, mechanical shear stress, stem cell, senescence]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
 
@@ -28,174 +28,190 @@ Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tupl
 
 Example 1:
 
-entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+entity_types: [cell, quiescence, serum stimulation, lysosomal function, autophagy, extracellular flow, gene expression, microenvironment, mechanical shear stress, stem cell, senescence]
 text:
-
-following the chemical Langevin formulation of the ODE
-
-Frontiers in Cell and Developmental Biology | www.frontiersin.org
-
-framework, which considered both intrinsic and extrinsic
-noise in the system (see Methods for detail), and the results
-are shown in Figure 6.
-A direct comparison between Figure 3B and Figure 6A
-demonstrates that the simulation results, based on the ﬂuid
-ﬂow-incorporated Rb-E2f bistable switch model, are
-qualitatively and quantitatively in good agreement with the
-experimental measurements. This ﬁnding supports our
-hypothesis regarding how extracellular ﬂuid ﬂow may sensitize
-cells to serum growth signals and activate the Rb-E2f bistable
-switch, and thus, reduces quiescence depth. Simulation results
-further show that the effect of extracellular ﬂuid ﬂow is more
+1 min for
+140 µl medium) and identical to all quiescent cell groups,
+avoiding the bias in the exposure time of cells to the
+stimulation medium (if otherwise using slow ﬂows at different
+ﬂow rates, 5 or 20 μl/h). Cells were then incubated with serumstimulation medium at static condition (again, identical to all
+quiescent cell groups). After 26 h of serum stimulation, cells
+inside the channel were harvested, and the intensities of E2fGFP signals from individual cells were measured using a ﬂow
+cytometer (BD LSR II). Flow cytometry data were analyzed using
+FlowJo software (version 10.0).
+The percentage of cells with the E2f at the “On” state (E2f-On
+%) in a cell population after serum stimulation was used as an
+index for quiescence depth before stimulation: the smaller the
 ------------------------
 output:
-("entity"{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}molecular mechanism{tuple_delimiter}The Rb-E2F bistable switch is a molecular mechanism that regulates cell cycle progression and is influenced by extracellular fluid flow.)
+("entity"{tuple_delimiter}QUIESCENT CELL GROUPS{tuple_delimiter}cell{tuple_delimiter}Groups of cells that are in a quiescent state, avoiding bias in exposure time to stimulation medium)
 {record_delimiter}
-("entity"{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}biological process{tuple_delimiter}Extracellular fluid flow refers to the movement of fluid outside cells, which can affect cellular responses and signaling pathways.)
+("entity"{tuple_delimiter}SERUM STIMULATION MEDIUM{tuple_delimiter}serum stimulation{tuple_delimiter}A medium used to stimulate cells, applied under static conditions to induce cellular responses)
 {record_delimiter}
-("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state in which cells are in a reversible non-dividing state, often characterized by reduced metabolic activity.)
+("entity"{tuple_delimiter}E2F{tuple_delimiter}gene expression{tuple_delimiter}A transcription factor that regulates the cell cycle and is measured to assess the quiescence state of cells)
 {record_delimiter}
-("entity"{tuple_delimiter}EXPERIMENTAL MEASUREMENTS{tuple_delimiter}experimental measurement{tuple_delimiter>Experimental measurements are quantitative assessments used to validate hypotheses and models in biological research.)
+("entity"{tuple_delimiter}FLOW CYTOMETER{tuple_delimiter}cell{tuple_delimiter}A device used to measure the intensities of E2fGFP signals from individual cells)
 {record_delimiter}
-("relationship"{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}Extracellular fluid flow activates the Rb-E2F bistable switch, influencing cell sensitivity to growth signals{tuple_delimiter}8)
+("entity"{tuple_delimiter}FLOWJO SOFTWARE{tuple_delimiter}cell{tuple_delimiter}Software used for analyzing flow cytometry data)
 {record_delimiter}
-("relationship"{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}QUIESCENCE{tuple_delimiter}The activation of the Rb-E2F bistable switch reduces the depth of quiescence in cells{tuple_delimiter}7)
+("relationship"{tuple_delimiter}QUIESCENT CELL GROUPS{tuple_delimiter}SERUM STIMULATION MEDIUM{tuple_delimiter}Quiescent cell groups are exposed to serum stimulation medium to assess their response{tuple_delimiter}8)
 {record_delimiter}
-("relationship"{tuple_delimiter}EXPERIMENTAL MEASUREMENTS{tuple_delimiter}R-E2F BISTABLE SWITCH{tuple_delimiter}Experimental measurements validate the simulation results of the Rb-E2F bistable switch model{tuple_delimiter}9)
+("relationship"{tuple_delimiter}SERUM STIMULATION MEDIUM{tuple_delimiter}E2F{tuple_delimiter}Serum stimulation medium affects the expression of E2F in cells, indicating their quiescence state{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}E2F{tuple_delimiter}FLOW CYTOMETER{tuple_delimiter}E2F signals are measured using a flow cytometer to analyze cell states{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}FLOW CYTOMETER{tuple_delimiter}FLOWJO SOFTWARE{tuple_delimiter}Flow cytometry data from the flow cytometer is analyzed using FlowJo software{tuple_delimiter}8)
 {completion_delimiter}
 #############################
 
 
 Example 2:
 
-entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+entity_types: [cell, quiescence, serum stimulation, lysosomal function, autophagy, extracellular flow, gene expression, microenvironment, mechanical shear stress, stem cell, senescence]
 text:
- was conducted in the
-absence of any commercial or ﬁnancial relationships that could be construed as a
-potential conﬂict of interest.
-Publisher’s Note: All claims expressed in this article are solely those of the authors
-and do not necessarily represent those of their afﬁliated organizations, or those of
-the publisher, the editors and the reviewers. Any product that may be evaluated in
-this article, orclaim that may be made by its manufacturer, is not guaranteed or
-endorsed by the publisher.
-Copyright © 2022 Liu, Wang, Jiang, Xu, Zohar and Yao. This is an open-access
-article distributed under the terms of the Creative Commons Attribution License (CC
-BY). The use, distribution or reproduction in other forums is permitted, provided the
-original author(s) and the copyright owner(s) are credited and that the original
-publication in this journal is cited, in accordance with accepted academic practice.
-No use, distribution
+ 3) or separately (Figures 4,
+5). As a result, exposed to a faster extracellular ﬂuid ﬂow, cells
+become more sensitive to serum growth signals and more likely to
+reenter the cell cycle.
+Several questions are left unanswered in our study. First, the
+molecular mechanisms are to be identiﬁed by which ﬂow-induced
+shear stress and extracellular factor replacement lower the
+activation threshold of the Rb-E2f bistable switch.
+Interestingly, increasing medium viscosity (by a higher dextran
+concentration) promotes quiescence exit under a medium ﬂow
+(Figure 4), but it inhibits quiescence exit in static medium
+(Supplementary Figure S2). This result may be associated
+
+Frontiers in Cell and Developmental Biology | www.frontiersin.org
+
+with medium viscosity-induced changes in certain lipoprotein
+synthesis (Yedgar
 ------------------------
 output:
+("entity"{tuple_delimiter}CELL{tuple_delimiter}cell{tuple_delimiter}Cells are biological units that can reenter the cell cycle when exposed to serum growth signals and extracellular fluid flow.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state where cells are inactive and do not divide, but can exit this state under certain conditions such as increased medium viscosity.)
+{record_delimiter}
+("entity"{tuple_delimiter}SERUM GROWTH SIGNALS{tuple_delimiter}serum stimulation{tuple_delimiter}Serum growth signals are factors that promote cell growth and can trigger cells to reenter the cell cycle.)
+{record_delimiter}
+("entity"{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}extracellular flow{tuple_delimiter}Extracellular fluid flow refers to the movement of fluid outside cells, which can influence cell behavior and sensitivity to growth signals.)
+{record_delimiter}
+("entity"{tuple_delimiter}MEDIUM VISCOSITY{tuple_delimiter}mechanical shear stress{tuple_delimiter}Medium viscosity affects the flow characteristics of the culture medium and can influence cell behavior, including quiescence exit.)
+{record_delimiter}
+("relationship"{tuple_delimiter}CELL{tuple_delimiter}SERUM GROWTH SIGNALS{tuple_delimiter}Cells become more sensitive to serum growth signals when exposed to faster extracellular fluid flow, leading to a higher likelihood of reentering the cell cycle.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}MEDIUM VISCOSITY{tuple_delimiter}Increasing medium viscosity promotes quiescence exit under flow conditions but inhibits it in static conditions.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}EXTRACELLULAR FLUID FLOW{tuple_delimiter}CELL{tuple_delimiter}Extracellular fluid flow influences the behavior of cells, making them more likely to reenter the cell cycle.{tuple_delimiter}8)
 {completion_delimiter}
 #############################
 
 
 Example 3:
 
-entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+entity_types: [cell, quiescence, serum stimulation, lysosomal function, autophagy, extracellular flow, gene expression, microenvironment, mechanical shear stress, stem cell, senescence]
 text:
-, Fig. S1C),
-and the serum concentration required for cell cycle reentry increased from <2% to ∼8% (to achieve ∼60% EdU+ measured at
-the 25th hour of serum stimulation) (Fig. 1B). This result is consistent with our earlier findings that the time and serum threshold
-required for cell cycle reentry are 2 related features that both reflect
-the same biological state, the quiescence depth (14). Importantly,
-deep quiescent cells were not irreversibly arrested. For example,
-upon 20% serum stimulation, 92.6% of 16-d serum-starved deep
-quiescent REF cells were able to reenter the cell cycle (EdU+)
-within 41 h (SI Appendix, Fig. S1B).
-To identify molecular mechanisms regulating quiescence
-depth at the transcriptional level, we performed RNA-sequencing
-(RNA-seq) analysis of
+ wells (n = 2) were harvested 19, 22, and 25 h after 20% serum stimulation (A), or 25 h after
+stimulation with serum at indicated concentrations (0.02 to 20%) (B). The
+EdU+% at 41 h after 20% serum stimulation (from SI Appendix, Fig. S1B) is
+shown in A for comparison. Lines were fitted using the smooth.spline
+function in R. (C) Principal component (PC) analysis of proliferating and 2- to
+16-d serum-starved cells based on 2,736 differentially expressed genes in
+RNA-seq time course. Days of serum starvation are indicated next to the
+sample (triplicates per condition). Dashed arrow is plotted for clarity. Percentage of the variation that each principal component accounts for is
+shown on the axis.
+
+and increased monotonically as cells moved from shallow to
+deep quiescence
 ------------------------
 output:
-("entity"{tuple_delimiter}CELL CYCLE{tuple_delimiter}biological process{tuple_delimiter}The cell cycle is a series of phases that cells go through to grow and divide, which can be influenced by serum concentration and quiescence depth.)
+("entity"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}serum stimulation{tuple_delimiter}Serum stimulation refers to the process of adding serum to cell cultures to promote cell growth and proliferation, with varying concentrations affecting the response of the cells.)
 {record_delimiter}
-("entity"{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}quiescence{tuple_delimiter}Quiescence depth refers to the state of cells being in a deep quiescent phase, where they are not actively dividing but can reenter the cell cycle under certain conditions.)
+("entity"{tuple_delimiter}CELL{tuple_delimiter}cell{tuple_delimiter}Cells are the basic structural and functional units of living organisms, which can proliferate and respond to various stimuli, including serum stimulation.)
 {record_delimiter}
-("entity"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}molecular mechanism{tuple_delimiter}Serum stimulation is a process that triggers cells to reenter the cell cycle, with varying concentrations affecting the reentry rate.)
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state in which cells are in a reversible non-dividing phase, often characterized by a lack of proliferation and metabolic activity, which can be induced by serum starvation.)
 {record_delimiter}
-("entity"{tuple_delimiter}REF CELLS{tuple_delimiter}cell type{tuple_delimiter}REF cells are a type of cell used in experiments to study quiescence and cell cycle reentry, particularly under serum starvation conditions.)
+("entity"{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}gene expression{tuple_delimiter>Gene expression is the process by which information from a gene is used to synthesize functional gene products, typically proteins, and can be influenced by various factors including serum stimulation and quiescence.)
 {record_delimiter}
-("entity"{tuple_delimiter}RNA-SEQUENCING{tuple_delimiter}experimental measurement{tuple_delimiter}RNA-sequencing is a technique used to analyze the transcriptome of cells, helping to identify molecular mechanisms regulating quiescence depth.)
+("relationship"{tuple_delimiter}CELL{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}Cells respond to serum stimulation by proliferating and increasing metabolic activity, which is essential for growth and development{tuple_delimiter}8)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}CELL CYCLE{tuple_delimiter}Quiescence depth affects the ability of cells to reenter the cell cycle upon serum stimulation{tuple_delimiter}8)
+("relationship"{tuple_delimiter}CELL{tuple_delimiter}QUIESCENCE{tuple_delimiter}Cells can enter a quiescent state when deprived of serum, leading to a halt in proliferation and metabolic activity{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}CELL CYCLE{tuple_delimiter>Serum stimulation is necessary for cells to transition from quiescence to active cell cycle reentry{tuple_delimiter}9)
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}The transition from quiescence to active proliferation is often triggered by serum stimulation, which reactivates cell growth{tuple_delimiter}9)
 {record_delimiter}
-("relationship"{tuple_delimiter}REF CELLS{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}REF cells are used to study the effects of quiescence depth on cell cycle reentry{tuple_delimiter}7)
-{record_delimiter}
-("relationship"{tuple_delimiter}RNA-SEQUENCING{tuple_delimiter}QUIESCENCE DEPTH{tuple_delimiter}RNA-sequencing helps identify the molecular mechanisms that regulate quiescence depth{tuple_delimiter}8)
+("relationship"{tuple_delimiter}GENE EXPRESSION{tuple_delimiter}SERUM STIMULATION{tuple_delimiter>Serum stimulation can lead to changes in gene expression profiles, affecting the behavior and characteristics of cells{tuple_delimiter}8)
 {completion_delimiter}
 #############################
 
 
 Example 4:
 
-entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+entity_types: [cell, quiescence, serum stimulation, lysosomal function, autophagy, extracellular flow, gene expression, microenvironment, mechanical shear stress, stem cell, senescence]
 text:
- Genet. 2001, 10, 699–703. [CrossRef]
-Sears, R.C.; Nevins, J.R. Signaling networks that link cell proliferation and cell fate. J. Biol. Chem. 2002, 277, 11617–11620.
-[CrossRef]
-Trimarchi, J.M.; Lees, J.A. Sibling rivalry in the E2F family. Nat. Rev. Mol. Cell Biol. 2002, 3, 11–20. [CrossRef] [PubMed]
-Polager, S.; Ginsberg, D. E2F-at the crossroads of life and death. Trends Cell Biol. 2008, 18, 528–535. [CrossRef] [PubMed]
-Yao, G.; Lee, T.J.; Mori, S.; Nevins, J.R.; You, L. A bistable Rb-E2F switch underlies the restriction point
+acellular factor
+replacement, leads to shallower quiescence.
+
+and thus the assessment of quiescence depth were not biased by
+different effective exposure time of cells to the serum-stimulation
+medium (if the medium was fed by different pump-driven ﬂows)
+and thus comparable across different quiescent cell groups (which
+were induced by serum starvation under different medium ﬂow
+rates).
+Upon serum stimulation (with 1, 2, or 4% serum), the fraction
+of cells reentering the cell cycle from quiescence, as indicated by
+E2f-On% in Figure 3, were positively correlated with the medium
+ﬂow rate applied to cells during quiescence induction (serum
+starvation). These results suggest that a higher extracellular ﬂuid
+ﬂow rate leads to shallower quiescence, from which cells are more
+likely to reenter the cell cycle upon stimulation.
+
+Mech
 ------------------------
 output:
-("entity"{tuple_delimiter}E2F{tuple_delimiter}molecular mechanism{tuple_delimiter}E2F is a family of transcription factors that play a crucial role in regulating the cell cycle and cell proliferation.)
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}quiescence{tuple_delimiter}Quiescence is a state in which cells are in a dormant phase, not actively dividing, and can be influenced by external factors such as serum stimulation and flow rates.)
 {record_delimiter}
-("entity"{tuple_delimiter}RB-E2F SWITCH{tuple_delimiter}Rb-E2F switch{tuple_delimiter}The Rb-E2F switch is a bistable mechanism that controls the transition between cell proliferation and quiescence, acting as a regulatory checkpoint in the cell cycle.)
+("entity"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}serum stimulation{tuple_delimiter}Serum stimulation refers to the process of adding serum to a culture medium to induce cells to reenter the cell cycle from a quiescent state.)
 {record_delimiter}
-("entity"{tuple_delimiter}CELL PROLIFERATION{tuple_delimiter}biological process{tuple_delimiter}Cell proliferation is the process by which cells divide and reproduce, leading to an increase in cell number.)
+("entity"{tuple_delimiter}EXTRACELLULAR FLOW{tuple_delimiter}extracellular flow{tuple_delimiter}Extracellular flow is the movement of fluid in the environment surrounding cells, which can affect their behavior and state, including quiescence and reentry into the cell cycle.)
 {record_delimiter}
-("entity"{tuple_delimiter}CELL FATE{tuple_delimiter}biological process{tuple_delimiter}Cell fate refers to the final differentiated state that a cell will adopt, influenced by various signaling pathways and environmental factors.)
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}Quiescence depth affects the ability of cells to reenter the cell cycle upon serum stimulation, indicating a relationship between these two states{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}SIGNALING NETWORKS{tuple_delimiter}molecular mechanism{tuple_delimiter}Signaling networks are complex systems of molecular signals that coordinate cellular responses, linking cell proliferation and cell fate decisions.)
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}EXTRACELLULAR FLOW{tuple_delimiter}The depth of quiescence is influenced by the extracellular flow rate, suggesting that higher flow rates lead to shallower quiescence{tuple_delimiter}7)
 {record_delimiter}
-("entity"{tuple_delimiter}SIBLING RIVALRY IN E2F FAMILY{tuple_delimiter}hypothesis{tuple_delimiter}The hypothesis suggests that members of the E2F family may compete for binding to target genes, influencing cell cycle progression and differentiation.)
-{record_delimiter}
-("relationship"{tuple_delimiter}E2F{tuple_delimiter}CELL PROLIFERATION{tuple_delimiter}E2F regulates cell proliferation by controlling the expression of genes necessary for cell cycle progression{tuple_delimiter}9)
-{record_delimiter}
-("relationship"{tuple_delimiter}E2F{tuple_delimiter}CELL FATE{tuple_delimiter}E2F influences cell fate decisions by regulating the expression of genes involved in differentiation{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}RB-E2F SWITCH{tuple_delimiter}CELL PROLIFERATION{tuple_delimiter}The Rb-E2F switch is critical for controlling the transition between cell proliferation and quiescence{tuple_delimiter}10)
-{record_delimiter}
-("relationship"{tuple_delimiter}SIGNALING NETWORKS{tuple_delimiter}CELL FATE{tuple_delimiter}Signaling networks play a key role in determining cell fate by integrating various signals that influence differentiation{tuple_delimiter}7)
-{record_delimiter}
-("relationship"{tuple_delimiter}SIBLING RIVALRY IN E2F FAMILY{tuple_delimiter}E2F{tuple_delimiter}The sibling rivalry hypothesis in the E2F family suggests competition among E2F members affects their regulatory functions in the cell cycle{tuple_delimiter}6)
+("relationship"{tuple_delimiter}SERUM STIMULATION{tuple_delimiter}EXTRACELLULAR FLOW{tuple_delimiter}Serum stimulation effectiveness is positively correlated with the extracellular flow rate, indicating that flow rates can enhance the response of cells to serum stimulation{tuple_delimiter}6)
 {completion_delimiter}
 #############################
 
 
 Example 5:
 
-entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+entity_types: [cell, quiescence, serum stimulation, lysosomal function, autophagy, extracellular flow, gene expression, microenvironment, mechanical shear stress, stem cell, senescence]
 text:
-20% (E) or 6% (F). Cells were harvested at the indicated time points (19 h, E; 10 to 30 h,
-F). Error bar in E, SEM (n = 2); **P < 0.01, and ns, insignificance, P > 0.05 (1-tailed t test). Dotted lines in F indicate the estimated median cell cycle reentry time
-(50 nM Baf-treated = 24.3 h; DMSO control = 20.6 h) of the quiescence-exited cells by the 30th hour (n = 2 at each time point). (G and H) EdU profiles of 2d serum-starved cells treated with 20 μM CQ for 5.5 h (G) or 5 μM CQ for 54 h (H), followed by 20% serum stimulation for 48 h (n = 
+ maximum NES value of all enclosed nodes in a circle is shown in parenthesis. (E) Heat map of time-course expression of
+lysosomal genes in RNA-seq analysis (0- to 16-d serum starvation). Lysosomal genes (rows) are defined by the Mouse Genome Database (MGD) (83) and
+ordered by hierarchical clustering (with gene names shown in SI Appendix, Table S1). RNA-seq samples (columns) are ordered chronologically (as in A). Color
+gradient bar indicates the degree of change in gene expression as in A. (F) Time-course expression of differentially expressed endosomal and lysosomal genes
+in RNA-seq analysis (0- to 16-d serum starvation). Endosomal and lysosomal genes are defined by the MGD (83). (G) LysoTracker intensity of serum-starved REF
+cells. LysoTracker intensity distribution of each cell population (0- to 17-d serum starvation, triplicates
 ------------------------
 output:
-("entity"{tuple_delimiter}CELLS{tuple_delimiter}CELL TYPE{tuple_delimiter}Cells are biological units that can be harvested and analyzed for various experimental measurements and processes.)
+("entity"{tuple_delimiter}LYSOSOMAL GENES{tuple_delimiter}gene expression{tuple_delimiter}Lysosomal genes are defined by the Mouse Genome Database and are involved in lysosomal function and gene expression during serum starvation)
 {record_delimiter}
-("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}QUIESCENCE{tuple_delimiter}Quiescence is a state where cells exit the cell cycle and enter a resting phase, which can be reversed under certain conditions.)
+("entity"{tuple_delimiter}RNA-SEQ ANALYSIS{tuple_delimiter}gene expression{tuple_delimiter}RNA-seq analysis is a method used to analyze the expression of genes over time, particularly during serum starvation)
 {record_delimiter}
-("entity"{tuple_delimiter}CELL CYCLE{tuple_delimiter}CELL CYCLE{tuple_delimiter}The cell cycle is a series of phases that cells go through to grow and divide, including reentry from quiescence.)
+("entity"{tuple_delimiter}SERUM STARVATION{tuple_delimiter}quiescence{tuple_delimiter}Serum starvation is a condition that induces quiescence in cells, affecting their gene expression and lysosomal function)
 {record_delimiter}
-("entity"{tuple_delimiter}EDU PROFILES{tuple_delimiter}EXPERIMENTAL MEASUREMENT{tuple_delimiter}EdU profiles are measurements used to assess cell proliferation by incorporating EdU into newly synthesized DNA.)
+("entity"{tuple_delimiter}LYSOTRACKER{tuple_delimiter}lysosomal function{tuple_delimiter}LysoTracker is a fluorescent dye used to measure lysosomal function and intensity in cells)
 {record_delimiter}
-("entity"{tuple_delimiter}Baf{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Baf is a compound used to treat cells, affecting their reentry into the cell cycle and quiescence exit.)
+("entity"{tuple_delimiter}REF CELLS{tuple_delimiter}cell{tuple_delimiter}REF cells are a type of cell line used in experiments to study lysosomal function and gene expression under serum starvation conditions)
 {record_delimiter}
-("entity"{tuple_delimiter}CQ{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}CQ is a compound used in experiments to study its effects on cell behavior and quiescence exit.)
+("relationship"{tuple_delimiter}LYSOSOMAL GENES{tuple_delimiter}RNA-SEQ ANALYSIS{tuple_delimiter}RNA-seq analysis is used to measure the expression of lysosomal genes during serum starvation{tuple_delimiter}8)
 {record_delimiter}
-("relationship"{tuple_delimiter}CELLS{tuple_delimiter}QUIESCENCE{tuple_delimiter}Cells can enter a quiescent state, exiting the cell cycle under specific conditions.{tuple_delimiter}8)
+("relationship"{tuple_delimiter}SERUM STARVATION{tuple_delimiter}REF CELLS{tuple_delimiter}REF cells undergo changes in gene expression and lysosomal function during serum starvation{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CELL CYCLE{tuple_delimiter}Quiescence is a phase that cells can exit to reenter the cell cycle.{tuple_delimiter}9)
+("relationship"{tuple_delimiter}LYSOTRACKER{tuple_delimiter}REF CELLS{tuple_delimiter}LysoTracker is used to assess lysosomal function in REF cells during serum starvation{tuple_delimiter}9)
 {record_delimiter}
-("relationship"{tuple_delimiter}EDU PROFILES{tuple_delimiter}CELL CYCLE{tuple_delimiter}EdU profiles are used to measure cell proliferation during the cell cycle phases.{tuple_delimiter}7)
-{record_delimiter}
-("relationship"{tuple_delimiter}Baf{tuple_delimiter}CELL CYCLE{tuple_delimiter}Baf treatment affects the timing of cell cycle reentry from quiescence.{tuple_delimiter}6)
-{record_delimiter}
-("relationship"{tuple_delimiter}CQ{tuple_delimiter}CELL CYCLE{tuple_delimiter}CQ treatment influences cell behavior and can affect the exit from quiescence into the cell cycle.{tuple_delimiter}6)
+("relationship"{tuple_delimiter}LYSOSOMAL GENES{tuple_delimiter}SERUM STARVATION{tuple_delimiter}Lysosomal genes are expressed in response to serum starvation{tuple_delimiter}8)
 {completion_delimiter}
 #############################
 
@@ -203,7 +219,7 @@ output:
 
 -Real Data-
 ######################
-entity_types: [biological process, molecular mechanism, cell type, experimental measurement, hypothesis, gene signature, quiescence, senescence, aging, lysosome, cell cycle, extracellular fluid flow, Rb-E2F switch]
+entity_types: [cell, quiescence, serum stimulation, lysosomal function, autophagy, extracellular flow, gene expression, microenvironment, mechanical shear stress, stem cell, senescence]
 text: {input_text}
 ######################
 output:
