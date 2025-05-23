@@ -220,6 +220,6 @@ output:
 -Real Data-
 ######################
 entity_types: [cell, quiescence, senescence, lysosome, autophagy, tissue engineering, biomedical research, growth factors, extracellular fluid flow, stem cells, molecular markers, epigenetic regulation]
-text: {input_text}
+text: {{input_text}}
 ######################
 output:
