@@ -1,0 +1,1039 @@
+Graded regulation of cellular quiescence depth
+between proliferation and senescence by a
+lysosomal dimmer switch
+KotaroFujimakia,1,RuoyanLib,1,HengyuChenb,KimikoDellaCrocea,HaoHelenZhangc,JianhuaXingd,FanBaib,2,
+andGuangYaoa,e,2
+aDepartmentofMolecularandCellularBiology,UniversityofArizona,Tucson,AZ85721;bBiomedicalPioneeringInnovationCenter,SchoolofLifeSciences,
+PekingUniversity,100871Beijing,China;cDepartmentofMathematics,UniversityofArizona,Tucson,AZ85721;dDepartmentofComputationaland
+SystemsBiology,SchoolofMedicine,UniversityofPittsburgh,Pittsburgh,PA15260;andeArizonaCancerCenter,UniversityofArizona,Tucson,AZ85719
+EditedbyBrigidL.M.Hogan,DukeUniversityMedicalCenter,Durham,NC,andapprovedOctober1,2019(receivedforreviewSeptember16,2019)
+Thereactivationofquiescentcellstoproliferateisfundamentalto (14).Deepquiescent cellscan stillrevert toproliferation under
+tissuerepairandhomeostasisinthebody.Oftenreferredtoasthe physiological conditions, appearing distinct from irreversibly
+G0state,quiescenceis,however,notauniformstatebutwithgraded arrested senescent cells (SI Appendix, Fig. S1A). A graded qui-
+depth.Shallowquiescentcellsexhibitahighertendencytorevertto escence depth indicates graded potentials for tissue repair and
+proliferationthandeepquiescentcells,whiledeepquiescentcells regeneration; yet, how quiescence depth is regulated in the cell
+arestillfullyreversibleunderphysiologicalconditions,distinctfrom andtheconnectionbetweendeepquiescenceandsenescenceare
+senescentcells.Cellularmechanismsunderlyingthecontrolofquies- notwell understood.
+cencedepthandtheconnectionbetweenquiescenceandsenescence Inthisstudy,weinvestigatewhatregulatesquiescencedepthin
+are poorly characterized, representing a missing link in our under- rat embryonic fibroblast (REF) cells. We identified sequential
+standingoftissuehomeostasisandregeneration.Herewemeasured transcriptome changes as cells move progressively deeper into
+transcriptome changes as rat embryonic fibroblasts moved from quiescenceunderlonger-termserumstarvation.Inparticular,we
+shallow to deep quiescence over time in the absence of growth
+found that lysosomal gene expression and lysosomal mass (in-
+signals.Wefoundthatlysosomalgeneexpressionwassignificantly
+dicatedbytheintensityoflysosomalstainingandthenumberof
+up-regulatedindeepquiescence,andpartiallycompensatedforgrad-
+lysosomespercell)continuouslyincreaseasquiescencedeepens;
+ually reduced autophagy flux. Reducing lysosomal function drove
+however, autophagy flux decreases. Lysosomes are hydrolytic
+cells progressively deeper into quiescence and eventually into a
+enzyme-filledorganellesinthecellthatbreakdownmanytypesof
+senescence-likeirreversiblyarrestedstate;increasinglysosomalfunc-
+biomolecules; lysosomal function, primarily through processes of
+tion, by lowering oxidative stress, progressively pushed cells into
+autophagyandendocytosis,hasbeenshowntopreventirreversible
+shallowerquiescence.Thatis,lysosomalfunctionmodulatesgraded
+cellular states, such as senescence, terminal differentiation, and
+quiescencedepthbetweenproliferationandsenescenceasadimmer
+switch.Finally,wefoundthatagene-expressionsignaturedeveloped
+by comparing deep and shallow quiescence in fibroblasts can cor- Significance
+rectlyclassifyawidearrayofsenescentandagingcelltypesinvitro
+andinvivo,suggestingthatwhilequiescenceisgenerallyconsidered Reactivatingsleep-likequiescentcellsinthebody(mostnota-
+to protect cells from irreversible arrest of senescence, quiescence blystemcells)todivideisfundamentaltotissuehomeostasis
+deepeninglikelyrepresentsacommontransitionpathfromcellpro- andregeneration.Likesleephavingshallowanddeepstages,
+liferationtosenescence,relatedtoaging. quiescence exhibits graded depths with different speeds and
+rates responding to stimulation signals. Understanding how
+| | | |
+quiescence dormancy senescence aging lysosome quiescence depth is regulated is fundamental to our under-
+standingoftissuerepairandregeneration.Hereweshowthat
+Cell proliferation in multicellular organisms is tightly regu- quiescencedepthisregulatedlikea“dimmerswitch”bylyso-
+lated,andthevastmajorityofcellsinthebodystaydormant somes (cell organelles that break down and recycle biomole-
+and out of the cell cycle at any given moment. The dormant cules), through the lysosomal function of reducing oxidative
+state, when reversible upon growth signals, is referred to as stress. We developed a gene signature to predict quiescence
+cellular quiescence. Quiescence protects cells against stress and depthandshowthatquiescencedeepeninglikelyrepresentsa
+irreversiblearrest,suchassenescence;itisfundamentaltomany transition path from cell division to irreversibly arrested se-
+physiological phenomena, such as stem cell homeostasis and nescence,relatedtotheagingprocess.
+tissue repair (1–4). Consequently, dysregulation of cellular qui-
+escence can lead to a range of hyper- and hypoproliferative Authorcontributions:K.F.,R.L.,J.X.,F.B.,andG.Y.designedresearch;K.F.,R.L.,H.C.,and
+diseases,includingcancer andaging(5–7). K.D.C.performedresearch;K.F.,R.L.,H.C.,K.D.C.,H.H.Z.,J.X.,F.B.,andG.Y.analyzed
+data;andK.F.,F.B.,andG.Y.wrotethepaper.
+It becomes increasingly recognized that quiescence is a het-
+Theauthorsdeclarenocompetinginterest.
+erogeneous state with graded depth. For example, following in-
+ThisarticleisaPNASDirectSubmission.
+jury,muscleandneuralstemcellsatnoninjurysitesinthebody
+PublishedunderthePNASlicense.
+move adaptively into shallower quiescence (alert or primed
+quiescent phase), positioning cells to more quickly respond to Datadeposition:ThedatareportedinthispaperhavebeendepositedintheGeneEx-
+pressionOmnibus(GEO)database,https://www.ncbi.nlm.nih.gov/geo(accessionno.
+injury and reenter the cell cycle when needed (8, 9). In other GSE124109).
+cases, cells move into deep quiescence and require stronger 1K.F.andR.L.contributedequallytothiswork.
+growthstimulationandlongertimestoreenterthecellcycle,as
+2Towhomcorrespondencemaybeaddressed.Email:fbai@pku.edu.cnorguangyao@
+seeninhepatocytesuponpartialhepatectomyinolderratsthan arizona.edu.
+in younger ones (10, 11). Similarly, the quiescent state deepens
+Thisarticlecontainssupportinginformationonlineatwww.pnas.org/lookup/suppl/doi:10.
+in cells that are cultured longer under quiescence-inducing sig- 1073/pnas.1915905116/-/DCSupplemental.
+nals, such as contact inhibition (12, 13) and serum starvation FirstpublishedOctober21,2019.
+22624–22634 | PNAS | November5,2019 | vol.116 | no.45 www.pnas.org/cgi/doi/10.1073/pnas.1915905116
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+apoptosis(15–18).Herewefoundthattheincreasedlysosomalmass A
+indeepquiescentcellsis,inpart,duetodecreasedautophagyflux,
+whichispartiallybutnotfullycompensatedbyincreasedlysosomal
+C
+geneexpressionandlysosomalbiogenesis.Weshowthatlysosomal
+function, like a dimmer switch, continuously regulates quiescence
+depth and thus the proliferative potential of quiescent cells by re-
+ducing the accumulation of reactive oxygen species (ROS). We
+found that a set of “senescence core signature” genes (19) show
+similarexpressionpatternsindeepquiescenceasinsenescence,and
+B
+that a gene-expression signature we developed to indicate cellular
+quiescence depth by comparing deep and shallow quiescent REF
+cellsisabletocorrectlyclassifysenescentandagingcellsinawide
+array of cell lines in vitro (20, 21) and tissues in vivo (22, 23),
+suggestingthatdeepquiescencemayserveasacommontransition
+pathfromcellproliferationtosenescence,relatedtoaging.
+Results
+DynamicTranscriptomeChangesduringQuiescenceDeepening.Similar
+to our previous observation (14), REF cells moved into deeper Fig. 1. Sequential quiescence deepening and transcriptome change in
+quiescence progressively with longer-term serum starvation. After
+serum-starvedREFcellsovertime.(AandB)EdU+%of2-to14-dserum-
+2-dserumstarvation,theentirecellpopulationenteredquiescence,as starved cellsuponstimulation.Cells induplicated wells (n=2)werehar-
+demonstrated by their negative DNA incorporation of 5-ethynyl-2′- vested 19, 22, and 25 h after 20% serum stimulation (A), or 25 h after
+deoxyuridine(EdU)andacompleteshut-offofE2f1expression(SI s
+E
+t
+d
+im
+U+
+u
+%
+lat
+a
+io
+t
+n
+41
+w
+h
+ith
+af
+s
+t
+e
+e
+r
+r
+u
+2
+m
+0%
+at
+s
+i
+e
+n
+r
+d
+u
+i
+m
+cat
+s
+e
+ti
+d
+m
+c
+u
+o
+la
+n
+t
+c
+i
+e
+o
+n
+n
+tr
+(
+a
+fr
+t
+o
+io
+m
+ns
+SI
+(0
+A
+.0
+p
+2
+pe
+t
+n
+o
+d
+2
+ix
+0
+,
+%
+Fi
+)
+g
+(
+.
+B
+S
+)
+1
+.
+B
+T
+)
+h
+i
+e
+s
+Appendix, Fig. S1B). E2f1 is a member of the E2f family of tran- shown in A for comparison. Lines were fitted using the smooth.spline
+scriptionfactors;itup-regulatesalargebatteryofgenesinvolvedin functioninR.(C)Principalcomponent(PC)analysisofproliferatingand2-to
+DNAreplicationand cell cycleprogression,actingasthekeyef- 16-d serum-starved cells based on 2,736 differentially expressed genes in
+fector of an Rb-E2f bistable switch that controls the all-or-none RNA-seq time course. Days of serum starvation are indicated next to the
+transition from quiescence to proliferation (24, 25). With in- sample(triplicatespercondition).Dashedarrowisplottedforclarity.Per-
+creasinglylongerserumstarvation,cellsmovedintodeeperquies- centage of the variation that each principal component accounts for is
+cence, requiring a longer time and a greater serum stimulation shownontheaxis.
+strength (concentration) to reenter the cell cycle than cells in
+shallower quiescence. For example, when the duration of serum
+and increased monotonically as cells moved from shallow to
+starvationincreasedgraduallyfrom2to14d,thecellcyclereentry deep quiescence (clusters 1 and 3) (Fig. 2B). In cluster 1, mul-
+timeupon20%serumstimulationincreasedfrom<19hto∼25h
+(toachieve∼60%EdU + rate)(Fig.1AandSIAppendix,Fig.S1C), tiple biological functions were enriched; among them, lysosome
+was overall the most statistically significant in Kyoto Encyclo-
+and the serum concentration required for cell cycle reentry in-
+creasedfrom<2%to∼8%(toachieve∼60%EdU + measuredat pediaofGenesandGenomes(KEGG)overrepresentationtests
+the 25th hour of serum stimulation) (Fig. 1B). This result is con-
+[Fig.2C,usingclusterProfiler(28);SIAppendix,Fig.S2C,using
+DAVID (29)]. In cluster 3, lysosome was the single function
+sistentwithourearlierfindingsthatthetimeandserumthreshold
+significantly enriched statistically (SI Appendix, Fig. S2C). Con-
+requiredforcellcyclereentryare2relatedfeaturesthatbothreflect
+sistently, lysosomal genes also had the strongest positive corre-
+the same biological state, the quiescence depth (14). Importantly,
+lation with deep quiescence in gene set enrichment analysis
+deep quiescent cells were not irreversibly arrested. For example,
+(GSEA) (30) (normalized enrichment score [NES] = 3.12)
+upon 20% serum stimulation, 92.6% of 16-d serum-starved deep
++ (Fig. 2D).
+quiescent REF cells were able to reenter the cell cycle (EdU )
+within41h(SIAppendix,Fig.S1B).
+LysosomalGeneExpressionandLysosomalMassIncreaseasQuiescence
+To identify molecular mechanisms regulating quiescence
+Deepens.Thevastmajorityoflysosomalgenes,encodingforvarious
+depthatthetranscriptionallevel,weperformedRNA-sequencing
+lysosomalenzymes,activatorproteins,membraneproteins,andion
+(RNA-seq) analysis of 0- to 16-d serum-starved cells (26). As
+channel proteins, increased their expression continuously as cells
+expected, the expression of well-characterized proliferation
+genes—suchasE2f1,Cdk2,andCdk4(SIAppendix,Fig.S2A)—
+movedfromshallowtodeepquiescence(Fig.2E[clusterCandthe
+E2f1 target genes (SI Appendix, Fig. S2B), and proliferation-
+bottomhalfofclusterA],Fig.2F,andSIAppendix,Fig.S3A).Asa
+related gene clusters (#7 and 9, SI Appendix, Fig. S2C) was comparison, the expression of most genes associated with endo-
+somes, anothercellularorganellein the endosomal–lysosomalsys-
+quickly down-regulated within 2-d serum starvation. Conversely,
+theexpressionofgrowthinhibitorygenes,suchasRb1,Cdkn1a tem, only increased significantly during the first 2 d of serum
+(p21Cip1), and Cdkn1b (p27Kip1), was up-regulated upon se- starvation but not afterward as quiescence continued to deepen
+rumstarvation(SIAppendix,Fig.S2A).TheexpressionofCdkn2a (Fig.2FandSIAppendix,Fig.S3BandC).
+(p16INK4A),a senescence marker (27), remained low as cells Lysosomalmassalsoincreasedindeepquiescence:Following
+moved deeper in quiescence (3- to 16-d serum starvation) (SI a brief pulsatile adaptive response (within the first 6 h) upon
+Appendix, Fig. S2D), consistent with quiescence being a serum starvation, lysosomal mass continuously increased over
+reversible state. the next 14 d, as seen from the stained LysoTracker intensity
+The global gene-expression profile changed drastically when (Fig. 2G). The initial pulsatile response of lysosomal mass was
+cells transitioned from proliferation to quiescence (0- to 2-d likely due to an adaptive mammalian target of rapamycin
+serum starvation) and continued to change sequentially as cells (mTOR)-autophagy response to serum starvation, as previously
+moved fromshallow todeep quiescence (2-to 16-d serum star- reported(31).ThecontinuouslyincreasedLysoTrackerintensity
+vation)(Fig.1C).Thissequentialchangewasreflectedin9gene in deep quiescence was consistent with an increased number of
+clusters that exhibited different temporal dynamic patterns (Fig. lysosomes, another indicator of lysosomal mass; for example,
+2 A and B). In particular, the expression of 2 gene clusters 11-dserum-starvedcellsexhibitedsignificantlymorelysosomalfoci
+appeared to be positively correlated with quiescence deepening percellandperunitareaofcellthan2-dserum-starvedcells(per
+Fujimakietal. PNAS | November5,2019 | vol.116 | no.45 | 22625
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+YGOLOIBLLEC
+A B E
+C D
+F
+G
+H
+Fig.2. Lysosomalgeneexpressionandlysosomalmassincreasealongquiescencedeepening.(A)K-meansclusteringof2,736differentiallyexpressedgenesin
+RNA-seqanalysis.Samplecolumns(0-,2-,3-,4-,6-,8-,10-,12-,14-,and16-dserumstarvation)areorderedchronologicallywith3replicatesateachtimepoint.
+Up-anddown-regulationofgenesareshowninredandblue,respectively;colorgradientbarindicatesthedegreeofchangeingeneexpression(normalized
+andlog-transformed;seeMaterialsandMethodsfordetails).(B)Gene-expressiondynamicswithineachK-meansclusterinA.Expressionofeachgeneina
+givenclusterisshowninatime-coursecurve.(C)Pathwaysenriched(P<0.05)incluster1.GeneRatio(xaxis)anddotsizeindicatethefractionandnumberof
+genes involved in the indicated pathway in cluster 1, respectively. Color gradient bar indicates statistical significance of pathway enrichment in KEGG
+overrepresentationtestbasedonPvaluesadjustedbyBenjamini-Hochbergcorrection.(D)Genesetssignificantlycorrelatedtoquiescencedepth(false-
+discoveryrate<0.1)inGSEAanalysis.Genesetsareconnectedbyedgesbasedontheirsimilarity(Jaccardindex≥0.5)whenapplicable.Genesetspositively
+andnegativelycorrelatedtoquiescencedeepeningareshowninredandbluenodes,respectively.NodesizerepresentstheabsoluteNESintheGSEAresult.
+Biologicalfunctionsthatarethemostnegativelyandpositively(top5instatisticalsignificance)correlatedwithquiescencedeepeningaredemarcatedbyblue
+andredcircles,respectively;themaximumNESvalueofallenclosednodesinacircleisshowninparenthesis.(E)Heatmapoftime-courseexpressionof
+lysosomalgenesinRNA-seqanalysis(0-to16-dserumstarvation).Lysosomalgenes(rows)aredefinedbytheMouseGenomeDatabase(MGD)(83)and
+orderedbyhierarchicalclustering(withgenenamesshowninSIAppendix,TableS1).RNA-seqsamples(columns)areorderedchronologically(asinA).Color
+gradientbarindicatesthedegreeofchangeingeneexpressionasinA.(F)Time-courseexpressionofdifferentiallyexpressedendosomalandlysosomalgenes
+inRNA-seqanalysis(0-to16-dserumstarvation).EndosomalandlysosomalgenesaredefinedbytheMGD(83).(G)LysoTrackerintensityofserum-starvedREF
+cells. LysoTracker intensity distribution of each cell population (0- to 17-d serum starvation, triplicates of ∼10,000 cells each) is shown (Left); the log 2-
+transformedagglomerationofthetriplicatesateachtimepointisplottedwiththeindicatedpercentiles(Right).(H)Numberoflysosomes(LysoTrackerfoci)
+percellandperunitareaofcellin2-and11-dserum-starvedcells(n=50each).Boxplot:Q1andQ3refertothefirstandthirdquantiles,respectively;IQR,
+interquartile range = Q3 − Q1; the same below unless otherwise noted. (Inset) Representative lysoTracker foci microscopy. Each red dot represents a
+LysoTracker-stainedlysosomeinthecell.(Scalebar,50μm.)CellboundariesweremanuallydeterminedusingbothPOLandCy5filters.
+22626 | www.pnas.org/cgi/doi/10.1073/pnas.1915905116 Fujimakietal.
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+cell,>2.5-fold,P=4.9×e −14ina1-tailedttest;perunitareaof
+A B
+cell,>2.3-fold,P= 2.9×e −15ina1-tailed ttest)(Fig.2H).
+Lysosomal FunctionandLysosomeDestructionDecrease asQuiescence
+Deepens.Wethoughttheincreasesofbothlysosomalgeneexpres-
+sion and lysosomal mass as quiescence deepens would lead to an
+increase of lysosomal function. Instead, we found that autophagy
+flux, an indicator for the primary lysosomal function, did not in-
+creasebutgraduallydeclinedascellsmoveddeeperintoquiescence, D
+asseeninanLC3-IIturnoverassay(32)(Fig.3A).Thisresultposed
+2 immediate questions: 1) What is the relationship between in-
+creasedlysosomalmassandgeneexpressiontodecreasedlysosomal
+C
+function? 2) Does declined lysosomal function cause quiescence
+deepeningand,ifso,how?
+Anincreaseoflysosomalmasscanbecausedbyanincreaseof
+lysosome biogenesis or a decrease of lysosome destruction or
+both. Since lysosome itself is destructed via an autophagic pro-
+cess named lysophagy (33, 34), the declined autophagy flux we
+observed in cells with prolonged serum starvation (Fig. 3A)
+suggests that the rate of lysosome destruction likely declines
+accordingly in deep quiescence. If this is the case, when we in-
+hibitautophagy/losophagy,weexpectthat1)lysosomalmasswill
+increaseincells,and2)thedegreeofincrease(fold-change)will
+besmallerindeepthanshallowquiescentcells.Indeed,whenwe Fig.3. Lysosomal–autophagicfunctionandlysosomedestructiondeclineas quiescencedeepens.(A)LC3-IIturnoverassayin2-,6-,8-,and16-dserum-
+treated 2-, 5-, and 8-d serum-starved quiescent cells with an
+starvedcells. Quantified LC3-IIΔ(thedifference betweenLC3-IIsignalin-
+autophagy inhibitor (nocodazole or vinblastine) (35) to repress tensitynormalizedagainstα-TubulincontrolinCQ-treatedandnontreated
+autophagy/lysophagy (as seen by decreased autophagy flux in cells) in duplicate samples is shown with a linear fit (red line). (Inset) A
+LC3 turnover assay) (Fig. 3B), we found that the relative in- representative immunoblot image. (B) LC3-II turnover assay in 2-d serum-
+crease of LysoTracker intensity was smaller in cells under pro- starvedcellstreatedwithnocodazole,vinblastine,orvehiclecontrolfor24h
+longedstarvation(Fig.3CandD).Althoughtheresultshouldbe at indicated doses. (C) LysoTracker intensity of 2-, 5-, and 8-d serum-
+taken with caveat since nocodazole and vinblastine are general starved cellstreatedwith25μMnocodazole,20μMvinblastine,orvehicle
+autophagyinhibitorsbutnotspecificlysophagyinhibitors(which controlfor24h(triplicates).(D)RelativeLysoTrackerintensityoftreated
+samplesovervehiclecontrolinCattheindicatedserumstarvationtime.
+are lacking in the field to the best of our knowledge), and thus
+Errorbar,SEM.*P<0.05,**P<0.01,and***P<0.001(1-tailedttest).
+maycauseothersideeffects,thisresult,togetherwithdecreased
+autophagy (Fig. 3A), suggested that lysosome destruction de-
+creased as quiescence deepened. Insufficient lysosome destruc- reenter the cell cycle. This result is consistent with our earlier
+tion by autophagy/lysophagy can lead to an accumulation of study with targeted perturbations (although the relative degree
+damaged lysosomes in the cell, which in turn interferes with ly- ofrequiredincreasesinserumconcentrationandtimemayvary
+sosomalhomeostasis andfunction (34). depending on the specific quiescence-deepening factors) (14).
+Interestingly, while blocking autophagy/lysophagy by either
+Hereweusedatleast1consistentindicator,theminimumserum
+nocodazoleorvinblastineincreasedtheLysoTrackerintensityin
+concentration required for cell cycle reentry, to measure quies-
+quiescentREFcells,itdidnotincreasethenumberoflysosomes
+cencedepththroughout thisstudy.
+(SIAppendix,Fig.S4AandC)andevendecreasedthelysosomal
+We applied 2 lysosomal inhibitors, bafilomycin A1 (Baf) and
+numberovertime(SIAppendix,Fig.S4BandD).Thisresultis
+chloroquine (CQ), that prevent lysosomal acidification (36). A
+different from the increased lysosomal number we observed, short exposure (6 h) to either drug was sufficient to inhibit ly-
+along with quiescence deepening (Fig. 2H); it suggests that de-
+sosomal function in REF cells, evident by the impaired pro-
+creased lysosome destruction was not the only factor contribut- teolytic degradation within the lysosomal compartment (SI
+ing to the increase of lysosomal mass in deep quiescent cells. Appendix, Fig. S5A). When quiescent cells were treated with
+Indeed, increased lysosome biogenesis (consistent with the in-
+creasedlysosomalgeneexpression,asseeninFig.2EandF)also eitherofthese2lysosomalinhibitors,increasinglyhigherserum
+concentrationswererequiredtoactivatecellstoreenterthecell
+played a role in this process, as we will explain further in the
+Discussion. Altogether, our study suggests that increased lyso-
+cycle,inadrugdose-dependentmanner(Fig.4B–D;redarrow
+pointstoserumconcentrationforactivating∼50%ofcells,judged
+somal mass (containing damaged lysosomes) is both partially
+based on EdU incorporation, E2f-GFP reporter, and propidium
+caused by and contributes to decreased lysosomal function and
+iodide [PI] staining, respectively). Correspondingly, at a given
+autophagicclearanceindeepquiescence.
+serumconcentration(e.g.,4%serum),adecreasingpercentageof
++
+InhibitingLysosomalFunctionDeepensCellularQuiescence.Ournext cellswereabletoreenterthecellcycle(EdU )withanincreasing
+question concerns whether the decreased lysosomal function is dose of either lysosomal inhibitor, Baf or CQ (Fig. 4B). The ly-
+causal to, or merely a consequence of, deep quiescence. If de- sosomal inhibition-caused quiescence deepening occurred re-
+creased lysosomal function causes deep quiescence, we expect gardlessoftheprecedingquiescencedepthbeforedrugtreatment:
+that inhibiting lysosomal function in quiescent cells would fur-
+AsshowninSIAppendix,Fig.S5B,ahigherserumconcentration
+ther deepen quiescence and that increasing lysosomal function wasrequiredtoactivatedrug-treated(bluecurve)thannontreated
+wouldleadtoshallow quiescence. (redcurve)cellsatalltestconditions(serum-starvationdays).
+To test this idea, we first performed pharmacological in- Consistently, cells took longer time to reenter the cell cycle
+hibition of lysosomal function and measured corresponding under the treatments of lysosomal inhibitors Baf and CQ. For
+changesinquiescencedepth(Fig.4A).AsseeninFig.1AandB, example, with either the treatment of 5 μM CQ or control
+deep quiescent cells under longer-term serum starvation both (Dulbecco’s phosphate-buffered saline, DPBS), although nearly
++
+requireahigherserumconcentration andtakealongertimeto all cells were able to reenter the cell cycle (EdU ) by the 24th
+Fujimakietal. PNAS | November5,2019 | vol.116 | no.45 | 22627
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+YGOLOIBLLEC
+A B E F
+C D G H
+I J
+Fig.4. Lysosomalinhibitionpushescellsintodeeperquiescenceandsenescent-likestate.(A)Experimentalschemeofthequiescence-depthassaysinB–D
+withlysosomalinhibitortreatment.Q,quiescentstate.(B–D)ReadoutsofEdU(B),E2f-GFP(C),andPIstaining(D)inquiescence-depthassayof2-dserum-
+starvedcells(∼10,000cellspersample,withthehighestfrequencysetto100%attheyaxisofeachhistogram).CellsatEdU−andEdU+(B),E2f-ONand-OFF
+states(C),andG0/G1(2N),S(2-4N),andG2/Mphase(4N)(D)areasindicated.RedarrowsinB–D,serumconcentrationsthatactivatedE2f1orinitiatedDNA
+replicationinapproximatelyhalfofthecellpopulation.GreenarrowsinB,cellcyclereentry(EdU+)oftheindicatedwhole-cellpopulations.BluearrowsinD,
+cellpopulationsthatcontainedasubsetofrecentlydividedcellsfollowingstrongserumstimulation.Quantificationsofcelldeathandirreversiblearrest
+percentagesattreatmentconditionsinB–DareshowninSIAppendix,TableS3.(EandF)Cellcyclereentry(EdU+)of2-dserum-starvedcellstreatedwith
+vehicle,CQ,orBaffor6h(asinA),followedbyserumstimulationat20%(E)or6%(F).Cellswereharvestedattheindicatedtimepoints(19h,E;10to30h,
+F).ErrorbarinE,SEM(n=2);**P<0.01,andns,insignificance,P>0.05(1-tailedttest).DottedlinesinFindicatetheestimatedmediancellcyclereentrytime
+(50nMBaf-treated=24.3h;DMSOcontrol=20.6h)ofthequiescence-exitedcellsbythe30thhour(n=2ateachtimepoint).(GandH)EdUprofilesof2-
+dserum-starvedcellstreatedwith20μMCQfor5.5h(G)or5μMCQfor54h(H),followedby20%serumstimulationfor48h(n=2).(IandJ)Cellswere
+treatedasinH(5μMCQorvehiclecontrolfor54h,n=2),theneithermeasuredforβ-galactosidaseactivity(I),orstimulatedwith20%serumfor48h
+followedbycellsizemeasurement(J).
+hourofserumstimulation(20%)(greenarrowinFig.4B,Upper), found that long-term CQ exposed quiescent cells exhibited other
+theEdU + percentageofcellswassignificantlysmallerwith5μM hallmarks of senescence: A significantly increased β-galactosidase
+CQ than with DPBS at the 19th hour (Fig. 4E), indicating a activity(P=0.011in1-tailedttest)(Fig.4I)andhypertrophywitha
+delayedcellcycleentrywithCQtreatment.Theentry–delayeffect significantlyincreasedcellsizeuponserumstimulation(P=0.003in
+of Baf at the tested dose range was weaker than that of CQ: 1-tailed t test) (Fig. 4J). Taken together, our data suggest that an
++
+Understrongserumstimulation(20%),theEdU percentageof impairmentoflysosomalfunctioninquiescentcellscanleadtodeep
+cellswitheitherthetreatmentof50nMBaforDMSOcontroldid quiescenceandpotentiallyasenescence-likestate.
+notshowasignificantdifferenceateitherthe19thhour(Fig.4E)
+or 24th hour (green arrow in Fig. 4 B, Lower); however, under EnhancingLysosomalFunctionPushesCellstowardShallowerQuiescence.
+reducedserumstimulationstrength(6%)andlongerobservation If the impaired lysosomal function is responsible for quiescence
+timewindow,theeffectofBafbecomesclearincausingadelayed deepening,enhancingsuchfunctionwilllikelycounteractthistrend
+half-activation time of the quiescence-exit cell population com- and push cells into shallower quiescence. Consistent with this hy-
+paredtotheDMSOcontrol(Fig.4F). pothesis, we observed that nutrient starvation, a known inducer of
+As seen in Fig. 4B, a short but strong inhibition of lysosomal autophagy, pushed cells into shallower quiescence: Serum-starved
+functionbyCQtreatment(6h,20μM)deepenedquiescence;the REFcellstreatedwithPBS(i.e.,underadditionalnutrientstarvation)
+vastmajorityofcellswerestillEdU − atthe24thhourafter20% for320minshowedsignificantlyhigherE2f-ON%(SIAppendix,Fig.
+serum stimulation. However, these cells were reversible and S6A)andEdU + %(SIAppendix,Fig.S6B)uponserumstimulation
+became EdU + by the 48th hour (Fig. 4G). In comparison, a thantreatedwithcontrol(i.e.,withoutnutrientstarvation).Thisre-
+prolongedlysosomalinhibitionbyCQtreatmentatalowerdose sult is similar to what was previously observed in quiescent neural
+(54h,5μM)droveasignificantsubpopulationofquiescentcells stemcells(NSCs)(39).However,nutrientstarvationinducesarange
+into a more irreversible state: As seen in Fig. 4H, 41.4 ± 2.9% ofcellularresponses(e.g.,AMPKactivationandmTORinhibition)
+such treated cells remained EdU − after 48 h of 20% serum inadditiontoautophagy.Toincreaselysosomalfunctiondirectly,we
+stimulation; in comparison, <2.5% of nontreated control cells soughttoenhancelysosomalgeneexpressionandbiogenesisinREF
+remainedEdU − (Fig.4H).Thisresultinquiescentcellsmaybe cells.Lysosomalgeneexpressionandbiogenesiscanbeup-regulated
+related to earlier findings that a repeated or long exposure to byaMiT/TFEfamilyoftranscription factorsTfeb,Mitf,and Tfe3,
+sublethal stresses can effectively induce proliferating cells to whichbindtoaCLEAR-boxsequenceupstreamofmanylysosomal
+senescence(37,38).Inadditiontotheirreversiblephenotype,we genesandareknownasthemasterregulatoroflysosomebiogenesis
+22628 | www.pnas.org/cgi/doi/10.1073/pnas.1915905116 Fujimakietal.
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+(40–43).Remarkably,theexpressionofMitfandTfe3butnotTfeb EdU + leveluponserumstimulation(normalizedtomCherrycon-
+increasedsignificantlyindeepquiescence(Fig.5A)(P=0.028,0.032, trol) (y axis in Fig. 5G), suggesting that cells can be continuously
+and 0.827 for Mitf, Tfe3, and Tfeb, respectively, in a 1-tailed t test driventoshallowerquiescencebyenhancinglysosomalfunction.
+comparing 16-d and 2-d serum-starved cells); meanwhile, Mitf but
+notTfebandTfe3showedahighdegreeofcoexpressionwithlyso- LysosomalFunctionPreventsQuiescenceDeepeningviaROSReduction.
+somalgenesinquiescence(SIAppendix,Fig.S6C).Together,these Lysosomes are known to play an antioxidative role in quiescent
+stem cells (15, 16). Thus, here we tested whether lysosomal
+results suggested a unique role for Mitf in regulating lysosomal
+function potentially prevents quiescence deepening by anti-
+function in the quiescent REF cell model. Indeed, we found that
+ectopicMitfexpressioninquiescentREFcells(arrowinSIAppendix, oxidation.Ifitdoes,wereasonedthatincreasingantioxidationin
+the cell would reduce quiescence depth. Indeed, we found that
+Fig.S6D)significantlyincreasedboththeLysoTrackerintensity(P=
+supplementing antioxidant 2-mercaptoethanol (βME) drove
+0.017ina1-tailedttest)(Fig.5BandC)andlysosomalnumber(SI
+quiescent cells into a shallower state, from which cells became
+Appendix,Fig.S6E)inthecell,aswellasenhancedautophagyflux +
+more sensitive to growth signals (higher EdU % upon serum
+(higher LC3-II Δ) (Fig. 5D), demonstrating the ability of Mitf to stimulation) (Fig. 6A); conversely, supplementing an oxidative
+increaselysosomalbiogenesisandfunction.Consistently,ectopicMitf reagenttert-butylhydroperoxide(tBHP)drovecellsintodeeper
+expressionpushedcellsintoshallowerquiescence,asseeninbotha quiescence,shownbythelowerEdU + %(Fig.6B)andlowerE2f-
+higherEdU + %uponserumstimulation(Fig.5E)andashortertime ON%(SIAppendix,Fig.S7A)uponstimulationatagivenserum
+to reenter the cell cycle (Fig. 5F). Notably, there was a monotonic concentrationwithincreasingtBHPconcentration.Theseresults
+correlation between the level of introduced Mitf expression vector indicatethatthedegreeofoxidativestressispositivelycorrelated
+(indicated by mCherry intensity) (x axis in Fig. 5G) and the withquiescencedepth.
+A B C D
+E
+F G
+Fig.5. Enhancinglysosomalfunctionpushescellstowardshallowerquiescence.(A)Time-courseexpressionofMiT/TFEfamilymembersinRNA-seqanalysis.
+Dashedline,SEMofthefittedline.(BandC)LysosomalmassindicatedbyLysoTrackerintensity.CellswerecotransfectedwithMitf-GFPandmCherryex-
+pressionvectors(Mitf/mCherry,triplicates)ormCherrycontrolalone(mCherry,duplicates)andinducedtoquiescenceby4-dserumstarvation.(B)Distribution
+ofLysoTrackerintensityin∼10,000cellspersample,withthehighestfrequencysetat100%(yaxis).(C)BinnedLysoTrackerintensity(log-transformedwith
+themedianofmCherrycontrolsetat0;bottomandtopedgesofeachboxindicatethefirstandthirdquartiles,respectively).Cellsweregroupedaccordingto
+theirmCherryintensity(log-transformed)into22even-widthbins(binswithcellnumber<40orwithbackgroundfluorescencelevelsimilartonontransfected
+cellswerefilteredout).(D)LC3-IIturnoverassay.CellsweretransfectedwithMitf-GFPexpressionvectorordGFPcontrolandinducedtoquiescenceby4-d
+serumstarvation.(Upper)Representativeimmunoblotimage.(Lower)QuantifiedLC3-IIΔ(betweenCQ-treatedandnontreatedcellsasinFig.3A,dupli-
+cates).Errorbar,SEM.(E)Quiescence-depthassaybyEdUprofile(n=2).CellsweretransfectedwithMitf-GFPexpressionvectorordGFPcontrolandinduced
+toquiescenceby2-or4-dserumstarvation,followedbyserumstimulationatindicatedconcentrations(0.5to4%)for24h.*P<0.05and**P<0.01(1-tailed
+ttest).(F)Cellcyclereentry(EdU+)of2-dserum-starvedcellstransfectedwithMitf-GFPvectorordGFPcontrol,followedby2%serumstimulationforthe
+indicateddurations.Dottedlinesindicatetheestimatedmediancellcyclereentrytime(Mitf-GFP=20.5h;dGFP=21.7h)ofthequiescence-exitedcellsbythe
+30thhour(n=2ateachtimepoint).(G)Quiescence-depthassayinmCherryorMitf/mCherrytransfectedcells.Transfectedcellswereinducedtoquiescenceby
+4-dserumstarvationandstimulatedwith0.5%serum.EdU+%wasmeasuredafter24hofserumstimulation(in7and9replicatesofmCherryandmCherry/
+Mitftransfection,respectively;∼10,000cellseach).TransfectedcellswerebinnedaccordingtomCherryintensityasinC.EdU+%ofmCherry/Mitfcellswas
+normalizedtothatofmCherrycontrolcellsineachbin.Theresultant“EdU+level”(yaxis)indicatesrelativefoldincreaseofquiescenceexit(EdU+)associated
+withectopicMitflevel(indicatedbymCherryintensity,xaxis)overcorrespondingmCherrycontrol.(B,C,andG)CotransfectedmCherrywasusedasaproxyto
+quantifyMitf-GFPexpression(seeSIAppendix,Fig.S6Fforverification).UsingGFPforquantificationotherwisemaybeintereferedbytheE2f-GFPreporter
+signalinthecell;inaddition,GFPfluorescenceisquenchedbytheClick-iTreactioninEdUassayandthuscannotbeusedforquantification.
+Fujimakietal. PNAS | November5,2019 | vol.116 | no.45 | 22629
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+YGOLOIBLLEC
+A B C D
+E
+G H
+F
+Fig.6. Lysosomalfunctionreducesoxidativestressandpreventsquiescencedeepening.(A)Two-dayserum-starvedcellswerefurtherculturedinstarvation
+mediumcontainingβMEfor4dandstimulatedwith2%or4%serumfor24h,followedbyEdUassay.*P<0.05,1-tailedtteststatisticalsignificanceandns,
+insignificance,(triplicateswith∼10,000cellseach).Errorbar,SEM.(B)Two-dayserum-starvedcellsweretreatedwithtBHPatindicatedconcentrationsfor1h
+andstimulatedwithvariousconcentrationsofserumasindicatedfor24h,followedbyEdUassay.(AandB)Quantificationsofcelldeathandirreversible
+arrestpercentagesattreatmentconditionsinAandBareshowninSIAppendix,TableS3.(CandD)IntracellularROSlevelinquiescentREFcellstreatedwith
+lysosomalinhibitors.Two-dayserum-starvedcellsweretreatedwithBaforCQatindicatedconcentrationsfor6handsubjectedtoMitoSoxmeasurement
+(duplicateswith∼10,000cellseach).MitoSoxsignaldistributionwiththehighestfrequencysetat100%(yaxis,C)anditsmedian(log-transformed,D)are
+shown.Errorbar,SEM.(EandF)IntracellularROSlevelinquiescentcellstransfectedwithMitfexpressionvector.CellsweretransfectedwithMitf-GFPordGFP
+controlvectorsandinducedtoquiescenceby4-dserumstarvation,followedbyMitoSoxmeasurement(triplicateswith∼10,000cellseach).REFcellswithout
+theE2F-GFPreporterwereusedtoavoidinterferingMitf-GFPquantificationbythereportersignal.(E)MitoSoxsignaldistributionwiththehighestfrequency
+setat100%(yaxis).(F)BinnedMitoSoxintensity(log-transformedandnormalizedwiththemedianofdGFPcontrolsetat0).Cellsweregroupedaccordingto
+theirlog-transformedGFPintensityinto20even-widthbins.(G)Quiescence-depthassayofMitftransfectedcellscotreatedwithtBHP(n=2).Cellswere
+transfectedwithMitf-GFPexpressionvectorordGFPcontrol,inducedtoquiescenceby2-dserumstarvation.Mitf-transfectedcellswerefurthertreatedwith
+tBHPatindicatedconcentrationfor1h.Cellsweresubsequentlystimulatedwith4%serumfor24handsubjectedtoEdUassay.(H)Modelofquiescence-
+depthregulationbylysosomalfunction.
+Next, we found that inhibiting lysosomal function by Baf and oxidative stress deepens quiescence, and reducing oxidative
+CQ, which deepened quiescence, increased mitochondrial ROS stresspreventsquiescencefromdeepening;2)reducinglysosomal
+level (higher MitoSox intensity) (Fig. 6 C and D). Conversely, functionincreasesROS,themediatorofoxidativestress,andin-
+enhancing lysosomal function by ectopic Mitf expression, which creasinglysosomalfunctiondecreasesROS;and3)increasingor
+reduced quiescence depth, suppressed mitochondrial ROS decreasinglysosomalfunctioncontinuouslymodulatesquiescence
+(lowerMitoSoxintensity)(Fig.6E)inadose-dependentmanner depth,actinglikeadimmerswitch(Fig.6H).
+(Fig. 6F). Consistently, tBHP blocked the effect of Mitf on re-
+ducing quiescence depth: While the ectopic Mitf expression in- Quiescence Deepening Is Linked to Cellular Senescence and Aging.
+creasedtheEdU + %overcontrol,additionaltBHPtreatmentin Finally,weexaminedwhetherandhowdeepquiescenceinREF
+Mitf-transfected cells decreased the EdU + % in a tBHP dose- cellsisrelatedtothequiescentstatesofothercelltypes(caseQ)
+dependent manner (Fig. 6G). We also considered that lyso- andothernongrowthcellularstates,suchassenescence(caseS).
+somes may prevent quiescence deepening by increasing energy To this end, we first developed a gene-expression signature in-
+production, another known role of lysosomes (18). However, dicating the quiescence depth in REF cells by performing a
+treatment with metabolites known to increase ATP production, linearregressionanalysisofthetime-courseRNA-seqdata(see
+suchasmethylpyruvate(MPy),didnotreducequiescencedepth Materials and Methods for details). To identify a signature that
+with statistical significance (SI Appendix, Fig. S7B); it actually correspondstoadeepening ofquiescence asopposedto simply
+increasedquiescencedepthathighconcentrations(SIAppendix, haltingthecellcycle,weomittedtheproliferatingsample(0d)from
+Fig. S7C), indicating that ATP generation is likely not respon- the analysis and used samples corresponding to 2- to 16-d serum
+sibleforhowlysosomalfunctionpreventsquiescencedeepening starvation(i.e.,shallowtodeepquiescence)tobuildtheregression
+inthetestedconditions,reminiscentofsimilarfindingsinyeasts model.Wenext appliedthisquiescence-depth signature toother
+(44). Taken together, our findings suggest that: 1) Increasing publiclyavailableRNA-seqdatasetsrelatedtocasesQandS,above.
+22630 | www.pnas.org/cgi/doi/10.1073/pnas.1915905116 Fujimakietal.
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+AsanexampleofcaseQ,dormantNSCsinvivotransitioninto largerthanthatinproliferatingcontrols(Fig.7B).Notably,QDS
+a shallower quiescent state called primed NSCs upon neural was constructed without involving proliferating samples (by
+injury(9).Whenweappliedthequiescence-depthgenesignature comparing shallow and deep quiescent cells under 2- to 16-d
+ofREFcellstotheRNA-seqdatacorrespondingtoNSCsbefore serum starvation) and thus likely reflects a common feature
+and after neural injury, we obtained quiescence depth scores between deep quiescence andsenescence. Consistently, aset of
+(QDS) from the linear regression model (see Materials and “senescence core signature” genes identified from metaanalysis
+Methodsfordetails)toindicatetherelativequiescencedepthof (19)exhibitsimilarexpressionchanges(i.e.,up-ordown-regulation)
+NSCs.WefoundthattheQDSofprimedNSCsafterinjurywas under both deep quiescence and senescence (Fig. 7E). Further-
+significantly smaller (i.e., shallower quiescence) than that of more,QDSwasfoundsignificantlylargerinagedhematopoietic
+dormant NSCs before injury (Fig. 7A). Thisresult suggests that stem cells (Fig. 7C) and monotonically increasing in all 11
+thequiescence-depthsignatureofREFcellsinvitrocanpredict studiedratorgansundergoingagingprocessesfromjuvenileto
+therelativequiescencedepthofNSCsinvivo,indicatingthatthis adolescence, adult, and aged stages (Fig. 7D). The success of
+gene signature may reflect shared quiescence regulatory mech- QDSgenesignaturetopredictbothsenescenceinvitroandaging
+anismsacrossdifferent celltypes. invivosuggeststhatquiescencedeepeningmayshareamolecular
+TotestcaseS,weanalyzedRNA-seqdatasetsassociatedwith mechanistic basis with and act as a transitional state toward se-
+cellular senescence and aging by applying the QDS model with nescenceandaging(seemoreinDiscussion).Consistently,itwas
+thequiescence-depthgenesignatureofREFcells.Strikingly,we recently reported that long-term cultured quiescent human fi-
+foundthatQDScorrectlypredicted cellular senescenceandag- broblastseventuallytransitintosenescenceunderphysiological
+inginawidearrayofcelllinesinvitro(20,21)andtissuesinvivo oxygen conditions (45).
+(22, 23) (Fig. 7 B–D). In all 6 cell lines (BJ, IMR-90, WI-38,
+HFF, MRC-5, and MDAH041) studied under replicative se- Discussion
+nescenceandinall3conditions(Adriamycin,5-aza,andH O ) Thelysosome–autophagypathwayisknowntoprotectadultstem
+2 2
+studied under stress-induced senescence, QDS was significantly cells against irreversible states, such as senescence, apoptosis,
+A B C
+D
+E
+Fig.7. Quiescencedeepeningparallelscellularsenescenceinvitroandaginginvivo.(A)QDSofdormant,primed,andactivatedNSCspredicatedbasedon
+thequiescence-depthgeneexpressionsignaturedevelopedinREFcells.Eachdotrepresentsasinglecellsampledbysingle-cellRNA(scRNA)-seq(9).See
+MaterialsandMethodsfordetails.*P<0.05,**P<0.01,and***P<0.001(1-tailedttest,samebelowinBandC).(B)PredictedQDSofindicatedcelllinesat
+proliferationversusreplicativesenescenceorstress-inducedsenescence(causedbyDNAdamagingagentAdriamycin,DNAdemethylationagent5-aza-2-
+deoxycytidine[5-aza],oroxidantH2O2).EachdotrepresentsacellpopulationsampledbyRNA-seq(20,21).(C)PredictedQDSofhematopoieticstemcells
+(HSCs)collectedfromyoung(2to3mo)oraged(20to25mo)mice.EachdotrepresentsasinglecellsampledbyscRNA-seq(22).(D)PredictedQDSofindicated
+organtypesharvestedfromrats(female,Upper;male,Lower)atindicatedagestages.*P<0.05,**P<0.01,and***P<0.001(1-wayANOVA).Eachdot
+representsacellpopulationsampledbyRNA-seq(23).(E)Expressiondynamicsof“senescencecoresignature”genesinRNA-seqanalysisof2-to16-dserum-
+starvedcells,showninahierarchicalclusteringheatmap(Left)oranoverlaidlineplot(Right).“Senescencecoresignature”genesup-ordown-regulatedin
+senescentcellsaregrouped,UpperandLower,respectively.
+Fujimakietal. PNAS | November5,2019 | vol.116 | no.45 | 22631
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+YGOLOIBLLEC
+andterminaldifferentiation(15,16,18).Thepresentstudyshows quiescentstemcellsinvivobyforcingcellcyclereentry(53,54).
+thatinsteadofasimpleOFF–ONswitch,lysosomesfunctionasa It is well established that mTORC1 drives cell growth and in-
+dimmer switch to continuously modulate quiescence depth (Fig. hibitsthelysosome-autophagypathway(43,55).Accordingly,the
+6H)andproliferativecapacityofquiescentcells. effect of mTORC1 on quiescence depth is likely 2-sided: By
+Our study suggests that as cells move deeper in quiescence, promotingcellgrowth,mTORC1facilitatesquiescenceexitand
+lysosomal gene expression and lysosomal mass increase, but ly- thusreducesquiescencedepth;byinhibitinglysosomalfunction,
+sosomalfunctionandlysosomedestructiondecrease.Decreased mTORC1drivescellsdeeperintoquiescence.IntheG case,
+Alert
+lysosome destruction via autophagy/lysophagy contributes to an wheremTORC1isactivatedbothbeforeandduringstimulation,
+increasedlysosomalmassandlikelyanaccumulationofdamaged the net result appears to be shallower quiescence. The exact
+lysosomes, which in turn contributes to a decreased lysosomal– bimodal effects of mTORC1 on quiescence depth may be com-
+autophagy function. Decreased lysosome destruction alone, plicatedandcondition-dependent, awaiting futurestudies.
+however, does not fully explain the increased lysosomal mass The lysosome–autophagy pathway plays an important role in
+(both lysoTracker intensity of lysosome number) observed in cancerphysiologyanddormancy(5,40,41,56–58).Activitiesof
+deep quiescent cells (Fig. 2 G and H), as blocking lysosome MiT/TFEfamilymembers,includingTfebandMitf,areup-regulated
+destructionincreasedLysoTrackerintensitybutnotthenumber by overexpression or nuclear localization in multiple cancer types,
+oflysosomesinREFcells(SIAppendix,Fig.S4);similarly,itwas includinglung,pancreatic,andovariancancers(41,59,60),whichis
+reported previously that lysosomal number did not change or linkedtopoorprognosisandsurvival(59,60).Thelysosome–auto-
+even mildly decreased in autophagy-impaired fibroblasts with phagy pathway appears to help maintain dormant cancer cells and
+Atg4BandAtg7mutations(46).Theothercontributingfactorof facilitate survival and metastasis (5). Consistently, autophagy in-
+increased lysosomal mass in deep quiescence appears to be ly- hibitiondecreasestheviabilityofdormantbreastcancercellsand
+sosomalbiogenesis:TheexpressionofMitf,amasterregulatorof their metastatic recurrence, suggesting a promising treatment
+lysosomal biogenesis, significantly increased the lysosomal strategy (57). Future studies are needed to determine the op-
+number (SI Appendix, Fig. S6E) in quiescent REF cells. Con- timaltarget anddegreeoflysosomal–autophagyinhibitionintreat-
+sistently, we found that applying small chemical inhibitors to menttominimizedisruptingthequiescencedepthofnormalcells.
+repress Mcoln1 (also known as TRPML1) that is crucial for ly- Our study highlights that deep quiescent cells exhibit gene-
+sosomebiogenesis(47)significantlydecreasedlysosomalnumber expressionsignaturesthataresimilartosenescentandagedcells
+in quiescent REF cells (SI Appendix, Fig. S8 A and B). The in- (Fig. 7 B–E). The enriched up-regulation of lysosomal genes
+crease in lysosome biogenesis itself is likely compensatory to (KEGG_lysosome gene set) is shown in 10 of the 11 studied
+quiescence deepening: Mitf expression increases significantly aging tissues (adrenal gland, brain, heart, kidney, liver, lung,
+along with quiescence deepening (Fig. 5A); relatedly, inhibiting spleen,thymus,uterus,testis,butnotmuscle);itisalsoshown
++
+lysosomebiogenesisfurtherdeepensquiescence(lowerEdU % in5ofthe6celllines(BJ,IMR-90,WI-38,HFF,MRC-5,but
+with Mcoln1 inhibitors than with DMSO control) (SI Appendix, not MDAH041)studiedunderreplicativesenescence,but not
+Fig. S8C). The dynamic balance and relative contributions of showninstress(Adriamycin/5-aza/H O )-inducedsenescencein
+2 2
+lysosomebiogenesis anddegradation destruction indeepquies- MDAH041cells(SIAppendix,TableS4).Thisresultisconsistent
+cenceawaitfurther investigation. with the findings that senescence and aging are partially driven
+REF cells in deep quiescence exhibited reduced autophagy by ROS and can be counteracted by lysosome–autophagy activ-
+flux(Fig.3A),whichmayberelevanttothedeclinedautophagy itiesinmanybutnotallconditions(6,15,17,61–63),indicating
+observed in aging (15, 48–50) and senescent cells (17, 51). It is the contributions of other potentially shared mechanisms un-
+unclearwhatresultedindeclinedautophagyindeepquiescence derlying deep quiescence, senescence, and aging. Among them,
+despite increased lysosomal gene expression (Fig. 2E) and bio- DNA damage is a likely candidate, which can be caused by
+genesis.Notethatnoteverylysosomalgeneincreasedexpression various stress signals (e.g., ROS and replication stress) and is
+with quiescence deepening: A small subset of lysosomal genes associated with quiescence entry (64, 65) as well as cellular se-
+enriched for those that also function in the Golgi network nescence(66,67)andaging(68,69).Furthermore,manycellular
+showed a general decrease (see cluster B in Fig. 2E for enrich- activities are up- or down-regulated as cells move deeper in
+mentanalysisandSIAppendix,TableS2).AstheGolginetwork quiescence (SI Appendix, Fig. S2C). Some of these cellular ac-
+iscriticaltotransportinglysosomalhydrolasesfromcytoplasmic tivitiesmaybeinvolvedintheregulationofquiescencedepthand
+ribosomesintolysosomalvesicles(52),thereducedexpressionof potentiallysenescenceandaging,withtheirdetailedmechanisms
+some of these related genes, therefore, may lead to a reduced awaitingfurtherstudies.Inthisregard,ithasbeenshownrecently
+lysosomal–autophagyfunction.Alternatively,the“net”decrease in both NSCs and bacteria that the accumulation of protein ag-
+in lysosomal function may be adaptive and serve as a cellular gregates is associated with quiescence deepening, and that the
+counter for serum-deprivation duration (i.e., environmental clearance of protein aggregates (by lysosomes in NSCs and by
+growth restriction), which in turn determines how cautious the DnaK–ClpBcomplexinbacteria)drivescellsto shallowerquies-
+cell will get before resuming growth. The exact mechanisms cenceandenhancestheirabilitytoreenterthecellcycle(39,70).
+dictating the relationship between lysosomal function and qui- QuiescenceentryandexitareregulatedbytheRb-E2f-Cyclin/
+escencedepth awaits furtherstudies. Cdk gene network (71, 72) that functions as a bistable switch
+Our results suggest that lysosomal function prevents quies- (25). How does the toggle switch-like nature of the Rb-E2f
+cence deepening via ROS reduction (Fig. 6). Previous studies pathway fit with the lysosomal dimmer switch? We speculate
+haveshownthatthelysosome–autophagypathwayreducesROS that during quiescence exit, cells first move progressively into
+in several types of quiescent cells (15, 16) through mitophagy: shallowquiescenceandatatimepoint,therestrictionpoint(73,
+That is, selective autophagic degradation of damaged mito- 74),“flip”intothecellcyclebycommittingtoproliferation;the
+chondria(15).Itremainstobetestedwhetherlysosomesprevent wholeprocessactslikeadjustingaslidingdimmerbeforeactivating
+quiescence deepening in REF cells via mitophagy, but the re- a toggle switch. In this regard, it will be important to figure out
+duced mitochondrial ROS levels resulting from enhanced lyso- whetherandhowthelysosomalswitchcross-talkswiththeRb-E2f
+somalfunction (Fig.6EandF)is consistentwiththismodel. switchincontrollingquiescencedepthandexitinfuturestudies.
+Itwas shown previously that mTORC1 can transform muscle Relatedly, recent in vivo studies on muscle and neural stem
+stemcellsintoashallowerquiescentstate,calledG ,inwhich cells generally invoke 2 quiescence state: 1 shallow (e.g., G
+Alert Alert
+cells are sensitized to growth stimulation (8). Consistently, con- andprimedquiescence)and1deep.Ourfindingsthatthegene-
+tinuousmTORC1activationledtodepletionofcertaintypesof expression signature we developed in the fibroblast model
+22632 | www.pnas.org/cgi/doi/10.1073/pnas.1915905116 Fujimakietal.
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+invitrocancorrectlyclassifydeep(dormant)andshallow(primed) CellCultureandQuiescenceInduction.REFsusedinthisstudyarefromasingle-
+NSCs in vivo (Fig. 7A) suggest a potential mechanistic link be- cellclonederivedfromREF52cellsandcontainastablyintegratedhuman
+tween the quiescent states in vitro and in vivo. As such, we E2F1 promoter-driven destabilized EGFP (E2f-GFP) reporter, as previously
+predict that quiescence depth in vivo is also continuous instead described [i.e., REF/E23 cells (25, 82)] unless otherwise noted. Cells were
+passagedevery2to3dandmaintainedatsubconfluency ingrowthme-
+ofbinary.Itispossiblethatdifferentlevelsofinjuriescancause
+dium: DMEM supplemented with 10% bovine growth serum (BGS; GE
+varyinglevelsofquiescentstatesinvivo,whichwasnotexamined
+Healthcare, SH30541). To induce quiescence, cells were plated at ∼50%
+previously but would be interesting to test in future studies. Fi-
+confluence in growth medium for a day, washed twice with DMEM, and
+nally,insupportofthecontinuousquiescencedepthinvivoare
+culturedinserum-starvationmedium(DMEMcontaining0.02%BGS)forthe
+theearlierfindingsthatintheliverafterpartialhepatectomyand indicatedduration(≥2d).
+in the salivary gland after isoproterenol stimulation, cells in in-
+creasingly older rats took an increasingly longer time toinitiate Quiescence-DepthAssay.Toassessquiescencedepth,cellswereswitchedfrom
+DNA synthesis, behaving like cells in increasing deeper quies- serum-starvationmediumtoserum-stimulationmedium(DMEMcontaining
+cence(10,75). BGSatindicatedconcentrations)andharvestedatindicatedtimepointsby
+Quiescence is commonly believed to protect cells from irre- trypsinization.Thecellfractionthatreenteredthecellcyclewasquantifiedby
+versible arrest, such as senescence. Our work suggests that this assessingtheprofileofEdUincorporation(andtheprofilesofE2f-GFPre-
+protectiondeclinesinlong-termquiescentcellsandthegradual porterandPIDNAstainingwhenindicated).Quiescencedepthisdetermined
+bytheserumthresholdrequiredtoactivatecellstoreenterthecellcycle.Ata
+quiescence deepening likely represents a transition path from
+givenserumconcentration,asmallerpercentageofdeeperquiescentcellsare
+cellproliferationtosenescence.Relatedly,thesameRbandp53
+abletoreenterthecellcyclebyagiventimethanofshallowerquiescentcells.
+pathways appear to underlie both quiescence and senescence
+Seetextfordetails.
+(76–79). Whether and how the lysosome–autophagy pathway
+interacts with Rb and p53 pathways to regulate the transition
+DataAvailability.Thedatareportedinthispaperhavebeendepositedinthe
+from deep quiescence to senescence, and whether such a tran- Gene Expression Omnibus (GEO) database, https://www.ncbi.nlm.nih.gov/
+sitionisgradualfollowingacontinuumorabruptascontrolledby geo(accessionno.GSE124109).
+an ultrasensitive or bistable switch-like mechanism (80, 81), re-
+mainsignificant unansweredquestions(SIAppendix,Fig.S1A). ACKNOWLEDGMENTS.WethankJohnnyFaresforvaluablediscussionsand
+suggestions on lysosomal function and assays; Andrew Peak and Andrew
+MaterialsandMethods Capaldiforcriticalreadingandcommentsonthemanuscript;andHaoxing
+XuforprovidingMcoln1inhibitors.ThisworkwassupportedbyNational
+DetaileddescriptionsofRNA-seqanddownstreamdataanalysisandmod-
+Science Foundation Grants DMS-1463137 (to G.Y.), DMS-1418172 (to G.Y.
+eling, modulation of lysosomal–autophagic function and lysosome bio- andH.H.Z.), CCF-1740858 (toH.H.Z.), andDMS-1462049 (toJ.X.);National
+genesis,assaysforquiescence-depth,lysosomalmassandproteolyticactivity, InstitutesofHealthGrantR01DK119232(toJ.X.);ChineseNationalScience
+autophagy flux, mitochondrial ROS, β-galactosidase activity, cell size, and andTechnologyMajorProject 2018ZX10302205(to F.B.); andGuangdong
+cytotoxicityareprovidedinSIAppendix. ProvinceKeyResearchandDevelopmentProgram2019B020226002(toF.B.).
+1. M.Rumman,J.Dhawan,M.Kassem,Concisereview:Quiescenceinadultstemcells: 21.S.Marthandanetal.,Conservedsenescenceassociatedgenesandpathwaysinpri-
+Biologicalsignificanceandrelevancetotissueregeneration.StemCells33,2903–2912 maryhumanfibroblastsdetectedbyRNA-seq.PLoSOne11,e0154531(2016).
+(2015). 22.A.Groveretal.,Single-cellRNAsequencingrevealsmolecularandfunctionalplatelet
+2. T.H.Cheung,T.A.Rando,Molecularregulationofstemcellquiescence.Nat.Rev. biasofagedhaematopoieticstemcells.Nat.Commun.7,11075(2016).
+Mol.CellBiol.14,329–340(2013). 23.Y.Yuetal.,AratRNA-seqtranscriptomicBodyMapacross11organsand4de-
+3. L.Rossietal.,Lessismore:Unveilingthefunctionalcoreofhematopoieticstemcells velopmentalstages.Nat.Commun.5,3230(2014).
+throughknockoutmice.CellStemCell11,302–317(2012). 24.G.Yao,C.Tan,M.West,J.R.Nevins,L.You,Originofbistabilityunderlyingmam-
+4. H.A.Coller,L.Sang,J.M.Roberts,Anewdescriptionofcellularquiescence.PLoSBiol. maliancellcycleentry.Mol.Syst.Biol.7,485(2011).
+4,e83(2006). 25.G.Yao,T.J.Lee,S.Mori,J.R.Nevins,L.You,AbistableRb-E2Fswitchunderliesthe
+5. M.S.Sosa,P.Bragado,J.A.Aguirre-Ghiso,Mechanismsofdisseminatedcancercell restrictionpoint.Nat.CellBiol.10,476–482(2008).
+dormancy:Anawakeningfield.Nat.Rev.Cancer14,611–622(2014). 26.K. Fujimaki et al., Graded regulation of cellular quiescence depth between pro-
+6. J.Oh,Y.D.Lee,A.J.Wagers,Stemcellaging:Mechanisms,regulatorsandtherapeutic liferationandsenescencebyalysosomaldimmerswitch.GeneExpressionOmnibus.
+opportunities.Nat.Med.20,870–880(2014). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124109.Deposited11Octo-
+7. N.E.Sharpless,R.A.DePinho,Howstemcellsageandwhythismakesusgrowold. ber2019.
+Nat.Rev.Mol.CellBiol.8,703–713(2007). 27.N.E.Sharpless,C.J.Sherr,Forgingasignatureofinvivosenescence.Nat.Rev.Cancer
+8. J.T.Rodgersetal.,mTORC1controlstheadaptivetransitionofquiescentstemcells
+15,397–408(2015).
+fromG0toG(Alert).Nature510,393–396(2014). 28.G.Yu,L.-G.Wang,Y.Han,Q.-Y.He,clusterProfiler:AnRpackageforcomparing
+biologicalthemesamonggeneclusters.OMICS16,284–287(2012).
+9. E.Llorens-Bobadillaetal.,Single-celltranscriptomicsrevealsapopulationofdormant
+neuralstemcellsthatbecomeactivateduponbraininjury.CellStemCell17,329–340 29.W.Huang,B.T.Sherman,R.A.Lempicki,Systematicandintegrativeanalysisoflarge genelistsusingDAVIDbioinformaticsresources.Nat.Protoc.4,44–57(2009).
+(2015).
+10.N.L.Bucher,Regenerationofmammalianliver.Int.Rev.Cytol.15,245–300(1963). 30.A.Subramanianetal.,Genesetenrichmentanalysis:Aknowledge-basedapproach
+forinterpretinggenome-wideexpressionprofiles.Proc.Natl.Acad.Sci.U.S.A.102,
+11.G.S.Roth,R.C.Adelman,Age-dependentregulationofmammalianDNAsynthesis 15545–15550(2005).
+andcelldivisioninvivobyglucocorticoids.Exp.Gerontol.9,27–31(1974).
+31.F.Nazioetal.,Fine-tuningofULK1mRNAandproteinlevelsisrequiredforauto-
+12.T.A.Owen,D.R.Soprano,K.J.Soprano,Analysisofthegrowthfactorrequirements phagyoscillation.J.CellBiol.215,841–856(2016).
+forstimulationofWI-38cellsafterextendedperiodsofdensity-dependentgrowth
+32.N.Mizushima,T.Yoshimori,B.Levine,Methodsinmammalianautophagyresearch.
+arrest.J.Cell.Physiol.139,424–431(1989). Cell140,313–326(2010).
+13.L.H.Augenlicht,R.Baserga,ChangesintheG0stateofWI-38fibroblastsatdifferent 33.J.Hasegawa,I.Maejima,R.Iwamoto,T.Yoshimori,Selectiveautophagy:Lysophagy.
+timesafterconfluence.Exp.CellRes.89,255–262(1974). Methods75,128–132(2015).
+14.J.S.Kwonetal.,ControllingdepthofcellularquiescencebyanRb-E2Fnetwork 34.C.Papadopoulos,H.Meyer,Detectionandclearanceofdamagedlysosomesbythe
+switch.CellRep.20,3223–3235(2017). endo-lysosomaldamageresponseandLysophagy.Curr.Biol.27,R1330–R1341(2017).
+15.L.García-Pratetal.,Autophagymaintainsstemnessbypreventingsenescence.Nature 35.I.Monastyrska,E.Rieter,D.J.Klionsky,F.Reggiori,Multiplerolesofthecytoskeleton
+529,37–42(2016). inautophagy.Biol.Rev.Camb.Philos.Soc.84,431–448(2009).
+16.T.T.Hoetal.,Autophagymaintainsthemetabolismandfunctionofyoungandold 36.D.J.Klionskyetal.,Guidelinesfortheuseandinterpretationofassaysformonitoring
+stemcells.Nature543,205–210(2017). autophagy(3rdedition).Autophagy12,1–222(2016).
+17.H.T.Kang,K.B.Lee,S.Y.Kim,H.R.Choi,S.C.Park,Autophagyimpairmentinduces 37.F.Debacq-Chainiauxetal.,Screeningofsenescence-associatedgeneswithspecific
+prematuresenescenceinprimaryhumanfibroblasts.PLoSOne6,e23367(2011). DNAarrayrevealstheroleofIGFBP-3inprematuresenescenceofhumandiploidfi-
+18.J.J.Lumetal.,Growthfactorregulationofautophagyandcellsurvivalintheabsence broblasts.FreeRadic.Biol.Med.44,1817–1832(2008).
+ofapoptosis.Cell120,237–248(2005). 38.J.Duan,J.Duan,Z.Zhang,T.Tong,Irreversiblecellularsenescenceinducedbypro-
+19.A.Hernandez-Seguraetal.,Unmaskingtranscriptionalheterogeneityinsenescent longed exposure to H2O2 involves DNA-damage-and-repair genes and telomere
+cells.Curr.Biol.27,2652–2660.e4(2017). shortening.Int.J.Biochem.CellBiol.37,1407–1420(2005).
+20.M.Purcell,A.Kruger,M.A.Tainsky,Geneexpressionprofilingofreplicativeandin- 39.D.S.Leemanetal.,Lysosomeactivationclearsaggregatesandenhancesquiescent
+ducedsenescence.CellCycle13,3927–3937(2014). neuralstemcellactivationduringaging.Science359,1277–1283(2018).
+Fujimakietal. PNAS | November5,2019 | vol.116 | no.45 | 22633
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD
+YGOLOIBLLEC
+40.D.Ploperetal.,MITFdrivesendolysosomalbiogenesisandpotentiatesWntsignaling 62.Z.Douetal.,Autophagymediatesdegradationofnuclearlamina.Nature527,105–
+inmelanomacells.Proc.Natl.Acad.Sci.U.S.A.112,E420–E429(2015). 109(2015).
+41.R.M.Pereraetal.,Transcriptionalcontrolofautophagy-lysosomefunctiondrives 63.M.Naritaetal.,SpatialcouplingofmTORandautophagyaugmentssecretoryphe-
+pancreaticcancermetabolism.Nature524,361–365(2015). notypes.Science332,966–970(2011).
+42.V. Bouché et al., Drosophila Mitf regulates the V-ATPase and the lysosomal- 64.A.R.Barretal.,DNAdamageduringS-phasemediatestheproliferation-quiescence
+autophagicpathway.Autophagy12,484–498(2016).
+decisioninthesubsequentG1viap21expression.Nat.Commun.8,14728(2017).
+43.C.Settembre,A.Fraldi,D.L.Medina,A.Ballabio,Signalsfromthelysosome:Acontrol 65.M.Arora,J.Moser,H.Phadke,A.A.Basha,S.L.Spencer,Endogenousreplication
+centreforcellularclearanceandenergymetabolism.Nat.Rev.Mol.CellBiol.14,283– stressinmothercellsleadstoquiescenceofdaughtercells.CellRep.19,1351–1364
+296(2013).
+(2017).
+44.D.Laporteetal.,Metabolicstatusratherthancellcyclesignalscontrolquiescence
+66.V.Gire,P.Roux,D.Wynford-Thomas,J.M.Brondello,V.Dulic,DNAdamagecheck-
+entryandexit.J.CellBiol.192,949–957(2011).
+pointkinaseChk2triggersreplicativesenescence.EMBOJ.23,2554–2563(2004).
+45.S.Marthandan,S.Priebe,P.Hemmerich,K.Klement,S.Diekmann,Long-termqui- 67.F.d’AddadiFagagna,Livingonabreak:CellularsenescenceasaDNA-damagere-
+escentfibroblastcellstransitintosenescence.PLoSOne9,e115597(2014). sponse.Nat.Rev.Cancer8,512–522(2008).
+46.I
+b
+.
+io
+M
+g
+a
+e
+e
+n
+j
+e
+im
+sis
+a
+a
+e
+n
+t
+d
+a
+k
+l.
+i
+,
+dn
+A
+e
+u
+y
+to
+in
+p
+j
+h
+u
+a
+ry
+g
+.
+y
+E
+s
+M
+eq
+B
+u
+O
+es
+J
+t
+.
+e
+3
+r
+2
+s
+,
+d
+2
+a
+3
+m
+36
+a
+–
+g
+2
+e
+3
+d
+47
+ly
+(
+s
+2
+o
+0
+s
+1
+o
+3
+m
+).
+estocontrollysosomal 68.J.P.Soaresetal.,AgingandDNAdamageinhumans:Ameta‐analysisstudy.Aging
+(AlbanyN.Y.)6,432–439(2014).
+47.A.Milleretal.,MucolipidosistypeIVproteinTRPML1-dependentlysosomeformation.
+Traffic16,284–297(2015). 69.I.Beerman,J.Seita,M.A.Inlay,I.L.Weissman,D.J.Rossi,Quiescenthematopoietic
+48.S.Vittorinietal.,Theage-relatedaccumulationofproteincarbonylinratlivercor- stemcellsaccumulateDNAdamageduringagingthatisrepaireduponentryintocell
+relateswiththeage-relateddeclineinliverproteolyticactivities.J.Gerontol.ABiol.
+cycle.CellStemCell15,37–50(2014).
+Sci.Med.Sci.54,B318–B323(1999). 70.Y.Puetal.,ATP-dependentdynamicproteinaggregationregulatesbacterialdor-
+49.S.Kaushiketal.,LossofautophagyinhypothalamicPOMCneuronsimpairslipolysis. mancydepthcriticalforantibiotictolerance.Mol.Cell73,143–156.e4(2018).
+EMBORep.13,258–265(2012). 71.S.L.Spenceretal.,Theproliferation-quiescencedecisioniscontrolledbyabifurcation
+50.A. M. Cuervo, J. F. Dice, Age-related decline in chaperone-mediated autophagy. inCDK2activityatmitoticexit.Cell155,369–383(2013).
+J.Biol.Chem.275,31505–31513(2000). 72.D.Sun,L.Buttitta,StatesofG0andtheproliferation-quiescencedecisionincells,
+51.B.I.Han,S.H.Hwang,M.Lee,Aprogressivereductioninautophagiccapacitycon- tissuesandduringdevelopment.Int.J.Dev.Biol.61,357–366(2017).
+tributestoinductionofreplicativesenescenceinHs68cells.Int.J.Biochem.CellBiol. 73.C.Schwarzetal.,ApreciseCdkactivitythresholddeterminespassagethroughthe
+92,18–25(2017). restrictionpoint.Mol.Cell69,253–264.e5(2018).
+52.J.P.Luzio,P.R.Pryor,N.A.Bright,Lysosomes:Fusionandfunction.Nat.Rev.Mol.Cell 74.J.P.Matson,J.G.Cook,Cellcycleproliferationdecisions:Theimpactofsinglecell
+Biol.8,622–632(2007). analyses.FEBSJ.284,362–375(2017).
+53.C.Chenetal.,TSC-mTORmaintainsquiescenceandfunctionofhematopoieticstem 75.R. C. Adelman, G.Stein, G. S.Roth, D. Englander,Age-dependentregulation of
+cellsbyrepressingmitochondrialbiogenesisandreactiveoxygenspecies.J.Exp.Med. mammalianDNAsynthesisandcellproliferationinvivo.Mech.AgeingDev.1,49–59
+205,2397–2408(2008).
+(1972).
+54.D.Adhikarietal.,Tsc/mTORC1signalinginoocytesgovernsthequiescenceandac- 76.B.G.Childs,M.Durik,D.J.Baker,J.M.vanDeursen,Cellularsenescenceinagingand
+tivationofprimordialfollicles.Hum.Mol.Genet.19,397–410(2010).
+age-relateddisease:Frommechanismstotherapy.Nat.Med.21,1424–1435(2015).
+55.M.Laplante,D.M.Sabatini,mTORsignalingingrowthcontrolanddisease.Cell149,
+77.J.W.Shay,O.M.Pereira-Smith,W.E.Wright,AroleforbothRBandp53inthe
+274–293(2012).
+regulationofhumancellularsenescence.Exp.CellRes.196,33–39(1991).
+56.A gr . o Y w a t n h g i , n A de . p C e . n K d i e m n m to e f lm T a P n 5 , 3/ I T n R h P ib 5 i 3 ti s o t n at o u f s. a A u u t t o o p p h h a a g g y y a 1 t 0 t , en 16 u 8 a 3 te – s 16 p 8 a 4 n ( c 2 re 0 a 1 t 4 i ) c . cancer 78. g J. o C o a d m c p e i l s ls i, .N F. a d t. ’A R d e d v. a M d o i l F . a C g e a ll g B n i a o , l. C 8 e , ll 7 u 2 la 9 r –7 se 4 n 0 e ( s 2 c 0 e 0 n 7 c ) e . :Whenbadthingshappento
+57.L.Vera-Ramirez,S.K.Vodnala,R.Nini,K.W.Hunter,J.E.Green,Autophagypro-
+79.D.C.Bennett,Humanmelanocytesenescenceandmelanomasusceptibilitygenes. motesthesurvivalofdormantbreastcancercellsandmetastatictumourrecurrence.
+Oncogene22,3063–3069(2003).
+Nat.Commun.9,1944(2018).
+80.J.J.Tyson,K.C.Chen,B.Novak,Sniffers,buzzers,togglesandblinkers:Dynamicsof
+58.E.E.Mowers,M.N.Sharifi,K.F.Macleod,Autophagyincancermetastasis.Oncogene
+36,1619–1630(2017). regulatoryandsignalingpathwaysinthecell.Curr.Opin.CellBiol.15,221–231(2003).
+59.A.Giatromanolakietal.,IncreasedexpressionoftranscriptionfactorEB(TFEB)is 81.J.E.Ferrell,Jr,S.H.Ha,UltrasensitivitypartIII:Cascades,bistableswitches,and
+associatedwithautophagy,migratoryphenotypeandpoorprognosisinnon-small
+oscillators.TrendsBiochem.Sci.39,612–618(2014).
+celllungcancer.LungCancer90,98–105(2015). 82.X.Wangetal.,Exitfromquiescencedisplaysamemoryofcellgrowthanddivision.
+60.X.Fu,L.Zhang,L.Dan,K.Wang,Y.Xu,ExpressionofTFEBinepithelialovariancancer Nat.Commun.8,321(2017).
+anditsroleinautophagy.Int.J.Clin.Exp.Pathol.9,10914–10928(2016). 83.C.L.Smith,J.A.Blake,J.A.Kadin,J.E.Richardson,C.J.Bult;MouseGenomeDa-
+61.C.D.Rubinsztein,G.Mariño,G.Kroemer,Autophagyandaging.Cell146,682–695 tabaseGroup,MouseGenomeDatabase(MGD)-2018:Knowledgebaseforthelabo-
+(2011). ratorymouse.NucleicAcidsRes.46,D836–D842(2018).
+22634 | www.pnas.org/cgi/doi/10.1073/pnas.1915905116 Fujimakietal.
+.31.991.691.821
+sserdda
+PI
+morf
+4202
+,52
+rebotcO
+no
+YRARBIL
+ANOZIRA
+FO
+YTISREVINU
+yb
+gro.sanp.www//:sptth
+morf
+dedaolnwoD

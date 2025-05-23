@@ -1,0 +1,575 @@
+ORIGINALRESEARCH
+published:24February2022
+doi:10.3389/fcell.2022.792719
+Extracellular Fluid Flow Induces
+Shallow Quiescence Through Physical
+and Biochemical Cues
+Bi Liu1,2†,XiaWang2,3†,Linan Jiang4*,Jianhua Xu1,YitshakZohar4andGuang Yao2*
+1SchoolofPharmacy,FujianProvincialKeyLaboratoryofNaturalMedicinePharmacology,FujianMedicalUniversity,Fuzhou,
+China,2DepartmentofMolecularandCellularBiology,UniversityofArizona,Tucson,AZ,UnitedStates,3CollegeofAnimal
+ScienceandTechnology,NorthwestA&FUniversity,Yangling,China,4AerospaceandMechanicalEngineering,Universityof
+Arizona,Tucson,AZ,UnitedStates
+Thebalancebetweencellquiescenceandproliferationisfundamentaltotissuephysiology
+and homeostasis. Recent studies have shown that quiescence is not a passive and
+homogeneous state but actively maintained and heterogeneous. These cellular
+characteristics associated with quiescence were observed primarily in cultured cells
+under a static medium. However, cells in vivo face different microenvironmental
+Editedby: conditions, particularly, under interstitial fluid flows distributed through extracellular
+WeiminLi,
+matrices. Interstitial fluid flow exerts shear stress on cells and matrix strain, and results
+WashingtonStateUniversity,
+UnitedStates incontinuousreplacementofextracellularfactors.Inthisstudy,weanalyzedindividualcells
+Reviewedby: undervaryingfluidflowratesinmicrofluidicdevices.Wefoundquiescencecharacteristics
+DianeAliciadeZélicourt, previouslyidentifiedunderconventionalstaticmedium,includingserumsignal-dependant
+UniversityofZurich,Switzerland
+TaekoKobayashi, quiescence entry and exit and time-dependant quiescence deepening, are also present
+KyotoUniversity,Japan undercontinuousfluidflow.Furthermore,increasingtheflowratedrivescellstoshallower
+*Correspondence:
+quiescenceandbecomemorelikelytoreenterthecellcycleupongrowthstimulation.This
+LinanJiang
+effectisduetoflow-inducedphysicalandbiochemicalcues.Specifically,increasingshear
+jiangl@arizona.edu
+GuangYao stress or extracellular factor replacement individually, without altering other parameters,
+guangyao@arizona.edu
+results in shallow quiescence. We show our experimental results can be quantitatively
+†Theseauthorshavecontributed
+explainedbyamathematicalmodelconnectingextracellularfluidflowtoanRb-E2fbistable
+equallytothiswork
+switch that regulates the quiescence-to-proliferation transition. Our findings uncover a
+Specialtysection: previouslyunappreciatedmechanismthatlikelyunderliestheheterogeneousresponsesof
+Thisarticlewassubmittedto
+quiescent cells for tissue repair and regeneration in different physiological tissue
+CellGrowthandDivision,
+asectionofthejournal microenvironments.
+FrontiersinCellandDevelopmental
+Biology Keywords:cellularquiescence,quiescencedepth,extracellularfluidflow,flowshearstress,extracellularfactors,
+microenvironment,microfluidics,mathematicalmodel
+Received:11October2021
+Accepted:08February2022
+Published:24February2022 INTRODUCTION
+Citation:
+LiuB,WangX,JiangL,XuJ,ZoharY Quiescenceisadormant,non-proliferativecellularstate.Quiescentcells,however,stillmaintainthe
+andYaoG(2022)ExtracellularFluid potentialtoproliferateuponphysiologicalsignals,makingthemdistinctfromotherdormantcells
+FlowInducesShallowQuiescence
+that are irreversibly arrested, such as those in senescence or terminal differentiation. Activating
+ThroughPhysicaland
+quiescent cells (e.g., adult stem and progenitor cells) to proliferate is fundamental to tissue
+BiochemicalCues.
+homeostasis and repair (Coller et al., 2006; Wilson et al., 2008; Li and Clevers, 2010; Cheung
+Front.CellDev.Biol.10:792719.
+doi:10.3389/fcell.2022.792719 and Rando, 2013). Quiescence has long been viewed as a passive cellular state lacking cell cycle
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 1 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+activity.Recentstudies,however,haverevealedthatquiescenceis tissue repair and regeneration in different physiological
+rather actively maintained and highly heterogeneous (Coller contexts of living tissues.
+et al., 2006; Sang et al., 2008; Cheung and Rando, 2013;
+Spencer et al., 2013; Wang et al., 2017).
+The heterogeneity of quiescent cells in their proliferation MATERIAL AND METHODS
+potential can be described as a graded depth. Cells in deeper
+quiescence require stronger growth stimulation and take longer Microfluidic Device Design and Fabrication
+to exit quiescence and reenter the cell cycle than in shallower Amicrofluidicsystemwasdevelopedtostudycellularquiescence
+quiescence (Augenlicht and Baserga, 1974; Kwon et al., 2017; undermediumflow.Toobtainsufficientnumbersofcellsforflow
+Fujimakietal.,2019).Hepatocytesinolderratsareanexampleof cytometryanalyses,amicrofluidicdevicewasdesignedfeaturing
+deeperquiescentcells,displayingalongerdelaybeforereentering astraightchannel420μminheight,4mminwidth,and4cmin
+the cell cycle and reinitiating DNA replication following partial length. The microdevices, made of optically transparent
+hepatectomy, as compared to those in younger rats (Bucher, polydimethylsiloxane (PDMS, Sylgard 184, Dow Corning
+1963).Certainmuscleandneuralstemcellsaftertissueinjuryare Corporation, 3097358-1004), also allow real-time imaging of
+examples of shallow quiescent cells, primed to reenter the cell cells during experimentation.
+cyclefasteruponthenextdamage(Rodgersetal.,2014;Llorens- Thedevicefabricationprocess,illustratedinFigure1,started
+Bobadilla et al., 2015). The dysregulation of cellular quiescence withthefabricationofamastermold.Themoldwithfeaturesof
+depthcanleadtodisruptedtissuehomeostasis,exhibitingeither microchannelpatternswasmadeinanaluminumblockusinga
+an insufficient number of growing cells due to an abnormally computer numerical control (CNC) machine based on a 3D
+deep quiescence, or a depleted pool of quiescent stem and Computer-Aided Design (CAD). PDMS mixture, consisting of
+progenitor cells due to an abnormally shallow quiescence 10:1baseandcuringagent,waspouredontothemold.Afterair
+(Orford and Scadden, 2008; Cheung and Rando, 2013; bubbleremovalfromthemixtureundervacuum,thePDMSwas
+Fujimaki and Yao, 2020). curedat55°Cfor3h.ThecuredPDMSsubstratewasthenpeeled
+Although dormant and non-proliferative, quiescent cells off the mold with formed microchannel grooves (Figure 1A).
+reside in and interact with dynamic microenvironments. A Afterpunchinginletandoutletholesatthetwoendsofachannel,
+particular microenvironmental factor is the interstitial fluid thePDMSmicrochannelwasbondedwithaglassslidefollowing
+flowingovertissuecells,whichtransportsnutrientsandother oxygen plasma treatment of the bonding surfaces (Figure 1B).
+dissolved molecules that influence cellular activities (Jain, Next,apairofinletandoutlettubingadapterswasassembledfor
+1987;SwartzandFleury,2007;Freundetal.,2012;Yaoetal., each device to connect the microchannel to the external flow
+2013).Interstitialflowalsogeneratesmechanicalshearstress control system. The device fabrication and packaging were
+on cells, which affects cell morphology, migration, growth, completed with incubation at 55°C for an hour to enhance the
+anddifferentiation(Jain,1987;NgandSwartz,2003;Tarbell bonding strength (Figure 1C). Prior to experiments, the
+et al., 2005; Swartz and Fleury, 2007; Polacheck et al., 2011; microfluidic devices were sterilized by flowing ethanol through
+Shirure et al., 2017; Chen et al., 2019). To date, though, the microchannels, followed by UV irradiation for 1h inside a
+cellular quiescence has been mostly studied in cell cultures biosafety hood. The inner surfaces of the microchannel were
+understaticmediumorinanimalmodelswithoutexamining coatedwith2%(w/w)fibronectintoenhancetheadhesionofcells
+the effects of interstitial fluid flow. Whether and how to the bottom surface.
+extracellular fluid flow affects cellular quiescence remain
+largely unknown. Flow Rate and Flow-Induced Shear Stress
+Inthisstudy,weexaminedtheeffectsofextracellularfluid Thetotalvolumeofmediuminamicrodevice(includingtubing
+flowoncellularquiescencedepthusingamicrofluidicsystem attheinlet/outletofthechannelbutnotconnectors,Figure1C)is
+with a controllable medium flow rate. First, we found many approximately 140μl, and the medium volume in the
+quiescencecharacteristicspreviouslyobservedincellcultures microfluidic channel alone is about 67µl. In this study, a
+under a static medium were also present in the microfluidic continuous medium flow with a fixed flow rate (5 or 20μl/h)
+system under continuous medium flow. Furthermore, the was fed into the channel to mimic the typical interstitial flow
+medium flow affected cellular quiescence depth, and thus, velocityinsofttissues(SwartzandFleury,2007)unlessotherwise
+the likelihood of cell cycle reentry upon growth stimulation. noted. Correspondingly, the flow rate, rather than the priming
+This result was further explained by the combined effect of volume,isusedtocharacterizethefloweffect.Wealsoconsider
+flow-induced hydrodynamic shear stress and extracellular theconcentrationofthebulkfluidisuniformspatially,andlocal
+substance replacement. Lastly, the experimental results diffusionandconvectionattheinterfacesbetweenthefluidand
+were integrated into a mathematic model that helps cells can be neglected.
+understand and predict how extracellular fluid flow Pressure-driven flow in a microchannel presents a non-
+modulates quiescence depth. To the best of our knowledge, uniform velocity profile, which gives rise to shear stress. The
+thisstudyisthefirsttocharacterizetheeffectsofextracellular shearstressforaNewtonianfluidisdirectlyproportionaltothe
+fluid flow on cellular quiescence, which could help better productofthevelocitygradientandfluidviscosity.Assuminga2-
+understandtheheterogeneousresponseofquiescentcellsfor Dparabolicvelocityprofileinamicrochannelwitharectangular
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 2 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+FIGURE1|Microdevicefabricationanddimensions.(A)aluminummoldandPDMSreplicate.(B)PDMSmicrochannelbondontoaglassslide.(C)Amicrofluidic
+devicewiththemicrochanneldimensions.(D)Thelineardependenceofwallshearstressonfluidflowrate.Thereddottedlinesindicatethewallshearstresslevelsatthe
+flowratesof5and20μl/h,respectively.
+TABLE1|Flow-inducedshearstressinmediumcontainingvaryingdextranconcentrations.
+Dextranconcentration(mg/ml) Viscosity(cP) Wallshearstress Wallshearstress
+at5ul/hflow at20ul/hflow
+rate(10−3dyne/cm2) rate(10−3dyne/cm2)
+0 0.73 0.09 0.35
+25 1.95 0.23 0.93
+50 4.64 0.55 2.20
+100 23.78 2.82 11.28
+cross-section, the wall shear stress, τ , experienced by cells viscosity at 37°C, and corresponding shear stress values for the
+w
+attachedonthebottomsurfaceofthemicrochannel,isgivenby: two flow rates (Carrasco et al., 1989).
+6μQ
+τ
+w
+(cid:1)
+WH2
+(1) Cell Culture
+REF/E23cellsusedinthisworkwerederivedfromratembryonic
+where W and H are the microchannel width and height, fibroblasts REF52 cells as a single-cell clone containing a stably
+respectively, μ is the fluid viscosity, and Q is the volumetric integratedE2f1promoter-drivendestabilizedGFPreporter(E2f-
+flow rate. For a fixed medium viscosity, estimated to be μ = GFP for short), as previously described (Yao et al., 2008). Cells
+0.73cP at 37°C, and given the microchannel dimensions, W = were maintained at 37°C with 5% CO in the growth medium:
+2
+4mmandH=420μm,theshearstressislinearlyproportionalto DMEM (Coning, 15013-CV supplemented with 2x Glutamax
+thefluidflowrate.Thus,thetwoflowratesusedinthisstudy,Q= (Gibco, 35050)) containing 10% bovine growth serum BGS
+5and20μl/h,correspondtoshearstressvaluesτ =0.09×10 −3 (HyClone, SH30541.03).
+w
+and 0.35 × 10
+−3dyne/cm2,
+respectively (Figure 1D).
+InEq.1,forafixedflowrateandmicrochanneldimensions,
+Quiescence Depth Measurement Under
+wallshearstressislinearlyproportionaltothemediumviscosity.
+Dextran(Sigma,D5251;~500,000averagemolecularweight)was Extracellular Fluid Flow
+dissolvedinthemediuminvariousfinalconcentrationstoobtain To induce cellular quiescence, growing cells were trypsinized
+correspondinglyvariousmediumviscosities.Table1summarizes (Coning, 25052-CI), and 70μl of cell suspension (0.6million
+the resultant dextran-containing medium concentrations, cells/ml) was seeded into a microfluidic channel; after cell
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 3 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+attachment on the bottom surface of the channel overnight, extrinsic noise, respectively. X(t)(cid:1)(X 1 (t), ...,X n (t)) is the
+growth medium inside the channel was replaced by a system state at time t. X i (t) is the molecule number of species
+continuous flow of serum-starvation medium (0.02% BGS in i(i(cid:1)1, ..., n) at time t. The time evolution of the system is
+DMEM)atadesignatedflowratecontrolledbyaprogrammable measured based on the rates a[X(t)](j(cid:1)1,...,M) with the
+j
+syringe pump (Harvard PHD 2000). Cell morphologies were corresponding change of molecule number j described in v .
+ji
+found comparable across the flow rate range (0–20μl/h) FactorsγandωaretwoindependentanduncorrelatedGaussian
+(Supplementary Figure S1A). To induce quiescence exit, noises. Scaling factors θ and δ are implemented for the
+following serum starvation, the microdevice was disconnected adjustment of intrinsic and extrinsic noise levels, respectively
+from the flow-feeding setup (syringe and pump), and serum- (unless otherwise noted, θ = 0.4, δ = 40, as selected to be
+stimulation medium (1–4% BGS in DMEM) was gently flowed consistent with the experimental data presented in Figure 3).
+into the micro-chamber using a pipette and a tip at the inlet Units of model parameters and species concentrations
+tubingofthedevice.Themediumchangestepisfast(<1minfor (Supplementary Table S2) in the ODE model were converted
+140µl medium) and identical to all quiescent cell groups, to molecule numbers. The E2f-On state was defined as the E2f
+avoiding the bias in the exposure time of cells to the moleculenumberatthe26thhafterserumstimulationreaching
+stimulation medium (if otherwise using slow flows at different beyondathresholdvalueof300.AllSDEswereimplementedand
+flowrates, 5or20μl/h). Cellswerethenincubatedwithserum- solved in Matlab.
+stimulation medium at static condition (again, identical to all
+quiescent cell groups). After 26h of serum stimulation, cells
+inside the channel were harvested, and the intensities of E2f- RESULTS
+GFP signals from individual cells were measured using a flow
+cytometer(BDLSRII).Flowcytometrydatawereanalyzedusing
+Quiescence Induction and Deepening Over
+FlowJo software (version 10.0).
+ThepercentageofcellswiththeE2fatthe“On”state(E2f-On Time are Consistent With or Without
+%) in a cell population after serum stimulation was used as an Medium Flow
+index for quiescence depth before stimulation: the smaller the To test whether and how extracellular fluid flow affects cellular
+E2f-On%, the deeper the quiescence depth prior to serum quiescence, we cultured REF/E23 cells in microfluidic devices
+stimulation (Kwon et al., 2017). Consistent with our previous undermediumflow(Figure1).Twoflowrates(Q=5and20μl/
+studiesinstatic-mediumexperiments(Kwonetal.,2017;Wang
+h) were used in this study; they generated average velocities of
+et al., 2017; Fujimaki et al., 2019), E2f-On% was found 0.82 and 3.33μm/s on the microfluidic platform, respectively,
+comparable to the percentage of cells with EdU incorporation whichareontheorderoftypicalinterstitialflowvelocityinsoft
+(EdU+%) in the microfluidic experiments under continuous
+tissues (Swartz and Fleury, 2007). Cells were seeded in
+flows (Supplementary Figures S1B,C). In the EdU microfluidic devices, and cell quiescence and proliferation
+incorporation assay, 1µM EdU was added to the serum-
+status were assessed using a previously established and stably
+stimulation medium at 0h, and the EdU signal intensity was
+integrated E2f-GFP reporter (Yao et al., 2008), which was
+measured30hafterserumstimulationbytheClick-iTEdUassay
+validated by standard EdU-incorporation assay in regular cell
+followingthemanufacturer’sprotocol(ThermoFisher,C10634).
+cultures (Kwon et al., 2017; Wang et al., 2017; Fujimaki et al.,
+2019) as well as here on the microfluidic platform
+(Supplementary Figures S1B,C; see Methods).
+Mathematical Modeling and Stochastic
+To induce quiescence, cells in microfluidic devices were
+Simulations
+cultured in serum-starvation medium (0.02% serum) for
+Toaccountfortheeffectsofextracellularfluidflowonquiescence
+4days under a given extracellular fluid flow (5 or 20μl/h). In
+depth, the fluid flow-associated terms were added to the serum
+theseconditions,about95%ofcellsormoreenteredquiescence
+response terms in our previously established Rb-E2F bistable (Figures 2A,B, 0.02% serum, 4-days), as indicated by the Off-
+switchmodel(SupplementaryTableS1)(Yaoetal.,2008).Based
+state of the E2f-GFP reporter (E2f-Off for short, the lower/left
+ontheresultantordinarydifferentialequation(ODE)framework mode of the E2f-GFP histograms in Figure 2). Quiescent cells
+(Supplementary Table S1), a Langevin-type stochastic
+weresubsequentlystimulatedtoreenterthecellcyclewithserum
+differential equation (SDE) model was constructed as follows atvaryingconcentrations(withoutflow,seeMethodsfordetails).
+(Gillespie, 2000; Lee et al., 2010):
+Cellswereharvestedafter26hofserumstimulation,andtheE2f-
+M M GFP reporter activity was measured by flow cytometry. With
+X i (t+τ)(cid:1)X i (t)+(cid:1)] ji a j [X(t)]τ+θ(cid:1)] ji (cid:3)a j [X(t)]τ(cid:4)1/2γ increasing serum conconcentrations (0.02–4% serum, 4days,
+j(cid:1)1 j(cid:1)1 Figure 2), higher percentages of cells exited quiescence and
++δωτ1/2 reentered the cell cycle, as indicated by the On-state of the
+(2) E2f-GFP reporter (E2f-On for short, the higher/right mode of
+theE2f-GFPhistogramsinFigure2).Theobservationsthatcells
+wherethefirsttwotermsontherightaccountfordeterministic entered quiescence upon serum deprivation under an
+kinetics, and the third and fourth terms represent intrinsic and extracellular fluid flow and then reentered the cell cycle upon
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 4 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+FIGURE2|Longer-termserumstarvationunderextracellularfluidflowleadstodeeperquiescence.REF/E23cellsseededinmicrofluidicdeviceswereinducedto
+andmaintainedinquiescencebyculturingtheminserum-starvationmediumforeither4or8daysunderthemediumflowratesof5μl/h(A)and20μl/h(B).Cellswere
+subsequentlystimulatedwithserumattheindicatedconcentrationsfor26h,andtheE2f-On%wereassayed.(Top)E2f-GFPhistogramswithrednumbersindicatingthe
+averageE2f-On%(theareasbelowtheright“peaks”ofthebimodalhistograms;samebelow)fromduplicatesamples(blackandgrey).(Bottom)Statisticbarchart
+oftheE2f-On%incellpopulations(fromthetop)asafunctionofserum-starvationdurationandserumconcentrationinserum-stimulation.Errorbars,SEM(n=2),
+*p<0.05.
+serum stimulation are consistent with the cell behaviors in whether cells are in microfluidic devices exposed to
+conventionalstaticmedium(Colleretal.,2006;Yaoetal.,2008). extracellular fluid flows or in conventional static-medium
+Wenextcomparedcellsinducedtoquiescenceby8vs.4days cultures.
+of serum starvation in the presence of extracellular fluid flow.
+Previous work, including ours, showed that cells moved into
+Fast Extracellular Fluid Flow Results in
+deeper quiescence when they remained quiescent for longer
+durations in conventional static-medium cell cultures Shallow Quiescence
+(Augenlicht and Baserga, 1974; Owen et al., 1989; Kwon et al., Toexaminewhetherandhowextracellularfluidflowmayaffect
+2017;Fujimakietal.,2019).Onemaywonder,however,whether cellular quiescence depth, we compared the cells induced to
+thisphenotypewascausedbythegradualdepletionofnutrients quiescence by serum starvation under different medium flow
+in the static culture medium in vitro, which may behave rates but otherwise in the same conditions. Specifically, cells in
+differently in vivo under an interstitial fluid flow replenishing microfluidic devices were cultured in serum-starvation medium
+nutrients.Inthemicrofluidicplatformunderaconstantfluidflow (0.02%serum)for4daysunderanextracellularfluidflow(0,5,or
+(either5or20μl/h)duringserumstarvation,wefoundcellsthat 20μl/h);serum-starvationmediumwasthenreplacedbyserum-
+remainedquiescentforalongerperiodoftime(8days)entereda stimulationmedium(1–4%serum)usingapipette—thismedium
+deeperquiescentstateandbecamelesslikelytoexit:theyhada change procedure in each microfluidic device was completed
+smallerE2f-On%uponagivenserumstimulationthanthosethat within1min(comparedtootherwisemorethan20and5hunder
+remained quiescent for a shorter time (4days, Figure 2). apump-drivenslowflowof5and20μl/h,respectively);cellswere
+Together, these results showed that cellular behaviors in 1) then cultured in static medium during serum stimulation. This
+serum signal-dependant quiescence entry and exit and 2) identical serum-stimulation condition was applied in this study
+quiescence deepening over time are consistent regardless (seeMethodsfordetails),sothatthesubsequentcellcyclereenter
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 5 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+FIGURE3|Higherextracellularmediumflowratesleadtoshallowerquiescence.REF/E23cellsseededinmicrofluidicdeviceswereinducedtoandmaintainedin
+quiescencebyculturingtheminserum-starvationmediumfor4daysundervariousmediumflowratesasindicated.Cellswerethenstimulatedwithserumatthe
+indicatedconcentrationsfor26h,andtheE2f-GFPsignalsweremeasuredusingflowcytometry.(A)TheE2f-GFPhistograms.Numbersinredindicatetheaverage
+percentagesofcellswithE2f-GFPatthe“On”state(seeSupplementaryFigureS1Dforexamples)basedonduplicatesamples(blackandgreyhistograms).(B)
+StatisticbarchartoftheE2f-On%incellpopulations(fromA)asafunctionofmediumflowrate(inserum-starvation)andserumconcentration(inserum-stimulation).Error
+bars,SEM(n=2),*p<0.05,**p<0.01(1-tailedt-test;thesamebelow).
+andthustheassessmentofquiescencedepthwerenotbiasedby proportional to the viscosity of working fluid (Eq. 1), which
+differenteffectiveexposuretimeofcellstotheserum-stimulation can be manipulated by varying the amount of high-molecular-
+medium(ifthemediumwasfedbydifferentpump-drivenflows) weight dextran dissolved in the medium (Table 1).
+andthuscomparableacrossdifferentquiescentcellgroups(which Accordingly,REF/E23cellswerefirstinducedtoquiescenceby
+wereinducedbyserumstarvationunderdifferentmediumflow culturingthemintheserum-starvationmediumcontaining0,25,
+rates). 50, or 100mg/ml high molecular weight ( ~ 500,000) dextran,
+Uponserumstimulation(with1,2,or4%serum),thefraction respectively,for4daysunder5or20μl/hflowrate.Thecellswere
+ofcellsreenteringthecellcyclefromquiescence,asindicatedby thenstimulatedwith2%or4%serumfor26h,andthefractionof
+E2f-On%inFigure3,werepositivelycorrelatedwiththemedium cellsthatexitedquiescence(E2f-On%)wasmeasured.Asshown
+flow rate applied to cells during quiescence induction (serum in Figures 4A,B, E2f-On% increased with increasing dextran
+starvation).Theseresultssuggestthatahigherextracellularfluid concentrationintheserum-starvationmediumundereither5or
+flowrateleadstoshallowerquiescence,fromwhichcellsaremore 20μl/h flow rate. By contrast, cells cultured in static serum-
+likely to reenter the cell cycle upon stimulation. starvation medium containing the same higher dextran
+concentration entered deeper rather than shallower quiescence
+(SupplementaryFigureS2;seeDiscussion).Theseresultssuggest
+Mechanical Shear Stress Drives Shallow
+that the dextran-induced shallow quiescence in the presence of
+Quiescence extracellular fluid flow was primarily due to the viscosity-
+Fluidflowintroducestwotypesofcuestocells:1)hydrodynamic dependent shear stress (instead of other dextran-associated
+shear stress (physical cue), and 2) continuous replenishment of effects such as being a metabolic source). The higher dextran
+nutrients and other compounds dissolved in the fluid and concentration, thus higher viscosity, of the medium flow
+removal of local cell-secreted substances (collectively as generates higher shear stress under a continuous flow rate (5
+extracellular factor replacement; biochemical cue). To or 20μl/h, see Table 1; but not static 0μl/h). Put together, our
+determine whether these physical and biochemical cues act results showed that increasing only the fluid flow shear stress,
+agonistically or antagonistically (thereby potentiating or whilekeepingthesameflowrateandpaceofextracellularfactor
+attenuating the combined effect) in affecting cellular replacement, leads to shallower quiescence.
+quiescence depth, we next conducted experiments to delineate
+the effect of each of the two cues.
+Extracellular Factor Replacement Drives
+To isolate the effect of mechanical shear stress from that of
+extracellularfactorreplacementoncellularquiescencedepth,the Shallow Quiescence
+viscosityoftheculturemediumwasvariedwhileitsflowrate(and The effect of continuous extracellular factor replacement on
+thusthepaceofextracellularfluidreplacement)wasmaintained cellular quiescence depth was examined next. Some of the
+at a constant level. The flow-induced shear stress is linearly extracellular factors (such as nutrients) are expected to
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 6 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+FIGURE4|Highershearstressleadstoshallowerquiescence.REF/E23cellsseededinmicrofluidicdeviceswereinducedtoandmaintainedinquiescenceby
+culturingtheminserum-starvationmediumfor4daysundertheflowratesof5μl/h(A)and20μl/h(B).Dextranattheindicatedconcentrationswasdissolvedinthe
+serum-starvationmedium.Cellsweresubsequentlystimulatedwithserumattheindicatedconcentrationsfor26h,andtheE2f-On%wereassayed.(Left)E2f-GFP
+histogramswithrednumbersindicatingtheaverageE2f-On%fromduplicatesamples(blackandgrey).(Right)StatisticbarchartoftheE2f-On%incellpopulations
+(fromtheleft)asafunctionofdextranconcentration(inserum-starvation)andserumconcentration(inserum-stimulation).Errorbars,SEM(n=2),*p<0.05,**p<0.01.
+facilitatequiescenceexitandcellcyclereentry,whileothersmay (E2f-On%) were significantly higher in ‘fresh-medium’ than in
+playinhibitoryroles(suchascertainextracellularmatrix(ECM) “recycled-medium” at a given serum stimulation condition.
+factors secreted by fibroblasts). To assess the net effect of These results were obtained at the same flow rate (either 5 or
+extracellular factor replacement, while decoupling it from the 20μl/h) and thus under the same mechanical shear stress. The
+effect of mechanical shear stress, we set up two test difference that the cells experienced was medium replacement:
+configurations. In the first “recycled-medium” configuration, a once per 24h during the 4-days serum-starvation in the fresh-
+totalfluidvolumeofeitherV=120or480μloscillatedback-and- mediumconfiguration,whereasnomediumreplacementduring
+forththroughthemicrochannelataconstantflowrateofeither the same period in the recycled-medium configuration. These
+Q=5or20μl/h,respectively.Thus,whentheflowdirectionwas resultssuggestthatwiththeflowrateandshearstressbeingequal,
+switchedevery24h,thecompletefluidvolumeVpassedthrough extracellular factor replacement alone (as in “fresh-medium”)
+the microchannel once. In the second “fresh-medium” induces shallower quiescence than without such a replacement
+configuration, the fluid oscillated exactly as in the first (as in “recycled-medium”).
+configuration, but fresh medium of volume V was supplied to
+replace previous medium at each flowdirection switch. In both
+ADynamicModelofExtracellularFluidFlow
+therecycled-mediumandfresh-mediumexperiments,cellswere
+serum-starvedfor4daysatagivenflowrateQ(5or20μl/h)and Regulating Quiescence Depth
+subsequently stimulated with serum (1 and 2%, respectively) We next sought to develop a mathematical model to gain
+for 26h. potential mechanistic insight into the effects of extracellular
+The quiescence depth measurements are shown in Figure 5. fluid flow on cellular quiescence depth. Previously, we have
+Thefractionsofcellsexitingquiescenceandreenteringcellcycle shown that the Rb-E2f pathway functions as a bistable gene-
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 7 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+FIGURE5|Extracellularfactorreplacementdrivecellstoshallowquiescence.REF/E23cellsseededinmicrofluidicdeviceswereinducedtoandmaintainedin
+quiescencebyculturingtheminserum-starvationmediumfor4daysundertheflowratesof5μl/h(A)and20μl/h(B).Duringthisperiod,theflowdirectionwasswitched
+every24h,afteracompletevolumeofmedium(V=120and480μl,respectively,forr=5and20μl/h)passedthroughthemicrochannel;thepreviousmedium
+(“recycled”)orafreshmedium(“fresh”)ofvolumeVwasusedtocontinuetheflowexperimentinthemicrofluidicdevice.Cellsweresubsequentlystimulatedwith
+serumattheindicatedconcentrationsfor26h,andtheE2f-On%wereassayed.(Top)E2f-GFPhistogramswithrednumbersindicatingtheaverageE2f-On%from
+duplicatesamples(blackandgrey).(Bottom)StatisticbarchartoftheE2f-On%incellpopulations(fromthetop)asafunctionofextracellularfluidreplacement
+configuration(inserum-starvation)andserumconcentration(inserum-stimulation).Errorbars,SEM(n=2),*p<0.05,**p<0.01.
+networkswitchthatconvertsgradedandtransientserumgrowth framework, which considered both intrinsic and extrinsic
+signals into an all-or-none transition from quiescence to noise in the system (see Methods for detail), and the results
+proliferation (Yao et al., 2008; Yao et al., 2011). Specifically, are shown in Figure 6.
+theminimumserumconcentrationrequiredtoactivatethisRb- A direct comparison between Figure 3B and Figure 6A
+E2f bistable switch (the E2f-activation threshold for short) demonstrates that the simulation results, based on the fluid
+determines quiescence depth (Yao, 2014; Kwon et al., 2017). flow-incorporated Rb-E2f bistable switch model, are
+Theexperimentalresultsinthisstudysuggestedthatextracellular qualitatively and quantitatively in good agreement with the
+fluidflowgeneratesorchangesphysical(mechanicalshearstress) experimental measurements. This finding supports our
+andbiochemical(extracellularsubstances)cuesthatdrivecellsto hypothesis regarding how extracellular fluid flow may sensitize
+shallow quiescence. We hypothesized that these flow-associated cells to serum growth signals and activate the Rb-E2f bistable
+cues boost the cellular responses to serum growth signals and switch, and thus, reduces quiescence depth. Simulation results
+thereby reduce the serum level required to activate the Rb-E2f further show that the effect of extracellular fluid flow is more
+bistable switch, which results in shallow quiescence. pronounced than that of mechanical shear stress alone in
+Accordingly, our previously established mathematical model promoting quiescence exit (E2f-On%, Figure 6B). The “delta”
+of the Rb-E2f bistable switch (Yao et al., 2008) was extended, betweenthetwocurves(orangeminusblue)presumablyreflects
+incorporating the extracellular fluid flow effects (FR) into the the effect of extracellular factor replacement in reducing
+serum signal terms in the governing ordinary differential quiescence depth (dotted grey curve, Figure 6B); this effect
+equations (ODEs) (Supplementary Table S1). The augmented also increases with a higher flow rate (thus, an increasing pace
+modelwasutilizedtosimulatetheresponses(E2f-Onor-Off)of offluidreplacement).Althoughhowshearstressandextracellular
+cells to serum stimulation under the influence of extracellular factorreplacementpromotequiescenceexitisunknown,takinga
+fluid flow varying in rate. The simulations were carried out simple assumption that shear stress and extracellular factor
+following the chemical Langevin formulation of the ODE replacement alone effectively corresponds to a portion (0.75
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 8 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+FIGURE6|Simulationresultsontheeffectsofextracellularfluidflowonquiescencedepth.(A,C,D)Simulatedcellresponsestoserumstimulationusingthefluid
+flow-incorporatedRb-E2fbistableswitchmodel.Serumstarvation-inducedquiescentcells,undertheinfluenceofextracellularfluidflowattheindicatedrates(A,C)or
+withoutfluidflow(D),werestimulatedwithserumatindicatedconcentrations[S].TheaverageE2f-On%fromfivesetsofstochasticsimulations(200runseach)isshown
+foreachcondition.ErrorbarsinAandD,SEM(n=5).(B)Theeffectsoffluidflowrate(orange),mechanicalshearstress(blue),andextracellularfactorreplacement
+(gray)onquiescencedepth.Bluetriangle,theaverageE2f-On%inresponseto2%serumstimulation,incellsunder5ul/hextracellularfluidflowwiththeindicatedshear
+stresslevelduringserumstarvation(basedonFigure4AandTable1).Orangesquare,theaverageE2f-On%calculatedfromfivesetsofstochasticsimulationsin
+responseto2%serumstimulationundertheinfluenceoftheindicatedfluidflowrate.Parametersusedinthissimulation(θ=0.3,δ=32)weredeterminedtofitthe
+simulatedE2f-On%totheexperimentalresultsshowninFigure4A(at5ul/hmediumflowratewith0mg/mldextran).Thevaluesofflowrateintheorangecurveandthe
+correspondingvaluesofshearstressinthebluecurvearerelatedbaseonEq.1.Thedottedgraycurverepresentsthe“delta”betweentheorangeandbluecurves;the
+dottedhorizontallineisfortheguideofeyeextendingfromtheinitialdatapoint(5ul/h).(B–D)EachsolidcurverepresentsthebestfitofdatapointstoaHillfunction.
+and0.85,respectively) oftheextracellularfluidflowtermFRin dependent level. By contrast, with sufficiently high serum
+themodel(SupplementaryTableS1),thesimulationresultsare concentration, the entire cell population can exit quiescence
+reasonably (although not perfectly) consistent with the (i.e., E2f-On% approaches 100%) in our model even without
+experimental observations (regarding the shear stress effects, extracellularfluidflow(Figure6D).Thislatterresultisconsistent
+Supplementary Figure S3). Together, our modeling and with what we experimentally observed previously in REF/E23
+experimental results suggest that the flow-induced shear stress cells under static medium (Yao et al., 2008; Kwon et al., 2017;
+(physical cue) and replacement of extracellular factors Fujimakietal.,2019).Therefore,itappearsthatextracellularfluid
+(biochemical cues) contribute agnostically to the effect of flow facilitates quiescence exit by reducing the E2f-activation
+extracellular fluid flow in promoting quiescence exit by serum threshold, but unlikely to fully replace the role of serum
+lowering the activation threshold of the Rb-E2f bistable switch. growth factors in this process.
+The good agreement between simulations and experiments
+motivated the application of the model for predicting the cell
+responses to higher fluid flow rates above 20ul/h, under which DISCUSSION
+cells started to partially detach from the microchannel bottom
+surfaceandhenceexcludedfromthecurrentexperimentalstudy. Quiescence is a reversible cellular dormancy state that can
+The simulation results show that the additive effect of persist over prolonged periods of time. The on-demand
+extracellular fluid flow to a given serum signal on quiescence reactivation of quiescent cells to divide serves as the basis
+exit(E2f-On%)canbewellfittedwithaHillfunction(Figure6C). fortissuehomeostasisandrepair(Colleretal.,2006;Wilson
+Namely,E2f-On%increasesmonotonicallywithincreasingflow et al., 2008; Cheung and Rando, 2013). Thus far,
+rate but is asymptotically bound by a serum concentration- characteristics of cellular quiescence have been mostly
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 9 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+studied and discovered in conventional static-medium cell with medium viscosity-induced changes in certain lipoprotein
+cultures, including the basic approaches applied to induce synthesis(Yedgaretal.,1982),cytoskeletonandcellmorphology
+quiescenceentry(e.g.,serumdeprivation,contactinhibition, (Khorshid, 2005), cell attachment and inflammation (Rouleau
+and loss of adhesion) and exit (by reverting the etal.,2010),orothercellularactivitiesthatinhibitquiescenceexit
+aforementioned inducing signals). The microenvironment instaticmedium.Thesechanges,ifalsopresentundercontinuous
+experienced by cultured cells under static medium, mediumflow,appeartobesurpassedbytheeffectsofshearstress
+however, is different from that experienced by tissue cells thatpromotequiescenceexit.Theexactmechanismneedstobe
+invivowheretheyareexposedtocontinuousinterstitialfluid investigated in future studies. Additionally, quiescent cells
+flows. The interstitial flow exerts hydrodynamic shear stress cultured in the microfluidic device appear to be generally
+on cells due to fluid flow viscosity and shear strain rate; the deeper in quiescence than those cultured in well plates under
+flow also carries fresh nutrients along with dissolved otherwise the same conditions (e.g., comparing the E2f-On%
+compounds and removes local substances secreted by cells upon2%serumstimulationinmicrodevice(Figure3)andthatin
+(Jain, 1987; Wiig, 1990; Wang and Tarbell, 1995; Ng and the comparable condition in well plate (Supplementary Figure
+Swartz,2003;SwartzandFleury,2007;ShiandTarbell,2011; S2), both being in static medium, 0μl/h, and without added
+Freund et al., 2012; Galie et al.,2012). As such, extracellular dextran).Wespeculatethisdifferencemaybeduetothedifferent
+fluid flow is known to play a critical role in repairing and surfaces that cells were attached to (glass in the microchannel
+remolding tissues, such as the vascular, lung, and bone versus plastic in the well plate), or different medium height
+(Hillsley and Frangos, 1994; Liu et al., 1999; Louis et al., (<0.5mm in the microchannel versus 3–4mm in the well
+2006;Rensenetal.,2007),throughaffectingcellmorphology, plate) that could result in different nutrient/factor availability,
+adhesion, motility, metabolism, and differentiation gas/heatexchangeetc.,orboth.Theexactmechanismneedstobe
+(Yamamoto et al., 2005; Lutolf et al., 2009; Toh and further investigated. Nevertheless, the current study
+Voldman, 2011; Hyler et al., 2018; Chen et al., 2019). demonstrated, for the first time to our best knowledge, the
+However, whether and how extracellular fluid flow affects direct effects of extracellular fluid flow and its corresponding
+cellular quiescence remains unclear. components (shear stress and extracellular factor replacement)
+Inthisstudy,amicrofluidicplatformisdesignedtomimicthe on cell quiescence depth.
+physiologically relevant interstitial fluid flow with varying rates Individual quiescent cells in vivo, including stem and
+(Figure1)andinvestigatethefloweffectsoncellularquiescence. progenitor cells in their tissue niches, experience interstitial
+Experimentalparameters,includingflowrate,fluidviscosity,and fluid flows with varying rates and viscosities depending on
+flowvolume,werevariedtotesttheeffectsofflowrate,shearstress, local tissue structures and distances from nearby blood vessels.
+andextracellularfactorreplacementoncellularquiescencedepth. The flow-driven heterogeneity in cellular quiescence depth, as
+Ourresultsshowthat,first,severalquiescencecharacteristics demonstratedinthisstudy,mayshedlightontheheterogeneous
+identifiedpreviouslyunderstaticmediumarealsopresentunder responses of quiescent cells in tissue repair and regeneration in
+continuous fluid flow, including the serum signal-dependant different physiological contexts of living tissues.
+quiescence entry and exit and the time-dependant quiescence
+deepening (Figure 2). Second, extracellular fluid flow sensitizes
+cells to serum growth signals and thus leads to shallow DATA AVAILABILITY STATEMENT
+quiescence. Particularly, increasing the fluid flow rate reduces
+theserumlevelneededforquiescenceexitandcellcyclereentry. Theoriginalcontributionspresentedinthestudyareincludedin
+Thisresultislikelyduetotheextracellularfluidflowloweringthe the article/Supplementary Material, further inquiries can be
+activation threshold of the Rb-E2f bistable switch that controls directed to the corresponding authors.
+thequiescence-to-proliferationtransition(Yaoetal.,2008;Kwon
+etal.,2017),assuggestedbyourmodelsimulations(Figure6).A
+higherfluidflowrateentailshighermechanicalshearstressanda AUTHOR CONTRIBUTIONS
+fasterpaceofextracellularfactorreplacement.Thesephysicaland
+biochemical cues are able to drive cells into shallow quiescence BL, LJ, JX, YZ, and GY designed research; BL performed
+whenpresenteithertogether(Figure3)orseparately(Figures4, experiments; XW performed mathematical modeling and
+5). As a result, exposed to a faster extracellular fluid flow, cells simulation; LJ designed, fabricated, and configured the
+becomemoresensitivetoserumgrowthsignalsandmorelikelyto microfluidic system; BL, LJ, and GY analyzed data; BL, YZ, LJ,
+reenter the cell cycle. and GY wrote the paper.
+Several questionsareleftunanswered inour study.First,the
+molecularmechanismsaretobeidentifiedbywhichflow-induced
+shear stress and extracellular factor replacement lower the FUNDING
+activation threshold of the Rb-E2f bistable switch.
+Interestingly, increasing medium viscosity (by a higher dextran This work was supported by grants from the NSF of USA
+concentration) promotes quiescence exit under a medium flow (#2016035 and #3038431 to GY), the Startup Fund for
+(Figure 4), but it inhibits quiescence exit in static medium scientific research of Fujian Medical University (#2017XQ2016
+(Supplementary Figure S2). This result may be associated to BL), and the NSF of China (#31500676 to XW).
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 10 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+ACKNOWLEDGMENTS averageE2f-On%orEdU+%asindicatedfromduplicatesamples(blackand
+greyhistograms).(Right)StatisticbarchartofE2f-On%andEdU+%fromthe
+left-panelhistograms.Errorbars,SEM(n=2),*p<0.05,**p<0.01,***p<
+We thank the Foundation for Scholarly Exchange of Fujian
+0.001.(D)DotplotsofFig3A.Y-axis,forward-scatter;x-axis,E2f-GFP.
+Medical University for sponsoring BL.
+Supplementary Figure S2 | The effect of varying dextran concentrations on
+quiescence depth in static culture. REF/E23 cells were induced to and
+maintainedinquiescencebyculturingtheminstaticserum-starvationmedium(in
+SUPPLEMENTARY MATERIAL
+well plate) for 4 days with dextran at the indicated concentrations. Cells were
+subsequentlystimulatedwithserumattheindicatedconcentrationsfor26hours,
+TheSupplementaryMaterialforthisarticlecanbefoundonlineat: and the E2f-On% were assayed. (A) E2f-GFP histograms with red numbers
+indicating the average E2f-On% from duplicate samples (black and grey). (B)
+https://www.frontiersin.org/articles/10.3389/fcell.2022.792719/
+Statistic bar chart of the E2f-On% in cell populations (from A) as a function of
+full#supplementary-material dextran concentration (in serum-starvation) and serum concentration (in serum-
+stimulation).BargraphsshowingtheE2f-On%fromtheleftpanels.Errorbars,SEM
+SupplementaryFigureS1|Experimentalsystemconfigurationandvalidation. (n=2),*p<0.05,**p<0.01.
+(A)Cellmorphologyundervaryingmediumflowrates.REF/E23cellsseededin
+microfluidic devices were induced to and maintained in quiescence by SupplementaryFigureS3|Simulationresultsontheeffectsofshearstressand
+culturing them in serum-starvation medium for 4 days under the indicated extracellularfactorreplacementonquiescencedepth.Simulationsoffluidflowrate
+flowrates,theneitherremainedinquiescence(0.02%serum)orstimulated effects(orange)arethesameasinFigure6B.Simulationsoftheeffectsofshear
+with serum at the indicated concentrations (1-4%) for 26 hours. Phase- stress(red)andextracellularfactorreplacement(purple)wereperformedinthesame
+contrastimagesweretakenwitha20xobjectivelens.(B,C)E2f-GFPand wayasthesimulationsoffluidflowrateeffects(orange),exceptthattheFRtermin
+EdU-incorporation readouts of cellular quiescence and cell cycle reentry. Supplementary Table S1 was multiplied by 0.75 and 0.85, respectively. Blue
+REF/E23cellswereinducedtoquiescenceasin(A)underamediumflowrate triangle,theaverageE2f-On%inresponseto2%serumstimulation,incellsunder5
+of5ul/h(B)or20ul/h(C),andthenstimulatedwithserumattheindicated ul/h extracellular fluid flow with the indicated shear stress level during serum
+concentrations. Cells were harvested after 26 and 30 hours of simulation, starvation(asinFigure6B,basedonFigure4AandTable1).Eachsolidcurve
+respectively,forE2f-GFPandEdUassays.(Left)Numbersinredindicatethe representsthebestfitofsimulationdatapointstoaHillfunction.
+REFERENCES Hyler,A.R.,Baudoin,N.C.,Brown,M.S.,Stremler,M.A.,Cimini,D.,Davalos,R.
+V., et al. (2018). Fluid Shear Stress Impacts Ovarian Cancer Cell Viability,
+Subcellular Organization, and Promotes Genomic Instability. PLoS One 13,
+Augenlicht, L., and Baserga, R. (1974). Changes in the G0 State of WI-38 e0194170.doi:10.1371/journal.pone.0194170
+Fibroblasts at Different Times after confluence. Exp. Cel Res. 89, 255–262. Jain,R.K.(1987).TransportofMoleculesintheTumorInterstitium:AReview.
+doi:10.1016/0014-4827(74)90789-7 CancerRes.47,3039–3051.
+Bucher, N. L. R. (1963). “Regeneration of Mammalian Liver,” in International Khorshid, F. A. (2005). The Effect of the Medium Viscosity on the Cells
+ReviewofCytology.EditorsG.H.BourneandJ.F.Danielli(NewYork:Academic Morphology in Reaction of Cells to Topography—I. Proc. 2nd Saudi Sci.
+Press),245–300.doi:10.1016/s0074-7696(08)61119-5 Conl,Fac.Sci..KAU;15–17March2004,PartI,67–98.
+Carrasco,F.,Chornet,E.,Overend,R.P.,andCosta,J.(1989).AGeneralized Kwon,J.S.,Everetts,N.J.,Wang,X.,Wang,W.,DellaCroce,K.,Xing,J.,etal.
+Correlation for the Viscosity of Dextrans in Aqueous Solutions as a (2017). Controlling Depth of Cellular Quiescence by an Rb-E2f Network
+FunctionofTemperature,Concentration,andMolecularWeightatLow Switch.CelRep.20,3223–3235.doi:10.1016/j.celrep.2017.09.007
+Shear Rates. J. Appl. Polym. Sci. 37, 2087–2098. doi:10.1002/app.1989. Lee,T.J.,Yao,G.,Bennett,D.C.,Nevins,J.R.,andYou,L.(2010).StochasticE2F
+070370801 Activation and Reconciliation ofPhenomenological Cell-Cycle Models. Plos
+Chen,H.,Yu,Z.,Bai,S.,Lu,H.,Xu,D.,Chen,C.,etal.(2019).MicrofluidicModels Biol.8,e1000488.doi:10.1371/journal.pbio.1000488
+of Physiological or Pathological Flow Shear Stress for Cell Biology, Disease Li,L.,andClevers,H.(2010).CoexistenceofQuiescentandActiveAdultStem
+Modeling and Drug Development. Trac Trends Anal. Chem. 117, 186–199. CellsinMammals.Science327,542–545.doi:10.1126/science.1180794
+doi:10.1016/j.trac.2019.06.023 Liu,M.,Tanswell,A.K.,andPost,M.(1999).MechanicalForce-InducedSignal
+Cheung, T. H., and Rando, T. A. (2013). Molecular Regulation of Stem Cell Transduction in Lung Cells. Am. J. Physiology-Lung Cell Mol. Physiol. 277,
+Quiescence.Nat.Rev.Mol.CelBiol14,329–340.doi:10.1038/nrm3591 L667–L683.doi:10.1152/ajplung.1999.277.4.L667
+Coller,H.A.,Sang,L.,andRoberts,J.M.(2006).ANewDescriptionofCellular Llorens-Bobadilla,E.,Zhao,S.,Baser,A.,Saiz-Castro,G.,Zwadlo,K.,andMartin-
+Quiescence.PlosBiol.4,e83.doi:10.1371/journal.pbio.0040083 Villalba, A. (2015). Single-Cell Transcriptomics Reveals a Population of
+Freund,J.B.,Goetz,J.G.,Hill,K.L.,andVermot,J.(2012).FluidFlowsandForces DormantNeuralStemCellsthatBecomeActivated uponBrain Injury.Cell
+inDevelopment:Functions,FeaturesandBiophysicalPrinciples.Development StemCell17,329–340.doi:10.1016/j.stem.2015.07.002
+139,1229–1245.doi:10.1242/dev.073593 Louis,H.,Lacolley,P.,Kakou,A.,Cattan,V.,Daret,D.,Safar,M.,etal.(2006).Early
+Fujimaki,K.,Li,R.,Chen,H.,DellaCroce,K.,Zhang,H.H.,Xing,J.,etal.(2019). ActivationofInternalMedialSmoothMuscleCellsintheRabbitAortaafter
+Graded Regulation of Cellular Quiescence Depth between Proliferation and MechanicalInjury:RelationshipwithIntimalThickeningandPharmacological
+SenescencebyaLysosomalDimmerSwitch.Proc.Natl.Acad.Sci.USA116, Applications.Clin.Exp.Pharmacol.Physiol.33,131–138.doi:10.1111/j.1440-
+22624–22634.doi:10.1073/pnas.1915905116 1681.2006.04339.x
+Fujimaki,K.,andYao,G.(2020).CellDormancyPlasticity:QuiescenceDeepens Lutolf,M.P.,Gilbert,P.M.,andBlau,H.M.(2009).DesigningMaterialstoDirect
+into Senescence through a Dimmer Switch. Physiol. Genomics 52, 558–562. Stem-CellFate.Nature462,433–441.doi:10.1038/nature08602
+doi:10.1152/physiolgenomics.00068.2020 Ng,C.P.,andSwartz,M.A.(2003).FibroblastAlignmentunderInterstitialFluid
+Galie,P.A.,Russell,M.W.,Westfall,M.V.,andStegemann,J.P.(2012).Interstitial Flow Using a Novel 3-D Tissue Culture Model. Am. J. Physiology-Heart
+Fluid Flow and Cyclic Strain Differentially Regulate Cardiac Fibroblast CirculatoryPhysiol.284,H1771–H1777.doi:10.1152/ajpheart.01008.2002
+Activation via AT1R and TGF-B1. Exp. Cel Res. 318, 75–84. doi:10.1016/j. Orford,K.W.,andScadden,D.T.(2008).DeconstructingStemCellSelf-Renewal:
+yexcr.2011.10.008 GeneticInsightsintoCell-CycleRegulation.Nat.Rev.Genet.9,115–128.doi:10.
+Gillespie, D. T. (2000). The Chemical Langevin Equation. J. Chem. Phys. 113, 1038/nrg2269
+297–306.doi:10.1063/1.481811 Owen,T.A.,Soprano,D.R.,andSoprano,K.J.(1989).AnalysisoftheGrowth
+Hillsley,M.V.,andFrangos,J.A.(1994).Review:BoneTissueEngineering:The FactorRequirementsforStimulationofWI-38CellsafterExtendedPeriodsof
+RoleofInterstitialFluidFlow.Biotechnol.Bioeng.43,573–581.doi:10.1002/bit. Density-dependentGrowthArrest.J.Cel.Physiol.139,424–431.doi:10.1002/
+260430706 jcp.1041390227
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 11 February2022|Volume10|Article792719
+Liuetal. ExtracellularFlowInducesShallowQuiescence
+Polacheck,W.J.,Charest,J.L.,andKamm,R.D.(2011).InterstitialFlowInfluences Wiig,H.(1990).EvaluationofMethodologiesforMeasurementofInterstitialFluid
+Direction of Tumor Cell Migration through Competing Mechanisms. Proc. Pressure(Pi):PhysiologicalImplicationsofRecentPiData.Crit.Rev.Biomed.
+Natl.Acad.Sci.108,11115–11120.doi:10.1073/pnas.1103581108 Eng.18,27–54.
+Rensen, S. S. M., Doevendans, P. A. F. M., and van Eys, G. J. J. M. (2007). Wilson,A.,Laurenti,E.,Oser,G.,vanderWath,R.C.,Blanco-Bose,W.,Jaworski,
+Regulation and Characteristics of Vascular Smooth Muscle Cell Phenotypic M.,etal.(2008).HematopoieticStemCellsReversiblySwitchfromDormancy
+Diversity.Nhjl15,100–108.doi:10.1007/BF03085963 toSelf-RenewalduringHomeostasisandRepair.Cell135,1118–1129.doi:10.
+Rodgers,J.T.,King,K.Y.,Brett,J.O.,Cromie,M.J.,Charville,G.W.,Maguire,K. 1016/j.cell.2008.10.048
+K.,etal.(2014).mTORC1ControlstheAdaptiveTransitionofQuiescentStem Yamamoto,K.,Sokabe,T.,Watabe,T.,Miyazono,K.,Yamashita,J.K.,Obi,S.,etal.
+CellsfromG0toGAlert.Nature510,393–396.doi:10.1038/nature13255 (2005).FluidShearStressInducesDifferentiationofFlk-1-PositiveEmbryonic
+Rouleau,L.,Rossi,J.,andLeask,R.L.(2010).ConcentrationandTimeEffectsof StemCellsintoVascularEndothelialCellsInVitro.Am.J.Physiology-Heart
+Dextran Exposure on Endothelial Cell Viability, Attachment, and CirculatoryPhysiol.288,H1915–H1924.doi:10.1152/ajpheart.00956.2004
+Inflammatory Marker Expression In Vitro. Ann. Biomed. Eng. 38, Yao,G.,Lee,T.J.,Mori,S.,Nevins,J.R.,andYou,L.(2008).ABistableRb-E2f
+1451–1462.doi:10.1007/s10439-010-9934-4 SwitchUnderliestheRestrictionpoint.Nat.CelBiol10,476–482.doi:10.1038/
+Sang,L.,Coller,H.A.,andRoberts,J.M.(2008).ControloftheReversibilityof ncb1711
+Cellular Quiescence by the Transcriptional Repressor HES1. Science 321, Yao, G. (2014). Modelling Mammalian Cellular Quiescence. Interf. Focus. 4,
+1095–1100.doi:10.1126/science.1155998 20130074.doi:10.1098/rsfs.2013.0074
+Shi,Z.-D.,andTarbell,J.M.(2011).FluidFlowMechanotransductioninVascular Yao,G.,Tan,C.,West,M.,Nevins,J.R.,andYou,L.(2011).OriginofBistability
+SmoothMuscleCellsandFibroblasts.Ann.Biomed.Eng.39,1608–1619.doi:10. UnderlyingMammalianCellCycleEntry.Mol.Syst.Biol.7,485.doi:10.1038/
+1007/s10439-011-0309-2 msb.2011.19
+Shirure,V.S.,Lezia,A.,Tao,A.,Alonzo,L.F.,andGeorge,S.C.(2017).Low Yao,W.,Li,Y.-b.,andChen,N.(2013).AnalyticSolutionsoftheInterstitialFluid
+LevelsofPhysiologicalInterstitialFlowEliminateMorphogenGradients FlowModels.J.Hydrodyn25,683–694.doi:10.1016/s1001-6058(13)60413-8
+and Guide Angiogenesis. Angiogenesis 20, 493–504. doi:10.1007/s10456- Yedgar, S., Weinstein, D. B., Patsch, W., Schonfeld, G., Casanada, F. E., and
+017-9559-4 Steinberg,D.(1982).ViscosityofCultureMediumasaRegulatorofSynthesis
+Spencer,S.L.,Cappell,S.D.,Tsai,F.-C.,Overton,K.W.,Wang,C.L.,and and Secretion of Very Low Density Lipoproteins by Cultured Hepatocytes.
+Meyer,T.(2013).TheProliferation-QuiescenceDecisionIsControlledbya J.Biol.Chem.257,2188–2192.doi:10.1016/s0021-9258(18)34904-4
+Bifurcation in CDK2 Activity at Mitotic Exit. Cell 155, 369–383. doi:10.
+1016/j.cell.2013.08.062 ConflictofInterest:Theauthorsdeclarethattheresearchwasconductedinthe
+Swartz,M.A.,andFleury,M.E.(2007).InterstitialFlowanditsEffectsinSoft absenceofanycommercialorfinancialrelationshipsthatcouldbeconstruedasa
+Tissues.Annu.Rev. Biomed.Eng.9,229–256.doi:10.1146/annurev.bioeng.9. potentialconflictofinterest.
+060906.151850
+Tarbell,J.M.,Weinbaum,S.,andKamm,R.D.(2005).CellularFluidMechanics Publisher’sNote:Allclaimsexpressedinthisarticlearesolelythoseoftheauthors
+and Mechanotransduction. Ann. Biomed. Eng. 33, 1719–1723. doi:10.1007/ anddonotnecessarilyrepresentthoseoftheiraffiliatedorganizations,orthoseof
+s10439-005-8775-z thepublisher,theeditorsandthereviewers.Anyproductthatmaybeevaluatedin
+Toh,Y.C.,andVoldman,J.(2011).FluidShearStressPrimesMouseEmbryonic thisarticle,orclaimthatmaybemadebyitsmanufacturer,isnotguaranteedor
+Stem Cellsfor Differentiation in a Self-renewing Environmentvia Heparan endorsedbythepublisher.
+SulfateProteoglycansTransduction.FASEBj.25,1208–1217.doi:10.1096/fj.10-
+168971 Copyright©2022Liu,Wang,Jiang,Xu,ZoharandYao.Thisisanopen-access
+Wang,D.M.,andTarbell,J.M.(1995).ModelingInterstitialFlowinanArtery articledistributedunderthetermsoftheCreativeCommonsAttributionLicense(CC
+Wall Allows Estimation of Wall Shear Stress on Smooth Muscle Cells. BY).Theuse,distributionorreproductioninotherforumsispermitted,providedthe
+J.BiomechanicalEng.117,358–363.doi:10.1115/1.2794192 original author(s) andthecopyright owner(s) arecredited andthattheoriginal
+Wang,X.,Fujimaki,K.,Mitchell,G.C.,Kwon,J.S.,DellaCroce,K.,Langsdorf,C., publicationinthisjournaliscited,inaccordancewithacceptedacademicpractice.
+etal.(2017).ExitfromQuiescenceDisplaysaMemoryofCellGrowthand No use, distribution or reproduction is permitted which does not comply with
+Division.Nat.Commun.8,321.doi:10.1038/s41467-017-00367-0 theseterms.
+FrontiersinCellandDevelopmentalBiology|www.frontiersin.org 12 February2022|Volume10|Article792719

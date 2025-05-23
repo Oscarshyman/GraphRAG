@@ -1,0 +1,451 @@
+biomedicines
+Opinion
+Quiescence-Origin Senescence: A New Paradigm in
+Cellular Aging
+GuangYao1,2
+1 DepartmentofMolecular&CellularBiology,UniversityofArizona,Tucson,AZ85721,USA;
+guangyao@arizona.edu
+2 ArizonaCancerCenter,UniversityofArizona,Tucson,AZ85719,USA
+Abstract:Cellularsenescence,traditionallyviewedasaconsequenceofproliferatingandgrowing
+cellsoverwhelmedbyextensivestressesanddamage,haslongbeenrecognizedasacriticalcellular
+agingmechanism. Recentresearch,however,hasrevealedanovelpathwaytermed“quiescence-
+originsenescence”,wherecellsdirectlytransitionintosenescencefromthequiescentstate,bypassing
+cellproliferationandgrowth.Thisopinionpaperpresentsaframeworkconceptualizingacontinuum
+betweenquiescenceandsenescencewithquiescencedeepeningasaprecursortosenescenceentry.
+Weexplorethetriggersandcontrollersofthisprocessanddiscussitsbiologicalimplications.Given
+thatthemajorityofcellsinthehumanbodyaredormantratherthanproliferative,understanding
+quiescence-originsenescencehassignificantimplicationsfortissuehomeostasis,aging,cancer,and
+variousdiseaseprocesses.Thenewparadigminexploringthispreviouslyoverlookedsenescentcell
+populationmayreshapeourinterventionstrategiesforage-relateddiseasesandtissueregeneration.
+Keywords: quiescence; senescence; quiescence deepening; dormancy state continuum; Rb–E2F
+switchthreshold;geroconversion
+1. Introduction
+Cellular senescence, a state of permanent cell cycle arrest, has been a focal point
+of biomedical research for decades [1]. It is typically triggered when growing cells are
+Citation:Yao,G.Quiescence-Origin
+overwhelmed by extensive stresses and damage, such as telomere erosion, oncogene
+Senescence:ANewParadigmin
+activation,oxidativestress,andDNAdamage,toadegreebeyondtheirrepaircapacity[2,3].
+CellularAging.Biomedicines2024,12,
+Cellsentersenescenceandpermanentlyhaltproliferationtoavoiddeleteriousconsequences
+1837. https://doi.org/10.3390/
+likemalignanttumorigenesisandfibroticresponse[4,5]. Thehallmarksofsenescentcells
+biomedicines12081837
+includepermanentcellcyclearrest, senescence-associatedsecretoryphenotype(SASP),
+AcademicEditors:FrancescaFaggioli macromolecular damage, deregulated metabolism [6], and often enlarged cell size and
+andKarenCrasta othermorphologicalchanges[2,7]. Thisconventionalviewhasshapedourunderstanding
+ofsenescenceprimarilyasanextremestressresponseinproliferatingandgrowingcells.
+Received:30July2024
+Incontrast,cellularquiescenceisareversiblestateofcellcyclearrest. Underphysio-
+Revised:3August2024
+logicalgrowth-limitingconditions,suchasmitogenwithdrawalorcontactinhibition,cells
+Accepted:9August2024
+Published:13August2024 exitthecellcycleandenterquiescence[8]. Quiescentcellsaretypicallyassociatedwithlow
+metabolicactivityandreducedcellsizeanddonotexhibitobviousdeleteriousphenotypes
+associatedwithsenescence,suchasSASPandseveredamage[8,9]. Uponrestorationof
+growth-permissive conditions (e.g., reintroducing growth factors or alleviating contact
+Copyright: © 2024 by the author. inhibition),quiescentcellscanresumeproliferation,whichisakeydistinctionfromsenes-
+Licensee MDPI, Basel, Switzerland. centcells[8,9]. Quiescenceisconsideredaphysiologicalstatethatallowscellstomaintain
+Thisarticleisanopenaccessarticle cellular viability and integrity under growth-limiting conditions, playing a crucial role
+distributed under the terms and intissuehomeostasisandstemcellmaintenance[9,10]. Thismechanismisproposedto
+conditionsoftheCreativeCommons
+safeguardcellsfromsenescence[11,12].
+Attribution(CCBY)license(https://
+Recentresearchinthepastdecade,however,hasbeguntochallengethistraditional
+creativecommons.org/licenses/by/
+paradigmbydemonstratingthatsenescencecanoriginatedirectlyfromquiescentcellsin
+4.0/).
+Biomedicines2024,12,1837.https://doi.org/10.3390/biomedicines12081837 https://www.mdpi.com/journal/biomedicines
+Biomedicines2024,12,1837 2of8
+variouscontexts[13–16].Thisphenomenon,whichweterm“quiescence-originsenescence”,
+suggestsafluidcontinuumbetweenquiescenceandsenescencewithprofoundimplications
+fortissuehomeostasis,aging,anddiseaseprocesses. Notably,proliferatingcellsaccount
+forlessthan1%ofthethirty-seventrillioncellsinthehumanbodyatanygiventime[17],
+suggestingthatquiescence-originsenescencemayunderliealargeproportionofpreviously
+overlookedormisclassifiedsenescentcells.
+This brief review synthesizes recent findings to provide a new framework for un-
+derstandingsenescencefromtheperspectiveofcelldormancy–stateplasticity,aimingto
+stimulatefurtherrelatedresearchintonovelinterventionstrategiesforage-relateddiseases,
+cancer,andregenerativemedicine.
+2. TheQuiescence–SenescenceContinuum: AFrameworkforUnderstanding
+Quiescence-OriginSenescence
+2.1. DirectTransitionfromQuiescencetoSenescence
+Mountingevidenceinthepastdecadedemonstratesadirecttransitiontosenescencein
+quiescentcellsunderstressorwithaging. Oneofthefirstreportsofthisphenomenonwas
+ingeriatricmice,wherequiescentsatellitecells(musclestemcells,MuSCs)loseregenerative
+capacityandbecomeirreversiblyarrested[13]. Thesameobservationwasconfirmedin
+geriatrichumanmuscle,suggestingaconservedmechanismcontributingtoage-related
+declineinmuscleregenerativecapacity[13]. Thequiescence-to-senescencetransitionin
+geriatric MuSCs was linked to the epigenetic derepression of p16INK4a, which is a key
+regulatorofsenescence[13].
+Furtherresearchrevealedthatp16INK4aderepressioningeriatricMuSCswastriggered
+byaccumulatedreactiveoxygenspecies(ROS)resultingfromfailedautophagy[18]. Restor-
+ingautophagypreventsthetransitiontosenescenceinquiescentMuSCs[18]. Similarly,
+in quiescent human hematopoietic stem progenitor cells (HSPCs), stress-induced ROS
+accumulationcanelevatethep16INK4alevelanddrivethetransitiontosenescence[14].
+Invitrostudiesprovidefurtherevidenceforthedirectquiescence-to-senescencetran-
+sition. Long-termquiescenthumanfibroblastsinculture(100–150days)accumulateDNA
+damage and transit into senescence [15]. Our recent work showed that quiescent rat
+embryonic fibroblasts (REFs) with impaired lysosomal autophagy can directly enter a
+senescence-likestatecharacterizedbyirreversiblecellcyclearrest,β-galactosidaseactivity,
+and cellular hypertrophy [16]. These invitro results strengthen the findings of invivo
+studiesbyshowingthatcellsmaintainedinquiescentconditionsthroughouttheexperi-
+mentseventuallytransitionedtosenescence,bypassingcellproliferation(whichcanbe
+difficulttotrackinvivo,e.g.,throughouttheentiregeriatricphase). Together,theseinvivo
+andinvitrostudiesprovidecompellingevidenceforthedirectquiescence-to-senescence
+transition,resultinginquiescence-originsenescence.
+2.2. QuiescenceDeepeningintoSenescence: AContinuumModel
+Theobservationthatcellscantransitionfromquiescencetosenescencealignswiththe
+conceptthatquiescenceisnotauniformstatebutratheraspectrumofdormantdepths.
+Specifically,deeperquiescentcellsaremoreresistanttocellcyclere-entry,andtheyresume
+proliferationlessfrequentlyorwithalongerdelaythanshallowerquiescentcellsgiventhe
+samegrowthstimulation[8,19–35]. Cellsindeepquiescencegenerallyexhibitdecreased
+transcription, reduced RNA and protein levels, and increased chromatin condensation
+comparedtocellsinshallowquiescence[22,36–38].Recentstudieshavefurtherrevealedthe
+changesinthecellularprofilesofgeneexpression,epigeneticmodification,andmetabolism
+thatoccurduringtheprocessofquiescencedeepening[8,16,39–41]. Itisimportanttonote
+thatdeepquiescentcells,bydefinition,stillretainthepotentialforcellcyclere-entryand
+canresumeproliferationgivenasufficientlystrongandsustainedgrowthstimulus,which
+isdistinctfromsenescentcells.
+Quiescencedeepeninghasbeenobservedunderextendedquiescenceincultureor
+alongtheagingprocessinvivoacrossmammaliancelltypesandtissues[8,19–33]aswell
+Biomedicines2024,12,1837 3of8
+asinyeast[34]andC.elegans[35]. Consistentwithquiescencedepthbeingacontinuum,
+subpopulations of quiescent muscle, neural, and hematopoietic stem cells, upon tissue
+injury orin response tosystemic factors, can moveto shallower (primedor G ) qui-
+Alert
+escence, bearing a closer resemblance to activecells [42–45]. Further extending thecell
+dormancystatecontinuum,senescentcellsalsoexhibitvarying“depths”withdifferent
+cellularcharacteristics[46–48].
+Ourrecentworkdirectlylinksquiescencedeepeningtosenescenceentry. Wefound
+thatwhileenhancinglysosomalautophagyactivitypushesREFstowardshallowquiescence,
+decreasinglysosomalautophagydrivesREFsintoprogressivelydeeperquiescence[16].
+Whenlysosomalautophagyisseverelyhampered(withchloroquinetreatment,forexam-
+ple),deepquiescent(yetstillreversible)cellstransitionintoirreversiblesenescence[16].
+Thissuggeststhatlysosomalautophagyactivityactsasa“dimmerswitch”thatcontinu-
+ouslyadjustscellulardormancydepthfromshallowquiescencetodeepquiescenceand
+finallytosenescence[16,41]. Furthermore,thetranscriptomicprofilechangesduringqui-
+escence deepening in REFs resemble those of senescence entry with similar expression
+changes in “senescence core signature” genes [16,49]. A gene signature derived from
+quiescencedeepeninginREFs,thequiescencedepthscore(QDS),cancorrectlypredicta
+widearrayofsenescentandagingcelltypes[16,50]. Together,thesefindingssuggestthat
+quiescencedeepeningrepresentsacontinuumtransitiontrajectoryfromproliferationto
+senescence,whichisamodelincreasinglyrecognizedinthefield[9,51–55].
+Supporting the quiescence–senescence continuum concept, the levels of multiple
+widelyusedsenescencebiomarkers(e.g.,SA-β-gal,LAMP1,IL8,53BP1,p21,LaminB1,and
+cellsize)werefoundtoincreasegraduallywiththedurationofcell-cyclewithdrawaland
+cannotdistinguishsenescencefromdeepquiescence[56]. Thisquiescence–senescencecon-
+tinuumcouldhelpexplainsomenormalphysiologicalfunctionsofcellularsenescence[57],
+assomeofthesenescentcellsidentifiedbasedonbiomarkerintensitiesmayinsteadbe
+deepquiescentcells.
+3. MechanismsUnderlyingQuiescenceDeepeningandQuiescence-OriginSenescence
+Thecellularprocessesunderlyingquiescencedeepeningandtransitiontosenescence
+likely involve a complex interplay between various cellular mechanisms and signaling
+pathways. Yet,aconvergingthemehasstartedtoemergefromrecentstudies.
+3.1. Trigger: TheLysosome–AutophagyAxis
+Thelysosome–autophagyaxishasemergedasacriticaldriverofquiescencedeepening
+andtransitiontosenescenceacrossvariouscelltypes.Autophagyinvolvesautophagosomes
+engulfing cellular components and fusing with lysosomes, where lysosomal enzymes
+degradethecontentsandrecyclethemacromolecules. Thislysosome–autophagyactivity
+acts as a “dimmer switch” regulating quiescence depth in REFs with its continuously
+decreasedactivityleadingtoprogressivelydeeperquiescencetowardsenescence[16]. It
+alsounderliesthequiescence-to-senescencetransitioningeriatricMuSCs[18].
+InbothREFsandgeriatricMuSCs,ROSaccumulationservesasakeyeffectoroftheim-
+pairedlysosomalautophagyfunction[16,18]. InREFs,ROSaccumulation,withoutevoking
+p16INK4a,leadstoquiescencedeepening[16];inMuSCs,ROSaccumulationepigenetically
+derepressesthep16INK4a locusandleadstothequiescence-to-senescencetransition[18].
+Similarly,ROSaccumulationdrivesthequiescence-to-senescencetransitioninHSPCsby
+elevatingthep16INK4alevel[14].
+In neural stem cells (NSCs), the lysosome–autophagy axis, with increased protein
+aggregates as the main effector, plays a crucial role in quiescence deepening. Aging
+quiescentNSCsdisplaylysosomaldefects,increasedproteinaggregates,anddiminished
+activationpotential[58].
+Enhancinglysosomalautophagyinvariouscelltypes,includingREFs,MuSCs,and
+NSCs, promotes shallow quiescence away from the transition to senescence [16,18,58].
+Biomedicines2024,12,1837 4of8
+Together,thefindingsabovehighlightthelysosome–autophagyaxisasacentraltriggerof
+quiescencedeepeningandthequiescence-to-senescencetransition.
+3.2. Controller: TheRb–E2FSwitchThreshold
+OurearlierstudiesdemonstratedthattheRb–E2Fpathway,apivotalregulatorofthe
+cellcycleinanimalsandplants[59–63],functionsasabistabletoggleswitch[64,65]. This
+Rb–E2F switch converts graded and transient mitogen signals into a binary (OFF/ON)
+activityofE2F(representingthecombinedE2Ftranscriptionalactivators,E2F1-3a),which
+underliestheall-or-nonequiescence-to-proliferationtransition[27,64,65]. Theactivation
+threshold of the Rb–E2F switch, “Rb–E2F switch threshold” for short, controls quies-
+cencedepth: increasingordecreasingthisthresholddrivescellstodeeperandshallower
+quiescence, respectively [27,28,66]. The Rb–E2F switch threshold is defined as the min-
+imumgrowthstimulusrequiredtoactivatethecellularE2Fleveltoexceedthatofnon-
+phosphorylatedRb,whichbindstoandinhibitsE2Finquiescentcells[27,28,66]. Wehave
+shown that the Rb–E2F switch threshold can be modulated by multiple factors in the
+Rb–E2FpathwaywithvaryingdegreesofsensitivitywiththoseassociatedwithG1cyclins
+andcyclin-dependentkinases(CDK)beingthemostprominent[28].
+TheRb–E2Fswitchisthefirstbistableswitchthatcellsencounterduringthetransition
+fromquiescencetoproliferationinresponsetomitogens,anditconnectstodownstream
+bistableswitchesandcheckpointsregulatingSphaseentry[67,68]. GiventhattheRb–E2F
+pathwayinteractswithotherquiescenceregulatorypathways(e.g.,Notch–Hes1,p53–p21,
+PI3K–Akt,DNAdamageresponse,LKB1–AMPK,andmicroRNA)[10,27,63],wepropose
+thattheRb–E2Fswitchservesasacorehubthatintegratescellularsignalstoquantitatively
+determinethegrowthstimulationlevelrequiredfortheall-or-nonecellcyclere-entry. In
+parallel,othercellularpathwaysimpingeontheRb–E2Fswitchandmodulateitsswitch
+threshold. Thismodulatoryeffectmayoccurthroughcrosstalkwithvariousgenenodesin
+theRb–E2Fswitchnetwork,mosteffectivelybyaffectingG1cyclinandCDKactivitiesin
+thecell[13,28,69]. Higherthresholdsleadtodeeperquiescenceand,eventually,senescence
+whenphysiologicalgrowthsignalscannolongerovercomethethreshold[27,41].Therefore,
+thedifferencebetweendeepquiescenceandsenescenceliesprimarilyinthemagnitudeof
+theRb–E2Fswitchthresholdratherthaninfundamentallydistinctcellularcharacteristics,
+aligningwiththequiescence–senescencecontinuummodel.
+The lysosomal–autophagy axis discussed above driving quiescence-to-senescence
+transitioninMuSCsdirectlyincreasestheRb–E2Fswitchthreshold(byactivatingp16that
+inhibitsCDKactivity)[13,18]. Similarly,increasingtheRb–E2Fswitchthresholdhasbeen
+reportedtodrivedeepquiescenceinMuSCsviafasting-inducedketonebodysignaling(by
+increasingp21thatinhibitsCDK)[69]. Thisthresholdmechanismpredictsapotentialway
+toreversethe“irreversible”senescencebyreducingtheRb–E2Fswitchthreshold. Indeed,
+studieshaveshownthatsenescentcellscanbereactivatedassuch,e.g.,byinactivatingRb,
+p53–p21,orp16activities[70–75]orbytheforcedG1cyclinupregulation[76].
+3.3. RemainingUnknownsandtheHeterogeneityinQuiescence-OriginSenescence
+Severalkeyareasremaintobeexplored. TheroleofmTORsignaling,forinstance,
+presentsanintriguingparadox. mTORisamajordriverofproliferation-originsenescence,
+underlyingtheprocessofgeroconversion—aprocessinwhichmTOR-drivencellgrowth
+continuesaberrantlyafterthecellcycleisblocked(e.g.,byCDKinhibitorsp21CIP1/Waf1and
+p16INK4a)[11,77]. Inquiescence,mTORisinactiveandcellslacksustainedgrowth,which
+hasbeenproposedasamechanismtoprotectquiescentcellsagainstsenescence[11,77].This
+questionstheinvolvementofmTORinquiescencedeepeningandthequiescence-origin
+senescence,whichalignswiththefactthatmTORactivityislinkedtoshallowquiescence
+(G )[42],notquiescencedeepening.Therefore,thequiescence-originsenescenceappears
+Alert
+differentfromproliferation-originsenescencefromtheaspectofmTORandgeroconversion
+(Figure1).
+Biomedicines2024,12,1837 5of8
+Biomedicines 2024, 12, x FOR PEER REVIEW 6 of 9
+Figure1.Quiescence-originsenescence.Conventionalsenescenceoriginatesfromproliferatingand
+Figure 1. Quiescence-origin senescence. Conventional senescence originates from proliferating and
+ggrorwoiwng icnelgls vciae mllTsOvRi-amemdiaTteOd gRer-omconevderisaiotne, dwhgene creoll cgoronwvthe crosntiionune,s awbehrreanntlyc aefltelr gthreo wthcontinuesaberrantlyafterthe
+cell cycle is blocked in response to severe stress and damage. In comparison, quiescence-origin se-
+nceesclelnccey ocrilgeinaitses bfrolomc qkuieesdcenitn celrlse vsipa qouniessceentceo deseepveneinrge, ascctormepsasnieadn bdy ad praomgreassgiveel.y Incomparison, quiescence-origin
+increasing Rb–E2F switch threshold in response to decreased lysosomal autophagy and increased
+RsOeSn aecscucmeunlacteiono arnidg pinroatetien sagfgrroegmatioqn.u Sieensescceennt tceclles lalrse ivrrieaverqsiubliye asrcreesntedc eunddeere pphyesnioi-ng,accompaniedbyaprogressively
+liongiccarle caonsdinitigonRs. bDe–eEp 2quFiesscwenitt ccehlls tahrer reesvehrsoibldle biunt rreeqsupireo sntrsonegteor gdroewcthr estaimseuldatiloyn saonds omalautophagyandincreasedROS
+take a longer time to re-enter the cell cycle than shallow quiescent cells. The boundary between very
+daecepc uqumiesucelnacet iaondn qauinesdcenpcer-oortiegiinn seangesgcerneceg (athtei orend .daSsheend elisnce)e isn btlucrereldl.s areirreversiblyarrestedunderphysiological
+Fcuondnidngi:t Tihoisn rses.eaDrceh ewpas qpaurtiiaellsyc seupnptorcteedl lbsy tahre eRerseeavrcehr Dseivbelloepmbeuntt Grreanqt uofi trhee Usntrivoern-gergrowthstimulationandtakea
+sity of Arizona.
+longertimetore-enterthecellcyclethanshallowquiescentcells.Theboundarybetweenverydeep
+Conflicts of Interest: The authors declare no conflicts of interest. The funders had no role in the
+dqeusigine sofc tehen sctuedya;n ind thqe cuoilleecstcioenn, acneal-yosers,i gori inntesreprneteastiocne onf cdeata(;t ihn ether wedritidnga osf hthee dmalniun-e)isblurred.
+script; or in the decision to publish the results.
+Epigeneticregulationplaysacrucialroleinproliferation-originsenescence,including
+References
+1. Hayflick, L.; Moorhead, P.S.t Thhee sefroiarl cmultaivtaitioonn ofo hfumsaenn deipslocide cnelcl estr-aainsss. Eoxcp.i Caetlle Rdes. h19e61t, e25r,o 58c5h–6r2o1. matinfoci(SAHF)thatrepressE2Ftarget
+2. Kuilman, T.; Michaloglou, C.; Mooi, W.J.; Peeper, D.S. The essence of senescence. Genes Dev. 2010, 24, 2463–2479.
+genes [78] and changes in DNA methylation and histone modification patterns[79,80].
+3. Rodier, F.; Campisi, J. Four faces of cellular senescence. J. Cell Biol. 2011, 192, 547–556.
+4. Campisi, J.; di Fagagna, F.DE. Cpelliuglaer nseenetsiccencme: Wechehna bnadi tshmingss haaprpeena tlos gooodin cevllso. Nlvate. Rdev.i Mnolq. Cuelil eBisolc. 2e0n07c, 8e, 7d29e–epeningandtransitiontosenes-
+740.
+5. Munoz-Espin, D.; Serrano, Mc.e Cnelcluela,r saesnessceenecne: Firnomt phheysiRoloOgyS to- mpatehodloigayt. eNdat. Rdeve. rMeopl. Creells Bsioilo. 2n014o, 1f5,t 4h82e–4p961. 6locus[18]andtheroleofketone
+6. Gorgoulis, V.; Adams, P.D.; Alimonti, A.; Bennett, D.C.; Bischof, O.; Bishop, C.; Campisi, J.; Collado, M.; Evangelou, K.;
+body-mediatedacetylationandactivationofthep53locus[69]inMuSCsaswellasthe
+Ferbeyre, G.; et al. Cellular Senescence: Defining a Path Forward. Cell 2019, 179, 813–827.
+7. Lanz, M.C.; Zatulovskiy, E.;l Sownafgfer-,o Mb.Ps.; eZrhvaneg,d L.;i Inlercterne, aI.;s Zehainng, Sc.;h Yrouo, mD.Sa.; tMianrincoov, nGd.; MecnAslpaintei, oP.n; Eliians, dJ.Ee.; eetp quiescentcells[37]. However,
+al. Increasing cell size remodels the proteome and promotes senescence. Mol. Cell 2022, 82, 3255–3269.e8.
+8. Coller, H.A.; Sang, L.; Roberats, cJ.Mo.m A Nperwe Dhesecnripstiiovn eof Cuenlludlare Qrusitesacenndce.i PnLgoS Boiofl. t20h06e, 4e, ep83i. geneticlandscapechangesduringquiescence
+9. Marescal, O.; Cheeseman, I.M. Cellular Mechanisms and Regulation of Quiescence. Dev. Cell 2020, 55, 259–271.
+deepening and the quiescence-to-senescence transition is still lacking, highlighting an
+10. Cheung, T.H.; Rando, T.A. Molecular regulation of stem cell quiescence. Nat. Rev. Mol. Cell Biol. 2013, 14, 329–340.
+11. Blagosklonny, M.V. Geroconivmerspioon: rIrtraevnertsibaler seteap tfoo crellufulart suenreescerneces. eCeallr Ccyhcle 2[04104, ]1.3, 3628–3635.
+12. Sang, L.; Coller, H.A. Fear of commitment: Hes1 protects quiescent fibroblasts from irreversible cellular fates. Cell Cycle 2009, 8,
+2161–2167. Theheterogeneityandcontextdependencyofthequiescence-to-senescencetransition
+13. Sousa-Victor, P.; Gutarra, S.; García-Prat, L.; Rodriguez-Ubreva, J.; Ortet, L.; Ruiz-Bonilla, V.; Jardí, M.; Ballestar, E.; González,
+arealsoapparent,underscoringthecomplexityofthesecellularprocesses. Forinstance,
+S.; Serrano, A.L.; et al. Geriatric muscle stem cells switch reversible quiescence into senescence. Nature 2014, 506, 316–321.
+ROS-mediatedp16INK4aactivationoccursthroughepigeneticderepressioninMuSCs[18]
+butviap38MAPKhyperactivationinHSPCs[14].Blockingp16INK4aactivationpreventsthe
+quiescence-to-senescencetransitiononlyinasubsetofcells[13],suggestingtheinvolvement
+of other molecular effectors driving the quiescence-origin senescence. Furthermore, is
+lysosomalautophagyalwaystheprimarytriggerforquiescencedeepeningandtransition
+tosenescence,anddoesthisprocessalwaysconvergeontotheRb–E2Fswitchthreshold—or
+possiblyregulatedownstreamswitchescontrollingSphaseentry[67,68]ordownstream
+E2Ftargetgenesnecessaryforcellproliferation[41,78]? Growingcellsexitingfromeither
+theG1orG2phaseofthecellcycleconvergeontothesamesenescentstatewithaG1-like
+molecularsignature[76]. Howaboutquiescence-originsenescence? Whatareitsmolecular
+markers,andtowhatextentdotheyoverlapwithordifferfromthemarkersofproliferation-
+origin senescence, beyond the sustained (if not totally irreversible) arrested phenotype
+(Figure1)? Futureinvestigationsareneededtofindtheanswers.
+4. Conclusions
+Unlike conventional proliferation-origin senescence, quiescence-origin senescence
+involvesthedirecttransitionofquiescentcellstosenescence. Itrepresentsapreviously
+understudiednewtypeofcellularagingprocess(Figure1). Giventhatthevastmajorityof
+cellsinthehumanbodyareinquiescence,notinproliferation,quiescence-originsenescence
+Biomedicines2024,12,1837 6of8
+isexpectedtoberesponsibleforalargerproportionofirreversiblyarrestedsenescentcells
+inourtissuesthanpreviouslyrealized.
+Understandingthemechanismsunderlyingthecontinuumofquiescence-to-senescence
+transitionthroughquiescencedeepeninghasimportantimplicationsformultipleareasof
+biomedicalresearchandclinicalpractice,suchascancerbiology,aging,andregenerative
+medicine. Future research will reveal both common and cell type-specific mechanisms
+ofquiescence-depthregulationandtransitiontosenescence,identifyspecificmolecular
+markers,andsuggesttheoptimalstrategiestotargetthisgroupofpreviouslyoverlooked
+senescentcellstoreshapeourapproachestopromotinghealthandlongevity.
+Funding:ThisresearchwaspartiallysupportedbytheResearchDevelopmentGrantoftheUniversity
+ofArizona.
+ConflictsofInterest:Theauthorsdeclarenoconflictsofinterest.Thefundershadnoroleinthedesign
+ofthestudy;inthecollection,analyses,orinterpretationofdata;inthewritingofthemanuscript;or
+inthedecisiontopublishtheresults.
+References
+1. Hayflick,L.;Moorhead,P.S.Theserialcultivationofhumandiploidcellstrains.Exp.CellRes.1961,25,585–621.[CrossRef]
+2. Kuilman,T.;Michaloglou,C.;Mooi,W.J.;Peeper,D.S.Theessenceofsenescence.GenesDev.2010,24,2463–2479.[CrossRef]
+3. Rodier,F.;Campisi,J.Fourfacesofcellularsenescence.J.CellBiol.2011,192,547–556.[CrossRef]
+4. Campisi,J.;diFagagna,F.D.Cellularsenescence:Whenbadthingshappentogoodcells.Nat.Rev.Mol.CellBiol.2007,8,729–740.
+[CrossRef]
+5. Munoz-Espin,D.;Serrano,M.Cellularsenescence: Fromphysiologytopathology. Nat. Rev. Mol. CellBiol. 2014,15,482–496.
+[CrossRef]
+6. Gorgoulis, V.; Adams, P.D.; Alimonti, A.; Bennett, D.C.; Bischof, O.; Bishop, C.; Campisi, J.; Collado, M.; Evangelou, K.;
+Ferbeyre,G.;etal.CellularSenescence:DefiningaPathForward.Cell2019,179,813–827.[CrossRef]
+7. Lanz,M.C.;Zatulovskiy,E.;Swaffer,M.P.;Zhang,L.;Ilerten,I.;Zhang,S.;You,D.S.;Marinov,G.;McAlpine,P.;Elias,J.E.;etal.
+Increasingcellsizeremodelstheproteomeandpromotessenescence.Mol.Cell2022,82,3255–3269.e8.[CrossRef]
+8. Coller,H.A.;Sang,L.;Roberts,J.M.ANewDescriptionofCellularQuiescence.PLoSBiol.2006,4,e83.[CrossRef]
+9. Marescal,O.; Cheeseman,I.M.CellularMechanismsandRegulationofQuiescence. Dev. Cell2020,55,259–271. [CrossRef]
+[PubMed]
+10. Cheung,T.H.;Rando,T.A.Molecularregulationofstemcellquiescence.Nat.Rev.Mol.CellBiol.2013,14,329–340.[CrossRef]
+11. Blagosklonny,M.V.Geroconversion:Irreversiblesteptocellularsenescence.CellCycle2014,13,3628–3635.[CrossRef]
+12. Sang,L.;Coller,H.A.Fearofcommitment:Hes1protectsquiescentfibroblastsfromirreversiblecellularfates.CellCycle2009,8,
+2161–2167.[CrossRef]
+13. Sousa-Victor,P.;Gutarra,S.;García-Prat,L.;Rodriguez-Ubreva,J.;Ortet,L.;Ruiz-Bonilla,V.;Jardí,M.;Ballestar,E.;González,S.;
+Serrano,A.L.;etal.Geriatricmusclestemcellsswitchreversiblequiescenceintosenescence.Nature2014,506,316–321.[CrossRef]
+14. Cho,J.;Yusuf,R.;Kook,S.;Attar,E.;Lee,D.;Park,B.;Cheng,T.;Scadden,D.T.;Lee,B.C.PurinergicP2Y(1)(4)receptormodulates
+stress-inducedhematopoieticstem/progenitorcellsenescence.J.Clin.Investig.2014,124,3159–3171.[CrossRef]
+15. Marthandan,S.;Priebe,S.;Hemmerich,P.;Klement,K.;Diekmann,S.Long-termquiescentfibroblastcellstransitintosenescence.
+PLoSONE2014,9,e115597.[CrossRef]
+16. Fujimaki,K.;Li,R.;Chen,H.;DellaCroce,K.;Zhang,H.H.;Xing,J.;Bai,F.;Yao,G.Gradedregulationofcellularquiescence
+depthbetweenproliferationandsenescencebyalysosomaldimmerswitch.Proc.Natl.Acad.Sci.USA2019,116,22624–22634.
+[CrossRef]
+17. Sender,R.;Milo,R.Thedistributionofcellularturnoverinthehumanbody.Nat.Med.2021,27,45–48.[CrossRef]
+18. García-Prat,L.;Martínez-Vicente,M.;Perdiguero,E.;Ortet,L.;Rodríguez-Ubreva,J.;Rebollo,E.;Ruiz-Bonilla,V.;Gutarra,S.;
+Ballestar,E.;Serrano,A.L.;etal.Autophagymaintainsstemnessbypreventingsenescence.Nature2016,529,37–42.[CrossRef]
+19. Bucher,N.L.RegenerationofMammalianLiver.Int.Rev.Cytol.1963,15,245–300.
+20. Adelman,R.C.;Stein,G.;Roth,G.S.;Englander,D.Age-dependentregulationofmammalianDNAsynthesisandcellproliferation
+Invivo.Mech.AgeingDev.1972,1,49–59.[CrossRef]
+21. Gunther,G.R.;Wang,J.L.;Edelman,G.M.Thekineticsofcellularcommitmentduringstimulationoflymphocytesbylectins.
+J.CellBiol.1974,62,366–377.[CrossRef]
+22. Augenlicht,L.H.;Baserga,R.ChangesintheG0stateofWI-38fibroblastsatdifferenttimesafterconfluence.Exp.CellRes.1974,
+89,255–262.[CrossRef]
+23. Martin,R.G.;Stein,S.Restingstateinnormalandsimianvirus40transformedChinesehamsterlungcells.Proc.Natl.Acad.Sci.
+USA1976,73,1655–1659.[CrossRef]
+24. Owen,T.A.;Soprano,D.R.;Soprano,K.J.AnalysisofthegrowthfactorrequirementsforstimulationofWI-38cellsafterextended
+periodsofdensity-dependentgrowtharrest.J.Cell.Physiol.1989,139,424–431.[CrossRef]
+Biomedicines2024,12,1837 7of8
+25. Yanez,I.;O’Farrell,M.Variationinthelengthofthelagphasefollowingserumrestimulationofmouse3T3cells.CellBiol.Int.
+Rep.1989,13,453–462.[CrossRef]
+26. Lum,J.J.;Bauer,D.E.;Kong,M.;Harris,M.H.;Li,C.;Lindsten,T.;Thompson,C.B.Growthfactorregulationofautophagyandcell
+survivalintheabsenceofapoptosis.Cell2005,120,237–248.[CrossRef]
+27. Yao,G.Modellingmammaliancellularquiescence.InterfaceFocus2014,4,20130074.[CrossRef]
+28. Kwon,J.S.;Everetts,N.J.;Wang,X.;Wang,W.;DellaCroce,K.;Xing,J.;Yao,G.ControllingDepthofCellularQuiescencebyan
+Rb-E2FNetworkSwitch.CellRep.2017,20,3223–3235.[CrossRef]
+29. Gookin,S.;Min,M.;Phadke,H.;Chung,M.;Moser,J.;Miller,I.;Carter,D.;Spencer,S.L.Amapofproteindynamicsduring
+cell-cycleprogressionandcell-cycleexit.PLoSBiol.2017,15,e2003268.[CrossRef]
+30. vanVelthoven,C.T.J.; Rando,T.A.StemCellQuiescence: Dynamism,Restraint,andCellularIdling. CellStemCell2019,24,
+213–225.[CrossRef]
+31. Audesse,A.J.;Webb,A.E.Mechanismsofenhancedquiescenceinneuralstemcellaging.Mech.AgeingDev.2020,191,111323.
+[CrossRef][PubMed]
+32. Harris, L.; Rigo, P.; Stiehl, T.; Gaber, Z.B.; Austin, S.H.; Masdeu, M.d.M.; Edwards, A.; Urbán, N.; Marciniak-Czochra, A.;
+Guillemot,F.Coordinatedchangesincellularbehaviorensurethelifelongmaintenanceofthehippocampalstemcellpopulation.
+CellStemCell2021,28,863–876.e6.[CrossRef][PubMed]
+33. Ibrayeva,A.;Bay,M.;Pu,E.;Jörg,D.J.;Peng,L.;Jun,H.;Zhang,N.;Aaron,D.;Lin,C.;Resler,G.;etal.Earlystemcellaginginthe
+maturebrain.CellStemCell2021,28,955–966.e7.[CrossRef][PubMed]
+34. Laporte,D.;Jimenez,L.;Gouleme,L.;Sagot,I.Yeastquiescenceexitswiftnessisinfluencedbycellvolumeandchronologicalage.
+Microb.Cell2017,5,104–111.[CrossRef][PubMed]
+35. Olmedo,M.;Mata-Cabana,A.;Rodríguez-Palero,M.J.;García-Sánchez,S.;Fernández-Yañez,A.;Merrow,M.;Artal-Sanz,M.
+Prolongedquiescencedelayssomaticstemcell-likedivisionsinCaenorhabditiselegansandiscontrolledbyinsulinsignaling.
+AgingCell2020,19,e13085.[CrossRef][PubMed]
+36. Darzynkiewicz,Z.;Traganos,F.;Melamed,M.R.Newcellcyclecompartmentsidentifiedbymultiparameterflowcytometry.
+Cytometry1980,1,98–108.[CrossRef][PubMed]
+37. Rossini,M.;Lin,J.C.;Baserga,R.EffectsofprolongedquiescenceonneucleiandchromatinofWI-38fibroblasts.J.Cell.Physiol.
+1976,88,1–11.[CrossRef][PubMed]
+38. Soprano,K.J.WI-38celllong-termquiescencemodelsystem:Avaluabletooltostudymoleculareventsthatregulategrowth.
+J.Cell.Biochem.1994,54,405–414.[CrossRef]
+39. Valcourt, J.R.; Lemons, J.M.; Haley, E.M.; Kojima, M.; Demuren, O.O.; Coller, H.A.Stayingalive: Metabolicadaptationsto
+quiescence.CellCycle2012,11,1680–1696.[CrossRef]
+40. Bonitto,K.;Sarathy,K.;Atai,K.;Mitra,M.;Coller,H.A.IsThereaHistoneCodeforCellularQuiescence?Front.CellDev.Biol.
+2021,9,739780.[CrossRef]
+41. Fujimaki,K.;Yao,G.Celldormancyplasticity:Quiescencedeepensintosenescencethroughadimmerswitch.Physiol.Genom.
+2020,52,558–562.[CrossRef]
+42. Rodgers,J.T.;King,K.Y.;Brett,J.O.;Cromie,M.J.;Charville,G.W.;Maguire,K.K.;Brunson,C.;Mastey,N.;Liu,L.;Tsai,C.-R.;etal.
+mTORC1controlstheadaptivetransitionofquiescentstemcellsfromG0toG(Alert). Nature2014,510,393–396. [CrossRef]
+[PubMed]
+43. Llorens-Bobadilla,E.;Zhao,S.;Baser,A.;Saiz-Castro,G.;Zwadlo,K.;Martin-Villalba,A.Single-CellTranscriptomicsRevealsa
+PopulationofDormantNeuralStemCellsthatBecomeActivateduponBrainInjury.CellStemCell2015,17,329–340.[CrossRef]
+44. Rodgers,J.T.;Schroeder,M.D.;Ma,C.;Rando,T.A.HGFAIsanInjury-RegulatedSystemicFactorthatInducestheTransitionof
+StemCellsintoGAlert.CellRep.2017,19,479–486.[CrossRef]
+45. Lee,G.;EspiritoSanto,A.I.;Zwingenberger,S.;Cai,L.;Vogl,T.;Feldmann,M.;Horwood,N.J.;Chan,J.K.;Nanchahal,J.Fully
+reducedHMGB1acceleratestheregenerationofmultipletissuesbytransitioningstemcellstoGAlert.Proc.Natl.Acad.Sci.USA
+2018,115,E4463–E4472.
+46. Baker,D.J.;Sedivy,J.M.Probingthedepthsofcellularsenescence.J.CellBiol.2013,202,11–13.[CrossRef]
+47. VanDeursen,J.M.Theroleofsenescentcellsinageing.Nature2014,509,439–446.[CrossRef]
+48. Zhang,X.;Liu,X.;Du,Z.;Wei,L.;Fang,H.;Dong,Q.;Niu,J.;Li,Y.;Gao,J.;Zhang,M.Q.;etal. Thelossofheterochromatin
+isassociatedwithmultiscalethree-dimensionalgenomereorganizationandaberranttranscriptionduringcellularsenescence.
+GenomeRes.2021,31,1121–1135.[CrossRef]
+49. Hernandez-Segura,A.;deJong,T.V.;Melov,S.;Guryev,V.;Campisi,J.;DeMaria,M.UnmaskingTranscriptionalHeterogeneityin
+SenescentCells.Curr.Biol.2017,27,2652–2660.e4.[CrossRef][PubMed]
+50. Wei,M.Y.;Yao,G.ModelingtheDepthofCellularDormancyfromRNA-SequencingData.MethodsMol.Biol.2024,2811,123–135.
+[PubMed]
+51. Urban,N.;Cheung,T.H.Stemcellquiescence:Thechallengingpathtoactivation.Development2021,148,dev165084.[CrossRef]
+[PubMed]
+52. Brooks,R.F.CellCycleCommitmentandtheOriginsofCellCycleVariability.Front.CellDev.Biol.2021,9,698066.[CrossRef]
+[PubMed]
+Biomedicines2024,12,1837 8of8
+53. Truskowski,K.;Amend,S.R.;Pienta,K.J.Dormantcancercells:Programmedquiescence,senescence,orboth?CancerMetastasis
+Rev.2023,42,37–47.[CrossRef][PubMed]
+54. Wiecek,A.J.;Cutty,S.J.;Kornai,D.;Parreno-Centeno,M.;Gourmet,L.E.;Tagliazucchi,G.M.;Jacobson,D.H.;Zhang,P.;Xiong,L.;
+Bond,G.L.;etal.GenomichallmarksandtherapeuticimplicationsofG0cellcyclearrestincancer.GenomeBiol.2023,24,128.
+[CrossRef]
+55. Tanke, N.T.; Liu, Z.; Gore, M.T.; Bougaran, P.; Linares, M.B.; Marvin, A.; Sharma, A.; Oatley, M.; Yu, T.; Quigley, K.; et al.
+EndothelialCellFlow-MediatedQuiescenceIsTemporallyRegulatedandUtilizestheCellCycleInhibitorp27.Arter.Thromb.
+Vasc.Biol.2024,44,1265–1282.[CrossRef][PubMed]
+56. Ashraf,H.M.;Fernandez,B.;Spencer,S.L.Theintensitiesofcanonicalsenescencebiomarkersintegratethedurationofcell-cycle
+withdrawal.Nat.Commun.2023,14,4527.[CrossRef][PubMed]
+57. deMagalhaes,J.P.Cellularsenescenceinnormalphysiology.Science2024,384,1300–1301.[CrossRef][PubMed]
+58. Leeman,D.S.;Hebestreit,K.;Ruetz,T.;Webb,A.E.;McKay,A.;Pollina,E.A.;Dulken,B.W.;Zhao,X.;Yeo,R.W.;Ho,T.T.;etal.
+Lysosome activation clears aggregates and enhances quiescent neural stem cell activation during aging. Science 2018, 359,
+1277–1283.[CrossRef][PubMed]
+59. Dyson,N.TheregulationofE2FbypRB-familyproteins.GenesDev.1998,12,2245–2262.[CrossRef]
+60. Nevins,J.R.TheRb/E2Fpathwayandcancer.Hum.Mol.Genet.2001,10,699–703.[CrossRef]
+61. Sears, R.C.; Nevins, J.R. Signaling networks that link cell proliferation and cell fate. J. Biol. Chem. 2002, 277, 11617–11620.
+[CrossRef]
+62. Trimarchi,J.M.;Lees,J.A.SiblingrivalryintheE2Ffamily.Nat.Rev.Mol.CellBiol.2002,3,11–20.[CrossRef][PubMed]
+63. Polager,S.;Ginsberg,D.E2F-atthecrossroadsoflifeanddeath.TrendsCellBiol.2008,18,528–535.[CrossRef][PubMed]
+64. Yao,G.;Lee,T.J.;Mori,S.;Nevins,J.R.;You,L.AbistableRb-E2Fswitchunderliestherestrictionpoint.Nat.CellBiol.2008,10,
+476–482.[CrossRef][PubMed]
+65. Yao,G.;Tan,C.;West,M.;Nevins,J.R.;You,L.Originofbistabilityunderlyingmammaliancellcycleentry.Mol.Syst.Biol.2011,
+7,485.[CrossRef][PubMed]
+66. Wang,X.;Fujimaki,K.;Mitchell,G.C.;Kwon,J.S.;DellaCroce,K.;Langsdorf,C.;Zhang,H.H.;Yao,G.Exitfromquiescence
+displaysamemoryofcellgrowthanddivision.Nat.Commun.2017,8,321.[CrossRef][PubMed]
+67. Cappell,S.D.;Chung,M.;Jaimovich,A.;Spencer,S.L.;Meyer,T.IrreversibleAPC(Cdh1)InactivationUnderliesthePointofNo
+ReturnforCell-CycleEntry.Cell2016,166,167–180.[CrossRef][PubMed]
+68. Cappell,S.D.;Mark,K.G.;Garbett,D.;Pack,L.R.;Rape,M.;Meyer,T.EMI1switchesfrombeingasubstratetoaninhibitorof
+APC/C(CDH1)tostartthecellcycle.Nature2018,558,313–317.[CrossRef][PubMed]
+69. Benjamin,D.I.;Both,P.;Benjamin,J.S.;Nutter,C.W.;Tan,J.H.;Kang,J.;Machado,L.A.;Klein,J.D.;deMorree,A.;Kim,S.;etal.
+Fastinginducesahighlyresilientdeepquiescentstateinmusclestemcellsviaketonebodysignaling. CellMetab. 2022,34,
+902–918.e6.[CrossRef]
+70. Shay,J.W.;Pereira-Smith,O.M.;Wright,W.E.AroleforbothRBandp53intheregulationofhumancellularsenescence.Exp.Cell
+Res.1991,196,33–39.[CrossRef]
+71. Beauséjour,C.M.;Krtolica,A.;Galimi,F.;Narita,M.;Lowe,S.W.;Yaswen,P.;Campisi,J.Reversalofhumancellularsenescence:
+Rolesofthep53andp16pathways.EMBOJ.2003,22,4212–4222.[CrossRef][PubMed]
+72. Sage,J.;Miller,A.L.;Perez-Mancera,P.A.;Wysocki,J.M.;Jacks,T.Acutemutationofretinoblastomagenefunctionissufficientfor
+cellcyclere-entry.Nature2003,424,223–228.[CrossRef][PubMed]
+73. Dirac,A.M.;Bernards,R.Reversalofsenescenceinmousefibroblaststhroughlentiviralsuppressionofp53.J.Biol.Chem.2003,
+278,11731–11734.[CrossRef][PubMed]
+74. Pajalunga,D.;Mazzola,A.;Salzano,A.M.;Biferi,M.G.;DeLuca,G.;Crescenzi,M.Criticalrequirementforcellcycleinhibitorsin
+sustainingnonproliferativestates.J.CellBiol.2007,176,807–818.[CrossRef][PubMed]
+75. Reyes,J.;Chen,J.-Y.;Stewart-Ornstein,J.;Karhohs,K.W.;Mock,C.S.;Lahav,G.Fluctuationsinp53SignalingAllowEscapefrom
+Cell-CycleArrest.Mol.Cell2018,71,581–591.e5.[CrossRef][PubMed]
+76. Stallaert,W.;Taylor,S.R.;Kedziora,K.M.;Taylor,C.D.;Sobon,H.K.;Young,C.L.;Limas,J.C.;Holloway,J.V.;Johnson,M.S.;
+Cook,J.G.;etal.Themoleculararchitectureofcellcyclearrest.Mol.Syst.Biol.2022,18,e11087.[CrossRef][PubMed]
+77. Blagosklonny, M.V.Rapamycin, proliferationandgeroconversiontosenescence. CellCycle2018, 17, 2655–2665. [CrossRef]
+[PubMed]
+78. Narita,M.;Nuñez,S.;Heard,E.;Lin,A.W.;Hearn,S.A.;Spector,D.L.;Hannon,G.J.;Lowe,S.W.Rb-MediatedHeterochromatin
+FormationandSilencingofE2FTargetGenesduringCellularSenescence.Cell2003,113,703–716.[CrossRef][PubMed]
+79. Crouch,J.;Shvedova,M.;Thanapaul,R.;Botchkarev,V.;Roh,D.EpigeneticRegulationofCellularSenescence.Cells2022,11,672.
+[CrossRef]
+80. Paluvai,H.;DiGiorgio,E.;Brancolini,C.TheHistoneCodeofSenescence.Cells2020,9,466.[CrossRef]
+Disclaimer/Publisher’sNote: Thestatements, opinionsanddatacontainedinallpublicationsaresolelythoseoftheindividual
+author(s)andcontributor(s)andnotofMDPIand/ortheeditor(s).MDPIand/ortheeditor(s)disclaimresponsibilityforanyinjuryto
+peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredtointhecontent.
