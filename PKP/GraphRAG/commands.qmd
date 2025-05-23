@@ -1,6 +1,6 @@
 python --version
 conda --version
-conda -n create graphrag
+conda create -n graphrag
 conda  init
 ("exit" & re-opened the terminal)
 
@@ -62,3 +62,15 @@ deb [signed-by=/etc/apt/keyrings/neotechnology.gpg] https://debian.neo4j.com sta
 
 With this corrected line:
 deb [signed-by=/etc/apt/keyrings/neotechnology.gpg] https://debian.neo4j.com/ stable main
+
+
+
+####################################################
+
+# Pdf to txt
+
+    sudo apt-get install poppler-utils
+    pdftotext <biomedicines.pdf> <biomedicines.txt>
+
+
+    
