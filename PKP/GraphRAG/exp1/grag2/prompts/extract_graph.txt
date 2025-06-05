@@ -1,121 +1,537 @@
 
 -Goal-
 Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
- 
+
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [{entity_types}]
+- entity_type: One of the following types: [cell type, biological process, molecular mechanism, disease, intervention strategy, gene, pathway, phenotype]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
- 
+
 2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
 For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
- Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
- 
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
 3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
- 
-4. When finished, output {completion_delimiter}
- 
-######################
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
 -Examples-
 ######################
+
 Example 1:
-Entity_types: ORGANIZATION,PERSON
-Text:
-The Verdantis's Central Institution is scheduled to meet on Monday and Thursday, with the institution planning to release its latest policy decision on Thursday at 1:30 p.m. PDT, followed by a press conference where Central Institution Chair Martin Smith will take questions. Investors expect the Market Strategy Committee to hold its benchmark interest rate steady in a range of 3.5%-3.75%.
-######################
-Output:
-("entity"{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution is the Federal Reserve of Verdantis, which is setting interest rates on Monday and Thursday)
-{record_delimiter}
-("entity"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}PERSON{tuple_delimiter}Martin Smith is the chair of the Central Institution)
-{record_delimiter}
-("entity"{tuple_delimiter}MARKET STRATEGY COMMITTEE{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution committee makes key decisions about interest rates and the growth of Verdantis's money supply)
-{record_delimiter}
-("relationship"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}Martin Smith is the Chair of the Central Institution and will answer questions at a press conference{tuple_delimiter}9)
-{completion_delimiter}
 
-######################
+entity_types: [cell type, biological process, molecular mechanism, disease, intervention strategy, gene, pathway, phenotype]
+text:
+cent cells.
+This brief review synthesizes recent findings to provide a new framework for understanding senescence from the perspective of cell dormancy–state plasticity, aiming to
+stimulate further related research into novel intervention strategies for age-related diseases,
+cancer, and regenerative medicine.
+2. The Quiescence–Senescence Continuum: A Framework for Understanding
+Quiescence-Origin Senescence
+2.1. Direct Transition from Quiescence to Senescence
+Mounting evidence in the past decade demonstrates a direct transition to senescence in
+quiescent cells under stress or with aging. One of the first reports of this phenomenon was
+in geriatric mice, where quiescent satellite cells (muscle stem cells, MuSCs) lose regenerative
+capacity and become irreversibly arrested [13]. The same observation was confirmed in
+geriatric human muscle, suggesting a conserved mechanism contributing to age-related
+decline in muscle regenerative capacity [13]. The quiescence-to-senescence transition in
+geriatric MuSCs was linked to the epigenetic derepression of p16INK4a , which is a key
+regulator of senescence [13].
+Further research revealed that p16INK4a derepression in geriatric MuSCs was triggered
+by accumulated reactive oxygen species (ROS) resulting from failed autophagy [18]. Restoring autophagy prevents the transition to senescence in quiescent MuSCs [18]. Similarly,
+in quiescent human hematopoietic stem progenitor cells (HSPCs), stress-induced ROS
+accumulation can elevate the p16INK4a level and drive the transition to senescence [14].
+In vitro studies provide further evidence for the direct quiescence-to-senescence transition. Long-term quiescent human fibroblasts in culture (100–150 days) accumulate DNA
+damage and transit into senescence [15]. Our recent work showed that quiescent rat
+embryonic fibroblasts (REFs) with impaired lysosomal autophagy can directly enter a
+senescence-like state characterized by irreversible cell cycle arrest, β-galactosidase activity,
+and cellular hypertrophy [16]. These in vitro results strengthen the findings of in vivo
+studies by showing that cells maintained in quiescent conditions throughout the experiments eventually transitioned to senescence, bypassing cell proliferation (which can be
+difficult to track in vivo, e.g., throughout the entire geriatric phase). Together, these in vivo
+and in vitro studies provide compelling evidence for the direct quiescence-to-senescence
+transition, resulting in quiescence-origin senescence.
+2.2. Quiescence Deepening into Senescence: A Continuum Model
+The observation that cells can transition from quiescence to senescence aligns with the
+concept that quiescence is not a uniform state but rather a spectrum of dormant depths.
+Specifically, deeper quiescent cells are more resistant to cell cycle re-entry, and they resume
+proliferation less frequently or with a longer delay than shallower quiescent cells given the
+same growth stimulation [8,19–35]. Cells in deep quiescence generally exhibit decreased
+transcription, reduced RNA and protein levels, and increased chromatin condensation
+compared to cells in shallow quiescence [22,36–38]. Recent studies have further revealed the
+changes in the cellular profiles of gene expression, epigenetic modification, and metabolism
+that occur during the process of quiescence deepening [8,16,39–41]. It is important to note
+that deep quiescent cells, by definition, still retain the potential for cell cycle re-entry and
+can resume proliferation given a sufficiently strong and sustained growth stimulus, which
+is distinct from senescent cells.
+Quiescence deepening has been observed under extended quiescence in culture or
+along the aging process in vivo across mammalian cell types and tissues [8,19–33] as well
+
+Biomedicines 2024, 12, 1837
+
+3 of 8
+
+as in yeast [34] and C. elegans [35]. Consistent with quiescence depth being a continuum,
+subpopulations of quiescent muscle, neural, and hematopoietic stem cells, upon tissue
+injury or in response to systemic factors, can move to shallower (primed or GAlert ) quiescence, bearing a closer resemblance to active cells [42–45]. Further extending the cell
+dormancy state continuum, senescent cells also exhibit varying “depths” with different
+cellular characteristics [46–48].
+Our recent work directly links quiescence deepening to senescence entry. We found
+that while enhancing lysosomal autophagy activity pushes REFs toward shallow quiescence,
+decreasing lysosomal autophagy drives REFs into progressively deeper quiescence [16].
+When lysosomal autophagy is severely hampered (with chloroquine treatment, for example), deep quiescent (yet still reversible) cells transition into irreversible senescence [16].
+This suggests that lysosomal autophagy activity acts as a “dimmer switch” that continuously adjusts cellular dormancy depth from shallow quiescence to deep quiescence and
+finally to senescence [16,41]. Furthermore, the transcriptomic profile changes during quiescence deepening in REFs resemble those of senescence entry with similar expression
+changes in “senescence core signature” genes [16,49]. A gene signature derived from
+quiescence deepening in REFs, the quiescence depth score (QDS), can correctly predict a
+wide array of sen
+------------------------
+output:
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive but can re-enter the cell cycle under certain conditions.)
+{record_delimiter}
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Senescence is a state where cells lose the ability to divide and grow, often as a response to stress or aging, leading to irreversible cell cycle arrest.)
+{record_delimiter}
+("entity"{tuple_delimiter}P16INK4A{tuple_delimiter}GENE{tuple_delimiter}P16INK4A is a tumor suppressor gene that regulates the cell cycle and is a key regulator of senescence, often upregulated in senescent cells.)
+{record_delimiter}
+("entity"{tuple_delimiter}REACTIVE OXYGEN SPECIES (ROS){tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Reactive oxygen species are chemically reactive molecules containing oxygen that can cause cellular damage and are implicated in the transition from quiescence to senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}AUTOPHAGY{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Autophagy is a cellular process that degrades and recycles cellular components, playing a crucial role in maintaining cellular homeostasis and preventing senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}GERIATRIC MICE{tuple_delimiter}PHENOTYPE{tuple_delimiter}Geriatric mice exhibit age-related decline in regenerative capacity, often transitioning from quiescent to senescent states under stress.)
+{record_delimiter}
+("entity"{tuple_delimiter}HUMAN HEMATOPOIETIC STEM PROGENITOR CELLS (HSPCs){tuple_delimiter}CELL TYPE{tuple_delimiter}Hematopoietic stem progenitor cells are a type of stem cell that can differentiate into various blood cells and can transition to senescence under stress conditions.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENT MUSCLE STEM CELLS (MuSCs){tuple_delimiter}CELL TYPE{tuple_delimiter}Quiescent muscle stem cells are dormant cells that can regenerate muscle tissue but may lose this capacity and enter senescence with aging or stress.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOMAL AUTOPHAGY{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Lysosomal autophagy is a process that degrades cellular components and is essential for preventing the transition from quiescence to senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE DEPTH SCORE (QDS){tuple_delimiter}GENE{tuple_delimiter}The quiescence depth score is a gene signature that predicts the transition from quiescence to senescence based on transcriptomic changes.)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Quiescence can transition into senescence under stress or aging conditions, indicating a direct relationship between the two states.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}P16INK4A{tuple_delimiter}SENESCENCE{tuple_delimiter}P16INK4A is a key regulator that promotes senescence when derepressed in quiescent cells.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}REACTIVE OXYGEN SPECIES (ROS){tuple_delimiter}SENESCENCE{tuple_delimiter}Accumulation of ROS can trigger the transition from quiescence to senescence, linking oxidative stress to cellular aging.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}AUTOPHAGY{tuple_delimiter}SENESCENCE{tuple_delimiter}Restoring autophagy can prevent the transition to senescence, highlighting its protective role against cellular aging.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}GERIATRIC MICE{tuple_delimiter}QUIESCENT MUSCLE STEM CELLS (MuSCs){tuple_delimiter}Geriatric mice show that quiescent muscle stem cells lose regenerative capacity and enter senescence with aging.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}HUMAN HEMATOPOIETIC STEM PROGENITOR CELLS (HSPCs){tuple_delimiter}SENESCENCE{tuple_delimiter}HSPCs can transition to senescence due to stress-induced ROS accumulation, linking them to the senescence process.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENT MUSCLE STEM CELLS (MuSCs){tuple_delimiter}SENESCENCE{tuple_delimiter}Quiescent MuSCs can transition to senescence, indicating a relationship between these cell types and the senescence process.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMAL AUTOPHAGY{tuple_delimiter}QUIESCENCE{tuple_delimiter}Lysosomal autophagy activity influences the depth of quiescence, affecting the transition to senescence.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE DEPTH SCORE (QDS){tuple_delimiter}SENESCENCE{tuple_delimiter}The QDS can predict the transition from quiescence to senescence based on gene expression changes.{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
 Example 2:
-Entity_types: ORGANIZATION
-Text:
-TechGlobal's (TG) stock skyrocketed in its opening day on the Global Exchange Thursday. But IPO experts warn that the semiconductor corporation's debut on the public markets isn't indicative of how other newly listed companies may perform.
 
-TechGlobal, a formerly public company, was taken private by Vision Holdings in 2014. The well-established chip designer says it powers 85% of premium smartphones.
-######################
-Output:
-("entity"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}ORGANIZATION{tuple_delimiter}TechGlobal is a stock now listed on the Global Exchange which powers 85% of premium smartphones)
+entity_types: [cell type, biological process, molecular mechanism, disease, intervention strategy, gene, pathway, phenotype]
+text:
+1 cyclins
+and cyclin-dependent kinases (CDK) being the most prominent [28].
+The Rb–E2F switch is the first bistable switch that cells encounter during the transition
+from quiescence to proliferation in response to mitogens, and it connects to downstream
+bistable switches and checkpoints regulating S phase entry [67,68]. Given that the Rb–E2F
+pathway interacts with other quiescence regulatory pathways (e.g., Notch–Hes1, p53–p21,
+PI3K–Akt, DNA damage response, LKB1–AMPK, and microRNA) [10,27,63], we propose
+that the Rb–E2F switch serves as a core hub that integrates cellular signals to quantitatively
+determine the growth stimulation level required for the all-or-none cell cycle re-entry. In
+parallel, other cellular pathways impinge on the Rb–E2F switch and modulate its switch
+threshold. This modulatory effect may occur through crosstalk with various gene nodes in
+the Rb–E2F switch network, most effectively by affecting G1 cyclin and CDK activities in
+the cell [13,28,69]. Higher thresholds lead to deeper quiescence and, eventually, senescence
+when physiological growth signals can no longer overcome the threshold [27,41]. Therefore,
+the difference between deep quiescence and senescence lies primarily in the magnitude of
+the Rb–E2F switch threshold rather than in fundamentally distinct cellular characteristics,
+aligning with the quiescence–senescence continuum model.
+The lysosomal–autophagy axis discussed above driving quiescence-to-senescence
+transition in MuSCs directly increases the Rb–E2F switch threshold (by activating p16 that
+inhibits CDK activity) [13,18]. Similarly, increasing the Rb–E2F switch threshold has been
+reported to drive deep quiescence in MuSCs via fasting-induced ketone body signaling (by
+increasing p21 that inhibits CDK) [69]. This threshold mechanism predicts a potential way
+to reverse the “irreversible” senescence by reducing the Rb–E2F switch threshold. Indeed,
+studies have shown that senescent cells can be reactivated as such, e.g., by inactivating Rb,
+p53–p21, or p16 activities [70–75] or by the forced G1 cyclin upregulation [76].
+3.3. Remaining Unknowns and the Heterogeneity in Quiescence-Origin Senescence
+Several key areas remain to be explored. The role of mTOR signaling, for instance,
+presents an intriguing paradox. mTOR is a major driver of proliferation-origin senescence,
+underlying the process of geroconversion—a process in which mTOR-driven cell growth
+continues aberrantly after the cell cycle is blocked (e.g., by CDK inhibitors p21CIP1/Waf1 and
+p16INK4a ) [11,77]. In quiescence, mTOR is inactive and cells lack sustained growth, which
+has been proposed as a mechanism to protect quiescent cells against senescence [11,77]. This
+questions the involvement of mTOR in quiescence deepening and the quiescence-origin
+senescence, which aligns with the fact that mTOR activity is linked to shallow quiescence
+(GAlert ) [42], not quiescence deepening. Therefore, the quiescence-origin senescence appears
+different from proliferation-origin senescence from the aspect of mTOR and geroconversion
+(Figure 1).
+
+Biomedicines 2024, 12, 1837
+
+Biomedicines 2024, 12, x FOR PEER REVIEW
+
+6 of 9
+
+5 of 8
+
+Figure
+1. Quiescence-origin
+senescence.
+Conventional
+senescence
+Figure
+1. Quiescence-origin
+senescence. Conventional
+senescence
+originates from proliferating
+and originates from proliferating and
+growing cells via mTOR-mediated geroconversion, when cell growth continues aberrantly after the
+growing cells via mTOR-mediated geroconversion, when cell growth continues aberrantly after the
+cell cycle is blocked in response to severe stress and damage. In comparison, quiescence-origin senescence
+originates
+from quiescent
+via quiescence
+by adamage.
+progressively In comparison, quiescence-origin
+cell cycle
+is blocked
+incells
+response
+todeepening,
+severe accompanied
+stress and
+increasing Rb–E2F switch threshold in response to decreased lysosomal autophagy and increased
+senescence
+from quiescent
+cells
+via quiescence
+deepening,
+accompanied by a progressively
+ROS
+accumulationoriginates
+and protein aggregation.
+Senescent cells
+are irreversibly
+arrested under
+physiological conditions. Deep quiescent cells are reversible but require stronger growth stimulation and
+increasing
+Rb–E2F
+switch
+threshold
+in
+response
+to
+decreased
+lysosomal
+autophagy and increased ROS
+take a longer time to re-enter the cell cycle than shallow quiescent cells. The boundary between very
+deep
+quiescence and quiescence-origin
+(the red dashed
+line) is blurred.
+accumulation
+and proteinsenescence
+aggregation.
+Senescent
+cells are irreversibly arrested under physiological
+Funding:
+This research
+was quiescent
+partially supported
+by the
+Development
+of the Un
+------------------------
+output:
+("entity"{tuple_delimiter}CYCLINS{tuple_delimiter}CELL TYPE{tuple_delimiter}Cyclins are proteins that regulate the cell cycle by activating cyclin-dependent kinases (CDKs). They play a crucial role in the transition from quiescence to proliferation.)
 {record_delimiter}
-("entity"{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}ORGANIZATION{tuple_delimiter}Vision Holdings is a firm that previously owned TechGlobal)
+("entity"{tuple_delimiter}CYCLIN-DEPENDENT KINASES{tuple_delimiter}CELL TYPE{tuple_delimiter}Cyclin-dependent kinases (CDKs) are a family of protein kinases that are activated by cyclins and are essential for the regulation of the cell cycle.)
 {record_delimiter}
-("relationship"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}Vision Holdings formerly owned TechGlobal from 2014 until present{tuple_delimiter}5)
+("entity"{tuple_delimiter}RB–E2F SWITCH{tuple_delimiter}PATHWAY{tuple_delimiter}The Rb–E2F switch is a regulatory mechanism that controls the transition from quiescence to proliferation in response to mitogens, integrating cellular signals to determine cell cycle re-entry.)
+{record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive and do not proliferate, serving as a protective mechanism against senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Senescence is a permanent state of cell cycle arrest that occurs when cells can no longer divide, often triggered by stress or damage.)
+{record_delimiter}
+("entity"{tuple_delimiter}MITOGENS{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Mitogens are substances that stimulate cell division and proliferation, playing a key role in the transition from quiescence to active cell cycle progression.)
+{record_delimiter}
+("entity"{tuple_delimiter}LKB1–AMPK PATHWAY{tuple_delimiter}PATHWAY{tuple_delimiter}The LKB1–AMPK pathway is involved in cellular energy homeostasis and regulates cell growth and metabolism, influencing the quiescence and senescence processes.)
+{record_delimiter}
+("entity"{tuple_delimiter}p53–p21{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}The p53–p21 pathway is a critical regulator of the cell cycle and is involved in the response to DNA damage, contributing to the onset of senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}p16{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}p16 is a cyclin-dependent kinase inhibitor that plays a significant role in regulating the cell cycle and is associated with the onset of cellular senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}mTOR{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}mTOR is a central regulator of cell growth and metabolism, influencing the balance between quiescence and senescence through its signaling pathways.)
+{record_delimiter}
+("entity"{tuple_delimiter}GEROCONVERSION{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Geroconversion is a process where cells continue to grow abnormally after the cell cycle is blocked, often leading to senescence in response to stress.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOMAL–AUTOPHAGY AXIS{tuple_delimiter}PATHWAY{tuple_delimiter}The lysosomal–autophagy axis is involved in cellular degradation processes and plays a role in the transition from quiescence to senescence by regulating cellular stress responses.)
+{record_delimiter}
+("relationship"{tuple_delimiter}RB–E2F SWITCH{tuple_delimiter}QUIESCENCE{tuple_delimiter}The Rb–E2F switch regulates the transition from quiescence to proliferation, determining the growth stimulation level required for cell cycle re-entry{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}RB–E2F SWITCH{tuple_delimiter}SENESCENCE{tuple_delimiter}The Rb–E2F switch threshold influences the onset of senescence when growth signals cannot overcome the threshold{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}The difference between deep quiescence and senescence is primarily in the Rb–E2F switch threshold, indicating a continuum between the two states{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}p53–p21{tuple_delimiter}SENESCENCE{tuple_delimiter}The p53–p21 pathway is involved in the regulation of senescence, particularly in response to DNA damage{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}p16{tuple_delimiter}SENESCENCE{tuple_delimiter}p16 inhibits CDK activity, contributing to the onset of senescence and regulating the Rb–E2F switch{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}mTOR{tuple_delimiter}GEROCONVERSION{tuple_delimiter}mTOR signaling is a major driver of geroconversion, influencing the transition from quiescence to senescence{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMAL–AUTOPHAGY AXIS{tuple_delimiter}QUIESCENCE{tuple_delimiter}The lysosomal–autophagy axis is involved in driving the quiescence-to-senescence transition by regulating cellular stress responses{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMAL–AUTOPHAGY AXIS{tuple_delimiter}SENESCENCE{tuple_delimiter}The lysosomal–autophagy axis affects the Rb–E2F switch threshold, influencing the onset of senescence{tuple_delimiter}8)
 {completion_delimiter}
+#############################
 
-######################
+
 Example 3:
-Entity_types: ORGANIZATION,GEO,PERSON
-Text:
-Five Aurelians jailed for 8 years in Firuzabad and widely regarded as hostages are on their way home to Aurelia.
 
-The swap orchestrated by Quintara was finalized when $8bn of Firuzi funds were transferred to financial institutions in Krohaara, the capital of Quintara.
+entity_types: [cell type, biological process, molecular mechanism, disease, intervention strategy, gene, pathway, phenotype]
+text:
+ assay in 2-d serumstarved cells treated with nocodazole, vinblastine, or vehicle control for 24 h
+at indicated doses. (C) LysoTracker intensity of 2-, 5-, and 8-d serumstarved cells treated with 25 μM nocodazole, 20 μM vinblastine, or vehicle
+control for 24 h (triplicates). (D) Relative LysoTracker intensity of treated
+samples over vehicle control in C at the indicated serum starvation time.
+Error bar, SEM. *P < 0.05, **P < 0.01, and ***P < 0.001 (1-tailed t test).
 
-The exchange initiated in Firuzabad's capital, Tiruzia, led to the four men and one woman, who are also Firuzi nationals, boarding a chartered flight to Krohaara.
+reenter the cell cycle. This result is consistent with our earlier
+study with targeted perturbations (although the relative degree
+of required increases in serum concentration and time may vary
+depending on the specific quiescence-deepening factors) (14).
+Here we used at least 1 consistent indicator, the minimum serum
+concentration required for cell cycle reentry, to measure quiescence depth throughout this study.
+We applied 2 lysosomal inhibitors, bafilomycin A1 (Baf) and
+chloroquine (CQ), that prevent lysosomal acidification (36). A
+short exposure (6 h) to either drug was sufficient to inhibit lysosomal function in REF cells, evident by the impaired proteolytic degradation within the lysosomal compartment (SI
+Appendix, Fig. S5A). When quiescent cells were treated with
+either of these 2 lysosomal inhibitors, increasingly higher serum
+concentrations were required to activate cells to reenter the cell
+cycle, in a drug dose-dependent manner (Fig. 4 B–D; red arrow
+points to serum concentration for activating ∼50% of cells, judged
+based on EdU incorporation, E2f-GFP reporter, and propidium
+iodide [PI] staining, respectively). Correspondingly, at a given
+serum concentration (e.g., 4% serum), a decreasing percentage of
+cells were able to reenter the cell cycle (EdU+) with an increasing
+dose of either lysosomal inhibitor, Baf or CQ (Fig. 4B). The lysosomal inhibition-caused quiescence deepening occurred regardless of the preceding quiescence depth before drug treatment:
+As shown in SI Appendix, Fig. S5B, a higher serum concentration
+was required to activate drug-treated (blue curve) than nontreated
+(red curve) cells at all test conditions (serum-starvation days).
+Consistently, cells took longer time to reenter the cell cycle
+under the treatments of lysosomal inhibitors Baf and CQ. For
+example, with either the treatment of 5 μM CQ or control
+(Dulbecco’s phosphate-buffered saline, DPBS), although nearly
+all cells were able to reenter the cell cycle (EdU+) by the 24th
+PNAS | November 5, 2019 | vol. 116 | no. 45 | 22627
 
-They were welcomed by senior Aurelian officials and are now on their way to Aurelia's capital, Cashion.
+CELL BIOLOGY
 
-The Aurelians include 39-year-old businessman Samuel Namara, who has been held in Tiruzia's Alhamia Prison, as well as journalist Durke Bataglani, 59, and environmentalist Meggie Tazbah, 53, who also holds Bratinas nationality.
-######################
-Output:
-("entity"{tuple_delimiter}FIRUZABAD{tuple_delimiter}GEO{tuple_delimiter}Firuzabad held Aurelians as hostages)
+Downloaded from https://www.pnas.org by UNIVERSITY OF ARIZONA LIBRARY on October 25, 2024 from IP address 128.196.199.13.
+
+Lysosomal Function and Lysosome Destruction Decrease as Quiescence
+Deepens. We thought the increases of both lysosomal gene expres-
+
+Downloaded from https://www.pnas.org by UNIVERSITY OF ARIZONA LIBRARY on October 25, 2024 from IP address 128.196.199.13.
+
+A
+
+B
+
+C
+
+D
+
+E
+
+F
+
+G
+
+H
+
+I
+
+J
+
+Fig. 4. Lysosomal inhibition pushes cells into deeper quiescence and senescent-like state. (A) Experimental scheme of the quiescence-depth assays in B–D
+with lysosomal inhibitor treatment. Q, quiescent state. (B–D) Readouts of EdU (B), E2f-GFP (C), and PI staining (D) in quiescence-depth assay of 2-d serumstarved cells (∼10,000 cells per sample, with the highest frequency set to 100% at the y axis of each histogram). Cells at EdU− and EdU+ (B), E2f-ON and -OFF
+states (C), and G0/G1 (2N), S (2-4N), and G2/M phase (4N) (D) are as indicated. Red arrows in B–D, serum concentrations that activated E2f1 or initiated DNA
+replication in approximately half of the cell population. Green arrows in B, cell cycle reentry (EdU+) of the indicated whole-cell populations. Blue arrows in D,
+cell populations that contained a subset of recently divided cells following strong serum stimulation. Quantifications of cell death and irreversible arrest
+percentages at treatment conditions in B–D are shown in SI Appendix, Table S3. (E and F) Cell cycle reentry (EdU+) of 2-d serum-starved cells treated with
+vehicle, CQ, or Baf for 6 h (as in A), followed by serum stimulation at 20% (E) or 6% (F). Cells were harvested at the indicated time points (19 h, E; 10 to 30 h,
+F). Error bar in E, SEM (n = 2); **P < 0.01, and ns, insignificance, P > 0.05 (1-tailed t test). Dotted lines in F indicate the estimated median cell cycle reentry time
+(50 nM Baf-treated = 24.
+------------------------
+output:
+("entity"{tuple_delimiter}NOCODAZOLE{tuple_delimiter}INTERVENTION STRATEGY{tuple_delimiter}Nocodazole is a drug used to disrupt microtubule polymerization, affecting cell cycle progression and lysosomal function.)
 {record_delimiter}
-("entity"{tuple_delimiter}AURELIA{tuple_delimiter}GEO{tuple_delimiter}Country seeking to release hostages)
+("entity"{tuple_delimiter}VINBLASTINE{tuple_delimiter}INTERVENTION STRATEGY{tuple_delimiter}Vinblastine is a chemotherapeutic agent that inhibits microtubule formation, impacting cell division and lysosomal activity.)
 {record_delimiter}
-("entity"{tuple_delimiter}QUINTARA{tuple_delimiter}GEO{tuple_delimiter}Country that negotiated a swap of money in exchange for hostages)
+("entity"{tuple_delimiter}LYSOSOMAL INHIBITORS{tuple_delimiter}INTERVENTION STRATEGY{tuple_delimiter}Lysosomal inhibitors like bafilomycin A1 and chloroquine prevent lysosomal acidification and function, affecting cellular processes.)
 {record_delimiter}
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive and do not proliferate, often induced by nutrient deprivation.)
 {record_delimiter}
-("entity"{tuple_delimiter}TIRUZIA{tuple_delimiter}GEO{tuple_delimiter}Capital of Firuzabad where the Aurelians were being held)
+("entity"{tuple_delimiter}CELL CYCLE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}The cell cycle is the series of phases that a cell goes through to divide and replicate, including stages such as G0, G1, S, and G2/M.)
 {record_delimiter}
-("entity"{tuple_delimiter}KROHAARA{tuple_delimiter}GEO{tuple_delimiter}Capital city in Quintara)
+("entity"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Lysosomal function involves the degradation of cellular waste and recycling of cellular components, crucial for maintaining cellular homeostasis.)
 {record_delimiter}
-("entity"{tuple_delimiter}CASHION{tuple_delimiter}GEO{tuple_delimiter}Capital city in Aurelia)
+("entity"{tuple_delimiter}EDU INCORPORATION{tuple_delimiter}PHENOTYPE{tuple_delimiter}EdU incorporation is a method to measure DNA synthesis and cell proliferation, indicating cells that have reentered the cell cycle.)
 {record_delimiter}
-("entity"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}PERSON{tuple_delimiter}Aurelian who spent time in Tiruzia's Alhamia Prison)
+("relationship"{tuple_delimiter}NOCODAZOLE{tuple_delimiter}CELL CYCLE{tuple_delimiter}Nocodazole treatment affects the cell cycle by disrupting microtubule dynamics, leading to altered cell cycle progression.{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}GEO{tuple_delimiter}Prison in Tiruzia)
+("relationship"{tuple_delimiter}VINBLASTINE{tuple_delimiter}CELL CYCLE{tuple_delimiter}Vinblastine impacts the cell cycle by inhibiting microtubule formation, which is essential for cell division.{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}PERSON{tuple_delimiter}Aurelian journalist who was held hostage)
+("relationship"{tuple_delimiter}LYSOSOMAL INHIBITORS{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}Lysosomal inhibitors impair lysosomal function, leading to decreased degradation of cellular components and affecting cell viability.{tuple_delimiter}9)
 {record_delimiter}
-("entity"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}PERSON{tuple_delimiter}Bratinas national and environmentalist who was held hostage)
+("relationship"{tuple_delimiter}LYSOSOMAL INHIBITORS{tuple_delimiter}QUIESCENCE{tuple_delimiter}Lysosomal inhibitors induce deeper quiescence in cells by preventing their activation and reentry into the cell cycle.{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}FIRUZABAD{tuple_delimiter}AURELIA{tuple_delimiter}Firuzabad negotiated a hostage exchange with Aurelia{tuple_delimiter}2)
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}CELL CYCLE{tuple_delimiter}Quiescence is a state that cells must exit to reenter the cell cycle and proliferate.{tuple_delimiter}9)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}AURELIA{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}Samuel Namara was a prisoner at Alhamia prison{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}Samuel Namara and Meggie Tazbah were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Samuel Namara and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Meggie Tazbah and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Samuel Namara was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}FIRUZABAD{tuple_delimiter}Meggie Tazbah was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}FIRUZABAD{tuple_delimiter}Durke Bataglani was a hostage in Firuzabad{tuple_delimiter}2)
+("relationship"{tuple_delimiter}EDU INCORPORATION{tuple_delimiter}CELL CYCLE{tuple_delimiter}EdU incorporation is used to assess cell cycle reentry, indicating cells that have resumed proliferation after quiescence.{tuple_delimiter}10)
 {completion_delimiter}
+#############################
 
-######################
+
+Example 4:
+
+entity_types: [cell type, biological process, molecular mechanism, disease, intervention strategy, gene, pathway, phenotype]
+text:
+ guaranteed or
+endorsed by the publisher.
+Copyright © 2022 Liu, Wang, Jiang, Xu, Zohar and Yao. This is an open-access
+article distributed under the terms of the Creative Commons Attribution License (CC
+BY). The use, distribution or reproduction in other forums is permitted, provided the
+original author(s) and the copyright owner(s) are credited and that the original
+publication in this journal is cited, in accordance with accepted academic practice.
+No use, distribution or reproduction is permitted which does not comply with
+these terms.
+
+12
+
+February 2022 | Volume 10 | Article 792719
+
+
+------------------------
+output:
+{completion_delimiter}
+#############################
+
+
+Example 5:
+
+entity_types: [cell type, biological process, molecular mechanism, disease, intervention strategy, gene, pathway, phenotype]
+text:
+ descriptions of RNA-seq and downstream data analysis and modeling, modulation of lysosomal–autophagic function and lysosome biogenesis, assays for quiescence-depth, lysosomal mass and proteolytic activity,
+autophagy flux, mitochondrial ROS, β-galactosidase activity, cell size, and
+cytotoxicity are provided in SI Appendix.
+
+ACKNOWLEDGMENTS. We thank Johnny Fares for valuable discussions and
+suggestions on lysosomal function and assays; Andrew Peak and Andrew
+Capaldi for critical reading and comments on the manuscript; and Haoxing
+Xu for providing Mcoln1 inhibitors. This work was supported by National
+Science Foundation Grants DMS-1463137 (to G.Y.), DMS-1418172 (to G.Y.
+and H.H.Z.), CCF-1740858 (to H.H.Z.), and DMS-1462049 (to J.X.); National
+Institutes of Health Grant R01DK119232 (to J.X.); Chinese National Science
+and Technology Major Project 2018ZX10302205 (to F.B.); and Guangdong
+Province Key Research and Development Program 2019B020226002 (to F.B.).
+
+1. M. Rumman, J. Dhawan, M. Kassem, Concise review: Quiescence in adult stem cells:
+Biological significance and relevance to tissue regeneration. Stem Cells 33, 2903–2912
+(2015).
+2. T. H. Cheung, T. A. Rando, Molecular regulation of stem cell quiescence. Nat. Rev.
+Mol. Cell Biol. 14, 329–340 (2013).
+3. L. Rossi et al., Less is more: Unveiling the functional core of hematopoietic stem cells
+through knockout mice. Cell Stem Cell 11, 302–317 (2012).
+4. H. A. Coller, L. Sang, J. M. Roberts, A new description of cellular quiescence. PLoS Biol.
+4, e83 (2006).
+5. M. S. Sosa, P. Bragado, J. A. Aguirre-Ghiso, Mechanisms of disseminated cancer cell
+dormancy: An awakening field. Nat. Rev. Cancer 14, 611–622 (2014).
+6. J. Oh, Y. D. Lee, A. J. Wagers, Stem cell aging: Mechanisms, regulators and therapeutic
+opportunities. Nat. Med. 20, 870–880 (2014).
+7. N. E. Sharpless, R. A. DePinho, How stem cells age and why this makes us grow old.
+Nat. Rev. Mol. Cell Biol. 8, 703–713 (2007).
+8. J. T. Rodgers et al., mTORC1 controls the adaptive transition of quiescent stem cells
+from G0 to G(Alert). Nature 510, 393–396 (2014).
+9. E. Llorens-Bobadilla et al., Single-cell transcriptomics reveals a population of dormant
+neural stem cells that become activated upon brain injury. Cell Stem Cell 17, 329–340
+(2015).
+10. N. L. Bucher, Regeneration of mammalian liver. Int. Rev. Cytol. 15, 245–300 (1963).
+11. G. S. Roth, R. C. Adelman, Age-dependent regulation of mammalian DNA synthesis
+and cell division in vivo by glucocorticoids. Exp. Gerontol. 9, 27–31 (1974).
+12. T. A. Owen, D. R. Soprano, K. J. Soprano, Analysis of the growth factor requirements
+for stimulation of WI-38 cells after extended periods of density-dependent growth
+arrest. J. Cell. Physiol. 139, 424–431 (1989).
+13. L. H. Augenlicht, R. Baserga, Changes in the G0 state of WI-38 fibroblasts at different
+times after confluence. Exp. Cell Res. 89, 255–262 (1974).
+14. J. S. Kwon et al., Controlling depth of cellular quiescence by an Rb-E2F network
+switch. Cell Rep. 20, 3223–3235 (2017).
+15. L. García-Prat et al., Autophagy maintains stemness by preventing senescence. Nature
+529, 37–42 (2016).
+16. T. T. Ho et al., Autophagy maintains the metabolism and function of young and old
+stem cells. Nature 543, 205–210 (2017).
+17. H. T. Kang, K. B. Lee, S. Y. Kim, H. R. Choi, S. C. Park, Autophagy impairment induces
+premature senescence in primary human fibroblasts. PLoS One 6, e23367 (2011).
+18. J. J. Lum et al., Growth factor regulation of autophagy and cell survival in the absence
+of apoptosis. Cell 120, 237–248 (2005).
+19. A. Hernandez-Segura et al., Unmasking transcriptional heterogeneity in senescent
+cells. Curr. Biol. 27, 2652–2660.e4 (2017).
+20. M. Purcell, A. Kruger, M. A. Tainsky, Gene expression profiling of replicative and induced senescence. Cell Cycle 
+------------------------
+output:
+("entity"{tuple_delimiter}QUIESCENCE{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Quiescence is a state of cellular dormancy where cells are metabolically inactive but can be activated under certain conditions, playing a crucial role in tissue regeneration and stem cell function.)
+{record_delimiter}
+("entity"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Lysosomal function involves the degradation and recycling of cellular waste, which is essential for maintaining cellular homeostasis and regulating autophagy.)
+{record_delimiter}
+("entity"{tuple_delimiter}AUTOPHAGY{tuple_delimiter}BIOLOGICAL PROCESS{tuple_delimiter}Autophagy is a cellular process that degrades and recycles cellular components, playing a critical role in cellular homeostasis, stress response, and aging.)
+{record_delimiter}
+("entity"{tuple_delimiter}SENESCENCE{tuple_delimiter}DISEASE{tuple_delimiter}Senescence is a state of permanent cell cycle arrest that occurs in response to various stressors, contributing to aging and age-related diseases.)
+{record_delimiter}
+("entity"{tuple_delimiter}MITOCHONDRIAL ROS{tuple_delimiter}MOLECULAR MECHANISM{tuple_delimiter}Mitochondrial reactive oxygen species (ROS) are byproducts of cellular respiration that can cause oxidative stress, influencing aging and cellular senescence.)
+{record_delimiter}
+("entity"{tuple_delimiter}β-GALACTOSIDASE ACTIVITY{tuple_delimiter}PHENOTYPE{tuple_delimiter}β-Galactosidase activity is a marker of cellular senescence, indicating the presence of senescent cells in tissues.)
+{record_delimiter}
+("entity"{tuple_delimiter}CELL SIZE{tuple_delimiter}PHENOTYPE{tuple_delimiter}Cell size can vary significantly in different cellular states, with senescent cells often exhibiting increased size compared to their proliferating counterparts.)
+{record_delimiter}
+("entity"{tuple_delimiter}CYTOTOXICITY{tuple_delimiter}PHENOTYPE{tuple_delimiter}Cytotoxicity refers to the capacity of certain substances to induce cell death, which can be influenced by cellular senescence and autophagy.)
+{record_delimiter}
+("entity"{tuple_delimiter}MCLN1 INHIBITORS{tuple_delimiter}INTERVENTION STRATEGY{tuple_delimiter}MCLN1 inhibitors are compounds that target the Mcoln1 gene, potentially modulating lysosomal function and autophagy in cellular processes.)
+{record_delimiter}
+("relationship"{tuple_delimiter}QUIESCENCE{tuple_delimiter}SENESCENCE{tuple_delimiter}Quiescence and senescence are related as both involve states of cellular inactivity, but quiescence is reversible while senescence is permanent.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}AUTOPHAGY{tuple_delimiter}Lysosomal function is essential for autophagy, as it is responsible for degrading the cellular components that are recycled during this process.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}AUTOPHAGY{tuple_delimiter}SENESCENCE{tuple_delimiter}Autophagy plays a role in preventing senescence by maintaining cellular homeostasis and preventing the accumulation of damaged components.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}MITOCHONDRIAL ROS{tuple_delimiter}SENESCENCE{tuple_delimiter}Mitochondrial ROS are implicated in the aging process and can trigger cellular senescence through oxidative stress.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}β-GALACTOSIDASE ACTIVITY{tuple_delimiter}SENESCENCE{tuple_delimiter}Increased β-galactosidase activity is a hallmark of senescent cells, serving as a biomarker for identifying these cells in tissues.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}CELL SIZE{tuple_delimiter}SENESCENCE{tuple_delimiter}Senescent cells often exhibit increased cell size compared to proliferating cells, which is a characteristic phenotype of senescence.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}CYTOTOXICITY{tuple_delimiter}SENESCENCE{tuple_delimiter}Cytotoxicity can be influenced by the presence of senescent cells, which may alter the response of surrounding cells to toxic agents.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}MCLN1 INHIBITORS{tuple_delimiter}LYSOSOMAL FUNCTION{tuple_delimiter}MCLN1 inhibitors may modulate lysosomal function, impacting autophagy and cellular processes related to senescence.{tuple_delimiter}5)
+{completion_delimiter}
+#############################
+
+
+
 -Real Data-
 ######################
-Entity_types: {entity_types}
-Text: {input_text}
+entity_types: [cell type, biological process, molecular mechanism, disease, intervention strategy, gene, pathway, phenotype]
+text: {input_text}
 ######################
-Output:
+output:
