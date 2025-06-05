@@ -123,7 +123,7 @@ umap:
 
 snapshots:
   graphml: true
-  embeddings: false
+  embeddings: true
 
 ### Query settings ###
 ## The prompt locations are required here, but each search method has a number of optional knobs that can be tuned.
