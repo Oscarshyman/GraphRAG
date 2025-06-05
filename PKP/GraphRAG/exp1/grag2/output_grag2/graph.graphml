@@ -6,21 +6,20 @@
     <node id="LYSOSOMAL FUNCTION" />
     <node id="GENE SIGNATURE" />
     <node id="CELL PROLIFERATION" />
-    <node id="RAT EMBRYONIC FIBROBLASTS (REF)" />
-    <node id="TISSUE HOMEOSTASIS" />
-    <node id="G0 STATE" />
+    <node id="DORMANCY" />
+    <node id="CELL HOMEOSTASIS" />
+    <node id="SERUM STARVATION" />
+    <node id="TRANSCRIPTOME CHANGES" />
     <node id="DEEP QUIESCENCE" />
     <node id="OXIDATIVE STRESS" />
-    <node id="AGING" />
     <node id="AUTOPHAGY" />
-    <node id="CELL CYCLE REENTRY" />
+    <node id="TISSUE REPAIR" />
+    <node id="E2F1" />
     <node id="REACTIVE OXYGEN SPECIES (ROS)" />
     <node id="SHALLOW QUIESCENCE" />
     <node id="LYSOSOMAL MASS" />
-    <node id="E2F1" />
-    <node id="RB-E2F SWITCH" />
-    <node id="RNA-SEQUENCING (RNA-SEQ)" />
-    <node id="LYSOSOMAL GENE EXPRESSION" />
+    <node id="LYSOSOMAL BIOGENESIS" />
+    <node id="CELL CYCLE REENTRY" />
     <node id="CDK2" />
     <node id="CDK4" />
     <node id="RB1" />
@@ -28,188 +27,199 @@
     <node id="CDKN1B (P27KIP1)" />
     <node id="SERUM STIMULATION" />
     <node id="EDU INCORPORATION" />
+    <node id="RNA-SEQUENCING (RNA-SEQ)" />
+    <node id="LYSOSOMAL GENE EXPRESSION" />
     <node id="CDKN2A (P16INK4A)" />
-    <node id="SERUM STARVATION" />
     <node id="LYSOTRACKER INTENSITY" />
-    <node id="MTOR" />
-    <node id="CELLULAR ADAPTATION" />
+    <node id="MAMMALIAN TARGET OF RAPAMYCIN (MTOR)" />
     <node id="RNA-SEQ ANALYSIS" />
-    <node id="HEAT MAP" />
-    <node id="K-MEANS CLUSTERING" />
-    <node id="DIFFERENTIALLY EXPRESSED GENES" />
-    <node id="LYSOSOMAL BIOGENESIS" />
     <node id="LYSOPHAGY" />
     <node id="AUTOPHAGY FLUX" />
     <node id="NOCODAZOLE" />
     <node id="VINBLASTINE" />
     <node id="CELL CYCLE" />
     <node id="LYSOSOMAL INHIBITORS" />
-    <node id="QUESCENCE" />
-    <node id="CQ (CHLOROQUINE)" />
-    <node id="BAF (BAFILOMYCIN A1)" />
-    <node id="MIT/TFE FAMILY" />
+    <node id="BAFILOMYCIN A1" />
+    <node id="CHLOROQUINE (CQ)" />
+    <node id="NUTRIENT STARVATION" />
     <node id="&#914;-GALACTOSIDASE ACTIVITY" />
     <node id="CELL SIZE" />
-    <node id="NUTRIENT STARVATION" />
     <node id="AMPK" />
-    <node id="ANTIOXIDATION" />
-    <node id="QUESCENCE DEPTH" />
+    <node id="MTOR" />
+    <node id="MIT/TFE FAMILY" />
+    <node id="REF CELLS" />
+    <node id="ANTIOXIDANT" />
     <node id="2-MERCAPTOETHANOL (&#914;ME)" />
     <node id="TERT-BUTYL HYDROPEROXIDE (TBHP)" />
+    <node id="QUESCENCE DEPTH" />
     <node id="MITF" />
-    <node id="TFE3" />
-    <node id="EDU ASSAY" />
-    <node id="INTRACELLULAR ROS" />
     <node id="MITOSOX" />
+    <node id="EDU ASSAY" />
     <node id="MITOCHONDRIAL ROS" />
     <node id="TBHP" />
-    <node id="BAF" />
-    <node id="CQ" />
+    <node id="BAFILOMYCIN A1 (BAF)" />
     <node id="ATP PRODUCTION" />
-    <node id="QDS" />
-    <node id="QUESCENCE-DEPTH SCORE (QDS)" />
+    <node id="QDS (QUIESCENCE DEPTH SCORE)" />
+    <node id="AGING" />
     <node id="HEMATOPOIETIC STEM CELLS (HSCS)" />
+    <node id="QDS" />
     <node id="DORMANT NEURAL STEM CELLS (NSCS)" />
     <node id="PRIMED NEURAL STEM CELLS (NSCS)" />
-    <node id="ADRIAMYCIN" />
-    <node id="5-AZA-2-DEOXYCYTIDINE (5-AZA)" />
-    <node id="HYDROGEN PEROXIDE (H2O2)" />
     <node id="SENESCENCE CORE SIGNATURE GENES" />
-    <node id="CELL LINES" />
-    <node id="RNA-SEQ" />
-    <node id="LYSOSOMAL DESTRUCTION" />
+    <node id="ADRIAMYCIN" />
+    <node id="5-AZA" />
+    <node id="HYDROGEN PEROXIDE (H2O2)" />
     <node id="MCOLN1" />
-    <node id="REF CELLS" />
     <node id="QUESCENCE DEEPENING" />
     <node id="MTORC1" />
     <node id="CANCER PHYSIOLOGY" />
     <node id="GOLGI NETWORK" />
+    <node id="SENESCENT CELLS" />
+    <node id="AGED CELLS" />
     <node id="LYSOSOMAL GENES" />
+    <node id="QUESCENCE" />
     <node id="DNA DAMAGE" />
-    <node id="AGING TISSUES" />
-    <node id="5-AZA" />
-    <node id="H2O2" />
-    <node id="PROTEIN AGGREGATES" />
-    <node id="LYSOSOMAL&#8211;AUTOPHAGY ACTIVITIES" />
-    <node id="E2F1 PROMOTER-DRIVEN DESTABILIZED EGFP" />
-    <node id="NSCS" />
-    <node id="MUSCLE STEM CELLS" />
+    <node id="LYSOSOME&#8211;AUTOPHAGY ACTIVITIES" />
+    <node id="CELL LINES" />
     <node id="MCLN1 INHIBITORS" />
     <node id="CYTOTOXICITY" />
     <node id="IGFBP-3" />
+    <node id="H2O2" />
     <node id="QUESCENT NEURAL STEM CELLS" />
+    <node id="RNA-SEQ" />
+    <node id="SENESCENCE-ASSOCIATED GENES" />
     <node id="CELL DEATH" />
     <node id="TELOMERE SHORTENING" />
-    <node id="FIBROBLASTS" />
+    <node id="DAMAGE RESPONSE" />
+    <node id="PRIMARY HUMAN FIBROBLASTS" />
+    <node id="SINGLE-CELL RNA SEQUENCING" />
+    <node id="CELLULAR HETEROGENEITY" />
     <node id="RB PATHWAY" />
     <node id="LYSOSOME&#8211;AUTOPHAGY PATHWAY" />
+    <node id="DNA SYNTHESIS" />
+    <node id="HEPATECTOMY" />
     <node id="ISOPROTERENOL STIMULATION" />
+    <node id="MITOCHONDRIAL BIOGENESIS" />
     <node id="P53 PATHWAY" />
+    <node id="QUIESCENT NEURAL STEM CELLS (NSCS)" />
+    <node id="AUTOPHAGY CAPACITY" />
+    <node id="PROTEOLYTIC ACTIVITIES" />
     <node id="AGE-RELATED DECLINE" />
-    <node id="PARTIAL HEPATECTOMY" />
+    <node id="CELLULAR CLEARANCE" />
+    <node id="LYSOSOMES" />
     <node id="HEMATOPOIETIC STEM CELLS" />
-    <node id="TSC/MTORC1" />
+    <node id="TSC-MTOR" />
+    <node id="ATP" />
     <node id="TRANSCRIPTION FACTOR EB (TFEB)" />
     <node id="REACTIVE OXYGEN SPECIES" />
-    <node id="CHK2" />
-    <node id="AUTOPHAGY INHIBITION" />
-    <node id="DORMANT BREAST CANCER CELLS" />
+    <node id="DNA DAMAGE CHECKPOINT" />
+    <node id="AUTOPHAGY IN PANCREATIC CANCER" />
+    <node id="PROLIFERATION" />
     <node id="REPLICATIVE SENESCENCE" />
-    <node id="AGE-RELATED DISEASES" />
+    <node id="CELLULAR SENESCENCE" />
+    <node id="RB" />
+    <node id="P53" />
+    <node id="MELANOCYTE" />
+    <node id="SIGNALING PATHWAYS" />
+    <node id="AGE-RELATED DISEASE" />
+    <node id="TUMOR SUPPRESSOR GENES" />
+    <node id="CELL GROWTH" />
+    <node id="CELLULAR REGENERATION" />
     <node id="MITOGEN WITHDRAWAL" />
     <node id="CONTACT INHIBITION" />
     <node id="DORMANCY STATE CONTINUUM" />
-    <node id="RB&#8211;E2F SWITCH THRESHOLD" />
-    <node id="QUIESCENCE-ORIGIN SENESCENCE" />
+    <node id="TISSUE HOMEOSTASIS" />
+    <node id="QUISCENCE-ORIGIN SENESCENCE" />
     <node id="SENESCENCE-ASSOCIATED SECRETORY PHENOTYPE (SASP)" />
-    <node id="MACROMOLECULAR DAMAGE" />
     <node id="TELOMERE EROSION" />
+    <node id="CELLULAR AGING" />
     <node id="GEROCONVERSION" />
     <node id="LYSOSOMAL AUTOPHAGY" />
+    <node id="CELL DORMANCY" />
+    <node id="QUIESCENCE DEPTH" />
     <node id="P16INK4A" />
     <node id="HUMAN HEMATOPOIETIC STEM PROGENITOR CELLS (HSPCS)" />
     <node id="QUIESCENT MUSCLE STEM CELLS (MUSCS)" />
     <node id="QUIESCENCE DEPTH SCORE (QDS)" />
+    <node id="CELL CYCLE ARREST" />
+    <node id="CELLULAR HYPERTROPHY" />
+    <node id="STRESS" />
+    <node id="TRANSCRIPTOMIC CHANGES" />
+    <node id="EPIGENETIC DEREPRESSION" />
+    <node id="SYSTEMIC FACTORS" />
     <node id="GERIATRIC MICE" />
     <node id="LYSOSOME&#8211;AUTOPHAGY AXIS" />
-    <node id="GERIATRIC MUSCLE STEM CELLS (MUSCS)" />
     <node id="NEURAL STEM CELLS (NSCS)" />
+    <node id="CELL CYCLE WITHDRAWAL" />
+    <node id="GERIATRIC MUSCLE STEM CELLS (MUSCS)" />
     <node id="SENESCENCE CORE SIGNATURE" />
     <node id="SENESCENCE BIOMARKERS" />
+    <node id="PROTEIN AGGREGATES" />
     <node id="RB&#8211;E2F SWITCH" />
     <node id="LYSOSOMAL&#8211;AUTOPHAGY AXIS" />
     <node id="P53&#8211;P21" />
     <node id="P16" />
-    <node id="PROLIFERATION-ORIGIN SENESCENCE" />
-    <node id="GERIATRIC PHENOTYPE" />
     <node id="EPIGENETIC REGULATION" />
     <node id="CHROMATIN CONDENSATION" />
     <node id="HETEROGENEITY" />
-    <node id="PROTEIN AGGREGATION" />
-    <node id="MAPK PATHWAY" />
-    <node id="QUIESCENCE DEPTH" />
-    <node id="PROTEOME" />
-    <node id="CELLULAR AGING" />
-    <node id="STEM CELL QUIESCENCE" />
-    <node id="QUIESCENT FIBROBLASTS" />
-    <node id="REGENERATIVE MEDICINE" />
+    <node id="GERICONVERSION" />
+    <node id="QUESCENCE-ORIGIN SENESCENCE" />
     <node id="MOLECULAR MARKERS" />
-    <node id="CELLULAR MECHANISMS" />
+    <node id="CELL TYPE-SPECIFIC MECHANISMS" />
+    <node id="STEM CELL QUIESCENCE" />
+    <node id="REGENERATIVE MEDICINE" />
     <node id="CELLULAR QUIESCENCE" />
-    <node id="CELLULAR SENESCENCE" />
+    <node id="HES1" />
+    <node id="MUSCLE STEM CELLS" />
     <node id="WI-38 FIBROBLASTS" />
-    <node id="DENSITY-DEPENDENT GROWTH ARREST" />
-    <node id="LYMPHOCYTES" />
-    <node id="HUMAN HEMATOPOIETIC STEM/PROGENITOR CELLS" />
-    <node id="P2Y(1)(4) RECEPTOR" />
-    <node id="AGE-DEPENDENT REGULATION" />
-    <node id="CELL CYCLE ARREST" />
-    <node id="SOMATIC STEM CELLS" />
+    <node id="CELL CYCLE EXIT" />
+    <node id="QUIESCENCE DEEPENING" />
+    <node id="NEURAL STEM CELLS" />
+    <node id="CHROMATIN" />
     <node id="INSULIN SIGNALING" />
     <node id="HISTONE CODE" />
-    <node id="3T3 CELLS" />
+    <node id="METABOLIC ADAPTATIONS" />
     <node id="CELL DORMANCY PLASTICITY" />
-    <node id="CELL CYCLE COMMITMENT" />
-    <node id="DORMANT CANCER CELLS" />
-    <node id="CELL CYCLE VARIABILITY" />
-    <node id="P27" />
-    <node id="ENDOTHELIAL CELL FLOW-MEDIATED QUIESCENCE" />
-    <node id="TRANSCRIPTIONAL HETEROGENEITY" />
-    <node id="GENOMIC HALLMARKS" />
-    <node id="G0" />
+    <node id="3T3 CELLS" />
     <node id="G(ALERT)" />
+    <node id="DORMANT CANCER CELLS" />
+    <node id="G0 CELL CYCLE ARREST" />
+    <node id="ENDOTHELIAL CELL FLOW-MEDIATED QUIESCENCE" />
+    <node id="P27" />
+    <node id="CELL CYCLE COMMITMENT" />
+    <node id="TRANSCRIPTIONAL HETEROGENEITY" />
+    <node id="G0" />
     <node id="DORMANT NEURAL STEM CELLS" />
     <node id="HGFA" />
     <node id="FULLY REDUCED HMGB1" />
+    <node id="GENOMIC HALLMARKS" />
     <node id="CELL CYCLE INHIBITOR P27" />
     <node id="APC/C" />
-    <node id="LENTIVIRAL SUPPRESSION OF P53" />
+    <node id="APC/C(CDH1)" />
+    <node id="CELL-CYCLE WITHDRAWAL" />
     <node id="LYSOSOME ACTIVATION" />
-    <node id="QUIESCENT NEURAL STEM CELLS" />
     <node id="FASTING" />
     <node id="E2F PATHWAY" />
     <node id="RB PROTEIN" />
-    <node id="RETINOBLASTOMA GENE" />
     <node id="DEEP QUIESCENT STATE" />
-    <node id="CELL CYCLE RE-ENTRY" />
-    <node id="QUIESCENT STATE" />
-    <node id="CELL CYCLE ENTRY" />
-    <node id="P53" />
+    <node id="KETONE BODY SIGNALING" />
+    <node id="EMI1" />
     <node id="CELL CYCLE INHIBITORS" />
     <node id="MOLECULAR ARCHITECTURE OF CELL CYCLE ARREST" />
     <node id="FLUCTUATIONS IN P53 SIGNALING" />
     <node id="RAPAMYCIN" />
-    <node id="RB" />
     <node id="E2F TARGET GENES" />
     <node id="EPIGENETIC REGULATION OF CELLULAR SENESCENCE" />
     <node id="HISTONE MODIFICATIONS" />
-    <node id="RB-E2F BISTABLE SWITCH" />
-    <node id="ADULT STEM CELLS" />
-    <node id="PROGENITOR CELLS" />
     <node id="EXTRACELLULAR FLUID FLOW" />
     <node id="SHEAR STRESS" />
     <node id="EXTRACELLULAR FACTORS" />
+    <node id="RB-E2F BISTABLE SWITCH" />
+    <node id="MICROENVIRONMENT" />
+    <node id="HYDRODYNAMIC SHEAR STRESS" />
     <node id="MICROFLUIDIC SYSTEM" />
+    <node id="MEDIUM FLOW" />
+    <node id="MATHEMATICAL MODEL" />
     <node id="HEPATOCYTES" />
     <node id="MICROCHANNEL" />
     <node id="CELL CULTURE" />
@@ -217,81 +227,76 @@
     <node id="FIBRONECTIN" />
     <node id="REF/E23 CELLS" />
     <node id="MICROFLUIDIC DEVICE" />
+    <node id="BOVINE GROWTH SERUM (BGS)" />
     <node id="GROWTH MEDIUM" />
     <node id="DEXTRAN" />
+    <node id="OXYGEN PLASMA TREATMENT" />
     <node id="ETHANOL" />
     <node id="UV IRRADIATION" />
-    <node id="BOVINE GROWTH SERUM (BGS)" />
-    <node id="OXYGEN PLASMA TREATMENT" />
     <node id="E2F" />
     <node id="SERUM STIMULATION MEDIUM" />
+    <node id="CELL SUSPENSION" />
     <node id="MICROFLUIDIC CHANNEL" />
     <node id="SERUM-STARVATION MEDIUM" />
-    <node id="CELL MORPHOLOGIES" />
-    <node id="SERUM CONCENTRATION" />
     <node id="E2F-GFP SIGNALS" />
     <node id="FLOW CYTOMETER" />
     <node id="E2F-GFP REPORTER" />
     <node id="E2F-OFF STATE" />
     <node id="FLOW CYTOMETRY" />
+    <node id="SERUM CONCENTRATION" />
     <node id="E2F-ON STATE" />
     <node id="E2F-GFP" />
     <node id="MICROFLUIDIC DEVICES" />
-    <node id="E2F TRANSCRIPTION FACTORS" />
     <node id="MECHANICAL SHEAR STRESS" />
     <node id="EXTRACELLULAR FACTOR REPLACEMENT" />
     <node id="FLUID FLOW" />
-    <node id="FRESH-MEDIUM" />
-    <node id="RECYCLED-MEDIUM" />
-    <node id="E2F-ON%" />
+    <node id="NUTRIENTS" />
     <node id="RB-E2F PATHWAY" />
-    <node id="EXTRACELLULAR MATRIX (ECM)" />
-    <node id="E2F-ACTIVATION THRESHOLD" />
-    <node id="QUANTITATIVE MODEL" />
-    <node id="HILL FUNCTION" />
-    <node id="SERUM GROWTH FACTORS" />
-    <node id="CELL MORPHOLOGY" />
-    <node id="CELL ADHESION" />
-    <node id="CELL METABOLISM" />
-    <node id="MEDIUM VISCOSITY" />
+    <node id="SERUM-STIMULATION" />
     <node id="SERUM" />
+    <node id="E2F-ACTIVATION THRESHOLD" />
+    <node id="E2F-ON%" />
+    <node id="SERUM GROWTH FACTORS" />
+    <node id="CELL POPULATION" />
+    <node id="CELL MORPHOLOGY" />
+    <node id="MEDIUM VISCOSITY" />
     <node id="CELL ATTACHMENT" />
+    <node id="EDU+" />
+    <node id="NUTRIENT AVAILABILITY" />
+    <node id="SERUM-STARVATION" />
     <node id="MEDIUM FLOW RATE" />
-    <node id="NEURAL STEM CELLS" />
-    <node id="LYSOSOMAL DIMMER SWITCH" />
-    <node id="DORMANCY PLASTICITY" />
-    <node id="GROWTH FACTORS" />
-    <node id="CELL DENSITY" />
-    <node id="MECHANICAL INJURY" />
+    <node id="BRAIN INJURY" />
     <node id="SINGLE-CELL TRANSCRIPTOMICS" />
+    <node id="WI-38 CELLS" />
+    <node id="CELL-CYCLE REGULATION" />
+    <node id="G0 STATE" />
+    <node id="MECHANICAL INJURY" />
+    <node id="FIBROBLAST ALIGNMENT" />
+    <node id="STEM CELL SELF-RENEWAL" />
     <node id="CELL CYCLE REGULATION" />
-    <node id="INTIMAL THICKENING" />
-    <node id="PROLIFERATION" />
-    <node id="CARDIAC FIBROBLAST" />
+    <node id="TISSUE REGENERATION" />
+    <node id="DENSITY-DEPENDENT GROWTH ARREST" />
+    <node id="LYSOSOMAL DIMMER SWITCH" />
     <node id="INTERSTITIAL FLUID FLOW" />
+    <node id="CARDIAC FIBROBLAST ACTIVATION" />
     <node id="AT1R" />
     <node id="TGF-B1" />
     <node id="VASCULAR ENDOTHELIAL CELLS" />
-    <node id="CYCLOPS" />
+    <node id="FLK-1" />
     <node id="VASCULAR SMOOTH MUSCLE CELLS" />
     <node id="ANGIOGENESIS" />
-    <node id="INTERSTITIAL FLOW" />
     <node id="FLUID SHEAR STRESS" />
-    <node id="HES1" />
-    <node id="ENDOTHELIAL CELLS" />
-    <node id="INFLAMMATORY MARKER EXPRESSION" />
-    <node id="FLUID FLOW MECHANOTRANSDUCTION" />
-    <node id="CELL VIABILITY" />
-    <node id="MOUSE EMBRYONIC STEM CELLS" />
-    <node id="G ALERT" />
+    <node id="INTERSTITIAL FLOW" />
     <node id="QUIESCENT STEM CELLS" />
-    <node id="G0 PHASE" />
-    <node id="CELL GROWTH" />
+    <node id="ENDOTHELIAL CELLS" />
+    <node id="CELL VIABILITY" />
+    <node id="FLUID FLOW MECHANOTRANSDUCTION" />
+    <node id="MEMORY OF CELL GROWTH AND DIVISION" />
     <edge source="QUIESCENCE" target="SENESCENCE">
       <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="LYSOSOMAL FUNCTION">
-      <data key="d0">9.0</data>
+      <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="GENE SIGNATURE">
       <data key="d0">1.0</data>
@@ -299,32 +304,26 @@
     <edge source="QUIESCENCE" target="CELL PROLIFERATION">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="RAT EMBRYONIC FIBROBLASTS (REF)">
+    <edge source="QUIESCENCE" target="DORMANCY">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="TISSUE HOMEOSTASIS">
-      <data key="d0">25.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="G0 STATE">
-      <data key="d0">10.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="CELL CYCLE REENTRY">
-      <data key="d0">10.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="RNA-SEQUENCING (RNA-SEQ)">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="LYSOSOMAL GENE EXPRESSION">
+    <edge source="QUIESCENCE" target="CELL HOMEOSTASIS">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="LYSOSOMAL MASS">
-      <data key="d0">16.0</data>
+    <edge source="QUIESCENCE" target="SERUM STARVATION">
+      <data key="d0">61.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="TRANSCRIPTOME CHANGES">
+      <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="E2F1">
-      <data key="d0">7.0</data>
+      <data key="d0">14.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="CELL CYCLE REENTRY">
+      <data key="d0">9.0</data>
     </edge>
     <edge source="QUIESCENCE" target="CDK2">
-      <data key="d0">14.0</data>
+      <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="CDK4">
       <data key="d0">7.0</data>
@@ -338,8 +337,8 @@
     <edge source="QUIESCENCE" target="CDKN1B (P27KIP1)">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SERUM STARVATION">
-      <data key="d0">53.0</data>
+    <edge source="QUIESCENCE" target="LYSOSOMAL MASS">
+      <data key="d0">14.0</data>
     </edge>
     <edge source="QUIESCENCE" target="LYSOSOMAL INHIBITORS">
       <data key="d0">7.0</data>
@@ -347,38 +346,44 @@
     <edge source="QUIESCENCE" target="CELL CYCLE">
       <data key="d0">63.0</data>
     </edge>
+    <edge source="QUIESCENCE" target="EDU INCORPORATION">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="NUTRIENT STARVATION">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="ANTIOXIDANT">
+      <data key="d0">8.0</data>
+    </edge>
     <edge source="QUIESCENCE" target="2-MERCAPTOETHANOL (&#914;ME)">
       <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="TERT-BUTYL HYDROPEROXIDE (TBHP)">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="EDU INCORPORATION">
-      <data key="d0">9.0</data>
+    <edge source="QUIESCENCE" target="AUTOPHAGY">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="EDU ASSAY">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="OXIDATIVE STRESS">
+      <data key="d0">15.0</data>
     </edge>
     <edge source="QUIESCENCE" target="MITOCHONDRIAL ROS">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="EDU ASSAY">
-      <data key="d0">9.0</data>
-    </edge>
     <edge source="QUIESCENCE" target="TBHP">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="BAF">
+    <edge source="QUIESCENCE" target="BAFILOMYCIN A1 (BAF)">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="CQ">
+    <edge source="QUIESCENCE" target="CHLOROQUINE (CQ)">
       <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="ATP PRODUCTION">
       <data key="d0">6.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="NSCS">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="MUSCLE STEM CELLS">
-      <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="RB PATHWAY">
       <data key="d0">7.0</data>
@@ -386,41 +391,50 @@
     <edge source="QUIESCENCE" target="LYSOSOME&#8211;AUTOPHAGY PATHWAY">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="QUIESCENCE" target="DNA SYNTHESIS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="HEPATECTOMY">
+      <data key="d0">8.0</data>
+    </edge>
     <edge source="QUIESCENCE" target="ISOPROTERENOL STIMULATION">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="HEMATOPOIETIC STEM CELLS">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="MTOR">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="TSC/MTORC1">
-      <data key="d0">9.0</data>
+    <edge source="QUIESCENCE" target="MITOCHONDRIAL BIOGENESIS">
+      <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="MITOGEN WITHDRAWAL">
-      <data key="d0">8.0</data>
+      <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="CONTACT INHIBITION">
-      <data key="d0">7.0</data>
+      <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="DORMANCY STATE CONTINUUM">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="RB&#8211;E2F SWITCH THRESHOLD">
-      <data key="d0">9.0</data>
+    <edge source="QUIESCENCE" target="TISSUE HOMEOSTASIS">
+      <data key="d0">20.0</data>
     </edge>
     <edge source="QUIESCENCE" target="LYSOSOMAL AUTOPHAGY">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="QUIESCENCE" target="CELL DORMANCY">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="QUIESCENCE DEPTH">
+      <data key="d0">16.0</data>
+    </edge>
     <edge source="QUIESCENCE" target="LYSOSOME&#8211;AUTOPHAGY AXIS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="GERIATRIC MUSCLE STEM CELLS (MUSCS)">
+    <edge source="QUIESCENCE" target="REACTIVE OXYGEN SPECIES (ROS)">
       <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="NEURAL STEM CELLS (NSCS)">
       <data key="d0">1.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="CELL CYCLE WITHDRAWAL">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="RB&#8211;E2F SWITCH">
       <data key="d0">8.0</data>
@@ -428,71 +442,89 @@
     <edge source="QUIESCENCE" target="LYSOSOMAL&#8211;AUTOPHAGY AXIS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SHALLOW QUIESCENCE">
-      <data key="d0">15.0</data>
-    </edge>
     <edge source="QUIESCENCE" target="EPIGENETIC REGULATION">
-      <data key="d0">7.0</data>
+      <data key="d0">9.0</data>
     </edge>
     <edge source="QUIESCENCE" target="CHROMATIN CONDENSATION">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="GEROCONVERSION">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="MOLECULAR MARKERS">
       <data key="d0">6.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="CELLULAR MECHANISMS">
-      <data key="d0">8.0</data>
+    <edge source="QUIESCENCE" target="CELL TYPE-SPECIFIC MECHANISMS">
+      <data key="d0">1.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SOMATIC STEM CELLS">
-      <data key="d0">9.0</data>
+    <edge source="QUIESCENCE" target="NEURAL STEM CELLS">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="CHROMATIN">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="INSULIN SIGNALING">
       <data key="d0">7.0</data>
     </edge>
+    <edge source="QUIESCENCE" target="WI-38 FIBROBLASTS">
+      <data key="d0">8.0</data>
+    </edge>
     <edge source="QUIESCENCE" target="HISTONE CODE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="METABOLIC ADAPTATIONS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="CELL DORMANCY PLASTICITY">
       <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="3T3 CELLS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="CELL DORMANCY PLASTICITY">
+    <edge source="QUIESCENCE" target="G(ALERT)">
       <data key="d0">7.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="CELL CYCLE COMMITMENT">
-      <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="DORMANT CANCER CELLS">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="CELL CYCLE VARIABILITY">
-      <data key="d0">6.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="P27">
+    <edge source="QUIESCENCE" target="G0 CELL CYCLE ARREST">
       <data key="d0">9.0</data>
     </edge>
     <edge source="QUIESCENCE" target="ENDOTHELIAL CELL FLOW-MEDIATED QUIESCENCE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="P27">
       <data key="d0">1.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="SHALLOW QUIESCENCE">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="EXTRACELLULAR FLUID FLOW">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="SHEAR STRESS">
+      <data key="d0">23.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="EXTRACELLULAR FACTORS">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="RB-E2F BISTABLE SWITCH">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="ADULT STEM CELLS">
+    <edge source="QUIESCENCE" target="TISSUE REPAIR">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="PROGENITOR CELLS">
+    <edge source="QUIESCENCE" target="MICROENVIRONMENT">
       <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="DEEP QUIESCENCE">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="EXTRACELLULAR FLUID FLOW">
-      <data key="d0">8.0</data>
+    <edge source="QUIESCENCE" target="HYDRODYNAMIC SHEAR STRESS">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="MICROFLUIDIC SYSTEM">
-      <data key="d0">1.0</data>
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="MEDIUM FLOW">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="MATHEMATICAL MODEL">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="QUIESCENCE" target="DEXTRAN">
       <data key="d0">14.0</data>
@@ -504,31 +536,31 @@
       <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="REF/E23 CELLS">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="MICROFLUIDIC CHANNEL">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SERUM-STARVATION MEDIUM">
-      <data key="d0">9.0</data>
+    <edge source="QUIESCENCE" target="CELL SUSPENSION">
+      <data key="d0">6.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="CELL MORPHOLOGIES">
+    <edge source="QUIESCENCE" target="MICROFLUIDIC CHANNEL">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SERUM CONCENTRATION">
-      <data key="d0">1.0</data>
+    <edge source="QUIESCENCE" target="SERUM-STARVATION MEDIUM">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="E2F-GFP SIGNALS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="SERUM STIMULATION">
+      <data key="d0">10.0</data>
     </edge>
     <edge source="QUIESCENCE" target="E2F-GFP REPORTER">
-      <data key="d0">1.0</data>
+      <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="E2F-OFF STATE">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="QUIESCENCE DEPTH">
-      <data key="d0">1.0</data>
+      <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="E2F-GFP">
-      <data key="d0">9.0</data>
+      <data key="d0">17.0</data>
     </edge>
     <edge source="QUIESCENCE" target="CELL CULTURE">
       <data key="d0">8.0</data>
@@ -540,25 +572,19 @@
       <data key="d0">23.0</data>
     </edge>
     <edge source="QUIESCENCE" target="EXTRACELLULAR FACTOR REPLACEMENT">
-      <data key="d0">16.0</data>
+      <data key="d0">10.0</data>
     </edge>
     <edge source="QUIESCENCE" target="FLUID FLOW">
       <data key="d0">16.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="FRESH-MEDIUM">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="RECYCLED-MEDIUM">
+    <edge source="QUIESCENCE" target="NUTRIENTS">
       <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="RB-E2F PATHWAY">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="FIBROBLASTS">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="EXTRACELLULAR MATRIX (ECM)">
-      <data key="d0">7.0</data>
+    <edge source="QUIESCENCE" target="SERUM-STIMULATION">
+      <data key="d0">9.0</data>
     </edge>
     <edge source="QUIESCENCE" target="E2F-ON%">
       <data key="d0">9.0</data>
@@ -566,44 +592,44 @@
     <edge source="QUIESCENCE" target="SERUM GROWTH FACTORS">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="QUIESCENCE" target="CELL POPULATION">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="SERUM CONCENTRATION">
+      <data key="d0">8.0</data>
+    </edge>
     <edge source="QUIESCENCE" target="MEDIUM VISCOSITY">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SERUM">
+    <edge source="QUIESCENCE" target="CELL ATTACHMENT">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="EDU+">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SERUM STIMULATION">
-      <data key="d0">8.0</data>
+    <edge source="QUIESCENCE" target="MICROFLUIDIC DEVICE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="CELL MORPHOLOGY">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="NUTRIENT AVAILABILITY">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="QUIESCENCE" target="SERUM-STARVATION">
+      <data key="d0">9.0</data>
     </edge>
     <edge source="QUIESCENCE" target="MEDIUM FLOW RATE">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="SHEAR STRESS">
-      <data key="d0">6.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="NEURAL STEM CELLS">
+    <edge source="QUIESCENCE" target="G0 STATE">
       <data key="d0">8.0</data>
     </edge>
     <edge source="QUIESCENCE" target="LYSOSOMAL DIMMER SWITCH">
-      <data key="d0">16.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="DORMANCY PLASTICITY">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUIESCENCE" target="WI-38 FIBROBLASTS">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="GROWTH FACTORS">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="CELL DENSITY">
+    <edge source="QUIESCENCE" target="HEMATOPOIETIC STEM CELLS">
       <data key="d0">7.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="MECHANICAL INJURY">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENCE" target="SINGLE-CELL TRANSCRIPTOMICS">
-      <data key="d0">1.0</data>
     </edge>
     <edge source="QUIESCENCE" target="MTORC1">
       <data key="d0">9.0</data>
@@ -612,13 +638,10 @@
       <data key="d0">8.0</data>
     </edge>
     <edge source="SENESCENCE" target="DEEP QUIESCENCE">
-      <data key="d0">29.0</data>
+      <data key="d0">15.0</data>
     </edge>
     <edge source="SENESCENCE" target="OXIDATIVE STRESS">
-      <data key="d0">24.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="AGING">
-      <data key="d0">1.0</data>
+      <data key="d0">16.0</data>
     </edge>
     <edge source="SENESCENCE" target="REACTIVE OXYGEN SPECIES (ROS)">
       <data key="d0">7.0</data>
@@ -626,65 +649,23 @@
     <edge source="SENESCENCE" target="CDKN2A (P16INK4A)">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="SENESCENCE" target="QDS">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="HEMATOPOIETIC STEM CELLS (HSCS)">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="ADRIAMYCIN">
-      <data key="d0">17.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="5-AZA-2-DEOXYCYTIDINE (5-AZA)">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="HYDROGEN PEROXIDE (H2O2)">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="SENESCENCE CORE SIGNATURE GENES">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="CELL LINES">
-      <data key="d0">15.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="RNA-SEQ">
-      <data key="d0">2.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="LYSOSOMAL GENES">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="QUESCENCE">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="DNA DAMAGE">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="AGING TISSUES">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="5-AZA">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="H2O2">
-      <data key="d0">18.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="PROTEIN AGGREGATES">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="LYSOSOMAL&#8211;AUTOPHAGY ACTIVITIES">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="AUTOPHAGY">
-      <data key="d0">18.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="MITOCHONDRIAL ROS">
-      <data key="d0">8.0</data>
-    </edge>
     <edge source="SENESCENCE" target="&#914;-GALACTOSIDASE ACTIVITY">
-      <data key="d0">9.0</data>
+      <data key="d0">18.0</data>
     </edge>
     <edge source="SENESCENCE" target="CELL SIZE">
       <data key="d0">7.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="QDS (QUIESCENCE DEPTH SCORE)">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="AGING">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="AUTOPHAGY">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="MITOCHONDRIAL ROS">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="SENESCENCE" target="CYTOTOXICITY">
       <data key="d0">6.0</data>
@@ -692,62 +673,89 @@
     <edge source="SENESCENCE" target="IGFBP-3">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="SENESCENCE" target="H2O2">
+      <data key="d0">9.0</data>
+    </edge>
     <edge source="SENESCENCE" target="QUESCENT NEURAL STEM CELLS">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="SENESCENCE" target="CELL DEATH">
+    <edge source="SENESCENCE" target="RNA-SEQ">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="SENESCENCE-ASSOCIATED GENES">
       <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="CELL DEATH">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="SENESCENCE" target="TELOMERE SHORTENING">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="SENESCENCE" target="FIBROBLASTS">
-      <data key="d0">1.0</data>
+    <edge source="SENESCENCE" target="DAMAGE RESPONSE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="PRIMARY HUMAN FIBROBLASTS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="SINGLE-CELL RNA SEQUENCING">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="CELLULAR HETEROGENEITY">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="DNA DAMAGE">
+      <data key="d0">26.0</data>
     </edge>
     <edge source="SENESCENCE" target="P53 PATHWAY">
       <data key="d0">9.0</data>
     </edge>
     <edge source="SENESCENCE" target="LYSOSOME&#8211;AUTOPHAGY PATHWAY">
-      <data key="d0">1.0</data>
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="RB PATHWAY">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="QUIESCENT NEURAL STEM CELLS (NSCS)">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="AUTOPHAGY CAPACITY">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="PROTEOLYTIC ACTIVITIES">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="SENESCENCE" target="AGE-RELATED DECLINE">
-      <data key="d0">1.0</data>
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="HEMATOPOIETIC STEM CELLS">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="SENESCENCE" target="REACTIVE OXYGEN SPECIES">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="SENESCENCE" target="CHK2">
-      <data key="d0">1.0</data>
+    <edge source="SENESCENCE" target="DNA DAMAGE CHECKPOINT">
+      <data key="d0">9.0</data>
     </edge>
-    <edge source="SENESCENCE" target="AUTOPHAGY INHIBITION">
+    <edge source="SENESCENCE" target="AUTOPHAGY IN PANCREATIC CANCER">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="SENESCENCE" target="DORMANT BREAST CANCER CELLS">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="QUIESCENCE-ORIGIN SENESCENCE">
-      <data key="d0">26.0</data>
+    <edge source="SENESCENCE" target="QUISCENCE-ORIGIN SENESCENCE">
+      <data key="d0">9.0</data>
     </edge>
     <edge source="SENESCENCE" target="SENESCENCE-ASSOCIATED SECRETORY PHENOTYPE (SASP)">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="MACROMOLECULAR DAMAGE">
       <data key="d0">8.0</data>
     </edge>
     <edge source="SENESCENCE" target="TELOMERE EROSION">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="SENESCENCE" target="DORMANCY STATE CONTINUUM">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="RB&#8211;E2F SWITCH THRESHOLD">
+    <edge source="SENESCENCE" target="CELLULAR AGING">
       <data key="d0">9.0</data>
     </edge>
     <edge source="SENESCENCE" target="GEROCONVERSION">
-      <data key="d0">9.0</data>
+      <data key="d0">17.0</data>
     </edge>
     <edge source="SENESCENCE" target="P16INK4A">
-      <data key="d0">25.0</data>
+      <data key="d0">24.0</data>
     </edge>
     <edge source="SENESCENCE" target="HUMAN HEMATOPOIETIC STEM PROGENITOR CELLS (HSPCS)">
       <data key="d0">6.0</data>
@@ -758,14 +766,38 @@
     <edge source="SENESCENCE" target="QUIESCENCE DEPTH SCORE (QDS)">
       <data key="d0">6.0</data>
     </edge>
+    <edge source="SENESCENCE" target="CELL CYCLE ARREST">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="CELLULAR HYPERTROPHY">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="STRESS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="TRANSCRIPTOMIC CHANGES">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="EPIGENETIC DEREPRESSION">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="SYSTEMIC FACTORS">
+      <data key="d0">6.0</data>
+    </edge>
     <edge source="SENESCENCE" target="LYSOSOME&#8211;AUTOPHAGY AXIS">
       <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="GERIATRIC MUSCLE STEM CELLS (MUSCS)">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="SENESCENCE" target="SENESCENCE CORE SIGNATURE">
       <data key="d0">8.0</data>
     </edge>
     <edge source="SENESCENCE" target="SENESCENCE BIOMARKERS">
       <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="PROTEIN AGGREGATES">
+      <data key="d0">1.0</data>
     </edge>
     <edge source="SENESCENCE" target="RB&#8211;E2F SWITCH">
       <data key="d0">8.0</data>
@@ -779,56 +811,26 @@
     <edge source="SENESCENCE" target="LYSOSOMAL&#8211;AUTOPHAGY AXIS">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="SENESCENCE" target="PROLIFERATION-ORIGIN SENESCENCE">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="GERIATRIC PHENOTYPE">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="LYSOSOMAL AUTOPHAGY">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="EPIGENETIC REGULATION">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="SHALLOW QUIESCENCE">
-      <data key="d0">7.0</data>
-    </edge>
     <edge source="SENESCENCE" target="HETEROGENEITY">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="SENESCENCE" target="PROTEIN AGGREGATION">
+    <edge source="SENESCENCE" target="GERICONVERSION">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="QUESCENCE-ORIGIN SENESCENCE">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="SENESCENCE" target="MAPK PATHWAY">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="QUIESCENCE DEPTH">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="PROTEOME">
+    <edge source="SENESCENCE" target="MOLECULAR MARKERS">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="SENESCENCE" target="CELLULAR AGING">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="STEM CELL QUIESCENCE">
-      <data key="d0">6.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="QUIESCENT FIBROBLASTS">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="REGENERATIVE MEDICINE">
+    <edge source="SENESCENCE" target="CELL CYCLE">
       <data key="d0">1.0</data>
+    </edge>
+    <edge source="SENESCENCE" target="CELL CYCLE COMMITMENT">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="SENESCENCE" target="TRANSCRIPTIONAL HETEROGENEITY">
       <data key="d0">8.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="GENOMIC HALLMARKS">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="CELL CYCLE ARREST">
-      <data key="d0">9.0</data>
     </edge>
     <edge source="SENESCENCE" target="RAPAMYCIN">
       <data key="d0">8.0</data>
@@ -848,26 +850,20 @@
     <edge source="SENESCENCE" target="HISTONE MODIFICATIONS">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="SENESCENCE" target="CELL CYCLE REGULATION">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="INTIMAL THICKENING">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SENESCENCE" target="PROLIFERATION">
-      <data key="d0">9.0</data>
+    <edge source="SENESCENCE" target="LYSOSOMAL DIMMER SWITCH">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="AUTOPHAGY">
-      <data key="d0">48.0</data>
+      <data key="d0">65.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="LYSOSOMAL BIOGENESIS">
-      <data key="d0">9.0</data>
+      <data key="d0">24.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="LYSOPHAGY">
-      <data key="d0">7.0</data>
+      <data key="d0">8.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="AUTOPHAGY FLUX">
-      <data key="d0">8.0</data>
+      <data key="d0">17.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="LYSOTRACKER INTENSITY">
       <data key="d0">1.0</data>
@@ -875,38 +871,32 @@
     <edge source="LYSOSOMAL FUNCTION" target="LYSOSOMAL INHIBITORS">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="QUESCENCE">
-      <data key="d0">16.0</data>
-    </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="CQ (CHLOROQUINE)">
+    <edge source="LYSOSOMAL FUNCTION" target="BAFILOMYCIN A1">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="BAF (BAFILOMYCIN A1)">
+    <edge source="LYSOSOMAL FUNCTION" target="CHLOROQUINE (CQ)">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="LYSOSOMAL FUNCTION" target="LYSOSOMAL MASS">
       <data key="d0">8.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="MIT/TFE FAMILY">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="ANTIOXIDATION">
-      <data key="d0">8.0</data>
+    <edge source="LYSOSOMAL FUNCTION" target="REF CELLS">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="OXIDATIVE STRESS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="QUESCENCE DEPTH">
+    <edge source="LYSOSOMAL FUNCTION" target="MITF">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="LYSOSOMAL FUNCTION" target="MITOSOX">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="MITF">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="TFE3">
-      <data key="d0">6.0</data>
-    </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="LYSOSOMAL DESTRUCTION">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="LYSOSOMAL FUNCTION" target="REACTIVE OXYGEN SPECIES (ROS)">
-      <data key="d0">8.0</data>
+    <edge source="LYSOSOMAL FUNCTION" target="MITOCHONDRIAL ROS">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="CANCER PHYSIOLOGY">
       <data key="d0">1.0</data>
@@ -915,16 +905,13 @@
       <data key="d0">8.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="GOLGI NETWORK">
-      <data key="d0">9.0</data>
+      <data key="d0">1.0</data>
     </edge>
     <edge source="LYSOSOMAL FUNCTION" target="MCLN1 INHIBITORS">
-      <data key="d0">6.0</data>
+      <data key="d0">5.0</data>
     </edge>
-    <edge source="CELL PROLIFERATION" target="SHALLOW QUIESCENCE">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="CELL PROLIFERATION" target="PARTIAL HEPATECTOMY">
-      <data key="d0">8.0</data>
+    <edge source="CELL PROLIFERATION" target="TISSUE REPAIR">
+      <data key="d0">9.0</data>
     </edge>
     <edge source="DEEP QUIESCENCE" target="SHALLOW QUIESCENCE">
       <data key="d0">1.0</data>
@@ -932,95 +919,74 @@
     <edge source="DEEP QUIESCENCE" target="LYSOSOMAL MASS">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="DEEP QUIESCENCE" target="LYSOSOMAL BIOGENESIS">
+      <data key="d0">1.0</data>
+    </edge>
     <edge source="DEEP QUIESCENCE" target="HEPATOCYTES">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="OXIDATIVE STRESS" target="QUESCENCE DEPTH">
+      <data key="d0">1.0</data>
+    </edge>
     <edge source="AUTOPHAGY" target="LYSOSOMAL MASS">
-      <data key="d0">1.0</data>
+      <data key="d0">7.0</data>
     </edge>
-    <edge source="AUTOPHAGY" target="MTOR">
+    <edge source="AUTOPHAGY" target="MAMMALIAN TARGET OF RAPAMYCIN (MTOR)">
       <data key="d0">8.0</data>
-    </edge>
-    <edge source="AUTOPHAGY" target="CELLULAR ADAPTATION">
-      <data key="d0">1.0</data>
     </edge>
     <edge source="AUTOPHAGY" target="NOCODAZOLE">
-      <data key="d0">8.0</data>
+      <data key="d0">7.0</data>
     </edge>
     <edge source="AUTOPHAGY" target="VINBLASTINE">
       <data key="d0">1.0</data>
     </edge>
+    <edge source="AUTOPHAGY" target="MITF">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="AUTOPHAGY" target="LYSOSOMAL BIOGENESIS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AUTOPHAGY" target="CELLULAR CLEARANCE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="AUTOPHAGY" target="LYSOSOMES">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="AUTOPHAGY" target="MTOR">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="AUTOPHAGY" target="ATP">
+      <data key="d0">1.0</data>
+    </edge>
     <edge source="AUTOPHAGY" target="TRANSCRIPTION FACTOR EB (TFEB)">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="REACTIVE OXYGEN SPECIES (ROS)" target="SENESCENT CELLS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SHALLOW QUIESCENCE" target="CELL CYCLE">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="AUTOPHAGY" target="CELLULAR SENESCENCE">
-      <data key="d0">9.0</data>
+    <edge source="SHALLOW QUIESCENCE" target="MUSCLE STEM CELLS">
+      <data key="d0">7.0</data>
     </edge>
-    <edge source="CELL CYCLE REENTRY" target="SERUM STIMULATION">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="CELL CYCLE REENTRY" target="EDU INCORPORATION">
-      <data key="d0">10.0</data>
-    </edge>
-    <edge source="CELL CYCLE REENTRY" target="E2F TRANSCRIPTION FACTORS">
-      <data key="d0">1.0</data>
+    <edge source="SHALLOW QUIESCENCE" target="NEURAL STEM CELLS">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="SHALLOW QUIESCENCE" target="EXTRACELLULAR FLUID FLOW">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="SHALLOW QUIESCENCE" target="SHEAR STRESS">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SHALLOW QUIESCENCE" target="EXTRACELLULAR FACTORS">
+    <edge source="LYSOSOMAL MASS" target="LYSOSOMAL GENE EXPRESSION">
       <data key="d0">8.0</data>
     </edge>
     <edge source="LYSOSOMAL MASS" target="LYSOTRACKER INTENSITY">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="LYSOSOMAL MASS" target="LYSOSOMAL GENE EXPRESSION">
-      <data key="d0">8.0</data>
-    </edge>
     <edge source="LYSOSOMAL MASS" target="LYSOSOMAL BIOGENESIS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="E2F1" target="RB-E2F SWITCH">
+    <edge source="LYSOSOMAL BIOGENESIS" target="LYSOSOMAL GENE EXPRESSION">
       <data key="d0">9.0</data>
-    </edge>
-    <edge source="LYSOSOMAL GENE EXPRESSION" target="LYSOSOMAL BIOGENESIS">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="LYSOSOMAL GENE EXPRESSION" target="MIT/TFE FAMILY">
-      <data key="d0">10.0</data>
-    </edge>
-    <edge source="SERUM STIMULATION" target="CELL CYCLE ARREST">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="SERUM STIMULATION" target="CELL CYCLE">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="SERUM STIMULATION" target="RB-E2F BISTABLE SWITCH">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="EDU INCORPORATION" target="CELL CYCLE">
-      <data key="d0">11.0</data>
-    </edge>
-    <edge source="EDU INCORPORATION" target="QUESCENCE">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="SERUM STARVATION" target="QUESCENCE">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="MTOR" target="AMPK">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="MTOR" target="GEROCONVERSION">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="RNA-SEQ ANALYSIS" target="HEAT MAP">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="K-MEANS CLUSTERING" target="DIFFERENTIALLY EXPRESSED GENES">
-      <data key="d0">7.0</data>
     </edge>
     <edge source="LYSOSOMAL BIOGENESIS" target="MITF">
       <data key="d0">9.0</data>
@@ -1028,116 +994,167 @@
     <edge source="LYSOSOMAL BIOGENESIS" target="MCOLN1">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="CELL CYCLE REENTRY" target="SERUM STIMULATION">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CELL CYCLE REENTRY" target="EDU INCORPORATION">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="CELL CYCLE REENTRY" target="E2F-ON STATE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="CDK2" target="PROLIFERATION">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SERUM STIMULATION" target="CELL CYCLE EXIT">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SERUM STIMULATION" target="CELL CYCLE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="EDU INCORPORATION" target="CELL CYCLE">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="EDU INCORPORATION" target="FLOW CYTOMETER">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="RNA-SEQUENCING (RNA-SEQ)" target="LYSOSOMAL GENE EXPRESSION">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="LYSOSOMAL GENE EXPRESSION" target="RNA-SEQ ANALYSIS">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="LYSOSOMAL GENE EXPRESSION" target="MIT/TFE FAMILY">
+      <data key="d0">10.0</data>
+    </edge>
     <edge source="NOCODAZOLE" target="CELL CYCLE">
       <data key="d0">8.0</data>
     </edge>
     <edge source="VINBLASTINE" target="CELL CYCLE">
       <data key="d0">8.0</data>
     </edge>
+    <edge source="CELL CYCLE" target="CELLULAR SENESCENCE">
+      <data key="d0">9.0</data>
+    </edge>
     <edge source="CELL CYCLE" target="E2F">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="CELL CYCLE" target="E2F-ON%">
+    <edge source="CELL CYCLE" target="QUIESCENT STEM CELLS">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="CELL CYCLE" target="MTORC1">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="LYSOSOMAL INHIBITORS" target="QUESCENCE">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="QUESCENCE" target="&#914;-GALACTOSIDASE ACTIVITY">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="QUESCENCE" target="CELL SIZE">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="QUESCENCE" target="NUTRIENT STARVATION">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUESCENCE" target="EDU ASSAY">
-      <data key="d0">10.0</data>
-    </edge>
-    <edge source="QUESCENCE" target="INTRACELLULAR ROS">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="QUESCENCE" target="QUESCENCE DEPTH">
-      <data key="d0">15.0</data>
-    </edge>
-    <edge source="QUESCENCE" target="E2F1 PROMOTER-DRIVEN DESTABILIZED EGFP">
-      <data key="d0">6.0</data>
-    </edge>
-    <edge source="INTRACELLULAR ROS" target="MITOSOX">
+    <edge source="AMPK" target="MTOR">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="QUESCENCE-DEPTH SCORE (QDS)" target="HEMATOPOIETIC STEM CELLS (HSCS)">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUESCENCE-DEPTH SCORE (QDS)" target="DORMANT NEURAL STEM CELLS (NSCS)">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="DORMANT NEURAL STEM CELLS (NSCS)" target="PRIMED NEURAL STEM CELLS (NSCS)">
+    <edge source="MTOR" target="GEROCONVERSION">
       <data key="d0">9.0</data>
     </edge>
     <edge source="REF CELLS" target="QUESCENCE DEEPENING">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="QUESCENCE DEEPENING" target="MTORC1">
+    <edge source="QUESCENCE DEPTH" target="SENESCENT CELLS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AGING" target="REPLICATIVE SENESCENCE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AGING" target="CELLULAR SENESCENCE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="HEMATOPOIETIC STEM CELLS (HSCS)" target="QDS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DORMANT NEURAL STEM CELLS (NSCS)" target="PRIMED NEURAL STEM CELLS (NSCS)">
       <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENCE CORE SIGNATURE GENES" target="ADRIAMYCIN">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE CORE SIGNATURE GENES" target="5-AZA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENCE CORE SIGNATURE GENES" target="HYDROGEN PEROXIDE (H2O2)">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="QUESCENCE DEEPENING" target="MTORC1">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="MTORC1" target="G0">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="MUSCLE STEM CELLS" target="QUIESCENT STATE">
+    <edge source="SENESCENT CELLS" target="AGED CELLS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SENESCENT CELLS" target="LYSOSOMAL GENES">
       <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENT CELLS" target="QUESCENCE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="SENESCENT CELLS" target="DNA DAMAGE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENT CELLS" target="LYSOSOME&#8211;AUTOPHAGY ACTIVITIES">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SENESCENT CELLS" target="CELL LINES">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="QUESCENT NEURAL STEM CELLS" target="LYSOSOME ACTIVATION">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="P53 PATHWAY" target="CELLULAR SENESCENCE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="HEMATOPOIETIC STEM CELLS" target="TSC-MTOR">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="REPLICATIVE SENESCENCE" target="AGE-RELATED DISEASES">
-      <data key="d0">1.0</data>
+    <edge source="CELLULAR SENESCENCE" target="RB">
+      <data key="d0">8.0</data>
     </edge>
-    <edge source="GEROCONVERSION" target="CELLULAR SENESCENCE">
+    <edge source="CELLULAR SENESCENCE" target="P53">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="QUIESCENT MUSCLE STEM CELLS (MUSCS)" target="GERIATRIC MICE">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="SENESCENCE BIOMARKERS" target="CELLULAR SENESCENCE">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENT FIBROBLASTS" target="CELLULAR SENESCENCE">
-      <data key="d0">6.0</data>
-    </edge>
-    <edge source="CELLULAR QUIESCENCE" target="CELLULAR SENESCENCE">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="CELLULAR QUIESCENCE" target="WI-38 FIBROBLASTS">
-      <data key="d0">6.0</data>
-    </edge>
-    <edge source="CELLULAR QUIESCENCE" target="DENSITY-DEPENDENT GROWTH ARREST">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="CELLULAR QUIESCENCE" target="LYMPHOCYTES">
+    <edge source="CELLULAR SENESCENCE" target="MELANOCYTE">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="CELLULAR SENESCENCE" target="HUMAN HEMATOPOIETIC STEM/PROGENITOR CELLS">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="CELLULAR SENESCENCE" target="P2Y(1)(4) RECEPTOR">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="CELLULAR SENESCENCE" target="AGE-DEPENDENT REGULATION">
+    <edge source="CELLULAR SENESCENCE" target="SIGNALING PATHWAYS">
       <data key="d0">8.0</data>
+    </edge>
+    <edge source="CELLULAR SENESCENCE" target="AGE-RELATED DISEASE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CELLULAR SENESCENCE" target="TUMOR SUPPRESSOR GENES">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="CELLULAR SENESCENCE" target="CELLULAR QUIESCENCE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CELLULAR SENESCENCE" target="GERICONVERSION">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CELLULAR SENESCENCE" target="MUSCLE STEM CELLS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CELLULAR SENESCENCE" target="WI-38 FIBROBLASTS">
+      <data key="d0">1.0</data>
     </edge>
     <edge source="CELLULAR SENESCENCE" target="CELL CYCLE INHIBITOR P27">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="CELLULAR SENESCENCE" target="LENTIVIRAL SUPPRESSION OF P53">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="CELL CYCLE ARREST" target="P53">
+    <edge source="CELLULAR SENESCENCE" target="CELL-CYCLE WITHDRAWAL">
       <data key="d0">9.0</data>
+    </edge>
+    <edge source="CELLULAR SENESCENCE" target="SENESCENCE BIOMARKERS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P53" target="CELL CYCLE ARREST">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CELL GROWTH" target="CELLULAR REGENERATION">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="QUIESCENT MUSCLE STEM CELLS (MUSCS)" target="GERIATRIC MICE">
+      <data key="d0">7.0</data>
     </edge>
     <edge source="CELL CYCLE ARREST" target="CELL CYCLE INHIBITORS">
       <data key="d0">8.0</data>
@@ -1146,165 +1163,171 @@
       <data key="d0">8.0</data>
     </edge>
     <edge source="CELL CYCLE ARREST" target="FLUCTUATIONS IN P53 SIGNALING">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CELL CYCLE ARREST" target="CELLULAR QUIESCENCE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="STEM CELL QUIESCENCE" target="REGENERATIVE MEDICINE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CELLULAR QUIESCENCE" target="HES1">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="CELL DORMANCY PLASTICITY" target="CYCLOPS">
-      <data key="d0">6.0</data>
+    <edge source="MUSCLE STEM CELLS" target="DEEP QUIESCENT STATE">
+      <data key="d0">9.0</data>
     </edge>
-    <edge source="G0" target="G(ALERT)">
+    <edge source="CELL CYCLE EXIT" target="QUIESCENCE DEEPENING">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="NEURAL STEM CELLS" target="LYSOSOME ACTIVATION">
       <data key="d0">7.0</data>
+    </edge>
+    <edge source="NEURAL STEM CELLS" target="FASTING">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="NEURAL STEM CELLS" target="BRAIN INJURY">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="NEURAL STEM CELLS" target="SINGLE-CELL TRANSCRIPTOMICS">
+      <data key="d0">8.0</data>
     </edge>
     <edge source="G(ALERT)" target="DORMANT NEURAL STEM CELLS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="G(ALERT)" target="HGFA">
+    <edge source="DORMANT CANCER CELLS" target="GENOMIC HALLMARKS">
       <data key="d0">7.0</data>
     </edge>
+    <edge source="DORMANT NEURAL STEM CELLS" target="HGFA">
+      <data key="d0">9.0</data>
+    </edge>
     <edge source="DORMANT NEURAL STEM CELLS" target="FULLY REDUCED HMGB1">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DORMANT NEURAL STEM CELLS" target="TISSUE REGENERATION">
       <data key="d0">9.0</data>
     </edge>
     <edge source="CELL CYCLE INHIBITOR P27" target="APC/C">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="LYSOSOME ACTIVATION" target="QUIESCENT NEURAL STEM CELLS">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="QUIESCENT NEURAL STEM CELLS" target="FASTING">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="E2F PATHWAY" target="RB PROTEIN">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="E2F PATHWAY" target="RETINOBLASTOMA GENE">
-      <data key="d0">9.0</data>
+    <edge source="CELL CYCLE INHIBITOR P27" target="APC/C(CDH1)">
+      <data key="d0">8.0</data>
     </edge>
-    <edge source="DEEP QUIESCENT STATE" target="CELL CYCLE RE-ENTRY">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="QUIESCENT STATE" target="CELL CYCLE ENTRY">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="RB-E2F BISTABLE SWITCH" target="HILL FUNCTION">
+    <edge source="APC/C(CDH1)" target="EMI1">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="RB-E2F BISTABLE SWITCH" target="EXTRACELLULAR FLUID FLOW">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="RB-E2F BISTABLE SWITCH" target="SHEAR STRESS">
+    <edge source="E2F PATHWAY" target="RB PROTEIN">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="RB-E2F BISTABLE SWITCH" target="E2F">
+    <edge source="DEEP QUIESCENT STATE" target="KETONE BODY SIGNALING">
       <data key="d0">8.0</data>
     </edge>
     <edge source="EXTRACELLULAR FLUID FLOW" target="DEXTRAN">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="EXTRACELLULAR FLUID FLOW" target="CELL MORPHOLOGY">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="EXTRACELLULAR FLUID FLOW" target="CELL ADHESION">
-      <data key="d0">7.0</data>
-    </edge>
-    <edge source="EXTRACELLULAR FLUID FLOW" target="CELL METABOLISM">
-      <data key="d0">8.0</data>
+    <edge source="EXTRACELLULAR FLUID FLOW" target="RB-E2F BISTABLE SWITCH">
+      <data key="d0">1.0</data>
     </edge>
     <edge source="SHEAR STRESS" target="CELL CULTURE">
       <data key="d0">7.0</data>
     </edge>
     <edge source="SHEAR STRESS" target="DEXTRAN">
-      <data key="d0">1.0</data>
+      <data key="d0">6.0</data>
     </edge>
-    <edge source="MICROCHANNEL" target="CELL CULTURE">
+    <edge source="SHEAR STRESS" target="RB-E2F BISTABLE SWITCH">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="MICROCHANNEL" target="PDMS">
+    <edge source="HYDRODYNAMIC SHEAR STRESS" target="CELL MORPHOLOGY">
       <data key="d0">8.0</data>
+    </edge>
+    <edge source="MICROCHANNEL" target="CELL CULTURE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="MICROCHANNEL" target="PDMS">
+      <data key="d0">9.0</data>
     </edge>
     <edge source="CELL CULTURE" target="FIBRONECTIN">
       <data key="d0">8.0</data>
     </edge>
     <edge source="CELL CULTURE" target="REF/E23 CELLS">
-      <data key="d0">9.0</data>
+      <data key="d0">1.0</data>
     </edge>
     <edge source="CELL CULTURE" target="MICROFLUIDIC DEVICE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CELL CULTURE" target="BOVINE GROWTH SERUM (BGS)">
       <data key="d0">9.0</data>
     </edge>
     <edge source="CELL CULTURE" target="GROWTH MEDIUM">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="MICROFLUIDIC DEVICE" target="ETHANOL">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="MICROFLUIDIC DEVICE" target="UV IRRADIATION">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="MICROFLUIDIC DEVICE" target="OXYGEN PLASMA TREATMENT">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="GROWTH MEDIUM" target="BOVINE GROWTH SERUM (BGS)">
+    <edge source="MICROFLUIDIC DEVICE" target="OXYGEN PLASMA TREATMENT">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="MICROFLUIDIC DEVICE" target="ETHANOL">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="MICROFLUIDIC DEVICE" target="UV IRRADIATION">
       <data key="d0">8.0</data>
     </edge>
     <edge source="DEXTRAN" target="MEDIUM VISCOSITY">
       <data key="d0">6.0</data>
     </edge>
-    <edge source="DEXTRAN" target="CELL VIABILITY">
+    <edge source="DEXTRAN" target="ENDOTHELIAL CELLS">
       <data key="d0">7.0</data>
     </edge>
-    <edge source="SERUM CONCENTRATION" target="E2F-ON STATE">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="E2F-GFP SIGNALS" target="FLOW CYTOMETER">
-      <data key="d0">8.0</data>
-    </edge>
     <edge source="E2F-GFP REPORTER" target="FLOW CYTOMETRY">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="MECHANICAL SHEAR STRESS" target="CELL ADHESION">
       <data key="d0">1.0</data>
+    </edge>
+    <edge source="SERUM CONCENTRATION" target="E2F-ON STATE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="RB-E2F PATHWAY" target="SERUM">
+      <data key="d0">9.0</data>
     </edge>
     <edge source="RB-E2F PATHWAY" target="E2F-ACTIVATION THRESHOLD">
       <data key="d0">1.0</data>
     </edge>
-    <edge source="RB-E2F PATHWAY" target="QUANTITATIVE MODEL">
-      <data key="d0">1.0</data>
+    <edge source="WI-38 CELLS" target="CELL-CYCLE REGULATION">
+      <data key="d0">7.0</data>
     </edge>
-    <edge source="CELL MORPHOLOGY" target="CELL ATTACHMENT">
-      <data key="d0">1.0</data>
-    </edge>
-    <edge source="CARDIAC FIBROBLAST" target="INTERSTITIAL FLUID FLOW">
+    <edge source="MECHANICAL INJURY" target="FIBROBLAST ALIGNMENT">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="CARDIAC FIBROBLAST" target="AT1R">
+    <edge source="STEM CELL SELF-RENEWAL" target="CELL CYCLE REGULATION">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CELL CYCLE REGULATION" target="DENSITY-DEPENDENT GROWTH ARREST">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="INTERSTITIAL FLUID FLOW" target="CARDIAC FIBROBLAST ACTIVATION">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="CARDIAC FIBROBLAST ACTIVATION" target="AT1R">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="CARDIAC FIBROBLAST" target="TGF-B1">
+    <edge source="CARDIAC FIBROBLAST ACTIVATION" target="TGF-B1">
       <data key="d0">9.0</data>
     </edge>
-    <edge source="INTERSTITIAL FLUID FLOW" target="VASCULAR ENDOTHELIAL CELLS">
-      <data key="d0">9.0</data>
+    <edge source="VASCULAR ENDOTHELIAL CELLS" target="FLK-1">
+      <data key="d0">1.0</data>
     </edge>
     <edge source="VASCULAR SMOOTH MUSCLE CELLS" target="ANGIOGENESIS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="VASCULAR SMOOTH MUSCLE CELLS" target="INTERSTITIAL FLOW">
-      <data key="d0">7.0</data>
-    </edge>
     <edge source="VASCULAR SMOOTH MUSCLE CELLS" target="FLUID SHEAR STRESS">
       <data key="d0">8.0</data>
     </edge>
-    <edge source="ENDOTHELIAL CELLS" target="INFLAMMATORY MARKER EXPRESSION">
+    <edge source="ANGIOGENESIS" target="INTERSTITIAL FLOW">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="QUIESCENT STEM CELLS" target="MEMORY OF CELL GROWTH AND DIVISION">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="ENDOTHELIAL CELLS" target="CELL VIABILITY">
       <data key="d0">8.0</data>
     </edge>
     <edge source="ENDOTHELIAL CELLS" target="FLUID FLOW MECHANOTRANSDUCTION">
-      <data key="d0">9.0</data>
-    </edge>
-    <edge source="MOUSE EMBRYONIC STEM CELLS" target="G ALERT">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="G ALERT" target="CELL GROWTH">
-      <data key="d0">8.0</data>
-    </edge>
-    <edge source="QUIESCENT STEM CELLS" target="G0 PHASE">
       <data key="d0">9.0</data>
     </edge>
   </graph>
